@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url(reset.css);
+
+#service {
+    width: 90rem;
+    padding: 2.188rem;
+    border-radius: 1.25rem;
+    background: #FDF8F4;
+    box-shadow: 0 0 1rem 0.313rem #00015910;
+    margin-bottom: 2.813rem;
+}
+
+#service h3 {
+    text-align: center;
+    font-size: 1.625rem;
+    margin-bottom: 2.813rem;
+}
+
+#service .card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.188rem;
+}
+
+#service .card-list .service-card {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 1.25rem;
+    background: linear-gradient(#FDF8F4, #E9C1A1);
+    box-shadow: inset -7px -7px 10px 3px #00015917;
+}
+
+.service-card a {
+    display: inline-block;
+    width: 20rem;
+    height: 25rem;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.service-card a img {
+    width: 16.875rem;
+    height: 15.625rem;
+}
+
+.service-card .card-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
