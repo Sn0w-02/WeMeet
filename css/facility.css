@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #292929;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inner {
+  width: 1100px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+#facility-header {
+  height: 76px;
+  background: #fff;
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #000159;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.gnb {
+  display: flex;
+  gap: 48px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.profile {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #6e7659;
+}
+
+#facility-hero {
+  position: relative;
+  height: 430px;
+  background: url("../img/강아지\ 2.png") center/cover no-repeat;
+}
+
+#facility-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .18);
+}
+
+.hero-textbox {
+  position: absolute;
+  z-index: 1;
+  top: 170px;
+  left: 40%;
+  color: #fff;
+}
+
+.hero-title {
+  margin-bottom: 18px;
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+#facility-values {
+  padding: 110px 0 85px;
+}
+
+.values-wrap {
+  overflow: hidden;
+  background: #fbf7f2;
+}
+
+.value-card {
+  min-height: 280px;
+  display: flex;
+}
+
+
+
+.value-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.value-image,
+.value-content {
+  width: 50%;
+}
+
+.value-content {
+  padding: 45px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000159;
+}
+
+.value-number {
+  margin-bottom: 24px;
+  color: #706fae;
+  font-size: 21px;
+  font-weight: 800;
+  display: flex;
+  gap: 15px;
+}
+
+.value-number img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.value-title {
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.value-description {
+  max-width: 330px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#adoption-school {
+  padding: 30px 0 95px;
+}
+
+.school-wrap {
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fbf7f2;
+}
+
+.school-top {
+  height: 350px;
+  display: flex;
+}
+
+.school-main-image {
+  width: 41%;
+}
+
+.school-content {
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.school-title {
+  margin-bottom: 24px;
+  color: #000159;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.school-description {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.school-description strong {
+  color: #000159;
+}
+
+.school-menu-image {
+  height: 200px;
+}
+
+#location {
+  padding: 10px 0 100px;
+}
+
+.section-title {
+  margin-bottom: 55px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.location-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.map-area {
+  position: relative;
+  width: 52%;
+  height: 330px;
+  overflow: hidden;
+}
+
+.map-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 11px;
+  color: #fff;
+  background: #000159;
+  text-align: center;
+  font-size: 16px;
+}
+
+.location-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 30px 88px 1fr;
+  align-items: start;
+  font-size: 14px;
+}
+
+
+
+.info-title {
+  color: #000159;
+  font-weight: 700;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.info-text {
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+#wemeet-promise {
+  padding-bottom: 80px;
+}
+
+.promise-box {
+  padding: 64px 30px;
+  border-radius: 5px;
+  background: #fbf7f2;
+  text-align: center;
+}
+
+.promise-main {
+  color: #666;
+  font-size: 21px;
+  line-height: 2;
+}
+
+.promise-main strong,
+.promise-description strong {
+  color: #ff6a2b;
+}
+
+.promise-line {
+  width: 70%;
+  height: 2px;
+  margin: 24px auto;
+  background: #d9cce8;
+}
+
+.promise-description {
+  color: #555;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+#facility-footer {
+  padding: 28px 0;
+  color: #fff;
+  background: #00012e;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr .5fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo>img {
+  display: block;
+  width: auto;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-text {
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.footer-sns {
+  text-align: right;
+  font-size: 22px;
+}
+
+@media (max-width:768px) {
+  #facility-header {
+    height: 64px;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  #facility-hero {
+    height: 350px;
+  }
+
+  .hero-textbox {
+    top: 70px;
+    left: 24px;
+    width: calc(100% - 48px);
+  }
+
+  .hero-title {
+    font-size: 25px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  #facility-values {
+    padding: 60px 0;
+  }
+
+  .value-card,
+  .value-card.reverse {
+    flex-direction: column;
+  }
+
+  .value-image,
+  .value-content {
+    width: 100%;
+  }
+
+  .value-image {
+    height: 250px;
+  }
+
+  .value-content {
+    min-height: 240px;
+    padding: 36px;
+  }
+
+  .school-top {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .school-main-image,
+  .school-content {
+    width: 100%;
+  }
+
+  .school-main-image {
+    height: 260px;
+  }
+
+  .school-content {
+    min-height: 230px;
+    padding: 30px 20px;
+  }
+
+  .school-menu-image {
+    height: auto;
+    aspect-ratio: 555/108;
+  }
+
+  .location-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .map-area {
+    width: 100%;
+    height: 300px;
+  }
+
+  .location-info {
+    width: 100%;
+  }
+
+  .promise-box {
+    padding: 42px 22px;
+  }
+
+  .promise-main {
+    font-size: 16px;
+  }
+
+  .promise-description {
+    font-size: 15px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-sns {
+    text-align: center;
+  }
+}

@@ -1,0 +1,237 @@
+@charset "utf-8";
+@import url(reset.css);
+/* 기본 설명 - 16px - 미디움- 111111
+각 페이지의 타이틀2 - 38px - 볼드- 프라이머리 */
+
+
+
+
+/* 전체 배너 영역 */
+section {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 360px;
+
+    margin: 0 auto;
+    padding: 50px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+
+/* =========================
+   왼쪽 메인 이미지
+========================= */
+
+section>img {
+    width: 430px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================
+   오른쪽 영역
+========================= */
+
+.guide.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 600px;
+}
+
+
+/* 위쪽 문구 */
+
+.guide.card>p {
+    width: 100%;
+    text-align: center;
+}
+
+.guide.card>.card-box {
+    display: flex;
+    gap: 40px;
+}
+
+/* 입양은 끝이 아닌 시작! */
+
+.guide.card>p:first-child {
+    color: #f5a623;
+    font-size: 38px;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+
+/* WeMeet이 함께 합니다 */
+
+.guide.card .title {
+    color: #000159;
+    font-size: 42px;
+    font-weight: 700;
+
+    margin-bottom: 110px;
+
+}
+
+.guide.card .title span {
+    font-weight: 800;
+}
+
+
+/* =========================
+   공통 카드
+========================= */
+
+.card-test,
+.card-visit {
+    /* width: calc(50% - 8px); */
+    width: 330px;
+    height: 210px;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    position: relative;
+}
+
+
+/* 카드 사이 간격 */
+
+.card-test {
+    margin-right: 10px;
+}
+
+
+/* =========================
+   성향 테스트 카드
+========================= */
+
+.card-test {
+    background-color: #000159;
+    color: #fff;
+}
+
+
+/* 왼쪽 아이콘 */
+
+.card-test>img:first-child {
+    width: 96px;
+    height: 96px;
+
+    object-fit: contain;
+
+    margin-right: 10px;
+}
+
+
+/* 제목 */
+
+.card-test a {
+    display: flex;
+    align-items: center;
+}
+
+
+.card-test .text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* 화살표 */
+
+.card-test a img {
+    width: 18px;
+    margin-left: 7px;
+}
+
+
+/* 설명 */
+
+.card-test>p:last-child {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   방문 예약 카드
+========================= */
+
+.card-visit {
+    background-color: #edc49f;
+    color: #000159;
+}
+
+
+/* 왼쪽 이미지 */
+
+.card-visit>img:first-child {
+    width: 96px;
+    height: 96px;
+
+    object-fit: contain;
+
+    margin-right: 10px;
+}
+
+
+/* 제목 + 화살표 */
+
+.card-visit a {
+    display: flex;
+    align-items: center;
+}
+
+.card-visit .text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* 화살표 */
+
+.card-visit a img,
+.card-test a img {
+    width: 34px;
+    margin-left: 9px;
+}
+
+
+/* 설명 */
+
+.card-visit>p:last-child {
+    width: 100%;
+    color: #000159;
+    font-weight: 400;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+
+}
