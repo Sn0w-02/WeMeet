@@ -10,7 +10,7 @@
 
 .header-inner {
     width: 1440px;
-    height: 100px;
+    height: 120px;
     position: relative;
     display: flex;
     align-items: center;
@@ -36,19 +36,24 @@
     gnb
 ======================================== */
 .gnb {
+    height: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .gnb-list {
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 60px;
 }
 
 .gnb-item {
+    height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .gnb-item>a {
@@ -61,6 +66,58 @@
 
 .gnb-item>a:hover {
     color: #000159;
+}
+
+/* ========================================
+    mobile menu button
+======================================== */
+
+.menu-btn {
+    display: none;
+    width: 30px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    position: relative;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    transition: 0.3s;
+}
+
+.menu-btn span:nth-child(1) {
+    top: 0
+}
+
+.menu-btn span:nth-child(2) {
+    top: 11px
+}
+
+.menu-btn span:nth-child(3) {
+    top: 22px
+}
+
+.menu-btn.active span:nth-child(1) {
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    top: 11px;
+    transform: rotate(-45deg);
 }
 
 /* ========================================
@@ -394,29 +451,50 @@
 /* ========================================
     responsive
 ======================================== */
-/*
-    1440px 콘텐츠 영역을 유지하다가
-    화면이 좁아지면 좌우 40px 여백 확보
-*/
-@media (max-width: 1480px) {
-
-    .header-inner,
-    .footer-inner {
-        width: calc(100% - 40px);
-    }
-
-}
 
 /* mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+
+    .header {
+        height: 60px;
+    }
 
     .header-inner {
-        width: calc(100% - 40px);
-        height: 70px;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
     }
 
     .gnb {
-        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: #fff;
+        padding: 30px 20px;
+        overflow-y: auto;
+
+        transform: translateX(100%);
+        transition: 0.4s;
+    }
+
+    .gnb.open {
+        transform: translateX(0);
+    }
+
+    /* 모바일 depth1 */
+    .gnb-list {
+        display: block;
+        height: auto;
+    }
+
+    .gnb-item {
+        display: block;
+        height: auto;
+        border-bottom: 1px solid #ddd;
     }
 
     .logo img {
