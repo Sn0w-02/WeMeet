@@ -59,7 +59,7 @@
 .gnb-item>a {
     display: block;
     padding: 38px 0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
 }
@@ -125,7 +125,7 @@
 ======================================== */
 .sub-menu {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 50%;
     min-width: 130px;
     padding: 12px 0;
@@ -172,6 +172,19 @@
 
 .login-link:hover {
     color: #000159;
+}
+
+.profile-link,
+.mobile-user-link {
+    display: none;
+}
+
+.header-user.logged-in .login-link {
+    display: none;
+}
+
+.header-user.logged-in .profile-link {
+    display: flex;
 }
 
 /* ========================================
@@ -281,7 +294,7 @@
     border-color: #000159;
 }
 
-#visit-date {
+#visit-data {
     cursor: pointer;
 }
 
@@ -433,7 +446,7 @@
 
 .footer-info-group p {
     margin: 6px 0;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.6;
 }
 
@@ -445,7 +458,7 @@
 }
 
 .footer-sns a {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 /* ========================================
@@ -455,6 +468,7 @@
 /* mobile */
 @media (max-width: 768px) {
 
+    /* header */
     .header {
         height: 60px;
     }
@@ -466,15 +480,52 @@
         justify-content: space-between;
     }
 
+    .logo img {
+        width: 140px;
+    }
+
+    /* 로그인 / 마이페이지 영역 */
+    .header-user {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    /* 로그인 상태일 때 PC 프로필 숨김 */
+    .header-user.logged-in .profile-link {
+        display: none;
+    }
+
+    /* 로그인 상태일 때 모바일 마이페이지 아이콘 표시 */
+    .header-user.logged-in .mobile-user-link {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .mobile-user-link img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* 햄버거 버튼 표시 */
+    .menu-btn {
+        display: block;
+    }
+
+    /* mobile gnb */
     .gnb {
         position: fixed;
-        top: 70px;
+        top: 60px;
         left: 0;
 
         width: 100%;
-        height: calc(100vh - 70px);
-        background: #fff;
+        height: calc(100dvh - 60px);
+
         padding: 30px 20px;
+        background: #fff;
+
         overflow-y: auto;
 
         transform: translateX(100%);
@@ -485,46 +536,83 @@
         transform: translateX(0);
     }
 
-    /* 모바일 depth1 */
     .gnb-list {
         display: block;
+        width: 100%;
         height: auto;
     }
 
     .gnb-item {
         display: block;
+        width: 100%;
         height: auto;
         border-bottom: 1px solid #ddd;
     }
 
-    .logo img {
-        width: 140px;
-    }
-
-    #section-reservation {
-        display: none;
-    }
-
-    /* reservation modal */
-    .reservation-modal-inner {
+    /* 1depth */
+    .gnb-item>.gnb-link {
         width: 100%;
-        max-width: 353px;
-        padding: 40px 25px;
+        height: 60px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .form-group {
+    /* sub-menu가 있는 메뉴만 + */
+    .gnb-item:has(.sub-menu)>.gnb-link::before {
+        content: "+";
+        order: 2;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    /* 열렸을 때 - */
+    .gnb-item.active>.gnb-link::before {
+        content: "−";
+    }
+
+    /* 2depth accordion */
+    .sub-menu {
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+        max-height: 0;
+
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+        background: #f7f7f7;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        overflow: hidden;
+
+        transition: max-height 0.4s;
+    }
+
+    .gnb-item.active>.sub-menu {
+        max-height: 200px;
+    }
+
+    .sub-menu li a {
         display: block;
+        padding: 12px 20px;
+        text-align: left;
     }
 
-    .form-group label {
-        display: block;
-        width: auto;
-        margin-bottom: 7px;
-    }
 
-    .purpose-group label {
-        width: calc(50% - 10px);
-        margin-right: 0;
+    /* reservation modal 모바일 표시X */
+    #section-reservation,
+    .reservation-modal,
+    .reservation-complete-modal {
+        display: none;
     }
 
     /* footer */
