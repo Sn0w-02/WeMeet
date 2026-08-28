@@ -6,13 +6,70 @@
     margin: 0 auto;
 }
 
-#survey .survey-main {
+.survey-main {
+    position: relative;
     width: 75rem;
     margin: 0 auto 9.375rem;
 }
 
+
+.survey-main .image {
+    position: absolute;
+    background: no-repeat;
+    z-index: -10;
+}
+
+
+.survey-main .image.bg01 {
+    width: 37.5rem;
+    height: 43.25rem;
+    background-image: url(../img/survey/survey-catbg.png);
+    top: 3rem;
+    left: -22rem;
+}
+
+.survey-main .image.bg02 {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-image: url(../img/survey/heart.svg);
+    top: 3rem;
+    left: 22rem;
+    transform: rotate(80deg);
+}
+
+.survey-main .image.bg03 {
+    width: 50rem;
+    height: 58.125rem;
+    background-image: url(../img/survey/survey-dogbg.png);
+    bottom: -9.5rem;
+    right: -22rem;
+}
+
+.survey-main .image.bg04 {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-image: url(../img/survey/heart.svg);
+    bottom: 40rem;
+    right: 30rem;
+}
+
+.survey-main .image.bg05 {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-image: url(../img/survey/heart.svg);
+    bottom: 50rem;
+    right: 20rem;
+}
+
 .survey-main .maintitle-group {
     padding: 10rem 0 4.375rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.survey-main .maintitle-group>div {
     text-align: center;
 }
 
@@ -24,19 +81,23 @@
 .survey-main .survey-item {
     padding-left: 6.25rem;
 }
+
 .survey-question {
     margin-bottom: 5rem;
 }
+
 .survey-question .question {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1.875rem;
 }
+
 .survey-question .choice {
     display: flex;
     gap: 5.938rem;
     font-size: 1.125rem;
 }
+
 .survey-main .finish {
     display: block;
     width: 7.25rem;
@@ -44,14 +105,26 @@
     margin: 0 auto;
     border: 1px solid #000159;
     border-radius: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000159;
 }
+
+.survey-main .finish:hover {
+    color: #fff;
+    background: #000159;
+    border: 1px solid #fff;
+}
+
 .survey-recommend {
     background: #FDF8F4;
     padding: 5rem 0;
 }
+
 .survey-recommend .title-group {
     text-align: center;
 }
+
 .title-group .top {
     display: flex;
     justify-content: center;
@@ -59,11 +132,97 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
 .title-group .top img {
     width: 2.188rem;
     height: 2.188rem;
 }
+
 .title-group .top .title {
     font-size: 1.875rem;
     margin: 1rem 0;
+}
+
+/* 반응형 모바일 */
+@media (max-width: 768px) {
+    #survey {
+        width: 100%;
+    }
+
+    .survey-main {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .survey-main .image {
+        display: none;
+    }
+
+    .survey-main .maintitle-group {
+        padding: 0;
+        margin-bottom: 50px;
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .survey-main .maintitle-group .title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #000159;
+    }
+
+    .maintitle-group>img {
+        display: none;
+    }
+
+    .survey-main .survey-item {
+        padding: 0;
+        word-break: keep-all;
+    }
+
+    .survey-question {
+        margin-bottom: 40px;
+    }
+
+    .survey-question .question {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .survey-question .choice {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        font-size: 14px;
+
+    }
+
+    .survey-main .finish {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .survey-recommend {
+        padding: 50px 0;
+    }
+
+    .title-group .top {
+        margin-bottom: 50px;
+    }
+
+    .title-group .top img {
+        display: none;
+    }
+
+    .title-group .top .title {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .title-group .title-text {
+        display: none;
+    }
 }
