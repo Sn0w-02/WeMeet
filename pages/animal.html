@@ -5,10 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 보호중인 동물</title>
+    <link rel="stylesheet" href="../css/animal.css">
 </head>
 
 <body>
-
+    <section id="animal">
+        <div class="main-title-group">
+            <img src="../img/animal/doghi.png" alt="">
+            <div class="title-group">
+                <p class="subtitle">FIND YOUR FAMILY</p>
+                <h2 class="title">보호중인 동물 <span></span>마리</h2>
+                <p class="text">나와 잘 맞는 반려동물을 찾아보세요~</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="filter">
+                <h3 class="filter-title">세부 검색</h3>
+                <p class="filter-name">동물</p>
+                <div class="filter-list btn">
+                    <button type="button" class="animal" data-type="all">모두</button>
+                    <button type="button" class="animal" data-type="dog">강아지</button>
+                    <button type="button" class="animal" data-type="cat">고양이</button>
+                </div>
+                <p class="filter-name">성별</p>
+                <div class="filter-list btn">
+                    <button type="button" class="gender" data-type="gender-all">남여</button>
+                    <button type="button" class="gender" data-type="male">남</button>
+                    <button type="button" class="gender" data-type="female">여</button>
+                </div>
+                <p class="filter-name">나이</p>
+                <div class="filter-list radio">
+                    <label><input type="radio" class="age" value="one">1살이하</label>
+                    <label><input type="radio" class="age" value="three">2~3살</label>
+                    <label><input type="radio" class="age" value="seven">4~7살</label>
+                    <label><input type="radio" class="age" value="eight">8살이상</label>
+                </div>
+                <p class="filter-name">크기</p>
+                <div class="filter-list radio">
+                    <label><input type="radio" class="size" value="small">소형</label>
+                    <label><input type="radio" class="size" value="medium">중형</label>
+                    <label><input type="radio" class="size" value="large">대형</label>
+                </div>
+                <p class="filter-name">성향</p>
+                <div class="filter-list radio">
+                    <div>
+                        <label><input type="radio" class="Propensity" value="outgoing">외향적</label>
+                        <label><input type="radio" class="Propensity" value="active">활동적</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" class="Propensity" value="affectionate">애교형</label>
+                        <label><input type="radio" class="Propensity" value="introverted">내향적</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" class="Propensity" value="calm">차분함</label>
+                        <label><input type="radio" class="Propensity " value="independent">독립형</label>
+                    </div>
+                </div>
+                <div class="btn-set">
+                    <button type="button" class="finish-btn" value="finish">완료</button>
+                    <button type="button" class="reset-btn" value="reset">초기화</button>
+                </div>
+            </div>
+            
+            <!-- javascript로 동물 리스트 불러오기 -->
+            <div class="animal-cardlist">SPACE TEST</div>
+        </div>
+    </section>
 </body>
 
 </html>
