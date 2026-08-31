@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import url(reset.css);
+
+#animal {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.main-title-group {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 6.25rem 0 3.125rem 17.875rem;
+}
+.main-title-group img {
+    width: 3.125rem;
+    height: auto;
+}
+.main-title-group .title-group .subtitle {
+    color: #FF7800;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+.main-title-group .title-group .title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2D2D2D;
+}
+.main-title-group .title-group .text {
+    font-size: 1.125rem;
+}
+#content {
+    display: flex;
+    align-items: center;    
+    gap: 4.375rem;
+}
+#content .filter {
+    padding: 2.5rem 0.5rem;
+    width: 13.375rem;
+    border: 0.016rem solid #2D2D2D;
+    border-radius: 0.75rem;
+}
+.filter > div {
+    margin-bottom: 2.25rem;
+}
+.filter .filter-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2.25rem;
+}
+.select-mobile {
+    display: none;
+}
+.filter .filter-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.125rem;
+}
+
+.filter .filter-list.btn button {
+    width: 3.75rem;
+    height: 2.188rem;
+    font-size: 0.875rem;
+    border: 0.063rem solid #07087C;
+    border-radius: 0.5rem;
+}
+.filter .filter-list.btn button:hover {
+    color: #fff;
+    background: #07087C;
+}
+.filter .filter-list.radio {
+    display: grid;
+    gap: 0.875rem;
+}
+.filter-list.radio label {
+    display: flex;
+    gap: 0.5rem;
+}
+.filter-list.radio > div {
+    display: flex;
+    gap: 1.5rem;
+}
+.filter .btn-set {
+    display: flex;
+    justify-content: space-between;   
+}
+.btn-set > button {
+    width: 3.75rem;
+    height: 2.188rem;
+    font-size: 0.875rem;
+    border: 0.063rem solid #07087C;
+    border-radius: 0.5rem;
+}
+.btn-set > button:hover {
+    color: #fff;
+    background: #07087C;
+}
+
+/* javascript로 동물 리스트 불러오기 */
+.animal-cardlist {
+    background: blue;
+}
+.animal-cardlist .result {
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    #animal {
+    margin: 0 20px;
+}
+.main-title-group {
+    justify-content: center;
+    margin: 45px auto;
+}
+.main-title-group .title-group .subtitle {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.main-title-group .title-group .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.main-title-group .title-group .text {
+    font-size: 16px;
+}
+.filter-radio {
+    display: none;
+}
+#select-mobile {
+    display: block;
+}
+#content {
+    display: block;
+    justify-content: center;
+    gap: 0;
+}
+#content .filter {
+    padding: 30px;
+    width: 100%;
+    border:1px solid #2D2D2D;
+}
+.filter .filter-title {
+    font-size: 18px;
+    margin-bottom: 2.25rem;
+}
+.filter .filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+.filter-btn .filter-name, .select-mobile .filter-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.filter-btn .filter-list.btn {
+    display: flex;
+    gap:10px;
+}
+.filter .filter-list.btn button {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+}
+.select-mobile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.select-mobile #list {
+    padding: 5px 15px;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    background: white;
+}
+.filter .btn-set .reset-btn {
+    display: none;
+}
+.filter .btn-set {
+    margin-top: 15px;  
+}
+.btn-set > button {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+#content .filter {
+    padding: 35px 25px 0;
+}
+
+/* javascript로 동물 리스트 불러오기 */
+.animal-cardlist {
+    background: blue;
+}
+.animal-cardlist .result {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 40px auto;
+}
+}
