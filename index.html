@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/common.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!--Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
     <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -64,7 +68,306 @@
 
     <!-- main -->
     <main>
+        <!-- main-visual -->
+        <section id="main-visual">
+            <!-- Swiper -->
+            <div class="swiper main-visual-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video class="main-video" autoplay muted playsinline>
+                            <source src="video/main1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="main-video" autoplay muted playsinline>
+                            <source src="video/main2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="main-video" autoplay muted playsinline>
+                            <source src="video/main3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
+        <!-- pet-list -->
+        <section id="pet-list">
+            <div class="pet-list-header">
+                <h3>현재! 보호중인 아이들</h3>
+                <p>평생을 함께할 가족을 애타게 기다리고 있어요</p>
+                <a href="pages/animal.html">아이들 더보기 →</a>
+            </div>
+
+            <div class="swiper pet-list-swiper">
+                <div class="swiper-wrapper">
+                    <!-- 슬라이드1 -->
+                    <div class="swiper-slide">
+                        <div class="pet-cards">
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section01.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section02.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section03.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드2 -->
+                    <div class="swiper-slide">
+                        <div class="pet-cards">
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section01.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section02.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section03.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드3 -->
+                    <div class="swiper-slide">
+                        <div class="pet-cards">
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section01.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section02.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/section-pet-list/img-animal-section03.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags">#활발함</span>
+                                        <span class="pet-card-tags">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 필요에 따라 swiper-slide를 추가할 수 있습니다 -->
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <!-- service -->
+        <section id="service">
+            <h3>따뜻한 보호소 WeMeet</h3>
+            <div class="card-list">
+                <div class="service-card">
+                    <a href="pages/facility.html">
+                        <img src="img/main_service/main-cardlist01.png" alt="">
+                        <p class="card-text">보호소 WeMeet의 <br>구석구석</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="pages/animal.html">
+                        <img src="img/main_service/main-cardlist02.png" alt="">
+                        <p class="card-text">WeMeet의<br> 보살핌을 받고 있는 아이들</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="pages/process.html">
+                        <img src="img/main_service/main-cardlist03.png" alt="">
+                        <p class="card-text">사랑스런 아이들의<br> 입양 절차 안내</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="pages/benefit.html">
+                        <img src="img/main_service/main-cardlist04.png" alt="">
+                        <p class="card-text">사랑스런 아이들의<br> 입양시 특별한 혜택</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- guide -->
+        <section class="guide-card">
+            <div class="guide-card-inner">
+
+                <!-- 왼쪽 이미지 영역 -->
+                <div class="guide-card-visual">
+                    <img src="img/guide/guide-banner.png" alt="반려동물과 보호자 이미지">
+                </div>
+
+                <!-- 오른쪽 콘텐츠 영역 -->
+                <div class="guide-card-content">
+
+                    <!-- 제목 -->
+                    <div class="guide-card-title">
+                        <p>입양은 끝이 아닌 시작!</p>
+                        <p><strong>WeMeet</strong> 이 함께 합니다.</p>
+                    </div>
+
+                    <!-- 카드 메뉴 -->
+                    <div class="guide-card-menu">
+
+                        <!-- 성향 테스트 -->
+                        <div class="guide-card-item">
+                            <div class="guide-card-icon">
+                                <img src="img/guide/guide-test-icon.png" alt="성향 테스트 아이콘">
+                            </div>
+
+                            <div class="guide-card-text">
+                                <p class="guide-card-name">성향 테스트</p>
+                                <p class="guide-card-description">
+                                    나는 어떤 성향의 아이와 잘 맞을까?
+                                </p>
+                            </div>
+
+                            <div class="guide-card-arrow">
+                                <img src="img/guide/arrow-icon.png" alt="바로가기">
+                            </div>
+                        </div>
+
+
+                        <!-- 입양학교 -->
+                        <div class="guide-card-item beige">
+                            <div class="guide-card-icon">
+                                <img src="img/guide/guide-school-icon.png" alt="입양학교 아이콘">
+                            </div>
+
+                            <div class="guide-card-text">
+                                <p class="guide-card-name">행복 입양하기</p>
+                                <p class="guide-card-description">
+                                    사랑으로 아이들을 위한 입양학교
+                                </p>
+                            </div>
+
+                            <div class="guide-card-arrow">
+                                <img src="img/guide/arrow-icon.png" alt="바로가기">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <!-- fixed -->

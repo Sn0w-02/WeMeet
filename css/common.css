@@ -6,6 +6,7 @@
 .header {
     width: 100%;
     background: #fff;
+    z-index: 100;
 }
 
 .header-inner {
@@ -40,6 +41,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 101;
 }
 
 .gnb-list {
