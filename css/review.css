@@ -71,7 +71,7 @@ img {
 }
 
 .review-heading {
-    margin: 0 50px 70px;
+    margin: 0 0 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -80,13 +80,13 @@ img {
 .heading-title {
     display: flex;
     align-items: center;
-    gap: 18px;
-    margin-bottom: 28px;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .heading-title h1 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .heading-title img {
@@ -100,13 +100,15 @@ img {
 }
 
 .write-button {
-    min-width: 180px;
-    padding: 14px 24px;
+    min-width: 160px;
+    padding: 14px 20px;
     border: 1px solid #000159;
-    border-radius: 24px;
+    border-radius: 20px;
     color: #000159;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
+
 }
 
 .write-button span {
@@ -122,10 +124,10 @@ img {
 
 .review-card {
 
-    min-height: 105px;
+    min-height: 128px;
     padding: 12px 70px;
     display: grid;
-    grid-template-columns: 125px 170px 130px 1fr;
+    grid-template-columns: 140px 180px 130px 1fr;
     align-items: center;
     column-gap: 24px;
     border-radius: 20px;
@@ -134,8 +136,8 @@ img {
 }
 
 .pet-image {
-    width: 104px;
-    height: 85px;
+    width: 109px;
+    height: 97px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -156,7 +158,8 @@ img {
 
 .pet-info strong,
 .adoption-date strong {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .review-text {
@@ -168,8 +171,8 @@ img {
     padding: 75px 0 20px;
     display: flex;
     justify-content: center;
-    gap: 12px;
-    font-size: 25px;
+    gap: 20px;
+    font-size: 18px;
 }
 
 #review-footer {
