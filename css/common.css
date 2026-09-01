@@ -1,0 +1,669 @@
+@charset "utf-8";
+
+/* ========================================
+    header
+======================================== */
+.header {
+    width: 100%;
+    background: #fff;
+}
+
+.header-inner {
+    width: 1440px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    flex-shrink: 0;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+/* ========================================
+    gnb
+======================================== */
+.gnb {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gnb-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.gnb-item {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.gnb-item>a {
+    display: block;
+    padding: 38px 0;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.gnb-item>a:hover {
+    color: #000159;
+}
+
+/* ========================================
+    mobile menu button
+======================================== */
+
+.menu-btn {
+    display: none;
+    width: 30px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    position: relative;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #111;
+    transition: 0.3s;
+}
+
+.menu-btn span:nth-child(1) {
+    top: 0
+}
+
+.menu-btn span:nth-child(2) {
+    top: 11px
+}
+
+.menu-btn span:nth-child(3) {
+    top: 22px
+}
+
+.menu-btn.active span:nth-child(1) {
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    top: 11px;
+    transform: rotate(-45deg);
+}
+
+/* ========================================
+    sub menu
+======================================== */
+.sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    min-width: 130px;
+    padding: 12px 0;
+    background: #fff;
+    border-radius: 6px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    z-index: 100;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.sub-menu li a:hover {
+    color: #000159;
+}
+
+.gnb-item:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========================================
+    login / user
+======================================== */
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.login-link {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    color: #000159;
+}
+
+.profile-link,
+.mobile-user-link {
+    display: none;
+}
+
+.header-user.logged-in .login-link {
+    display: none;
+}
+
+.header-user.logged-in .profile-link {
+    display: flex;
+}
+
+/* ========================================
+    fixed reservation
+======================================== */
+#section-reservation {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 500;
+}
+
+.reservation-btn {
+    width: 50px;
+    min-height: 150px;
+    padding: 15px 10px;
+    border: 0;
+    border-radius: 12px 0 0 12px;
+    background: #000159;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    writing-mode: vertical-rl;
+    cursor: pointer;
+}
+
+/* ========================================
+    reservation modal
+======================================== */
+.reservation-modal,
+.reservation-complete-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1000;
+}
+
+.reservation-modal.active,
+.reservation-complete-modal.active {
+    display: flex;
+}
+
+/* reservation form modal */
+.reservation-modal-inner {
+    position: relative;
+    width: 480px;
+    padding: 45px 60px 50px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.reservation-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.reservation-modal-inner h2 {
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ========================================
+    reservation form
+======================================== */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    width: 85px;
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #b5b5b5;
+}
+
+.form-group input:focus {
+    border-color: #000159;
+}
+
+#visit-data {
+    cursor: pointer;
+}
+
+/* ========================================
+    reservation purpose
+======================================== */
+.purpose-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    padding: 0;
+    border: 0;
+}
+
+.purpose-group legend {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.purpose-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.purpose-group input[type="radio"] {
+    margin: 0;
+    accent-color: #000159;
+    cursor: pointer;
+}
+
+/* ========================================
+    reservation warning
+======================================== */
+.reservation-warning {
+    display: none;
+    margin-top: 15px;
+    color: #e53935;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.reservation-warning.active {
+    display: block;
+}
+
+/* ========================================
+    reservation submit
+======================================== */
+.reservation-submit {
+    display: block;
+    width: 180px;
+    height: 48px;
+    margin: 30px auto 0;
+    border: 1px solid #000159;
+    border-radius: 8px;
+    background: #fff;
+    color: #000159;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reservation-submit:hover {
+    opacity: 0.85;
+    background: #000159;
+    color: #fff;
+}
+
+/* ========================================
+    reservation complete
+======================================== */
+.reservation-complete-inner {
+    width: 400px;
+    padding: 55px 40px 40px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.reservation-complete-inner p {
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reservation-confirm {
+    width: 150px;
+    height: 45px;
+    border: 0;
+    border-radius: 8px;
+    background: #000159;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ========================================
+    footer
+======================================== */
+.footer {
+    width: 100%;
+    padding: 45px 0;
+    background: #000144;
+    color: #fff;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* footer brand */
+.footer-brand {
+    flex-shrink: 0;
+}
+
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-logo img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* footer info */
+.footer-info {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-info-group p {
+    margin: 6px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* footer sns */
+.footer-sns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-sns a {
+    font-size: 14px;
+}
+
+/* ========================================
+    responsive
+======================================== */
+
+/* mobile */
+@media (max-width: 768px) {
+
+    /* header */
+    .header {
+        height: 60px;
+    }
+
+    .header-inner {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    /* 로그인 / 마이페이지 영역 */
+    .header-user {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    /* 로그인 상태일 때 PC 프로필 숨김 */
+    .header-user.logged-in .profile-link {
+        display: none;
+    }
+
+    /* 로그인 상태일 때 모바일 마이페이지 아이콘 표시 */
+    .header-user.logged-in .mobile-user-link {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .mobile-user-link img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* 햄버거 버튼 표시 */
+    .menu-btn {
+        display: block;
+    }
+
+    /* mobile gnb */
+    .gnb {
+        position: fixed;
+        top: 60px;
+        left: 0;
+
+        width: 100%;
+        height: calc(100dvh - 60px);
+
+        padding: 30px 20px;
+        background: #fff;
+
+        overflow-y: auto;
+
+        transform: translateX(100%);
+        transition: 0.4s;
+    }
+
+    .gnb.open {
+        transform: translateX(0);
+    }
+
+    .gnb-list {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .gnb-item {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* 1depth */
+    .gnb-item>.gnb-link {
+        width: 100%;
+        height: 60px;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* sub-menu가 있는 메뉴만 + */
+    .gnb-item:has(.sub-menu)>.gnb-link::before {
+        content: "+";
+        order: 2;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    /* 열렸을 때 - */
+    .gnb-item.active>.gnb-link::before {
+        content: "−";
+    }
+
+    /* 2depth accordion */
+    .sub-menu {
+        position: static;
+
+        width: 100%;
+        min-width: 0;
+        max-height: 0;
+
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+        background: #f7f7f7;
+
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        overflow: hidden;
+
+        transition: max-height 0.4s;
+    }
+
+    .gnb-item.active>.sub-menu {
+        max-height: 200px;
+    }
+
+    .sub-menu li a {
+        display: block;
+        padding: 12px 20px;
+        text-align: left;
+    }
+
+
+    /* reservation modal 모바일 표시X */
+    #section-reservation,
+    .reservation-modal,
+    .reservation-complete-modal {
+        display: none;
+    }
+
+    /* footer */
+    .footer {
+        padding: 20px 0 18px;
+    }
+
+    .footer-inner {
+        display: block;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* 로고 + 저작권 */
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        width: 140px;
+    }
+
+    .copyright {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* 회사정보 */
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        margin-top: 18px;
+        text-align: left;
+    }
+
+    .footer-info-group p {
+        margin: 5px 0;
+        font-size: 11px;
+        line-height: 1.4;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /* 모바일에서는 SNS 숨김 */
+    .footer-sns {
+        display: none;
+    }
+
+}
