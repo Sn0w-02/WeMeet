@@ -68,9 +68,73 @@ const reservationBtn = document.querySelector('.reservation-btn'),
     reservationForm = document.querySelector('#reservation-form'),
     reservationWarning = document.querySelector('.reservation-warning'),
     completeModal = document.querySelector('.reservation-complete-modal'),
-    confirmBtn = document.querySelector('.reservation-confirm');
+    confirmBtn = document.querySelector('.reservation-confirm'),
+    visitDate = document.querySelector('#visit-data');
+
+//방문일자 이전 날짜 선택 방지
+const today = new Date(),
+    year = today.getFullYear(),
+    month = String(today.getMonth() + 1).padStart(2, '0'),
+    day = String(today.getDate()).padStart(2, '0');
+
+visitDate.min = `${year}-${month}-${day}`;
 
 //예약하기 버튼
 reservationBtn.addEventListener('click', () => {
     reservationModal.classList.add('active');
+})
+
+//예약 모달 닫기
+reservationClose.addEventListener('click', () => {
+    reservationModal.classList.remove('active');
+    reservationWarning.classList.remove('active');
+})
+reservationModal.addEventListener('click', (event) => {
+    if (event.target === reservationModal) {
+        reservationModal.classList.remove('active');
+        reservationWarning.classList.remove('active');
+    }
+})
+
+//예약 신청
+reservationForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const userName = document.querySelector('#user-name').value.trim();
+    const userphone = document.querySelector('#user-phone').value.trim();
+    const animalBreed = document.querySelector('#animal-breed').value.trim();
+    const visitDateValue = visitDate.value;
+    const purpose = document.querySelector('input[name="purpose"]:checked');
+
+    //미작성 항목 확인
+    if (
+        userName === '' ||
+        userphone === '' ||
+        animalBreed === '' ||
+        visitDateValue === '' ||
+        !purpose
+    ) {
+        reservationWarning.classList.add('active');
+        return;
+    }
+
+    //경고 문구 숨김
+    reservationWarning.classList.remove('active');
+
+    //예약 모달 닫기
+    reservationModal.classList.remove('active');
+
+    //완료 모달 열기
+    completeModal.classList.add('active');
+})
+
+//예약 완료 확인 버튼
+confirmBtn.addEventListener('click', () => {
+    completeModal.classList.remove('active');
+
+    //작성내용 초기화
+    reservationForm.reset();
+
+    //경고 문구 초기화
+    reservationWarning.classList.remove('active');
 })
