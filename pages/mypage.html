@@ -5,10 +5,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 마이페이지</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/common.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
 
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="process.html">입양절차</a></li>
+                            <li><a href="review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.html">국가지원</a></li>
+                            <li><a href="benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="login.html" class="login-link">로그인</a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="../img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- summary -->
+        <section id="mypage-summary">
+            <div class="d-day">
+                <h2 class="summary-title">우리 집 막내 '해피'와 함께한지</h2>
+                <div class="summary-info">
+                    <img src="" alt="">
+                    <div class="info-text">
+                        <p class="">적응 완료기</p>
+                        <span class="d-day-text">D+day</span>
+                        <button type="button" class="btn" aria-label="사진 변경">사진 변경</button>
+                    </div>
+                </div>
+            </div>
+            <div class="history">
+                <h2 class="history-title">임보내역</h2>
+                <div class="history-info">
+                    <img src="" alt="">
+                    <div class="info-text">
+                        <p class=""><i></i>주인 찾은 아이 내역 : 총 6건</p>
+                        <p class=""><i></i>임시보호 진행 중 : 1건</p>
+                        <p class=""><i></i>현재 누적 가산점 : +15점</p>
+                        <button type="button" class="btn" aria-label="자세히보기">자세히보기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- profile -->
+        <section id="mypage-profile">
+
+        </section>
+
+        <!-- favorite -->
+        <section id="mypage-favorite">
+
+        </section>
+
+        <!-- benefit -->
+        <section id="mypage-benefit">
+
+        </section>
+    </main>
+
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
+    </section>
+
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <fieldset class="purpose-group">
+                    <legend>방문목적</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="사전만남">사전만남
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="시설방문">시설방문
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="입양신청">입양신청
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
+                    </label>
+                </fieldset>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="../img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="../img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
