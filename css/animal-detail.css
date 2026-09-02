@@ -60,12 +60,15 @@
 }
 
 #animal-trait {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 13.125rem;
     border: 0.063rem solid #2D2D2D;
     border-radius: 1.25rem;
     padding: 4.375rem 7.813rem;
+    margin-bottom: 5rem;
 }
 
 .like .like-title,
@@ -89,7 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3.125rem;
+    gap: 6.125rem;
 }
 
 .like .like-content>div,
@@ -121,4 +124,200 @@
 .bad .bad-content>div p {
     font-size: 1.25rem;
     font-weight: 400;
+    text-align: center;
+}
+
+#animal-trait .bad::before {
+    position: absolute;
+    width: 0.063rem;
+    height: 18.75rem;
+    top: 15%;
+    left: 50%;
+    opacity: 80%;
+    border: 1px dashed #6853A6;
+    content: '';
+}
+
+#detail-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+#detail-info .animal-info,
+#detail-info .animal-care {
+    width: 43.75rem;
+    height: 48.438rem;
+    border: 0.063rem solid #000159;
+    border-radius: 1.25rem;
+    padding: 3.75rem 3.125rem 0;
+}
+
+#detail-info .animal-info h2,
+#detail-info .animal-care h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.875rem;
+}
+
+#detail-info .animal-info h4,
+#detail-info .animal-care h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#detail-info .animal-info>div p,
+#detail-info .animal-care p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.animal-info .info-flex,
+.animal-care .care-name {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#detail-info .animal-info {
+    background-image: url(../img/animal-detail/dog_character\ 1.png);
+    background-repeat: no-repeat;
+    background-size: auto 15.625rem;
+    background-position: 100% 100%;
+}
+
+.animal-info .info-sub-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+}
+
+#detail-info .animal-info .info-flex h4 {
+    margin-bottom: 3rem;
+}
+
+.animal-care .care-name img {
+    width: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#animal-record-bg {
+    background: #FDF8F4;
+}
+
+.animal-record {
+    width: 90rem;
+    margin: 0 auto;
+    padding: 5.313rem 7.5rem;
+}
+
+.animal-record .record-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.125rem;
+    margin-bottom: 2.25rem;
+}
+
+.animal-record .record-title h1 {
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+
+.animal-record .record-title img {
+    width: 10.25rem;
+    height: auto;
+}
+
+.animal-record>p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2.875rem;
+}
+
+.animal-record table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border: 0.063rem solid #0001598a;
+    border-radius: 1.25rem;
+    border-spacing: 0;
+    /* overflow: hidden; */
+    margin-bottom: 2.5rem;
+}
+
+.animal-record table tr th,
+.animal-record table tr td {
+    font-size: 1.5rem;
+    padding: 0.75rem 0 1rem;
+    text-align: center;
+    border-bottom: 0.063rem solid #0001598a;
+}
+
+.animal-record table tr th {
+    font-weight: 500;
+    background: #FFEEE3;
+}
+
+.animal-record table td img {
+    width: 2.375rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pagination button {
+    font-size: 1.5rem;
+}
+
+#check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90rem;
+    margin: 5.313rem auto;
+    padding: 4.063rem 5.938rem;
+    border: 0.063rem solid #000159;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.625rem #2d2d2d3b;
+}
+
+#check>img {
+    width: 22.75rem;
+}
+
+#check .check-list h1 {
+    font-size: 2.375rem;
+    font-weight: 700;
+    margin-bottom: 2.813rem;
+}
+
+#check .check-list>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#check .check-list>div:last-child {
+    margin-bottom: 0;
+}
+
+
+.check-list div img {
+    width: 2.188rem;
+}
+
+.check-list div p {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
