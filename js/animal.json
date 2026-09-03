@@ -6,6 +6,7 @@
         "breed": "포메라니안",
         "gender": "female",
         "age": 3,
+        "ageGroup": "adult",
         "weight": 2.7,
         "size": "small",
         "image": "../img/animal-detail/love.png",
@@ -14,9 +15,25 @@
         "fosterStatus": "progress",
         "personality": [
             "affectionate",
-            "active",
-            "outgoing"
+            "active"
         ],
+        "experienceLevel": [
+            "yes",
+            "before",
+            "no"
+        ],
+        "residence": [
+            "apt",
+            "villa",
+            "house",
+            "officetel"
+        ],
+        "household": [
+            "yes",
+            "no"
+        ],
+        "awayTime": "2to4",
+        "walkTime": "30to60",
         "tags": [
             "#입양가능",
             "#애교형",
@@ -49,7 +66,7 @@
                 "lifespan": "12~16년",
                 "adultWeight": "1.4~3.2kg",
                 "height": "18~24cm",
-                "origin": "독일, 폴란드"
+                "breedOrigin": "독일, 폴란드"
             },
             "care": [
                 {
@@ -82,9 +99,10 @@
         "breed": "프렌치 불독",
         "gender": "male",
         "age": 1,
+        "ageGroup": "adult",
         "weight": 1.8,
         "size": "small",
-        "image": "../img/dog&cat/dog.jpg",
+        "image": "../img/section-pet-list/img-animal-section01.jpg",
         "neutered": true,
         "vaccinated": true,
         "fosterStatus": "none",
@@ -92,6 +110,21 @@
             "outgoing",
             "active"
         ],
+        "experienceLevel": [
+            "yes",
+            "before"
+        ],
+        "residence": [
+            "apt",
+            "villa",
+            "house"
+        ],
+        "household": [
+            "yes",
+            "no"
+        ],
+        "awayTime": "4to8",
+        "walkTime": "30to60",
         "tags": [
             "#입양가능",
             "#활발함",
