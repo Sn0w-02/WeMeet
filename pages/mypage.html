@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 마이페이지</title>
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mypage.css">
     <script src="../js/common.js" defer></script>
 </head>
 
@@ -61,29 +62,57 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main class="mypage">
         <!-- summary -->
         <section id="mypage-summary">
-            <div class="d-day">
-                <h2 class="summary-title">우리 집 막내 '해피'와 함께한지</h2>
-                <div class="summary-info">
-                    <img src="" alt="">
-                    <div class="info-text">
-                        <p class="">적응 완료기</p>
-                        <span class="d-day-text">D+day</span>
-                        <button type="button" class="btn" aria-label="사진 변경">사진 변경</button>
+            <div class="summary-card d-day">
+                <h2 class="summary-title">
+                    우리 집 막내 '<span class="pet-name">해피</span>'와 함께한지
+                </h2>
+
+                <div class="summary-content">
+                    <div class="summary-img">
+                        <img src="../img/dog&cat/cat5.jpg" alt="해피">
+                    </div>
+
+                    <div class="d-day-info">
+                        <p class="adaptation-status">적응 완료기</p>
+                        <strong class="d-day-text">D+120</strong>
+                        <button type="button" class="btn photo-change-btn">사진 변경</button>
                     </div>
                 </div>
             </div>
-            <div class="history">
+
+            <div class="summary-card history">
                 <h2 class="history-title">임보내역</h2>
-                <div class="history-info">
-                    <img src="" alt="">
-                    <div class="info-text">
-                        <p class=""><i></i>주인 찾은 아이 내역 : 총 6건</p>
-                        <p class=""><i></i>임시보호 진행 중 : 1건</p>
-                        <p class=""><i></i>현재 누적 가산점 : +15점</p>
-                        <button type="button" class="btn" aria-label="자세히보기">자세히보기</button>
+
+                <div class="summary-content">
+                    <div class="summary-img">
+                        <img src="../img/mypage/history.png" alt="">
+                    </div>
+
+                    <div class="history-info">
+                        <ul class="history-list">
+                            <li>
+                                <span class="history-icon"></span>
+                                주인 찾은 아이 내역 : 총
+                                <strong class="history-complete-count">6</strong>건
+                            </li>
+
+                            <li>
+                                <span class="history-icon"></span>
+                                임시보호 진행 중 :
+                                <strong class="history-progress-count">1</strong>건
+                            </li>
+
+                            <li>
+                                <span class="history-icon"></span>
+                                현재 누적 가산점 :
+                                <strong class="history-point">+15</strong>점
+                            </li>
+                        </ul>
+
+                        <a href="mypage-temporary.html" class="btn history-link">자세히보기</a>
                     </div>
                 </div>
             </div>
@@ -91,17 +120,111 @@
 
         <!-- profile -->
         <section id="mypage-profile">
+            <div class="profile-img">
+                <img src="../img/dog&cat/cat5.jpg" alt="프로필 이미지">
+            </div>
 
+            <div class="profile-content">
+                <div class="profile-top">
+                    <dl class="profile-basic">
+                        <div>
+                            <dt>닉네임</dt>
+                            <dd class="user-nickname">wemeet</dd>
+                        </div>
+
+                        <div>
+                            <dt>하고픈 말</dt>
+                            <dd class="user-message">나에게 와줘서 고마워</dd>
+                        </div>
+                    </dl>
+
+                    <a href="mypage-edit.html" class="btn profile-edit">프로필 수정</a>
+                </div>
+
+                <div class="profile-survey">
+                    <dl class="survey-info">
+                        <div>
+                            <dt>양육 경험</dt>
+                            <dd class="survey-experience">예전에 키워 봤다</dd>
+                        </div>
+
+                        <div>
+                            <dt>거주 형태</dt>
+                            <dd class="survey-residence">빌라</dd>
+                        </div>
+
+                        <div>
+                            <dt>선호 동물</dt>
+                            <dd class="survey-type">고양이</dd>
+                        </div>
+
+                        <div>
+                            <dt>선호 조건</dt>
+                            <dd class="survey-preference">
+                                소형 / 애교가 많은 / 성견·성묘
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <div class="survey-tags">
+                        <span>#고양이</span>
+                        <span>#소형</span>
+                        <span>#애교형</span>
+                        <span>#성묘</span>
+                    </div>
+                </div>
+
+                <a href="survey.html" class="btn survey-retry">설문 다시하기</a>
+            </div>
         </section>
 
         <!-- favorite -->
         <section id="mypage-favorite">
+            <div class="mypage-title">
+                <h2>관심있는 아이들</h2>
+                <a href="animal.html" class="favorite-more">전체보기</a>
+            </div>
 
+            <div class="favorite-list">
+                <!-- users.json favoriteAnimalIds + animals.json 데이터 출력 -->
+            </div>
         </section>
 
         <!-- benefit -->
         <section id="mypage-benefit">
+            <div class="benefit-banner">
+                <div class="benefit-inner">
+                    <div class="swiper benefit-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../img/mypage/benefit-banner01.png" alt="혜택 배너 1">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../img/mypage/benefit-banner02.jpg" alt="혜택 배너 2">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../img/mypage/benefit-banner03.jpg" alt="혜택 배너 3">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
 
+
+                    <div class="benefit-help">
+                        <h2>도움이 필요하신가요?</h2>
+                        <div class="help-links">
+                            <a href="support.html" class="btn faq-link">자주 묻는 질문</a>
+                            <a href="#" class="btn kakao-link">카카오톡 채널 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
