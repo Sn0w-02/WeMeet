@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "사랑이",
+        "type": "dog",
+        "breed": "포메라니안",
+        "gender": "female",
+        "age": 3,
+        "weight": 2.7,
+        "size": "small",
+        "image": "../img/animal-detail/love.png",
+        "neutered": true,
+        "vaccinated": true,
+        "fosterStatus": "progress",
+        "personality": [
+            "affectionate",
+            "active",
+            "outgoing"
+        ],
+        "tags": [
+            "#입양가능",
+            "#애교형",
+            "#활발함"
+        ],
+        "detail": {
+            "intro": "사람을 좋아하지만 천천히 마음을 여는 다정한 아이에요.",
+            "likes": [
+                "사람과 함께 있는 시간",
+                "산책하고 냄새 맡기",
+                "공놀이와 장난감 놀이"
+            ],
+            "dislikes": [
+                "갑작스러운 큰 소리",
+                "낯선 사람의 빠른 접근",
+                "오랜 시간 혼자 있기"
+            ],
+            "breedInfo": {
+                "personality": "애교가 많고 활발하며 영리하고 호기심이 많아요. 보호자와 잘 지내지만 경계심이 있거나 예민할 수 있어요.",
+                "colors": [
+                    "화이트",
+                    "세이지",
+                    "블랙",
+                    "브라운",
+                    "블루",
+                    "세이블",
+                    "크림",
+                    "믹스"
+                ],
+                "lifespan": "12~16년",
+                "adultWeight": "1.4~3.2kg",
+                "height": "18~24cm",
+                "origin": "독일, 폴란드"
+            },
+            "care": [
+                {
+                    "title": "충분한 산책",
+                    "description": "하루 한 번 이상 산책과 놀이가 필요해요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털 빠짐이 많아 주 3~4회 이상 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "먹는 것을 좋아해 하루 두 번 급여량을 지켜주세요."
+                },
+                {
+                    "title": "기본 훈련",
+                    "description": "지금부터 기본 예절 교육을 시작해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "사람을 좋아해 오랜 시간 혼자 있는 생활은 힘들 수 있어요."
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "멍이",
+        "type": "dog",
+        "breed": "프렌치 불독",
+        "gender": "male",
+        "age": 1,
+        "weight": 1.8,
+        "size": "small",
+        "image": "../img/dog&cat/dog.jpg",
+        "neutered": true,
+        "vaccinated": true,
+        "fosterStatus": "none",
+        "personality": [
+            "outgoing",
+            "active"
+        ],
+        "tags": [
+            "#입양가능",
+            "#활발함",
+            "#사람을 좋아함"
+        ],
+        "detail": null
+    }
+]
