@@ -1,0 +1,511 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+.inner {
+    width: 1440px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+#process-info {
+    height: 76px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.header-inner {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 180px 1fr 60px;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.gnb {
+    display: flex;
+    gap: 48px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-image {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#adoption-process {
+    padding: 110px 0 190px;
+}
+
+.process-heading {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.heading-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+    color: #000159;
+}
+
+.heading-title img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.heading-title h1 {
+    font-size: 34px;
+}
+
+
+
+.process-heading p {
+    color: #555;
+    font-size: 14px;
+}
+
+.process-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* 카드 */
+.process-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    min-height: 220px;
+    padding: 36px 30px;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+    border-radius: 22px;
+
+    box-shadow:
+        2px 4px 18px rgba(0, 1, 89, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* hover */
+.process-item:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        2px 10px 28px rgba(0, 1, 89, 0.11);
+}
+
+
+/* ==============================
+   아이콘
+============================== */
+
+.process-icon {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 135px;
+    height: 135px;
+
+    background: #f7f6ff;
+
+    border-radius: 50%;
+}
+
+
+.process-icon img {
+    width: 100px;
+    height: 100px;
+
+    margin: 0;
+
+    object-fit: contain;
+}
+
+
+/* ==============================
+   번호
+============================== */
+
+.process-center {
+    position: absolute;
+
+    top: -18px;
+    left: 24px;
+
+    height: auto;
+}
+
+
+.process-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #000159;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    box-shadow:
+        0 4px 10px rgba(0, 1, 89, 0.12);
+}
+
+
+/* 기존 세로선 삭제 */
+.process-line {
+    display: none;
+}
+
+
+/* ==============================
+   텍스트
+============================== */
+
+.process-content {
+    flex: 1;
+
+    padding: 0;
+}
+
+
+.process-content h2 {
+    position: relative;
+
+    margin: 0 0 18px;
+
+    padding-bottom: 14px;
+
+    color: #000159;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* 제목 아래 선 */
+.process-content h2::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background: #e7e7e7;
+}
+
+
+/* 제목 아래 작은 포인트 */
+.process-content h2::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    z-index: 1;
+
+    width: 26px;
+    height: 2px;
+
+    background: #ff9861;
+}
+
+.process-item:nth-child(1) .process-content h2::before {
+    width: 15%;
+}
+
+.process-item:nth-child(2) .process-content h2::before {
+    width: 30%;
+}
+
+.process-item:nth-child(3) .process-content h2::before {
+    width: 45%;
+}
+
+.process-item:nth-child(4) .process-content h2::before {
+    width: 60%;
+}
+
+.process-item:nth-child(5) .process-content h2::before {
+    width: 75%;
+}
+
+.process-item:nth-child(6) .process-content h2::before {
+    width: 100%;
+}
+
+/* ul */
+.process-content ul {
+    margin: 0;
+
+    padding-left: 20px;
+}
+
+
+/* li */
+.process-content ul li {
+    list-style: disc;
+
+    margin-bottom: 7px;
+
+    color: #333;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.process-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+#shelter-location {
+    padding: 0px 0 100px;
+}
+
+.location-heading {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.location-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.location-title h2 {
+    font-size: 32px;
+}
+
+.location-title img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.location-heading p {
+    font-size: 14px;
+}
+
+.location-map {
+    height: 510px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f2f6f1;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+}
+
+.location-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.shelter-list {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.shelter-card {
+    min-height: 72px;
+    padding: 15px 18px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 11px;
+}
+
+.shelter-card:hover {
+    color: #000159;
+}
+
+.shelter-card strong {
+    margin-right: 14px;
+    font-size: 18px;
+}
+
+.shelter-card p {
+    margin-top: 9px;
+    color: #555;
+}
+
+#adoption-footer {
+    padding: 28px 0;
+    color: #fff;
+    background: #00012e;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.2fr .5fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 180px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-text {
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.footer-sns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.footer-sns img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+@media (max-width:768px) {
+    #adoption-header {
+        height: 64px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    #adoption-process {
+        padding: 75px 0 110px;
+    }
+
+    .heading-title h1 {
+        font-size: 27px;
+    }
+
+    .process-heading {
+        margin-bottom: 65px;
+    }
+
+    .process-item {
+        min-height: 245px;
+        grid-template-columns: 100px 65px 1fr;
+    }
+
+    .process-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .process-icon img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .process-number {
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
+    }
+
+    .process-line {
+        margin-top: 25px;
+    }
+
+    .process-content {
+        padding: 5px 0 0 15px;
+    }
+
+    .process-content h2 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .process-content li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .location-title h2 {
+        font-size: 26px;
+    }
+
+    .location-map {
+        height: 380px;
+    }
+
+    .shelter-list {
+        margin-top: 45px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .footer-sns {
+        justify-content: center;
+    }
+}
