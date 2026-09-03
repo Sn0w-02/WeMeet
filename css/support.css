@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+
+body {
+    background-image: url(../img/supportbg.png)
+}
+
+.container {
+    max-width: 90rem;
+    height: 67.938rem;
+    margin: 0 auto;
+    padding: 7.188rem 7.188rem;
+}
+
+/* 제목칸 */
+#support-info {
+    margin-bottom: 4.563rem;
+}
+
+.support-title {
+    margin-bottom: 4.063rem;
+}
+
+.support-title h2 {
+    font-size: 2rem;
+    color: #2d2d2d;
+    margin-top: 0;
+    margin-bottom: 1.313rem;
+    font-weight: bold;
+}
+
+.support-title .support-subtitle {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+}
+
+.support-source {
+    text-align: right;
+    font-size: 1.125rem;
+    color: #2d2d2d;
+    margin-bottom: 1.75rem;
+}
+
+/* 국가지원 박스 */
+.support-infoBox {
+    border-top: 0.063rem solid #07087C;
+    border-bottom: 0.063rem solid #07087C;
+}
+
+.support-infoCard {
+    background-color: #fff;
+    border-bottom: 0.063rem solid #07087C;
+}
+
+.support-infoCard:last-child {
+    border-bottom: none;
+}
+
+.info-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.125rem 0.625rem;
+    cursor: pointer;
+    user-select: none;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+.info-text:hover {
+    background-color: #fafafa;
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d2d2d;
+    padding: 3.125rem;
+}
+
+.arrow-icon {
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    transition: transform 0.3s ease;
+}
+
+/* 아코디언 영역 */
+.info-detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: white;
+    padding: 0 3.125rem;
+    font-size: 1.125rem;
+    color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8;
+}
+
+.support-infoCard.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.support-infoCard.active .info-detail {
+    max-height: 31.25rem;
+    padding: 3.125rem 3.125rem 3.125rem 3.125rem;
+}
+
+/* 자주 묻는 질문 */
+#support-question {
+    margin-top: 4.375rem;
+}
+
+.question-title h2 {
+    font-size: 2rem;
+    color: #2d2d2d;
+    margin-bottom: 6.25rem;
+    font-weight: bold;
+}
+
+.question-box h3 {
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    margin-bottom: 1.875rem;
+    font-weight: bold;
+}
+
+.question-box p {
+    font-size: 1.125rem;
+    color: #2d2d2d;
+    margin-bottom: 5rem;
+}
+
+
+
+
+/* ===================모바일======================= */
+
+
+
+
+@media screen and (max-width: 393px) {
+    body {
+        background-color: #FDF8F4;
+    }
+
+    .container {
+        max-width: 353px;
+        height: 1400px;
+        margin: 0 auto;
+        padding: 45px 20px;
+    }
+
+    /* 제목칸 */
+    #support-info {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .support-title {
+        margin-bottom: 30px;
+    }
+
+    .support-title h2 {
+        font-size: 22px;
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .support-title .support-subtitle {
+        margin-top: 0;
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    .support-source {
+        display: none;
+    }
+
+    /* 국가지원 박스 */
+    .support-infoBox {
+        border-top: 1px solid #07087C;
+        border-bottom: 1px solid #07087C;
+    }
+
+    .support-infoCard {
+        background-color: #fff;
+        border-bottom: 1px solid #07087C;
+    }
+
+    .support-infoCard:last-child {
+        border-bottom: none;
+    }
+
+    .info-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 10px;
+        font-size: 18px;
+        color: #000000;
+        padding: 20px;
+        cursor: pointer;
+        user-select: none;
+        background-color: #fff;
+        transition: background-color 0.2s;
+    }
+
+    .info-text:hover {
+        background-color: #fafafa;
+    }
+
+    .arrow-icon {
+        font-size: 24px;
+        color: #2d2d2d;
+        transition: transform 0.3s ease;
+    }
+
+    /* 아코디언 영역 */
+    .info-detail {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #fff;
+        padding: 0 10px;
+        font-size: 14px;
+        color: #2d2d2d;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.8;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .support-infoCard.active .arrow-icon {
+        transform: rotate(180deg);
+    }
+
+    .support-infoCard.active .info-detail {
+        max-height: 800px;
+        padding: 20px 20px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+
+    /* 자주 묻는 질문 */
+    #support-question {
+        margin-top: 70px;
+    }
+
+    .question-title h2 {
+        font-size: 22px;
+        color: #2d2d2d;
+        margin-bottom: 45px;
+    }
+
+    .question-box h3 {
+        font-size: 18px;
+        color: #2d2d2d;
+        margin-bottom: 15px;
+    }
+
+    .question-box p {
+        font-size: 14px;
+        color: #2d2d2d;
+        margin-bottom: 40px;
+    }
+}
