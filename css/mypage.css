@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 main {
-    width: 120rem;
+    width: 100%;
+    max-width: 120rem;
 }
 
 /* mypage */
@@ -231,8 +232,8 @@ main {
 .survey-tags span {
     padding: 0.5rem 1rem;
     border-radius: 6.25rem;
-    background: #fff;
-    color: #000159;
+    background: #E5E0F3;
+    color: #2D2D2D;
     font-size: 0.875rem;
 }
 
@@ -384,17 +385,21 @@ main {
 /* mobile */
 @media (max-width: 768px) {
     .mypage {
-        padding: 3rem 1.25rem 5rem;
+        width: 100%;
     }
 
     /* summary */
     #mypage-summary {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        margin-bottom: 4rem;
+        width: calc(100% - 2.5rem);
+        margin: 3rem auto 4rem;
     }
 
     .summary-card {
+        width: 100%;
+        height: auto;
+        min-height: 12rem;
         padding: 1.5rem;
     }
 
@@ -405,6 +410,7 @@ main {
     }
 
     .summary-content {
+        justify-content: flex-start;
         gap: 1.25rem;
     }
 
@@ -437,20 +443,22 @@ main {
     }
 
     .history-list li {
-        font-size: 0.8125rem;
+        font-size: 0.7875rem;
     }
 
     /* profile */
     #mypage-profile {
         flex-direction: column;
         gap: 1.5rem;
-        margin-bottom: 4rem;
+        width: calc(100% - 2.5rem);
+        margin: 0 auto 4rem;
         padding: 1.5rem;
+
     }
 
     .profile-img {
         width: 100%;
-        height: 15rem;
+        height: 12rem;
         border-radius: 0.875rem;
     }
 
@@ -461,7 +469,7 @@ main {
 
     .profile-basic,
     .survey-info {
-        gap: 0.875rem;
+        gap: 0.5rem;
     }
 
     .profile-basic>div,
@@ -500,7 +508,8 @@ main {
 
     /* favorite */
     #mypage-favorite {
-        margin-bottom: 4rem;
+        width: calc(100% - 2.5rem);
+        margin-bottom: 0 auto 4rem;
     }
 
     .mypage-title {
@@ -540,12 +549,19 @@ main {
         gap: 1.5rem;
     }
 
+    .benefit-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 3rem 1.25rem;
+    }
+
     .benefit-banner {
         border-radius: 0.875rem;
     }
 
     .benefit-help {
-        padding: 2rem 1.5rem;
+        padding: 2rem 0;
         border-radius: 0.875rem;
     }
 
