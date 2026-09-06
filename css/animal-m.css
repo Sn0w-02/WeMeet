@@ -84,17 +84,20 @@
     margin: 0 auto;
 }
 #content .filter {
-    padding: 35px 25px 0;
+    padding: 35px 25px;
 }
 
 /* javascript로 동물 리스트 불러오기 */
 .animal-cardlist {
-    background: blue;
+    border: 0.068rem solid #000159;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;    
+    text-align: center;
 }
 .animal-cardlist .result {
     display: block;
     font-size: 22px;
     font-weight: 700;
-    margin: 40px auto;
 }
 }
