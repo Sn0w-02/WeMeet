@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+    #survey {
+        width: 100%;
+    }
+
+    .survey-main {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    /*  .survey-main .image {
+        display: none;
+    } */
+
+    .survey-main .maintitle-group {
+        padding: 0;
+        margin-bottom: 50px;
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .survey-main .maintitle-group .title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #000159;
+    }
+
+    .maintitle-group>img {
+        display: none;
+    }
+
+    .survey-main .survey-item {
+        padding: 0;
+        word-break: keep-all;
+    }
+
+    .survey-question {
+        margin-bottom: 40px;
+    }
+
+    .survey-question .question {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .survey-question .choice {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .survey-main .finish {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .survey-recommend {
+        padding: 50px 0;
+    }
+
+    .title-group .top {
+        margin-bottom: 50px;
+    }
+
+    .title-group .top img {
+        display: none;
+    }
+
+    .title-group .top .title {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .title-group .title-text {
+        display: none;
+    }
+}
