@@ -5,11 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 동물상세</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/animal-detail.css">
+    <link rel="stylesheet" href="../css/animal-detail-m.css">
+    <script src="../js/common.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="process.html">입양절차</a></li>
+                            <li><a href="review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.html">국가지원</a></li>
+                            <li><a href="benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="login.html" class="login-link">로그인</a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="../img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
     <div id="animal-detail">
+
+        <!--================ 프로필 ================-->
         <section id="animal-profile">
             <img class="web" src="../img/animal-detail/love.png" alt="">
             <div class="profile-detail">
@@ -66,6 +122,8 @@
                 </div>
             </div>
         </section>
+
+        <!--===============  사랑이 특성 ==============-->
         <section id="animal-trait">
             <div class="like">
                 <div class="like-title">
@@ -120,19 +178,25 @@
                 </div>
             </div>
         </section>
+
+        <!--============== 기본정보 ====================-->
         <section id="detail-info">
             <div class="animal-info">
                 <p class="info-sub-title">기본정보</p>
                 <h2>포메라니안</h2>
                 <div>
-                    <h4 class="info-class">성격</h4>
-                    <p class="info-description">
-                        애교 많음, 활발함, 영리함, 호기심 많음, 보호자와 잘 지냄, 경계심/예민할 수 있음.
-                    </p>
-                    <h4 class="info-class">색상</h4>
-                    <p class="info-description">
-                        화이트, 세이지, 블랙, 브라운, 블루, 세이블, 크림, 믹스 등
-                    </p>
+                    <div class="gap">
+                        <h4 class="info-class">성격</h4>
+                        <p class="info-description">
+                            애교 많음, 활발함, 영리함, 호기심 많음, 보호자와 잘 지냄, 경계심이 강해 예민할 수 있음.
+                        </p>
+                    </div>
+                    <div class="gap">
+                        <h4 class="info-class">색상</h4>
+                        <p class="info-description">
+                            화이트, 세이지, 블랙, 브라운, 블루, 세이블, 크림, 믹스 등
+                        </p>
+                    </div>
                     <div class="info-flex">
                         <h4 class="info-class">수명</h4>
                         <p class="info-description">12 ~ 16년</p>
@@ -153,27 +217,27 @@
             </div>
             <div class="animal-care">
                 <h2>"사랑이" <br>이렇게 돌봐주세요</h2>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/walk 1.png" alt="">
                     <h4>충분한 산책</h4>
                 </div>
                 <p class="howto">하루 한 번 이상 산책과 놀이가 필요해요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/brushing 1.png" alt="">
                     <h4>꾸준한 빗질</h4>
                 </div>
                 <p class="howto">털 빠짐이 많아 주 3~4회 이상 빗질해 주세요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/feeding 1.png" alt="">
                     <h4>식사량 관리</h4>
                 </div>
                 <p class="howto"> 먹는 것을 좋아해 하루 두 번 급여량을 지켜주세요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/training 1.png" alt="">
                     <h4>기본 훈련</h4>
                 </div>
                 <p class="howto">지금부터 기본 예절 교육을 시작해 주세요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/together_time 1.png" alt="">
                     <h4>함께하는 시간</h4>
                 </div>
@@ -181,6 +245,8 @@
             </div>
         </section>
     </div>
+
+    <!--============== 임보기록 =================-->
     <section id="animal-record-bg">
         <div class="animal-record">
             <div class="record-title">
@@ -268,12 +334,14 @@
                 </tr>
             </table>
             <div class="pagination">
-                <button type="button" class="prev">이전</button>
+                <button type="button" class="back">BACK</button>
                 <button type="button" class="page-number"></button>
-                <button type="button" class="next">다음</button>
+                <button type="button" class="next">NEXT</button>
             </div>
         </div>
     </section>
+
+    <!--=============== 체크사항 ==================-->
     <section id="check">
         <div class="check-list">
             <h1>입양 전 체크해야 할 것!</h1>

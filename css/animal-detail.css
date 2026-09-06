@@ -1,11 +1,11 @@
 @charset "utf-8";
-@import url(reset.css);
 
 #animal-detail {
     width: 90rem;
     margin: 6.25rem auto;
 }
 
+/* =============== 프로필 =============== */
 #animal-profile {
     display: flex;
     justify-content: center;
@@ -61,6 +61,7 @@
     margin-right: 2rem;
 }
 
+/*  ================= 사랑이 특성 ============= */
 #animal-trait {
     position: relative;
     display: flex;
@@ -140,6 +141,7 @@
     content: '';
 }
 
+/* ============= 기본정보 ============ */
 #detail-info {
     display: flex;
     justify-content: space-between;
@@ -180,7 +182,7 @@
 }
 
 .animal-info .info-flex,
-.animal-care .care-name {
+.animal-care .care-list {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -196,9 +198,10 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.625rem;
+    color: #000159;
 }
 
-#detail-info .animal-info .info-flex h4 {
+.animal-info .info-flex > .info-class {
     margin-bottom: 3rem;
 }
 
@@ -208,12 +211,13 @@
     background-size: 11.25rem;
 }
 
-.animal-care .care-name img {
+.animal-care .care-list img {
     width: 2rem;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
+/* =============== 임보기록 =============== */
 #animal-record-bg {
     background: #FDF8F4;
 }
@@ -250,9 +254,7 @@
 
 .animal-record table {
     width: 100%;
-    /* border-collapse: collapse; */
     border: 0.063rem solid #0001598a;
-    border-radius: 1.25rem;
     border-spacing: 0;
     /* overflow: hidden; */
     margin-bottom: 2.5rem;
@@ -282,10 +284,13 @@
     gap: 2rem;
 }
 
-.pagination button {
+.pagination .back,
+.pagination .next {
     font-size: 1.5rem;
+    color: #000159;
 }
 
+/* ========== 체크사항============ */
 #check {
     display: flex;
     justify-content: space-between;
@@ -330,324 +335,3 @@
     font-weight: 500;
 }
 
-/* 반응형 */
-@media (max-width: 768px) {
-    #animal-detail {
-        width: calc(100% - 40px);
-        margin: 20px;
-    }
-
-    #animal-profile {
-        gap: 26px;
-        padding: 28px;
-        margin-bottom: 4.688rem;
-    }
-
-    #animal-profile .web {
-        display: none;
-    }
-
-    .profile-detail .detail-top {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 26px;
-        margin-bottom: 28px;
-    }
-
-    .profile-detail .mobile {
-        display: block;
-        width: 80px;
-        height: 80px;
-        border-radius: 10px;
-    }
-
-    .profile-detail .title {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .profile-detail .content {
-        justify-content: space-between;
-        gap: 13px;
-    }
-
-    .content .left-box>div,
-    .content .right-box>div {
-        gap: 6px;
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .content .left-box>div:last-child,
-    .content .right-box>div:last-child {
-        margin-bottom: 0;
-    }
-
-    .content .left-box>div img,
-    .content .right-box>div img {
-        width: 25px;
-        height: auto;
-    }
-
-    .content .left-box>div .sub-title,
-    .content .right-box>div .sub-title {
-        font-weight: 500;
-        margin-right: 6px;
-    }
-
-
-    #animal-trait {
-        display: block;
-        padding: 28px;
-    }
-
-    #animal-trait .like {
-        margin-bottom: 75px;
-    }
-
-    .like .like-title,
-    .bad .bad-title {
-        justify-content: start;
-        gap: 1.25rem;
-        margin-bottom: 20px;
-    }
-
-    .like .like-title img,
-    .bad .bad-title img {
-        width: 32px;
-        height: auto;
-    }
-
-    .like .like-title h2,
-    .bad .bad-title h2 {
-        font-weight: 500;
-    }
-
-    .like .like-content,
-    .bad .bad-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .like .like-content>div,
-    .bad .bad-content>div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .like .like-content>div .icon,
-    .bad .bad-content>div .icon {
-        width: 72px;
-        height: 72px;
-        margin-bottom: 15px;
-    }
-
-    .like .like-content>div p,
-    .bad .bad-content>div p {
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    #animal-trait .bad::before {
-        top: 18%;
-        transform: rotate(90deg);
-    }
-
-
-    #detail-info {
-        display: block;
-        margin-bottom: 0;
-    }
-
-    .animal-info,
-    .animal-care {
-        width: 100%;
-        height: 100%;
-        padding: 28px;
-        margin-bottom: 4.688rem
-    }
-
-    .animal-info h2,
-    .animal-care h2 {
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 30px;
-    }
-
-    .animal-info h4,
-    .animal-care h4 {
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 14px;
-    }
-
-    .animal-info>div p,
-    .animal-care p {
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 14px;
-    }
-
-
-    #detail-info .animal-info {
-        background: url(../img/animal-detail/animal-info-bg.png) no-repeat;
-        background-size: auto 357px;
-        background-position: 100% 100%;
-    }
-
-    .animal-info .info-sub-title {
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 12px;
-    }
-
-    #detail-info .animal-info .info-flex h4 {
-        margin-bottom: 14px;
-    }
-
-    .animal-care {
-        background: url(../img/animal-detail/animal-care-bg.png) no-repeat;
-        background-position: 90% 5%;
-        background-size: auto 105px;
-    }
-
-    .animal-care .care-name {
-        gap: 10px;
-        margin-bottom: 5px;
-    }
-
-    #detail-info .animal-care .care-name h4 {
-        margin-bottom: 0;
-    }
-
-    .animal-care>p {
-        margin-bottom: 30px;
-    }
-
-    .animal-care .care-name img {
-        width: 32px;
-        margin-bottom: 0;
-    }
-
-    #animal-record-bg {
-        background: #FDF8F4;
-    }
-
-    .animal-record {
-        width: 90rem;
-        margin: 0 auto;
-        padding: 5.313rem 7.5rem;
-    }
-
-    .animal-record .record-title {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 3.125rem;
-        margin-bottom: 2.25rem;
-    }
-
-    .animal-record .record-title h1 {
-        font-size: 2.375rem;
-        font-weight: 700;
-    }
-
-    .animal-record .record-title img {
-        width: 10.25rem;
-        height: auto;
-    }
-
-    .animal-record>p {
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin-bottom: 2.875rem;
-    }
-
-    .animal-record table {
-        width: 100%;
-        /* border-collapse: collapse; */
-        border: 0.063rem solid #0001598a;
-        border-radius: 1.25rem;
-        border-spacing: 0;
-        /* overflow: hidden; */
-        margin-bottom: 2.5rem;
-    }
-
-    .animal-record table tr th,
-    .animal-record table tr td {
-        font-size: 1.5rem;
-        padding: 0.75rem 0 1rem;
-        text-align: center;
-        border-bottom: 0.063rem solid #0001598a;
-    }
-
-    .animal-record table tr th {
-        font-weight: 500;
-        background: #FFEEE3;
-    }
-
-    .animal-record table td img {
-        width: 2.375rem;
-    }
-
-    .pagination {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .pagination button {
-        font-size: 1.5rem;
-    }
-
-    #check {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90rem;
-        margin: 5.313rem auto;
-        padding: 4.063rem 5.938rem;
-        border: 0.063rem solid #000159;
-        border-radius: 1.25rem;
-        box-shadow: 0 0 0.625rem #2d2d2d3b;
-    }
-
-    #check>img {
-        width: 22.75rem;
-    }
-
-    #check .check-list h1 {
-        font-size: 2.375rem;
-        font-weight: 700;
-        margin-bottom: 2.813rem;
-    }
-
-    #check .check-list>div {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    #check .check-list>div:last-child {
-        margin-bottom: 0;
-    }
-
-
-    .check-list div img {
-        width: 2.188rem;
-    }
-
-    .check-list div p {
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-}
