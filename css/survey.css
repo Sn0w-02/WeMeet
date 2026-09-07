@@ -58,18 +58,18 @@
     right: 20rem;
 }
 
-.survey-main .maintitle-group {
+.survey-main .main-title-group {
     padding: 10rem 0 4.375rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-.survey-main .maintitle-group>div {
+.survey-main .main-title-group>div {
     text-align: center;
 }
 
-.survey-main .maintitle-group .title {
+.survey-main .main-title-group .title {
     font-size: 1.875rem;
     margin-bottom: 1rem;
 }
@@ -88,7 +88,7 @@
     margin-bottom: 1.875rem;
 }
 
-.survey-question .choice {
+.survey-question .answers {
     display: flex;
     gap: 5.938rem;
     font-size: 1.125rem;
@@ -115,9 +115,12 @@
 .survey-recommend {
     background: #FDF8F4;
     padding: 5rem 0;
+    align-items: center;
 }
 
-.survey-recommend .title-group {
+.survey-recommend .recommend-inner {
+    width: 90rem;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -137,4 +140,26 @@
 .title-group .top .title {
     font-size: 1.875rem;
     margin: 1rem 0;
+}
+
+.recommend-box {
+    width: 90rem;
+    margin-top: 4.5rem;
+}
+
+.recommend-box.result {
+    display: grid;
+    grid-template-columns: 4, 1fr;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.list-btn {
+    width: 7.25rem;
+    height: 2.5rem;
+    border: 1px solid #000159;
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000159;
 }
