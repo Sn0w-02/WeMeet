@@ -6,201 +6,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet 입양 절차 안내</title>
     <link rel="stylesheet" href="../css/process.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/common.js" defer></script>
 </head>
 
 <body>
-    <section id="process-info ">
-        <div class="inner header-inner">
-            <a href="#" class="logo">
-                <img src="../img/logo.png" alt="WeMeet">
-            </a>
-            <div class="gnb">
-                <a href="#">시설안내</a>
-                <a href="#">보호중인 동물</a>
-                <a href="#">입양안내</a>
-                <a href="#">혜택 및 제휴</a>
+
+
+
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="process.html">입양절차</a></li>
+                            <li><a href="review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.html">국가지원</a></li>
+                            <li><a href="benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="login.html" class="login-link">로그인</a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="../img/mobile-User.png" alt="">
+                </a>
             </div>
-            <div class="profile-image">
-                <img src="../img/dog&cat/cat-1.jpg" alt="프로필">
-            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </header>
+
+    <!-- main -->
+    <main>
+
+
+        <section id="adoption-process">
+            <div class="inner process-inner">
+                <div class="process-heading">
+                    <div class="heading-title">
+
+
+                        <h1>입양 절차 안내</h1>
+                    </div>
+                    <p>소중한 가족이 되기까지의 절차를 안내해 드려요</p>
+                </div>
+
+                <div class="process-list">
+                    <div class="process-item">
+                        <div class="process-icon">
+                            <img src="../img/process/말풍선이미지수정완료.png" alt="품종 문의 아이콘">
+                        </div>
+                        <div class="process-center">
+                            <div class="process-number">01</div>
+                            <div class="process-line"></div>
+                        </div>
+                        <div class="process-content">
+                            <h2>품종 문의</h2>
+                            <ul>
+                                <li>실사진 및 영상 제공</li>
+                                <li>전문 상담 가능</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-icon">
+                            <img src="../img/process/개집이미지 수정완료.png" alt="보호소 방문 및 상담 아이콘">
+                        </div>
+                        <div class="process-center">
+                            <div class="process-number">02</div>
+                            <div class="process-line"></div>
+                        </div>
+                        <div class="process-content">
+                            <h2>보호소 방문 및 상담</h2>
+                            <ul>
+                                <li>전문 관리자 1:1 상담</li>
+                                <li>전국 지점 방문 가능</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-icon">
+                            <img src="../img/process/심박이미지수정완료.png" alt="건강상태 확인 아이콘">
+                        </div>
+                        <div class="process-center">
+                            <div class="process-number">03</div>
+                            <div class="process-line"></div>
+                        </div>
+                        <div class="process-content">
+                            <h2>건강상태 확인</h2>
+                            <ul>
+                                <li>건강검진 및 질병 확인</li>
+                                <li>예방접종 여부 확인</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-icon">
+                            <img src="../img/process/문서이미지수정완료.png" alt="WeMeet Time 아이콘">
+                        </div>
+                        <div class="process-center">
+                            <div class="process-number">04</div>
+                            <div class="process-line"></div>
+                        </div>
+                        <div class="process-content">
+                            <h2>WeMeet Time</h2>
+                            <ul>
+                                <li>입양 전 충분히 교감해요</li>
+                                <li>아이와 서로를 이해하는 시간</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="process-icon">
+                            <img src="../img/process/강아지 백터사이즈 조정 이미지.png" alt="계약서 작성 아이콘">
+                        </div>
+                        <div class="process-center">
+                            <div class="process-number">05</div>
+                            <div class="process-line"></div>
+                        </div>
+                        <div class="process-content">
+                            <h2>계약서 작성</h2>
+                            <ul>
+                                <li>책임있는 입양을 위한 계약</li>
+                                <li>합리적 결제 혜택 지원</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-item last">
+                        <div class="process-icon">
+                            <img src="../img/process/손하트이미지수저완료.png" alt="입양 후 관리 아이콘">
+                        </div>
+                        <div class="process-center">
+                            <div class="process-number">06</div>
+                        </div>
+                        <div class="process-content">
+                            <h2>입양 후 관리</h2>
+                            <ul>
+                                <li>건강관리 및 적응 상담</li>
+                                <li>사후관리 및 다양한 지원</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-infotext">
+                <p class="infotxet">한 생명의 평생을 책임지는 소중한 약속, <br>WeMeet이 함께 동행하겠습니다</p>
+                <button><a href="#">보호동물 보러가기</a></button>
+            </div>
+        </section>
+
+        <section id="shelter-location">
+            <div class="inner location-inner">
+                <div class="location-heading">
+                    <div class="location-title">
+                        <h2>시설 위치 안내</h2>
+                        <img src="../img/process/입양절차 위치아이콘.png" alt="">
+                    </div>
+                    <p>전국의 WeMeet 보호센터를 만나보세요</p>
+                </div>
+
+                <div class="location-map">
+                    <img src="../img/process/입양절차페이지아이콘.png" alt="전국 WeMeet 보호센터 위치 지도">
+                </div>
+
+                <div class="shelter-list">
+                    <div class="shelter-card"><strong>서울 동물보호센터</strong><span>02-1234-5678</span>
+                        <p>서울특별시 강서구 화곡로 149</p>
+                    </div>
+                    <div class="shelter-card"><strong>강원 동물보호센터</strong><span>033-1234-5678</span>
+                        <p>강원도 춘천시 중앙로 321</p>
+                    </div>
+                    <div class="shelter-card"><strong>대전 동물보호센터</strong><span>042-1234-5678</span>
+                        <p>대전광역시 중구 대학로 1234</p>
+                    </div>
+                    <div class="shelter-card"><strong>대구 동물보호센터</strong><span>053-1234-5678</span>
+                        <p>대구광역시 서구 국채로 145</p>
+                    </div>
+                    <div class="shelter-card"><strong>광주 동물보호센터</strong><span>062-1234-5678</span>
+                        <p>광주광역시 북구 용봉로 55</p>
+                    </div>
+                    <div class="shelter-card"><strong>부산 동물보호센터</strong><span>051-1234-5678</span>
+                        <p>부산광역시 해운대구 반려동물로 123</p>
+                    </div>
+                    <div class="shelter-card"><strong>경남 동물보호센터</strong><span>055-1234-5678</span>
+                        <p>경상남도 창원시 의창대로 300</p>
+                    </div>
+                    <div class="shelter-card"><strong>제주 동물보호센터</strong><span>064-1234-5678</span>
+                        <p>제주특별자치도 제주시 서광로 242</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
     </section>
 
-    <section id="adoption-process">
-        <div class="inner process-inner">
-            <div class="process-heading">
-                <div class="heading-title">
-
-
-                    <h1>입양 절차 안내</h1>
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
                 </div>
-                <p>소중한 가족이 되기까지의 절차를 안내해 드려요</p>
-            </div>
-
-            <div class="process-list">
-                <div class="process-item">
-                    <div class="process-icon">
-                        <img src="../img/process/말풍선이미지수정완료.png" alt="품종 문의 아이콘">
-                    </div>
-                    <div class="process-center">
-                        <div class="process-number">01</div>
-                        <div class="process-line"></div>
-                    </div>
-                    <div class="process-content">
-                        <h2>품종 문의</h2>
-                        <ul>
-                            <li>실사진 및 영상 제공</li>
-                            <li>전문 상담 가능</li>
-                        </ul>
-                    </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
                 </div>
-
-                <div class="process-item">
-                    <div class="process-icon">
-                        <img src="../img/process/개집이미지 수정완료.png" alt="보호소 방문 및 상담 아이콘">
-                    </div>
-                    <div class="process-center">
-                        <div class="process-number">02</div>
-                        <div class="process-line"></div>
-                    </div>
-                    <div class="process-content">
-                        <h2>보호소 방문 및 상담</h2>
-                        <ul>
-                            <li>전문 관리자 1:1 상담</li>
-                            <li>전국 지점 방문 가능</li>
-                        </ul>
-                    </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
                 </div>
-
-                <div class="process-item">
-                    <div class="process-icon">
-                        <img src="../img/process/심박이미지수정완료.png" alt="건강상태 확인 아이콘">
-                    </div>
-                    <div class="process-center">
-                        <div class="process-number">03</div>
-                        <div class="process-line"></div>
-                    </div>
-                    <div class="process-content">
-                        <h2>건강상태 확인</h2>
-                        <ul>
-                            <li>건강검진 및 질병 확인</li>
-                            <li>예방접종 여부 확인</li>
-                        </ul>
-                    </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
                 </div>
-
-                <div class="process-item">
-                    <div class="process-icon">
-                        <img src="../img/process/문서이미지수정완료.png" alt="WeMeet Time 아이콘">
-                    </div>
-                    <div class="process-center">
-                        <div class="process-number">04</div>
-                        <div class="process-line"></div>
-                    </div>
-                    <div class="process-content">
-                        <h2>WeMeet Time</h2>
-                        <ul>
-                            <li>입양 전 충분히 교감해요</li>
-                            <li>아이와 서로를 이해하는 시간</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="process-item">
-                    <div class="process-icon">
-                        <img src="../img/process/강아지 백터사이즈 조정 이미지.png" alt="계약서 작성 아이콘">
-                    </div>
-                    <div class="process-center">
-                        <div class="process-number">05</div>
-                        <div class="process-line"></div>
-                    </div>
-                    <div class="process-content">
-                        <h2>계약서 작성</h2>
-                        <ul>
-                            <li>책임있는 입양을 위한 계약</li>
-                            <li>합리적 결제 혜택 지원</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="process-item last">
-                    <div class="process-icon">
-                        <img src="../img/process/손하트이미지수저완료.png" alt="입양 후 관리 아이콘">
-                    </div>
-                    <div class="process-center">
-                        <div class="process-number">06</div>
-                    </div>
-                    <div class="process-content">
-                        <h2>입양 후 관리</h2>
-                        <ul>
-                            <li>건강관리 및 적응 상담</li>
-                            <li>사후관리 및 다양한 지원</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                <fieldset class="purpose-group">
+                    <legend>방문목적</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="사전만남">사전만남
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="시설방문">시설방문
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="입양신청">입양신청
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
+                    </label>
+                </fieldset>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
         </div>
-        
-        <div class="process-infotext">
-            <p class="infotxet">한 생명의 평생을 책임지는 소중한 약속, <br>WeMeet이 함께 동행하겠습니다</p>
-            <button><a href="#">보호동물 보러가기</a></button>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
         </div>
-    </section>
+    </div>
 
-    <section id="shelter-location">
-        <div class="inner location-inner">
-            <div class="location-heading">
-                <div class="location-title">
-                    <h2>시설 위치 안내</h2>
-                    <img src="../img/process/입양절차 위치아이콘.png" alt="">
-                </div>
-                <p>전국의 WeMeet 보호센터를 만나보세요</p>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
             </div>
 
-            <div class="location-map">
-                <img src="../img/process/입양절차페이지아이콘.png" alt="전국 WeMeet 보호센터 위치 지도">
-            </div>
-
-            <div class="shelter-list">
-                <div class="shelter-card"><strong>서울 동물보호센터</strong><span>02-1234-5678</span>
-                    <p>서울특별시 강서구 화곡로 149</p>
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
                 </div>
-                <div class="shelter-card"><strong>강원 동물보호센터</strong><span>033-1234-5678</span>
-                    <p>강원도 춘천시 중앙로 321</p>
-                </div>
-                <div class="shelter-card"><strong>대전 동물보호센터</strong><span>042-1234-5678</span>
-                    <p>대전광역시 중구 대학로 1234</p>
-                </div>
-                <div class="shelter-card"><strong>대구 동물보호센터</strong><span>053-1234-5678</span>
-                    <p>대구광역시 서구 국채로 145</p>
-                </div>
-                <div class="shelter-card"><strong>광주 동물보호센터</strong><span>062-1234-5678</span>
-                    <p>광주광역시 북구 용봉로 55</p>
-                </div>
-                <div class="shelter-card"><strong>부산 동물보호센터</strong><span>051-1234-5678</span>
-                    <p>부산광역시 해운대구 반려동물로 123</p>
-                </div>
-                <div class="shelter-card"><strong>경남 동물보호센터</strong><span>055-1234-5678</span>
-                    <p>경상남도 창원시 의창대로 300</p>
-                </div>
-                <div class="shelter-card"><strong>제주 동물보호센터</strong><span>064-1234-5678</span>
-                    <p>제주특별자치도 제주시 서광로 242</p>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="adoption-footer">
-        <div class="inner footer-inner">
-            <div class="footer-logo"><img src="../img/footer-logo.png" alt="WeMeet"></div>
-            <div class="footer-text">상호 : 세상 둥근 보호센터 위밋<br>사업자번호 : 123-45-56789</div>
-            <div class="footer-text">Tel. 02-1234-5678<br>주소 : 서울특별시 강서구 화곡로 149</div>
             <div class="footer-sns">
-                <img src="../img/instagram.png" alt="인스타그램">
-                <img src="../img/youtube.png" alt="유튜브">
+                <a href="#" aria-label="인스타그램">
+                    <img src="../img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="../img/youtube.png" alt="Youtube"></img>
+                </a>
             </div>
+
         </div>
-    </section>
+
+    </footer>
 </body>
 
 </html>
