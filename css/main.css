@@ -157,7 +157,7 @@
 /* service */
 #service {
     width: 90rem;
-    padding: 2.188rem;
+    padding: 4rem;
     border-radius: 1.25rem;
     background: #FDF8F4;
     box-shadow: 0 0 1rem 0.313rem #00015910;
@@ -174,12 +174,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2.188rem;
+    gap: 2rem;
 }
 
 #service .card-list .service-card {
-    width: 20rem;
-    height: 25rem;
+    width: 17rem;
+    height: 22rem;
     border-radius: 1.25rem;
     background: linear-gradient(#FDF8F4, #E9C1A1);
     box-shadow: inset -0.438rem -0.438rem 0.625rem 0.188rem #00015917;
@@ -187,15 +187,15 @@
 
 .service-card a {
     display: inline-block;
-    width: 20rem;
-    height: 25rem;
+    width: 100%;
+    height: 100%;
     padding: 2.5rem 0;
     text-align: center;
 }
 
 .service-card a img {
-    width: 16.875rem;
-    height: 15.625rem;
+    width: 80%;
+    height: 80%;
 }
 
 .service-card .card-text {
@@ -208,6 +208,7 @@
 .guide-card {
     width: 100%;
     background: #fff;
+    margin-bottom: 3rem;
 }
 
 .guide-card-inner {
@@ -298,8 +299,10 @@
 }
 
 .guide-card-text {
+    width: 20.625rem;
     margin-left: 0.625rem;
     color: #fff;
+    word-break: keep-all;
 }
 
 .guide-card-name {
@@ -311,9 +314,10 @@
 
 .guide-card-description {
     margin: 0;
-    font-size: 0.625rem;
+    font-size: 0.938rem;
     line-height: 1.5;
-    white-space: nowrap;
+    /* 
+    white-space: nowrap; */
 }
 
 .guide-card-item.beige .guide-card-text {
