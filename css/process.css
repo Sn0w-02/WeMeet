@@ -412,127 +412,8 @@
     background: #00012e;
 }
 
-/*  footer========================= */
-.footer-inner {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr 1.2fr .5fr;
-    align-items: center;
-    gap: 30px;
-}
 
-.footer-logo {
-    width: 180px;
-}
 
-.footer-logo img {
-    width: 100%;
-    height: auto;
-}
-
-.footer-text {
-    font-size: 10px;
-    line-height: 1.8;
-}
-
-.footer-sns {
-    display: flex;
-    justify-content: flex-end;
-    gap: 18px;
-}
-
-.footer-sns img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-}
-
-@media (max-width:768px) {
-    #adoption-header {
-        height: 64px;
-    }
-
-    .logo {
-        width: 140px;
-    }
-
-    .gnb {
-        display: none;
-    }
-
-    #adoption-process {
-        padding: 75px 0 110px;
-    }
-
-    .heading-title h1 {
-        font-size: 27px;
-    }
-
-    .process-heading {
-        margin-bottom: 65px;
-    }
-
-    .process-item {
-        min-height: 245px;
-        grid-template-columns: 100px 65px 1fr;
-    }
-
-    .process-icon {
-        width: 90px;
-        height: 90px;
-    }
-
-    .process-icon img {
-        width: 55px;
-        height: 55px;
-    }
-
-    .process-number {
-        width: 44px;
-        height: 44px;
-        font-size: 15px;
-    }
-
-    .process-line {
-        margin-top: 25px;
-    }
-
-    .process-content {
-        padding: 5px 0 0 15px;
-    }
-
-    .process-content h2 {
-        margin-bottom: 15px;
-        font-size: 18px;
-    }
-
-    .process-content li {
-        font-size: 12px;
-        line-height: 1.5;
-    }
-
-    .location-title h2 {
-        font-size: 26px;
-    }
-
-    .location-map {
-        height: 380px;
-    }
-
-    .shelter-list {
-        margin-top: 45px;
-        grid-template-columns: 1fr;
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-    }
-
-    .footer-sns {
-        justify-content: center;
-    }
-}
 
 /* =========================================
    MOBILE
@@ -542,7 +423,6 @@
     /* ===============================
        공통
     =============================== */
-
     .inner {
         width: 100%;
         max-width: calc(100% - 40px);
@@ -553,7 +433,6 @@
     /* ===============================
        HEADER
     =============================== */
-
     #process-info {
         height: 48px;
         border-bottom: 1px solid #eee;
@@ -564,207 +443,163 @@
         height: 100%;
 
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
-        width: 75px;
+        width: 60px;
     }
 
     .logo img {
         width: 100%;
+        height: auto;
         display: block;
     }
 
-    /* PC 메뉴 숨기기 */
+    /* 모바일에서는 PC 메뉴 숨김 */
     .gnb {
         display: none;
     }
 
     .profile-image {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
+        width: 22px;
+        height: 22px;
     }
 
 
     /* ===============================
-       입양 절차 전체 영역
+       입양 절차 전체
     =============================== */
-
     #adoption-process {
-        padding: 28px 0 55px;
+        padding: 24px 0 38px;
         background: #fff;
     }
 
     .process-inner {
         width: 100%;
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 42px);
+        margin: 0 auto;
     }
 
 
     /* ===============================
-       입양 절차 제목
+       제목
     =============================== */
-
     .process-heading {
-        margin-bottom: 35px;
+        margin-bottom: 28px;
         text-align: center;
     }
 
     .heading-title {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 
-    .heading-title h1 {
-        font-size: 20px;
-        font-weight: 700;
-        color: #222;
-    }
-
-    /* PC 제목 아이콘이 있다면 숨김 */
+    /* PC 제목 아이콘 제거 */
     .heading-title img {
         display: none;
     }
 
+    .heading-title h1 {
+        margin: 0;
+
+        color: #222;
+
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
     .process-heading p {
-        font-size: 11px;
-        line-height: 1.5;
+        margin: 0;
+
         color: #666;
+
+        font-size: 9px;
+        line-height: 1.5;
     }
 
 
     /* ===============================
-       입양 절차 리스트
-
-       PC : 카드 3열
-       모바일 : 세로형 리스트
+       입양 절차 카드 리스트
     =============================== */
-
     .process-list {
         width: 100%;
-        max-width: 270px;
+        max-width: none;
 
         margin: 0 auto;
 
         display: flex;
         flex-direction: column;
 
-        gap: 0;
+        gap: 20px;
     }
 
 
     /* ===============================
-       각각의 절차
+       카드
     =============================== */
-
     .process-item {
         position: relative;
 
         width: 100%;
-        min-height: 96px;
+        min-height: 122px;
 
-        padding: 0;
+        padding: 20px 22px;
 
-        display: grid;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
 
-        /* 번호 / 아이콘 / 설명 */
-        grid-template-columns: 38px 62px 1fr;
+        gap: 18px;
 
-        column-gap: 10px;
+        box-sizing: border-box;
 
-        align-items: start;
-
-        background: transparent;
+        background: #fff9f4;
 
         border: none;
-        border-radius: 0;
+        border-radius: 15px;
 
-        box-shadow: none;
+        box-shadow:
+            0 3px 7px rgba(0, 0, 0, 0.08);
 
         transition: none;
     }
 
     .process-item:hover {
         transform: none;
-        box-shadow: none;
+
+        box-shadow:
+            0 3px 7px rgba(0, 0, 0, 0.08);
     }
 
 
     /* ===============================
-       번호 영역
-
-       HTML상 icon이 먼저지만
-       order를 이용해서 번호가 왼쪽으로
+       번호 숨기기
     =============================== */
-
     .process-center {
-        position: relative;
-
-        top: auto;
-        left: auto;
-
-        order: 1;
-
-        width: 38px;
-        height: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
 
     .process-number {
-        position: relative;
-        z-index: 2;
-
-        width: 25px;
-        height: 25px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        flex-shrink: 0;
-
-        border: 1px solid #b4c8df;
-        border-radius: 50%;
-
-        background: #fff;
-
-        color: #555;
-
-        font-size: 10px;
-        font-weight: 400;
-
-        box-shadow: none;
+        display: none;
     }
 
-
-    /* 번호 아래 세로선 */
     .process-line {
-        display: block;
-
-        width: 1px;
-        height: 53px;
-
-        margin-top: 10px;
-
-        background: #555;
+        display: none;
     }
 
 
     /* ===============================
-       절차 아이콘
+       아이콘
     =============================== */
-
     .process-icon {
-        order: 2;
+        order: 1;
+        flex-shrink: 0;
 
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
 
         margin: 0;
 
@@ -772,9 +607,9 @@
         justify-content: center;
         align-items: center;
 
-        background: transparent;
+        background: #fff0e5;
 
-        border-radius: 0;
+        border-radius: 50%;
     }
 
     .process-icon img {
@@ -784,37 +619,102 @@
         margin: 0;
 
         object-fit: contain;
+        display: block;
     }
 
 
     /* ===============================
-       절차 설명
+       카드 내용
     =============================== */
-
     .process-content {
-        order: 3;
+        order: 2;
+        flex: 1;
 
         min-width: 0;
 
-        padding: 0 0 20px;
+        padding: 0;
+
+        text-align: left;
     }
 
     .process-content h2 {
-        margin: 0 0 4px;
-        padding: 0;
+        position: relative;
 
-        color: #000159;
+        margin: 0 0 8px;
+        padding: 0 0 8px;
+
+        color: #222;
 
         font-size: 14px;
         font-weight: 700;
         line-height: 1.3;
     }
 
-    /* PC에서 사용한 제목 밑 줄 삭제 */
-    .process-content h2::before,
+
+    /* 제목 아래 회색선 */
     .process-content h2::after {
-        display: none;
+        content: "";
+
+        display: block;
+
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+
+        width: 50%;
+        height: 1px;
+
+        background: #ccc;
     }
+
+
+    /* 제목 아래 주황 포인트 */
+    .process-content h2::before {
+        content: "";
+
+        display: block;
+
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+
+        z-index: 1;
+
+        /* width: 20px !important; */
+        height: 2px;
+
+        background: #ff9861;
+    }
+
+
+    /* PC에서 nth-child마다 달라지던 선 길이 초기화 */
+
+    .process-item:nth-child(1) .process-content h2::before {
+        width: 15%;
+    }
+
+    .process-item:nth-child(2) .process-content h2::before {
+        width: 20%;
+    }
+
+    .process-item:nth-child(3) .process-content h2::before {
+        width: 30%;
+    }
+
+    .process-item:nth-child(4) .process-content h2::before {
+        width: 40%;
+    }
+
+    .process-item:nth-child(5) .process-content h2::before {
+        width: 45%;
+    }
+
+    .process-item:nth-child(6) .process-content h2::before {
+        width: 60%;
+    }
+
 
     .process-content ul {
         margin: 0;
@@ -826,65 +726,94 @@
 
         list-style: disc;
 
-        color: #444;
+        color: #333;
 
         font-size: 9px;
         line-height: 1.45;
     }
 
 
-    /* 마지막 절차는 세로선 제거 */
-    .process-item.last .process-line {
-        display: none;
-    }
-
-
     /* ===============================
-       마지막 안내 문구가 있다면
+       카드 아래 안내문
     =============================== */
+    .process-infotext {
+        margin-top: 28px;
 
-    .process-bottom {
-        margin-top: 22px;
+        color: #333;
+
         text-align: center;
-    }
 
-    .process-bottom p {
         font-size: 10px;
+        font-weight: 600;
         line-height: 1.6;
     }
 
+    .process-infotext a {
+        width: fit-content;
+
+        margin: 16px auto 0;
+        padding: 6px 12px;
+
+        display: block;
+
+        box-sizing: border-box;
+
+        border: 1px solid #000159;
+        border-radius: 20px;
+
+        background: #fff;
+
+        color: #000159;
+
+        font-size: 9px;
+        font-weight: 500;
+
+        text-decoration: none;
+    }
+
+    .process-infotext a:hover {
+        background: #fff;
+        color: #000159;
+    }
+
 
     /* ===============================
-       시설 위치
+       시설 위치 안내
     =============================== */
-
     #shelter-location {
-        padding: 25px 0 50px;
+        padding: 14px 0 25px;
 
-        background: #faf7f3;
+        background: #fff8f3;
     }
 
     .location-inner {
         width: 100%;
-        max-width: calc(100% - 62px);
+        max-width: calc(100% - 52px);
+
+        margin: 0 auto;
     }
 
 
-    /* 위치 제목 */
+    /* 제목 */
     .location-heading {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: center;
     }
 
     .location-title {
         display: block;
-        margin-bottom: 7px;
+
+        margin-bottom: 5px;
     }
 
     .location-title h2 {
-        font-size: 18px;
-        font-weight: 700;
+        margin: 0;
+
         color: #222;
+
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.4;
     }
 
     .location-title img {
@@ -892,18 +821,21 @@
     }
 
     .location-heading p {
-        font-size: 10px;
-        color: #666;
+        margin: 0;
+
+        color: #555;
+
+        font-size: 9px;
+        line-height: 1.4;
     }
 
 
     /* ===============================
        지도
     =============================== */
-
     .location-map {
         width: 100%;
-        height: 247px;
+        height: 235px;
 
         overflow: hidden;
 
@@ -912,82 +844,81 @@
         background: #eff1e8;
 
         box-shadow:
-            0 1px 10px rgba(0, 0, 0, 0.08);
+            0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
     .location-map img {
         width: 100%;
         height: 100%;
 
-        object-fit: contain;
-
         display: block;
+
+        object-fit: contain;
     }
 
 
     /* ===============================
        보호센터 목록
     =============================== */
-
     .shelter-list {
-        margin-top: 18px;
+        margin-top: 15px;
 
         display: grid;
-
         grid-template-columns: 1fr;
 
-        gap: 14px;
+        gap: 10px;
     }
 
     .shelter-card {
-        min-height: 92px;
+        min-height: 74px;
 
-        padding: 13px 12px;
+        padding: 10px 11px;
 
         box-sizing: border-box;
 
         border: 1px solid #ccc;
-        border-radius: 7px;
+        border-radius: 6px;
 
         background: rgba(255, 255, 255, 0.45);
 
-        font-size: 10px;
+        color: #333;
+        font-weight: 500;
+        font-size: 14px;
     }
 
     .shelter-card strong {
         display: block;
 
-        margin: 0 0 13px;
+        margin: 0 0 10px;
 
         color: #333;
 
-        font-size: 11px;
-        font-weight: 500;
+        font-size: 12px;
+        font-weight: 600;
     }
 
     .shelter-card p {
-        margin: 0 0 12px;
+        margin: 0 0 7px;
 
-        color: #777;
+        color: #666;
 
-        font-size: 10px;
-        line-height: 1.4;
+        font-size: 9px;
+        line-height: 1.6;
     }
 
     .shelter-card span {
-        display: block;
-
         position: relative;
 
-        padding-left: 16px;
+        display: block;
 
-        color: #777;
+        padding-left: 12px;
 
-        font-size: 10px;
+        color: #666;
+        font-weight: 500;
+        font-size: 9px;
+        margin-bottom: 5px;
     }
 
-
-    /* 전화기 모양 */
     .shelter-card span::before {
         content: "♧";
 
@@ -996,80 +927,9 @@
         left: 0;
         top: -1px;
 
-        font-size: 11px;
+        font-size: 9px;
     }
 
 
-    /* ===============================
-       FOOTER
-    =============================== */
 
-    #adoption-footer {
-        padding: 18px 0 20px;
-
-        color: #fff;
-        background: #00012e;
-    }
-
-    .footer-inner {
-        width: 100%;
-        max-width: calc(100% - 30px);
-
-        display: flex;
-        flex-wrap: wrap;
-
-        justify-content: space-between;
-        align-items: flex-start;
-
-        gap: 10px 0;
-
-        text-align: left;
-    }
-
-
-    /* 로고 */
-    .footer-logo {
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-
-        margin-bottom: 5px;
-    }
-
-    .footer-logo img {
-        width: 105px;
-        height: auto;
-
-        display: block;
-    }
-
-
-    /* 회사정보 */
-    .footer-text {
-        width: 48%;
-
-        font-size: 7px;
-        line-height: 1.8;
-    }
-
-
-    /* sns */
-    .footer-sns {
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-
-        gap: 8px;
-
-        margin-top: 4px;
-    }
-
-    .footer-sns img {
-        width: 17px;
-        height: 17px;
-
-        object-fit: contain;
-    }
 }
