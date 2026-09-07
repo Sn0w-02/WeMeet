@@ -6,106 +6,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 입양후기</title>
     <link rel="stylesheet" href="../css/review.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/common.js" defer></script>
 </head>
 
 <body>
-    <section id="review-header">
-        <div class="inner header-inner">
-            <a href="#" class="logo"><img src="../img/review/logo - 복사본.png" alt="WeMeet"></a>
-            <div class="gnb">
-                <a href="#">시설안내</a>
-                <a href="#">보호중인 동물</a>
-                <a href="#">입양안내</a>
-                <a href="#">혜택 및 제휴</a>
-            </div>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="process.html">입양절차</a></li>
+                            <li><a href="review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.html">국가지원</a></li>
+                            <li><a href="benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="header-user">
-                <span>해피의 단짝 위밋님</span>
-                <img src="../img/review/dog-2.jpg" alt="프로필">
-            </div>
-        </div>
-    </section>
+                <a href="login.html" class="login-link">로그인</a>
 
-    <section id="adoption-review">
-        <div class="inner review-inner">
-            <div class="review-heading">
-                <div class="heading-copy">
-                    <div class="heading-title">
-                        <h1>입양 후 이야기</h1><img src="../img/review/강아지풀수정.png" alt="">
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="../img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section id="adoption-review">
+            <div class="inner review-inner">
+                <div class="review-heading">
+                    <div class="heading-copy">
+                        <div class="heading-title">
+                            <h1>입양 후 이야기</h1><img src="../img/review/강아지풀수정.png" alt="">
+                        </div>
+                        <p>새로운 가족을 만난 아이들의 행복한 일상들~</p>
                     </div>
-                    <p>새로운 가족을 만난 아이들의 행복한 일상들~</p>
+                    <a href="#" class="write-button">후기 작성하기 <span>✎</span></a>
                 </div>
-                <a href="#" class="write-button">후기 작성하기 <span>✎</span></a>
-            </div>
 
-            <div class="review-list">
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/cat-2.jpg" alt="고영희"></div>
-                    <div class="pet-info"><strong>고영희</strong><span>코리안 숏헤어</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.07.20</span></div>
-                    <p class="review-text">이제는 집에서 자유롭게 잘 다녀요!~ 창가에서 햇살을 즐기는 모습이 너~무 예뻐요</p>
+                <div class="review-list">
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/cat-2.jpg" alt="고영희"></div>
+                        <div class="pet-info"><strong>고영희</strong><span>코리안 숏헤어</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.07.20</span></div>
+                        <p class="review-text">이제는 집에서 자유롭게 잘 다녀요!~ 창가에서 햇살을 즐기는 모습이 너~무 예뻐요</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/dag-3.jpg" alt="별이"></div>
+                        <div class="pet-info"><strong>별이</strong><span>보더콜리</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.07.12</span></div>
+                        <p class="review-text">산책을 정말 좋아해요. 매일 같이 뛰면서 많이 가까워졌어요</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/cat-1.jpg" alt="또또"></div>
+                        <div class="pet-info"><strong>또또</strong><span>스코티쉬폴드</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.06.23</span></div>
+                        <p class="review-text">처음엔 숨어있기만 했는데 이제는 잘 놀고 애교도 부려요 ^^</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/cat-4.jpg" alt="나비"></div>
+                        <div class="pet-info"><strong>나비</strong><span>코리안 숏헤어</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.06.15</span></div>
+                        <p class="review-text">장난감을 정말 좋아해요. 덕분에 가족의 웃음이 많아졌어요</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/dog4.jpg" alt="콩이"></div>
+                        <div class="pet-info"><strong>콩이</strong><span>믹스견</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.06.09</span></div>
+                        <p class="review-text">겁이 많았는데 이제는 웃는듯한 표정이 많아졌어요. 너무 사랑스럽답니다~</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/dog-1.jpg" alt="몽이"></div>
+                        <div class="pet-info"><strong>몽이</strong><span>말티푸</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.06.01</span></div>
+                        <p class="review-text">보고 있으면 저도 행복해집니다. 너무 사랑스러워요~</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/cat6.jpg" alt="호두"></div>
+                        <div class="pet-info"><strong>호두</strong><span>아메리칸 숏헤어</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.05.22</span></div>
+                        <p class="review-text">식탐이 많은만큼 애교도 너무너무 많아요. 우리 집 귀염둥이가 됐어요</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="pet-image"><img src="../img/review/review (dog)보더콜리.jpg" alt="별이"></div>
+                        <div class="pet-info"><strong>별이</strong><span>보더콜리</span></div>
+                        <div class="adoption-date"><strong>입양일</strong><span>26.05.12</span></div>
+                        <p class="review-text">적응하는데 시간이 좀 걸렸지만 지금은 아주 잘 지내고 있습니다. 산책을 아주 좋아해요</p>
+                    </div>
                 </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/dag-3.jpg" alt="별이"></div>
-                    <div class="pet-info"><strong>별이</strong><span>보더콜리</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.07.12</span></div>
-                    <p class="review-text">산책을 정말 좋아해요. 매일 같이 뛰면서 많이 가까워졌어요</p>
-                </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/cat-1.jpg" alt="또또"></div>
-                    <div class="pet-info"><strong>또또</strong><span>스코티쉬폴드</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.06.23</span></div>
-                    <p class="review-text">처음엔 숨어있기만 했는데 이제는 잘 놀고 애교도 부려요 ^^</p>
-                </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/cat-4.jpg" alt="나비"></div>
-                    <div class="pet-info"><strong>나비</strong><span>코리안 숏헤어</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.06.15</span></div>
-                    <p class="review-text">장난감을 정말 좋아해요. 덕분에 가족의 웃음이 많아졌어요</p>
-                </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/dog4.jpg" alt="콩이"></div>
-                    <div class="pet-info"><strong>콩이</strong><span>믹스견</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.06.09</span></div>
-                    <p class="review-text">겁이 많았는데 이제는 웃는듯한 표정이 많아졌어요. 너무 사랑스럽답니다~</p>
-                </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/dog-1.jpg" alt="몽이"></div>
-                    <div class="pet-info"><strong>몽이</strong><span>말티푸</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.06.01</span></div>
-                    <p class="review-text">보고 있으면 저도 행복해집니다. 너무 사랑스러워요~</p>
-                </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/cat6.jpg" alt="호두"></div>
-                    <div class="pet-info"><strong>호두</strong><span>아메리칸 숏헤어</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.05.22</span></div>
-                    <p class="review-text">식탐이 많은만큼 애교도 너무너무 많아요. 우리 집 귀염둥이가 됐어요</p>
-                </div>
-                <div class="review-card">
-                    <div class="pet-image"><img src="../img/review/review (dog)보더콜리.jpg" alt="별이"></div>
-                    <div class="pet-info"><strong>별이</strong><span>보더콜리</span></div>
-                    <div class="adoption-date"><strong>입양일</strong><span>26.05.12</span></div>
-                    <p class="review-text">적응하는데 시간이 좀 걸렸지만 지금은 아주 잘 지내고 있습니다. 산책을 아주 좋아해요</p>
-                </div>
-            </div>
 
-            <div class="pagination"><a href="#" aria-label="이전 페이지">&lt;</a><strong>1</strong><a href="#"
-                    aria-label="다음 페이지">&gt;</a></div>
-        </div>
+                <div class="pagination"><a href="#" aria-label="이전 페이지">&lt;</a><strong>1</strong><a href="#"
+                        aria-label="다음 페이지">&gt;</a></div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
     </section>
 
-    <section id="review-footer">
-        <div class="inner footer-inner">
-            <div class="footer-brand"><img src="./img/footer-logo.png" alt="WeMeet">
-                <p>ⓒ2023 WeMeet. All rights reserved.</p>
-            </div>
-            <div class="footer-title">
-                <div class="footer-text">상호 : 서울 동물 보호센터 위밋<br>사업자번호 : 123-45-56789</div>
-                <div class="footer-text">Tel : 02-1234-5678<br>주소 : 서울특별시 강서구 화곡로 149</div>
-            </div>
-            <div class="footer-sns"><img src="./img/instagram.png" alt="인스타그램"><img src="./img/youtube.png" alt="유튜브">
-            </div>
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <fieldset class="purpose-group">
+                    <legend>방문목적</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="사전만남">사전만남
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="시설방문">시설방문
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="입양신청">입양신청
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
+                    </label>
+                </fieldset>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="../img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="../img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
