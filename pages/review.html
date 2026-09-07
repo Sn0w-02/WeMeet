@@ -6,24 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 입양후기</title>
     <link rel="stylesheet" href="../css/review.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/common.js" defer></script>
 </head>
 
 <body>
-    <section id="review-header">
-        <div class="inner header-inner">
-            <a href="#" class="logo"><img src="../img/review/logo - 복사본.png" alt="WeMeet"></a>
-            <div class="gnb">
-                <a href="#">시설안내</a>
-                <a href="#">보호중인 동물</a>
-                <a href="#">입양안내</a>
-                <a href="#">혜택 및 제휴</a>
-            </div>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="pages/facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/process.html">입양절차</a></li>
+                            <li><a href="pages/review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/support.html">국가지원</a></li>
+                            <li><a href="pages/benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="header-user">
-                <span>해피의 단짝 위밋님</span>
-                <img src="../img/review/dog-2.jpg" alt="프로필">
+                <a href="pages/login.html" class="login-link">로그인</a>
+
+                <a href="pages/mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="pages/mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="img/mobile-User.png" alt="">
+                </a>
             </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </section>
+    </header>
 
     <section id="adoption-review">
         <div class="inner review-inner">
@@ -93,19 +128,40 @@
         </div>
     </section>
 
-    <section id="review-footer">
-        <div class="inner footer-inner">
-            <div class="footer-brand"><img src="./img/footer-logo.png" alt="WeMeet">
-                <p>ⓒ2023 WeMeet. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="./index.html" class="footer-logo">
+                    <img src="img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
             </div>
-            <div class="footer-title">
-                <div class="footer-text">상호 : 서울 동물 보호센터 위밋<br>사업자번호 : 123-45-56789</div>
-                <div class="footer-text">Tel : 02-1234-5678<br>주소 : 서울특별시 강서구 화곡로 149</div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
             </div>
-            <div class="footer-sns"><img src="./img/instagram.png" alt="인스타그램"><img src="./img/youtube.png" alt="유튜브">
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="img/youtube.png" alt="Youtube"></img>
+                </a>
             </div>
+
         </div>
-    </section>
+
+    </footer>
 </body>
 
 </html>
