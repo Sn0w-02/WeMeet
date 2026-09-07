@@ -65,20 +65,26 @@ main {
 }
 
 .summary-img {
-    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 12.5rem;
-    aspect-ratio: 1 / 1;
+    height: 12.5rem;
     overflow: hidden;
-    border-radius: 1.25rem;
+    border-radius: 50%;
 }
 
 .summary-img img {
+    display: block;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .d-day-info,
 .history-info {
     flex: 1;
+    min-width: 0;
     text-align: center;
 }
 
@@ -152,14 +158,16 @@ main {
 }
 
 .profile-img {
+    height: 22.5rem;
     flex-shrink: 0;
-    width: 25rem;
+    width: 22.5rem;
     overflow: hidden;
     border-radius: 1.25rem;
 }
 
 .profile-img img {
     height: 100%;
+    border-radius: 1.25rem;
 }
 
 .profile-content {
@@ -509,7 +517,7 @@ main {
     /* favorite */
     #mypage-favorite {
         width: calc(100% - 2.5rem);
-        margin-bottom: 0 auto 4rem;
+        margin: 0 auto 4rem;
     }
 
     .mypage-title {
