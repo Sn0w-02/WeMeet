@@ -24,7 +24,7 @@ const surveyTags = document.querySelector(".survey-tags");
 const favoriteList = document.querySelector(".favorite-list");
 
 
-fetch("../json/user.json")
+fetch("../js/user.json")
     .then(response => response.json())
     .then(users => {
         const user = users[0];
