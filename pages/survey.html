@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/survey.css">
     <link rel="stylesheet" href="../css/survey-m.css">
     <script src="../js/common.js" defer></script>
+    <script src="../js/survey.js" defer></script>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
     <!--=========== main ===========-->
     <section id="survey">
         <div class="survey-main">
-            <div class="maintitle-group">
+            <div class="main-title-group">
                 <div>
                     <h2 class="title">어떤 친구와 함께하고 싶으신가요?</h2>
                     <p class="title-text">우리집 새로운 가족을 위한 맞춤 짝꿍 찾기</p>
@@ -72,159 +73,159 @@
             <div class="survey-item">
                 <div class="survey-question">
                     <h3 class="question">Q. 현재 반려동물을 키우고 있나요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="grow" value="yes"> 현재 키우고 있다
+                            <input type="radio" name="experiencelevel" value="yes"> 현재 키우고 있다
                         </label>
                         <label>
-                            <input type="radio" name="grow" value="before"> 예전에 키워 봤다
+                            <input type="radio" name="experiencelevel" value="before"> 예전에 키워 봤다
                         </label>
                         <label>
-                            <input type="radio" name="grow" value="no"> 한번도 키워본적 없다
+                            <input type="radio" name="experiencelevel" value="no"> 한번도 키워본적 없다
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 어떤 동물을 더 선호하시나요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="like" value="dog"> 강아지
+                            <input type="radio" name="type" value="dog"> 강아지
                         </label>
                         <label>
-                            <input type="radio" name="like" value="cat"> 고양이
+                            <input type="radio" name="type" value="cat"> 고양이
                         </label>
                         <label>
-                            <input type="radio" name="like" value="both"> 둘 다 좋다
+                            <input type="radio" name="type" value="both"> 둘 다 좋다
                         </label>
                         <label>
-                            <input type="radio" name="like" value="notyet"> 아직 잘 모르겠다
+                            <input type="radio" name="type" value="notyet"> 아직 잘 모르겠다
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 어떤 체형을 선호하시나요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="type" value="small"> 소형
+                            <input type="radio" name="size" value="small"> 소형
                         </label>
                         <label>
-                            <input type="radio" name="type" value="Medium"> 중형
+                            <input type="radio" name="size" value="Medium"> 중형
                         </label>
                         <label>
-                            <input type="radio" name="type" value="Large"> 대형
+                            <input type="radio" name="size" value="Large"> 대형
                         </label>
                         <label>
-                            <input type="radio" name="type" value="any"> 상관없다
+                            <input type="radio" name="size" value="any"> 상관없다
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 어떤 성격을 좋아하시나요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="nature" value="charm"> 애교가 많은
+                            <input type="radio" name="traits" value="charm"> 애교가 많은
                         </label>
                         <label>
-                            <input type="radio" name="nature" value="calm"> 차분한
+                            <input type="radio" name="traits" value="calm"> 차분한
                         </label>
                         <label>
-                            <input type="radio" name="nature" value="Active"> 활발한
+                            <input type="radio" name="traits" value="Active"> 활발한
                         </label>
                         <label>
-                            <input type="radio" name="nature" value="independent"> 독립적인
+                            <input type="radio" name="traits" value="independent"> 독립적인
                         </label>
                         <label>
-                            <input type="radio" name="nature" value="any"> 상관없다
+                            <input type="radio" name="traits" value="any"> 상관없다
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 선호하시는 연령을 알려주세요~</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="age" value="young"> 1년미만
+                            <input type="radio" name="agegroup" value="young"> 1년미만
                         </label>
                         <label>
-                            <input type="radio" name="age" value="adult"> 성견 • 성묘
+                            <input type="radio" name="agegroup" value="adult"> 성견 • 성묘
                         </label>
                         <label>
-                            <input type="radio" name="age" value="old"> 노령견 • 노령묘
+                            <input type="radio" name="agegroup" value="old"> 노령견 • 노령묘
                         </label>
                         <label>
-                            <input type="radio" name="age" value="any"> 상관없다
+                            <input type="radio" name="agegroup" value="any"> 상관없다
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 어디에서 키울 예정인가요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="place" value="apt"> 아파트
+                            <input type="radio" name="residence" value="apt"> 아파트
                         </label>
                         <label>
-                            <input type="radio" name="place" value="villa"> 빌라
+                            <input type="radio" name="residence" value="villa"> 빌라
                         </label>
                         <label>
-                            <input type="radio" name="place" value="house"> 단독주택
+                            <input type="radio" name="residence" value="house"> 단독주택
                         </label>
                         <label>
-                            <input type="radio" name="place" value="officetel"> 오피스텔
+                            <input type="radio" name="residence" value="officetel"> 오피스텔
                         </label>
                         <label>
-                            <input type="radio" name="place" value="any"> 기타
+                            <input type="radio" name="residence" value="any"> 기타
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 함께 거주하는 분이 계신가요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="with" value="yes"> 있다
+                            <input type="radio" name="household" value="yes"> 있다
                         </label>
                         <label>
-                            <input type="radio" name="with" value="no"> 없다
+                            <input type="radio" name="household" value="no"> 없다
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 하루 평균 얼마나 집을 비우세요?</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="howlong" value="apt"> 2시간 이하
+                            <input type="radio" name="awaytime" value="under2"> 2시간 이하
                         </label>
                         <label>
-                            <input type="radio" name="howlong" value="villa"> 2 ~ 4시간
+                            <input type="radio" name="awaytime" value="2to4"> 2 ~ 4시간
                         </label>
                         <label>
-                            <input type="radio" name="howlong" value="house"> 4 ~ 8시간
+                            <input type="radio" name="awaytime" value="4to8"> 4 ~ 8시간
                         </label>
                         <label>
-                            <input type="radio" name="howlong" value="officetel"> 8시간 이상
+                            <input type="radio" name="awaytime" value="8plus"> 8시간 이상
                         </label>
                     </div>
                 </div>
                 <div class="survey-question">
                     <h3 class="question">Q. 매일 얼마나 산책하실 수 있으세요? (강아지 기준)</h3>
-                    <div class="choice">
+                    <div class="answers">
                         <label>
-                            <input type="radio" name="walk" value="apt"> 30분 미만
+                            <input type="radio" name="walktime" value="under30"> 30분 미만
                         </label>
                         <label>
-                            <input type="radio" name="walk" value="villa"> 30분 ~ 1시간
+                            <input type="radio" name="walktime" value="30to60"> 30분 ~ 1시간
                         </label>
                         <label>
-                            <input type="radio" name="walk" value="house"> 1 ~ 2시간
+                            <input type="radio" name="walktime" value="60to120"> 1 ~ 2시간
                         </label>
                         <label>
-                            <input type="radio" name="walk" value="officetel"> 2시간 이상
+                            <input type="radio" name="walktime" value="120plus"> 2시간 이상
                         </label>
                         <label>
-                            <input type="radio" name="walk" value="any"> 해당 안됨
+                            <input type="radio" name="walktime" value="any"> 해당 안됨
                         </label>
                     </div>
                 </div>
             </div>
-            <button class="finish">완 료</button>
+            <button type="button" class="finish">완 료</button>
 
             <!-- 배경이미지 -->
             <div class="image bg01"></div>
@@ -235,16 +236,20 @@
         </div>
     </section>
     <div class="survey-recommend">
-        <div class="title-group">
-            <div class="top">
-                <img src="../img/survey/pattern-bl.svg" alt="">
-                <h2 class="title">설문 결과 추천 동물</h2>
+        <div class="recommend-inner">
+            <div class="title-group">
+                <div class="top">
+                    <img src="../img/survey/pattern-bl.svg" alt="">
+                    <h2 class="title">설문 결과 추천 동물</h2>
+                </div>
+                <p class="title-text">여러분들과 어울리는 아이들을 소개합니다</p>
             </div>
-            <p class="title-text">여러분들과 어울리는 아이들을 소개합니다</p>
+            <!-- json data를 script로 구현 -->
+            <div class="recommend-box">
+                <div class="recommend-list"></div>
+            </div>
+            <button type="button" class="list-btn">더보기 ↓</button>
         </div>
-
-        <!-- json data를 script로 구현 -->
-        <div class="recommend-list"></div>        
     </div>
 
     <!-- fixed -->
