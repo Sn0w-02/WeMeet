@@ -65,11 +65,16 @@ html {
 .hero-textbox {
     position: absolute;
     z-index: 1;
-
     top: 10.625rem;
-    left: 40%;
-
+    left: 050%;
     color: #fff;
+    transform: translateX(-50%);
+
+}
+
+.hero-textbox .hero-description {
+    width: 500px;
+    text-align: center;
 }
 
 .hero-title {
@@ -551,7 +556,7 @@ html {
 
     align-items: start;
 
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .info-title {
@@ -606,7 +611,6 @@ html {
     height: 0.063rem;
     text-align: center;
     margin: 1.5rem auto;
-
     background: #2C00AF;
     opacity: 50%;
 }
@@ -647,28 +651,45 @@ html {
 
 
     /* ====================================
-        HERO
-    ==================================== */
+    HERO
+==================================== */
 
     #facility-hero {
         height: 350px;
+        position: relative;
     }
 
     .hero-textbox {
-        top: 4.375rem;
-        left: 1.5rem;
+        position: absolute;
+
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: calc(100% - 40px);
+
         text-align: center;
-        width: calc(100% - 48px);
     }
 
     .hero-title {
-        font-size: 1.563;
+        margin-bottom: 12px;
+
+        font-size: 1.875rem;
+        text-align: center;
+
+        word-break: keep-all;
     }
 
-    .hero-description {
-        font-size: 0.875rem;
-    }
+    .hero-textbox>.hero-description {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1rem;
+        /*  line-height: 1.7; */
 
+        text-align: center;
+        word-break: keep-all;
+
+    }
 
     /* ====================================
         VALUES
@@ -697,17 +718,21 @@ html {
     }
 
     .value-title {
-        font-size: 1.563rem
+        font-size: 1.563rem;
+        word-break: keep-all;
     }
 
     .value-description {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
 
     /* ====================================
         FACILITY CARDLIST
     ==================================== */
+    #facility-values {
+        padding-bottom: 0;
+    }
 
     .facility-cardlist {
         padding: 55px 1.25rem;
@@ -748,6 +773,7 @@ html {
     .facility-mobile-item:last-child {
         margin-bottom: 0;
     }
+
 
 
     /* 모바일 아이콘 */
@@ -806,14 +832,18 @@ ADOPTOPN-SCHOOL
     }
 
     strong {
-        margin-bottom: 1.875rem;
+        margin-bottom: 0.875rem;
     }
 
     .school-moblie li {
         display: flex;
         gap: 1.875rem;
-        margin-bottom: 1.875rem;
+        margin: 1.875rem 0 0;
         justify-content: space-between;
+        align-items: center;
+        line-height: 1.4;
+        font-size: 1rem;
+        word-break: keep-all;
 
     }
 
@@ -840,7 +870,6 @@ ADOPTOPN-SCHOOL
 
     .location-content {
         flex-direction: column;
-
         gap: 40px;
     }
 
@@ -851,6 +880,7 @@ ADOPTOPN-SCHOOL
 
     .location-info {
         width: 100%;
+
     }
 
 
