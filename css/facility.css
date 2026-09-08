@@ -92,7 +92,7 @@ html {
 ======================================== */
 
 #facility-values {
-    padding: 6.875rem 0 5.313rem;
+    padding: 6.875rem 0;
 }
 
 .values-wrap {
@@ -306,7 +306,7 @@ html {
 ======================================== */
 
 #adoption-school {
-    padding: 5rem 0 6.875rem;
+    padding: 0 0 2.875rem;
 }
 
 .school-wrap {
@@ -317,6 +317,8 @@ html {
 
     background: #fbf7f2;
 }
+
+
 
 
 /* ========================================
@@ -655,7 +657,7 @@ html {
     .hero-textbox {
         top: 4.375rem;
         left: 1.5rem;
-
+        text-align: center;
         width: calc(100% - 48px);
     }
 
@@ -672,9 +674,7 @@ html {
         VALUES
     ==================================== */
 
-    #facility-values {
-        padding: 3.75rem 0;
-    }
+
 
     .value-card,
     .value-card.reverse {
@@ -801,14 +801,27 @@ ADOPTOPN-SCHOOL
 
     .school-moblie {
         display: block;
+        padding: 1.875rem;
 
+    }
+
+    strong {
+        margin-bottom: 1.875rem;
     }
 
     .school-moblie li {
         display: flex;
-        gap: 1.125rem;
+        gap: 1.875rem;
+        margin-bottom: 1.875rem;
+        justify-content: space-between;
+
     }
 
+    .moblie {
+        white-space: wrap;
+        width: 100%;
+        margin: 15px 0 30px;
+    }
 
 
     .school-moblie img {
