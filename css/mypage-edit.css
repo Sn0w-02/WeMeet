@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    max-width: 120rem;
+}
+
+#profile-edit,
+#mypet-edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    width: 100%;
+    max-width: 90rem;
+    margin: 7rem auto;
+    padding: 4.5rem;
+    background: #FDF8F4;
+    border-radius: 1.25rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0.9rem #0001591a;
+}
+
+.profile-img,
+.pet-img {
+    height: 22.5rem;
+    flex-shrink: 0;
+    width: 22.5rem;
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
+.profile-img img,
+.pet-img img {
+    height: 100%;
+    border-radius: 1.25rem;
+}
+
+.profile-content,
+.mypet-content {
+    display: flex;
+    flex: 1;
+    gap: 0.5rem;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.profile-top,
+.mypet-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-bottom,
+.mypet-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-basic,
+.mypet-basic {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    gap: 1rem;
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.profile-basic>div,
+.mypet-basic>div {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    align-items: center;
+}
+
+.profile-basic dt,
+.mypet-basic dt {
+    font-weight: 700;
+}
+
+.profile-basic dd,
+.mypet-basic dd {
+    line-height: 1.6;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #222;
+}
+
+.photo-change-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 8.75rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    background: #fff;
+    border: 1px solid #000159;
+    border-radius: 0.75rem;
+}
+
+.profile-edit,
+.mypet-edit {
+    cursor: pointer;
+    min-width: 8.75rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    background: #000159;
+    border: 1px solid #000159;
+    color: #fff;
+    border-radius: 0.75rem;
+}
+
+#personal-edit {
+    display: flex;
+    width: 100%;
+    max-width: 90rem;
+    margin: 7rem auto;
+    padding: 4.5rem;
+    background: #FDF8F4;
+    border-radius: 1.25rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0.9rem #0001591a;
+}

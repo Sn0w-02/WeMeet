@@ -43,3 +43,19 @@ fetch("../js/user.json")
     .catch(error => {
         console.log(error);
     });
+
+
+
+//benefit
+var benefitSwiper = new Swiper('.benefit-swiper', {
+    loop: true,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});

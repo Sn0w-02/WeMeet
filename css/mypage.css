@@ -319,6 +319,13 @@ main {
     background: #FDF8F4;
 }
 
+.benefit-banner {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
 .benefit-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -329,27 +336,15 @@ main {
     padding: 4rem 1.25rem;
 }
 
-.benefit-banner {
-    min-width: 0;
-    overflow: hidden;
-    border-radius: 1.25rem;
-}
-
 .benefit-swiper {
     width: 100%;
     height: 100%;
-}
-
-.benefit-swiper .swiper-slide a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    padding: 3.5rem 0;
 }
 
 .benefit-swiper .swiper-slide img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .benefit-help {
