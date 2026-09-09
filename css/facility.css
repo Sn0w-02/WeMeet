@@ -405,7 +405,7 @@ html {
     display: flex;
 
     width: 100%;
-
+    top: 0;
     margin: 0;
     padding: 0;
 
@@ -413,7 +413,7 @@ html {
 }
 
 .school-item {
-    width: 20%;
+    width: 30%;
 }
 
 .school-item button {
@@ -431,61 +431,44 @@ html {
 
 /* 사진 */
 
+/* 이미지 영역 */
 .school-thumb {
+    display: block;
     width: 100%;
     height: 9.0625rem;
-
+    padding: 0;
     overflow: hidden;
+    background: none;
 }
 
 .school-thumb img {
+    display: block;
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
-
 }
 
-
-/* 메뉴 이름 */
-
-.school-item span {
+/* button 바로 다음에 있는 메뉴 이름에만 적용 */
+.school-item>span {
     display: block;
-
     padding: 0.625rem 0.3125rem;
-
     background: #9a96cf;
-
     color: #fff;
-
     font-size: 0.875rem;
     font-weight: 500;
-
     text-align: center;
-
-
 }
 
-
-/* 선택된 메뉴 */
-
-.school-item.active span {
+/* 선택된 메뉴의 텍스트만 변경 */
+.school-item.active>span {
     background: #000159;
 }
 
-
-/* 마우스 올렸을 때 */
-
-.school-item:hover .school-thumb img {
-    transform: scale(1.05);
-}
-
-.school-item:hover span {
+.school-item:hover>span {
     background: #6f6bb4;
 }
 
-.school-item.active:hover span {
+.school-item.active:hover>span {
     background: #000159;
 }
 
@@ -641,9 +624,9 @@ html {
         height: 64px;
     }
 
-    .gnb {
+    /*     .gnb {
         display: none;
-    }
+    } */
 
     .logo {
         font-size: 1.563rem;
