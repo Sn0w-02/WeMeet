@@ -5,10 +5,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 마이페이지/내역</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mypage-temporary.css">
+    <script src="../js/common.js" defer></script>
+    <script src="../js/mypage-temporary.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="WeMeet"></a></h1>
 
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="pages/facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/process.html">입양절차</a></li>
+                            <li><a href="pages/review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/support.html">국가지원</a></li>
+                            <li><a href="pages/benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="pages/login.html" class="login-link">로그인</a>
+
+                <a href="pages/mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="pages/mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="mypage-temporary">
+        <div class="temporary-inner">
+
+            <div class="temporary-head">
+                <div class="temporary-title">
+                    <h2>임시보호 상세 내역</h2>
+                    <img src="../img/mypage/text-ico.png" alt="">
+                </div>
+
+                <div class="temporary-summary">
+                    <p class="summary-greeting">
+                        WEMEET님 오늘도 수고하셨어요~
+                    </p>
+
+                    <div class="summary-list">
+                        <div class="summary-item">
+                            <img src="../img/mypage/history-ico1.png" alt="">
+                            <div class="summary-info">
+                                <h3>완료된 임시 보호 내역</h3>
+                                <span>총 1건</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-item">
+                            <img src="../img/mypage/history-ico2.png" alt="">
+                            <div class="summary-info">
+                                <h3>임시 보호 진행 중</h3>
+                                <span>총 1건</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-item">
+                            <img src="../img/mypage/history-ico3.png" alt="">
+                            <div class="summary-info">
+                                <h3>현재 누적 포인트</h3>
+                                <span>총 15점</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="temporary-content">
+
+                <!-- 탭 콘텐츠 -->
+                <div class="temporary-main">
+
+                    <!-- 임보내역 -->
+                    <section id="history" class="history active">
+
+                        <!-- 현재 보호 중인 아이 -->
+                        <div class="current-pet">
+                            <div class="current-title">
+                                <h2>현재 보호 중인 아이</h2>
+                                <button type="button" class="diary-btn">일지작성</button>
+                            </div>
+
+                            <div class="current-content">
+                                <img src="" alt="">
+
+                                <div class="current-info">
+                                    <dl>
+                                        <div>
+                                            <dt>이름</dt>
+                                            <dd>의젓이</dd>
+                                        </div>
+
+                                        <div>
+                                            <dt>품종</dt>
+                                            <dd>요크셔테리어</dd>
+                                        </div>
+
+                                        <div>
+                                            <dt>간단소개</dt>
+                                            <dd>소심하지만 똥꼬발랄, 귀여운 아기에요</dd>
+                                        </div>
+
+                                        <div>
+                                            <dt>임보시작일</dt>
+                                            <dd>2026년 7월 29일</dd>
+                                        </div>
+
+                                        <div>
+                                            <dt>주의사항</dt>
+                                            <dd>이것저것 다 먹어요 먹는 것을 조심해야해요</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 보호자를 찾은 아이 -->
+                        <div class="history-pet">
+                            <div class="history-title">
+                                <h2>보호자를 찾은 아이</h2>
+                            </div>
+
+                            <div class="history-list">
+                                <div class="history-card">
+                                    <img src="" alt="">
+                                    <div class="history-info">
+                                        <strong>똘이</strong>
+                                        <span>말티즈</span>
+                                    </div>
+                                </div>
+
+                                <div class="history-card">
+                                    <img src="" alt="">
+                                    <div class="history-info">
+                                        <strong>까미</strong>
+                                        <span>코리안 숏헤어</span>
+                                    </div>
+                                </div>
+
+                                <div class="history-card">
+                                    <img src="" alt="">
+                                    <div class="history-info">
+                                        <strong>해피</strong>
+                                        <span>푸들</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- 포인트 조회 -->
+                    <section id="point" class="point">
+                        <div class="point-history">
+                            <h2>포인트 내역 조회</h2>
+
+                            <!-- 조회 영역 -->
+                        </div>
+
+                        <div class="point-exchange">
+                            <h2>포인트 전환</h2>
+
+                            <!-- 전환 영역 -->
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- 사이드 탭 메뉴-->
+                <aside class="mypage-side">
+                    <div class="side-profile">
+                        <img src="../img/mypage/mypage-profile.png" alt="프로필 이미지">
+                        <strong>WEMEET님</strong>
+                        <p>
+                            열심히 임보 하고,
+                            일지 작성도 하신 보호자님~
+                            특별한 혜택도
+                            꼭 받으세요~❤️
+                        </p>
+                    </div>
+
+                    <div class="side-tab">
+                        <button type="button" class="side-tab-btn active" data-tab="history">
+                            임보내역
+                        </button>
+
+                        <button type="button" class="side-tab-btn" data-tab="point">
+                            포인트 조회
+                        </button>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
+    </section>
+
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="./index.html" class="footer-logo">
+                    <img src="img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
