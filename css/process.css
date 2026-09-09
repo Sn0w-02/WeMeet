@@ -458,10 +458,10 @@
     }
 
     /* 모바일에서는 PC 메뉴 숨김 */
-    .gnb {
+    /*   .gnb {
         display: none;
     }
-
+ */
     .profile-image {
         width: 22px;
         height: 22px;
