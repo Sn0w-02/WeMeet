@@ -84,12 +84,6 @@
     background-color: white;
     color: #2d2d2d;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-.pet-list-header a:hover {
-    background-color: #000159;
-    color: #fff;
 }
 
 /* 슬라이드 css */
@@ -223,145 +217,84 @@
 }
 
 /* guide */
-.guide-card {
-    width: 100%;
-    background: #fff;
-    margin-bottom: 3rem;
-}
-
-.guide-card-inner {
-    width: 90rem;
-    height: 31.25rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4.375rem;
-}
-
-.guide-card-visual {
-    width: 32.5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.guide-card-visual img {
-    width: 100%;
-    max-width: 31.25rem;
-    height: auto;
-    display: block;
-}
-
-.guide-card-content {
-    width: 37.5rem;
-}
-
-.guide-card-title {
-    margin-bottom: 4.375rem;
-    text-align: center;
-}
-
-.guide-card-title p {
-    margin: 0;
-    font-size: 1.563rem;
-    line-height: 1.3;
-    font-weight: 700;
-    color: #f5a623;
-}
-
-.guide-card-title p:last-child {
-    color: #f5a623;
-}
-
-.guide-card-title strong {
-    color: #000159;
-    font-size: 1.75rem;
-    font-weight: 800;
-}
-
-.guide-card-menu {
-    display: flex;
-    gap: 1.875rem;
-}
-
-.guide-card-item {
-    width: 16.875rem;
-    height: 9.375rem;
-    padding: 1.563rem 1.25rem;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    background: #000159;
-    border-radius: 0.75rem;
-    position: relative;
-    cursor: pointer;
-}
-
-.guide-card-item.beige {
-    background: #e9bd98;
-}
-
-.guide-card-icon {
-    width: 3.438rem;
-    flex-shrink: 0;
+#guide {
+    max-width: 90rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
+    margin: 7.5rem auto;
 }
-
-.guide-card-icon img {
-    width: 100%;
-    height: auto;
-    display: block;
+.guide-left {
+    width: 41rem;
 }
-
-.guide-card-text {
-    width: 20.625rem;
-    margin-left: 0.625rem;
-    color: #fff;
-    word-break: keep-all;
-}
-
-.guide-card-name {
-    margin: 0 0 0.5rem;
-    font-size: 1rem;
+.guide-right .guide-title {
+    font-size: 2.375rem;
+    color: #F4B942;
     font-weight: 600;
-    white-space: nowrap;
-}
-
-.guide-card-description {
-    margin: 0;
-    font-size: 0.938rem;
+    text-align: center;
     line-height: 1.5;
-    /* 
-    white-space: nowrap; */
+    margin-bottom: 6.25rem;
 }
-
-.guide-card-item.beige .guide-card-text {
+.guide-right .guide-title strong {
     color: #000159;
 }
-
-.guide-card-arrow {
-    width: 1.5rem;
-    position: absolute;
-    right: 0.938rem;
-    top: 50%;
-    transform: translateY(-50%);
+.guide-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.5rem;
+}
+.guide-card .guide-item {
+    width: 21.875rem;
+    padding: 3.125rem 1.25rem;
+    border-radius: 0.938rem;
+    background: #000159;
+    margin: 0 auto0;
+}
+.guide-item .card-icon img {
+    height: 5rem;
+    margin-right: 1rem;
+}
+.guide-card .guide-item a {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: #fff;
+}
+.guide-item .card-text .card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+.card-flex .card-arrow {
+    display: flex;
+    align-items: center;    
+    padding: 0.313rem 0.625rem;
+    gap: 0.625rem;
+    border-radius: 1rem;
+    background: #fff;
+    color: #000;
+}
+.card-flex .card-arrow img {
+    width: 1.25rem;
+}
+.card-text .card-flex .card-name {
+    font-size: 1.5rem;
+}
+.guide-card .guide-item.beige {
+    background: #E6BB97;
+}
+.guide-card .guide-item.beige button {    
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
 
-.guide-card-arrow img {
-    width: 100%;
-    display: block;
-}
 
-.guide-card-item {
-    transition: transform 0.3s ease;
-}
 
-.guide-card-item:hover {
-    transform: translateY(-0.313rem);
-}
+
 
 /* mobile */
 @media (max-width: 768px) {
@@ -371,6 +304,11 @@
 
     #main-visual .mobile-visual {
         display: block;
+        height: 350px;
+    }
+
+    #main-visual .mobile-visual img {
+        height: 100%;
     }
 
     /* pet-list */
@@ -385,7 +323,6 @@
         grid-template-columns: 1fr auto;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 1.875rem;
     }
 
     .pet-list-header h3 {
@@ -395,9 +332,7 @@
     }
 
     .pet-list-header p {
-        grid-column: 1/ span 2;
-        grid-row: 2;
-        font-size: 0.625rem;
+        display: none;
     }
 
     .pet-list-header a {
@@ -470,6 +405,7 @@
     #service {
         width: calc(100% - 2.5rem);
         padding: 1.25rem;
+        margin: 0.625rem auto;
     }
 
     #service h3 {
@@ -494,8 +430,8 @@
     }
 
     .service-card a img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100px;
     }
 
     .service-card .card-text {
@@ -531,18 +467,27 @@
     }
 
     .guide-card-menu {
+        flex-direction: column;
         gap: 1rem;
     }
 
     .guide-card-item {
         flex: 1;
         width: auto;
-        height: 7.5rem;
+        height: 9.375rem;
         padding: 1rem;
     }
 
+    .guide-card-item a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+    }
+
     .guide-card-icon {
-        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.625rem;
     }
 
     .guide-card-text {
@@ -550,17 +495,16 @@
     }
 
     .guide-card-name {
-        font-size: 0.875rem;
+        font-size: 1.125rem;
     }
 
     .guide-card-description {
-        font-size: 0.625rem;
+        font-size: 1rem;
         white-space: normal;
     }
 
     .guide-card-arrow {
         width: 1rem;
-        right: 0.625rem;
     }
 
     .guide-card-item:hover {
