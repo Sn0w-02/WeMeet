@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+main {
+    width: 100%;
+    max-width: 120rem;
+    padding-bottom: 2rem;
+    background: url(../img/mypage/edit-bottom-bg.png) center bottom / contain no-repeat;
+}
+
+#profile-edit,
+#mypet-edit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    width: 100%;
+    max-width: 90rem;
+    margin: 7rem auto;
+    padding: 4.5rem;
+    background: #FDF8F4;
+    border-radius: 1.25rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0.9rem #0001591a;
+}
+
+.profile-img,
+.pet-img {
+    width: 22.5rem;
+    height: 22.5rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-img img,
+.pet-img img {
+    height: 100%;
+}
+
+.profile-content,
+.mypet-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.profile-top,
+.mypet-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.profile-top>div,
+.mypet-top>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-bottom,
+.mypet-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-basic,
+.mypet-basic {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    gap: 1rem;
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5rem;
+    gap: 17rem;
+}
+
+
+.profile-basic>div,
+.mypet-basic>div {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    align-items: center;
+}
+
+.profile-basic dt,
+.mypet-basic dt {
+    font-weight: 700;
+}
+
+.profile-basic dd,
+.mypet-basic dd {
+    line-height: 1.6;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #222;
+}
+
+.photo-change-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 8.75rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    background: #fff;
+    border: 1px solid #000159;
+    border-radius: 0.75rem;
+}
+
+.profile-edit,
+.mypet-edit {
+    cursor: pointer;
+    min-width: 8.75rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    background: #000159;
+    border: 1px solid #000159;
+    color: #fff;
+    border-radius: 0.75rem;
+}
+
+#personal-edit {
+    width: 100%;
+    max-width: 90rem;
+    margin: 7rem auto;
+    padding: 4.5rem;
+    border: 1px solid #ddd;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 0.9rem #0001591a;
+    background: #FDF8F4 url(../img/mypage/personal-bg.png) right 12rem top 5rem / auto 40% no-repeat;
+}
+
+.personal-content {
+    width: 100%;
+}
+
+.personal-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.personal-top h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.personal-bottom {
+    width: 100%;
+}
+
+.personal-basic {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40rem;
+}
+
+.personal-basic>div {
+    display: grid;
+    grid-template-columns: 6rem 14rem 6rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.personal-basic dt {
+    font-weight: 700;
+}
+
+.personal-basic dd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+}
+
+/* 아이디는 입력창 형태 제거 */
+.personal-basic>div:first-child dd,
+.personal-basic>div:nth-child(3) dd {
+    justify-content: flex-start;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+/* 주소 영역 */
+.personal-basic>div:last-child {
+    grid-template-columns: 6rem 24rem 6rem;
+}
+
+/* 변경 / 인증 / 검색 */
+.personal-change,
+.personal-auth,
+.personal-search {
+    cursor: pointer;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    background: #fff;
+    color: #000159;
+    border: 1px solid #000159;
+    border-radius: 0.5rem;
+}
+
+/* 저장 / 회원탈퇴 */
+#personal-edit .btn-list.personal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.personal-save,
+.personal-remove {
+    cursor: pointer;
+    min-width: 7.5rem;
+    height: 2.75rem;
+    padding: 0 1.5rem;
+    background: #fff;
+    color: #000159;
+    border: 1px solid #000159;
+    border-radius: 0.5rem;
+}
+
+.personal-change:hover,
+.personal-auth:hover,
+.personal-search:hover,
+.personal-save:hover,
+.personal-remove:hover {
+    background: #000159;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        max-width: 100%;
+        padding: 0 1.25rem 3rem;
+        background-image: none;
+    }
+
+    #profile-edit,
+    #mypet-edit,
+    #personal-edit {
+        width: 100%;
+        max-width: 100%;
+        margin: 2.5rem auto;
+        padding: 2rem 1.75rem;
+        border-radius: 1rem;
+    }
+
+    #profile-edit,
+    #mypet-edit {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    .profile-img,
+    .pet-img {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+
+    .profile-img img,
+    .pet-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-content,
+    .mypet-content {
+        width: 100%;
+    }
+
+    .profile-top,
+    .mypet-top {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-top>div,
+    .mypet-top>div {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .profile-top>div img,
+    .mypet-top>div img {
+        display: none;
+    }
+
+    .profile-top h2,
+    .mypet-top h2 {
+        font-size: 1.4rem;
+        color: #000159;
+    }
+
+    .profile-top p,
+    .mypet-top p {
+        display: none;
+    }
+
+    .profile-basic,
+    .mypet-basic {
+        width: 100%;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .profile-basic>div,
+    .mypet-basic>div {
+        grid-template-columns: 4.5rem 1fr;
+        gap: 0.75rem;
+    }
+
+    .profile-basic dt,
+    .mypet-basic dt {
+        font-size: 0.9rem;
+    }
+
+    .profile-basic dd,
+    .mypet-basic dd {
+        width: 100%;
+        min-width: 0;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .btn-list {
+        width: 100%;
+        padding-right: 0;
+        gap: 0.75rem;
+    }
+
+    #profile-edit .btn-list {
+        justify-content: space-between;
+    }
+
+    #mypet-edit .btn-list {
+        justify-content: flex-end;
+    }
+
+    .photo-change-btn,
+    .profile-edit,
+    .mypet-edit {
+        min-width: 6.5rem;
+        height: 2.5rem;
+        padding: 0 1rem;
+        font-size: 0.85rem;
+    }
+
+    .photo-change-btn,
+    .profile-edit {
+        flex: 1;
+    }
+
+    #personal-edit {
+        background-image: none;
+        background-color: #FDF8F4;
+    }
+
+    .personal-top {
+        margin-bottom: 2rem;
+    }
+
+    .personal-top>img {
+        display: none;
+    }
+
+    .personal-top h2 {
+        font-size: 1.4rem;
+        color: #000159;
+    }
+
+    .personal-basic {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .personal-basic>div,
+    .personal-basic>div:last-child {
+        grid-template-columns: 4.5rem minmax(0, 1fr) 5.5rem;
+        gap: 0.5rem;
+    }
+
+    .personal-basic dt {
+        font-size: 0.9rem;
+    }
+
+    .personal-basic dd {
+        width: 100%;
+        min-width: 0;
+        min-height: 2.5rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .personal-basic>div:first-child dd {
+        padding-left: 0.75rem;
+    }
+
+    .personal-change,
+    .personal-auth,
+    .personal-search {
+        height: 2.5rem;
+        padding: 0 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    #personal-edit .btn-list.personal {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .personal-save,
+    .personal-remove {
+        min-width: 6.5rem;
+        height: 2.5rem;
+        padding: 0 1rem;
+        font-size: 0.85rem;
+    }
+}

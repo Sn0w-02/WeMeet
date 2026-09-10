@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(reset.css);
 
 #survey {
     width: 90rem;
@@ -12,13 +11,11 @@
     margin: 0 auto 9.375rem;
 }
 
-
 .survey-main .image {
     position: absolute;
     background: no-repeat;
     z-index: -10;
 }
-
 
 .survey-main .image.bg01 {
     width: 37.5rem;
@@ -61,19 +58,18 @@
     right: 20rem;
 }
 
-.survey-main .maintitle-group {
+.survey-main .main-title-group {
     padding: 10rem 0 4.375rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-
-.survey-main .maintitle-group>div {
+.survey-main .main-title-group>div {
     text-align: center;
 }
 
-.survey-main .maintitle-group .title {
+.survey-main .main-title-group .title {
     font-size: 1.875rem;
     margin-bottom: 1rem;
 }
@@ -92,7 +88,7 @@
     margin-bottom: 1.875rem;
 }
 
-.survey-question .choice {
+.survey-question .answers {
     display: flex;
     gap: 5.938rem;
     font-size: 1.125rem;
@@ -119,9 +115,12 @@
 .survey-recommend {
     background: #FDF8F4;
     padding: 5rem 0;
+    align-items: center;
 }
 
-.survey-recommend .title-group {
+.survey-recommend .recommend-inner {
+    width: 90rem;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -143,86 +142,24 @@
     margin: 1rem 0;
 }
 
-/* 반응형 모바일 */
-@media (max-width: 768px) {
-    #survey {
-        width: 100%;
-    }
+.recommend-box {
+    width: 90rem;
+    margin-top: 4.5rem;
+}
 
-    .survey-main {
-        width: 80%;
-        margin: 50px auto;
-    }
+.recommend-box.result {
+    display: grid;
+    grid-template-columns: 4, 1fr;
+    flex: 1;
+    margin-bottom: 1rem;
+}
 
-    /*  .survey-main .image {
-        display: none;
-    } */
-
-    .survey-main .maintitle-group {
-        padding: 0;
-        margin-bottom: 50px;
-        display: block;
-        justify-content: flex-start;
-    }
-
-    .survey-main .maintitle-group .title {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 16px;
-        color: #000159;
-    }
-
-    .maintitle-group>img {
-        display: none;
-    }
-
-    .survey-main .survey-item {
-        padding: 0;
-        word-break: keep-all;
-    }
-
-    .survey-question {
-        margin-bottom: 40px;
-    }
-
-    .survey-question .question {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 15px;
-    }
-
-    .survey-question .choice {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-        font-size: 14px;
-
-    }
-
-    .survey-main .finish {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .survey-recommend {
-        padding: 50px 0;
-    }
-
-    .title-group .top {
-        margin-bottom: 50px;
-    }
-
-    .title-group .top img {
-        display: none;
-    }
-
-    .title-group .top .title {
-        font-size: 22px;
-        margin: 0;
-    }
-
-    .title-group .title-text {
-        display: none;
-    }
+.list-btn {
+    width: 7.25rem;
+    height: 2.5rem;
+    border: 1px solid #000159;
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000159;
 }

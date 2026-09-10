@@ -6,6 +6,7 @@
     width: 100%;
     background: #fff;
     z-index: 100;
+    border-bottom: 1px solid #ddd;
 }
 
 .header-inner {
@@ -287,34 +288,32 @@
 }
 
 /* reservation purpose */
-.purpose-group {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 1.563rem;
-    padding: 0;
-    border: 0;
-}
-
-.purpose-group legend {
+.purpose-group .purpose-title {
     margin-bottom: 0.938rem;
     font-size: 0.938rem;
     font-weight: 600;
 }
 
-.purpose-group label {
-    display: inline-flex;
+.purpose-group .purpose-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 0.313rem;
     margin-right: 0.938rem;
     margin-bottom: 0.625rem;
     font-size: 0.875rem;
-    cursor: pointer;
 }
 
-.purpose-group input[type="radio"] {
-    margin: 0;
-    accent-color: #000159;
-    cursor: pointer;
+.purpose-content .purpose-btn {
+    border: 0.063rem solid #b5b5b5;
+    border-radius: 0.313rem;
+    padding: 0.75rem;
+}
+
+.purpose-content .purpose-btn.active {
+    border-color: #000159;
+    background: #000159;
+    color: #fff;
 }
 
 /* reservation warning */

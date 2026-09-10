@@ -1,11 +1,11 @@
 @charset "utf-8";
-@import url(reset.css);
 
 #animal-detail {
     width: 90rem;
     margin: 6.25rem auto;
 }
 
+/* =============== 프로필 =============== */
 #animal-profile {
     display: flex;
     justify-content: center;
@@ -14,16 +14,18 @@
     padding: 7.188rem 0;
     border: 0.063rem solid #2D2D2D;
     border-radius: 1.25rem;
-    background-image: url(../img/animal-detail/detail-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../img/animal-detail/detail-bg.png) no-repeat center/cover;
     margin-bottom: 4.688rem;
 }
 
-#animal-profile>img {
+#animal-profile .web {
     width: 29.25rem;
     height: 100%;
     border-radius: 50%;
+}
+
+.profile-detail .mobile {
+    display: none;
 }
 
 .profile-detail .title {
@@ -59,6 +61,7 @@
     margin-right: 2rem;
 }
 
+/*  ================= 사랑이 특성 ============= */
 #animal-trait {
     position: relative;
     display: flex;
@@ -68,7 +71,7 @@
     border: 0.063rem solid #2D2D2D;
     border-radius: 1.25rem;
     padding: 4.375rem 7.813rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4.688rem;
 }
 
 .like .like-title,
@@ -138,6 +141,7 @@
     content: '';
 }
 
+/* ============= 기본정보 ============ */
 #detail-info {
     display: flex;
     justify-content: space-between;
@@ -146,8 +150,8 @@
     margin-bottom: 5rem;
 }
 
-#detail-info .animal-info,
-#detail-info .animal-care {
+.animal-info,
+.animal-care {
     width: 43.75rem;
     height: 48.438rem;
     border: 0.063rem solid #000159;
@@ -155,38 +159,38 @@
     padding: 3.75rem 3.125rem 0;
 }
 
-#detail-info .animal-info h2,
-#detail-info .animal-care h2 {
+.animal-info h2,
+.animal-care h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2.875rem;
 }
 
-#detail-info .animal-info h4,
-#detail-info .animal-care h4 {
+.animal-info h4,
+.animal-care h4 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-#detail-info .animal-info>div p,
-#detail-info .animal-care p {
+.animal-info>div p,
+.animal-care p {
     font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 3rem;
+    word-break: keep-all;
 }
 
 .animal-info .info-flex,
-.animal-care .care-name {
+.animal-care .care-list {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
 #detail-info .animal-info {
-    background-image: url(../img/animal-detail/dog_character\ 1.png);
-    background-repeat: no-repeat;
-    background-size: auto 15.625rem;
+    background: url(../img/animal-detail/animal-info-bg.png) no-repeat;
+    background-size: auto 37.5rem;
     background-position: 100% 100%;
 }
 
@@ -194,18 +198,26 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.625rem;
+    color: #000159;
 }
 
-#detail-info .animal-info .info-flex h4 {
+.animal-info .info-flex > .info-class {
     margin-bottom: 3rem;
 }
 
-.animal-care .care-name img {
+.animal-care {
+    background: url(../img/animal-detail/animal-care-bg.png) no-repeat;
+    background-position: 90% 10%;
+    background-size: 11.25rem;
+}
+
+.animal-care .care-list img {
     width: 2rem;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
+/* =============== 임보기록 =============== */
 #animal-record-bg {
     background: #FDF8F4;
 }
@@ -242,9 +254,7 @@
 
 .animal-record table {
     width: 100%;
-    /* border-collapse: collapse; */
     border: 0.063rem solid #0001598a;
-    border-radius: 1.25rem;
     border-spacing: 0;
     /* overflow: hidden; */
     margin-bottom: 2.5rem;
@@ -274,10 +284,13 @@
     gap: 2rem;
 }
 
-.pagination button {
+.pagination .back,
+.pagination .next {
     font-size: 1.5rem;
+    color: #000159;
 }
 
+/* ========== 체크사항============ */
 #check {
     display: flex;
     justify-content: space-between;
@@ -321,3 +334,4 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+

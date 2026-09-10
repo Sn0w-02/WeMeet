@@ -5,16 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 동물상세</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/animal-detail.css">
+    <link rel="stylesheet" href="../css/animal-detail-m.css">
+    <script src="../js/common.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="process.html">입양절차</a></li>
+                            <li><a href="review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.html">국가지원</a></li>
+                            <li><a href="benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="login.html" class="login-link">로그인</a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="../img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
     <div id="animal-detail">
+
+        <!--================ 프로필 ================-->
         <section id="animal-profile">
-            <img src="../img/animal-detail/love.png" alt="">
+            <img class="web" src="../img/animal-detail/love.png" alt="">
             <div class="profile-detail">
-                <h1 class="title">“사람을 좋아하지만 <br>
-                    천천히 마음을 여는 다정한 아이에요.”</h1>
+                <div class="detail-top">
+                    <img class="mobile" src="../img/animal-detail/love.png" alt="">
+                    <h1 class="title">“사람을 좋아하지만 <br>
+                        천천히 마음을 여는 다정한 아이에요.”</h1>
+                </div>
                 <div class="content">
                     <div class="left-box">
                         <div>
@@ -63,6 +122,8 @@
                 </div>
             </div>
         </section>
+
+        <!--===============  사랑이 특성 ==============-->
         <section id="animal-trait">
             <div class="like">
                 <div class="like-title">
@@ -117,19 +178,25 @@
                 </div>
             </div>
         </section>
+
+        <!--============== 기본정보 ====================-->
         <section id="detail-info">
             <div class="animal-info">
                 <p class="info-sub-title">기본정보</p>
                 <h2>포메라니안</h2>
                 <div>
-                    <h4 class="info-class">성격</h4>
-                    <p class="info-description">
-                        애교 많음, 활발함, 영리함, 호기심 많음, 보호자와 잘 지냄, <br>경계심/예민할 수 있음.
-                    </p>
-                    <h4 class="info-class">색상</h4>
-                    <p class="info-description">
-                        화이트, 세이지, 블랙, 브라운, 블루, 세이블, 크림, 믹스 등
-                    </p>
+                    <div class="gap">
+                        <h4 class="info-class">성격</h4>
+                        <p class="info-description">
+                            애교 많음, 활발함, 영리함, 호기심 많음, 보호자와 잘 지냄, 경계심이 강해 예민할 수 있음.
+                        </p>
+                    </div>
+                    <div class="gap">
+                        <h4 class="info-class">색상</h4>
+                        <p class="info-description">
+                            화이트, 세이지, 블랙, 브라운, 블루, 세이블, 크림, 믹스 등
+                        </p>
+                    </div>
                     <div class="info-flex">
                         <h4 class="info-class">수명</h4>
                         <p class="info-description">12 ~ 16년</p>
@@ -150,27 +217,27 @@
             </div>
             <div class="animal-care">
                 <h2>"사랑이" <br>이렇게 돌봐주세요</h2>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/walk 1.png" alt="">
                     <h4>충분한 산책</h4>
                 </div>
                 <p class="howto">하루 한 번 이상 산책과 놀이가 필요해요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/brushing 1.png" alt="">
                     <h4>꾸준한 빗질</h4>
                 </div>
                 <p class="howto">털 빠짐이 많아 주 3~4회 이상 빗질해 주세요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/feeding 1.png" alt="">
                     <h4>식사량 관리</h4>
                 </div>
                 <p class="howto"> 먹는 것을 좋아해 하루 두 번 급여량을 지켜주세요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/training 1.png" alt="">
                     <h4>기본 훈련</h4>
                 </div>
                 <p class="howto">지금부터 기본 예절 교육을 시작해 주세요.</p>
-                <div class="care-name">
+                <div class="care-list">
                     <img src="../img/animal-detail/together_time 1.png" alt="">
                     <h4>함께하는 시간</h4>
                 </div>
@@ -178,6 +245,8 @@
             </div>
         </section>
     </div>
+
+    <!--============== 임보기록 =================-->
     <section id="animal-record-bg">
         <div class="animal-record">
             <div class="record-title">
@@ -189,88 +258,90 @@
                 <tr>
                     <th>날짜</th>
                     <th>컨디션</th>
-                    <th>식사</th>
-                    <th>배변습관</th>
+                    <th class="hide">식사</th>
+                    <th class="hide">배변습관</th>
                     <th>특이사항</th>
                 </tr>
                 <tr>
                     <td>26.08.09</td>
                     <td><img src="../img/animal-detail/happy 2.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>산책을 1시간이나 했어요</td>
                 </tr>
                 <tr>
                     <td>26.08.08</td>
                     <td><img src="../img/animal-detail/smile 1.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>처음 보는 사람인데 안 도망갔어요</td>
                 </tr>
                 <tr>
                     <td>26.08.07</td>
                     <td><img src="../img/animal-detail/smile 1.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>오늘은 공이랑 많이 놀았어요</td>
                 </tr>
                 <tr>
                     <td>26.08.06</td>
                     <td><img src="../img/animal-detail/arrogant 2.png" alt=""></td>
-                    <td>반정도 남겼어요</td>
-                    <td>정상</td>
+                    <td class="hide">반정도 남겼어요</td>
+                    <td class="hide">정상</td>
                     <td>낮잠을 많이 잤어요</td>
                 </tr>
                 <tr>
                     <td>26.08.05</td>
                     <td><img src="../img/animal-detail/smile 1.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>산책하고 목욕도 하고 행복해 했어요</td>
                 </tr>
                 <tr>
                     <td>26.08.04</td>
                     <td><img src="../img/animal-detail/nomal.png" alt=""></td>
-                    <td>조금 남겼어요</td>
-                    <td>정상</td>
+                    <td class="hide">조금 남겼어요</td>
+                    <td class="hide">정상</td>
                     <td>비가 와서 실내에서만 놀았어요</td>
                 </tr>
                 <tr>
                     <td>26.08.03</td>
                     <td><img src="../img/animal-detail/smile 1.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>낯선 소리에 놀라서 조금 짖었어요</td>
                 </tr>
                 <tr>
                     <td>26.08.02</td>
                     <td><img src="../img/animal-detail/happy 2.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>대소변을 아주 잘 가렸어요</td>
                 </tr>
                 <tr>
                     <td>26.08.01</td>
                     <td><img src="../img/animal-detail/arrogant 2.png" alt=""></td>
-                    <td>조금 남겼어요</td>
-                    <td>정상</td>
+                    <td class="hide">조금 남겼어요</td>
+                    <td class="hide">정상</td>
                     <td>오후에 컨디션이 조금 떨어졌어요</td>
                 </tr>
                 <tr>
                     <td>26.07.31</td>
                     <td><img src="../img/animal-detail/happy 2.png" alt=""></td>
-                    <td>잘 먹었어요</td>
-                    <td>정상</td>
+                    <td class="hide">잘 먹었어요</td>
+                    <td class="hide">정상</td>
                     <td>새 장난감 때문인지 기분이 좋았어요</td>
                 </tr>
             </table>
             <div class="pagination">
-                <button type="button" class="prev">이전</button>
+                <button type="button" class="back">BACK</button>
                 <button type="button" class="page-number"></button>
-                <button type="button" class="next">다음</button>
+                <button type="button" class="next">NEXT</button>
             </div>
         </div>
     </section>
+
+    <!--=============== 체크사항 ==================-->
     <section id="check">
         <div class="check-list">
             <h1>입양 전 체크해야 할 것!</h1>
@@ -297,7 +368,105 @@
         </div>
         <img src="../img/animal-detail/checkhouse.png" alt="">
     </section>
+    
+     <!--============= fixed ===========-->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
+    </section>
 
+    <!--============ 예약하기 모달 ================-->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <fieldset class="purpose-group">
+                    <legend>방문목적</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="사전만남">사전만남
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="시설방문">시설방문
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="입양신청">입양신청
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
+                    </label>
+                </fieldset>
+                <!--=========== 미작성 경고 ============-->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
+        </div>
+    </div>
+    <!--=========== 예약완료 모달 ===============-->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <!-- ========= footer =========== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="../img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="../img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

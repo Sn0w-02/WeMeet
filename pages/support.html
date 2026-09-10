@@ -1,14 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeMeet || 국가지원</title>
+    <title>support</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/support.css">
 </head>
 
-<body>
+<body> 
+    <div class="container">
+        <section id="support-info">
+            <!-- 국가지원 제목칸 -->
+            <div class="support-title">
+                <h2>입양시 국가지원</h2>
+                <p class="support-subtitle">유기동물 입양시 지자체에서 지원하는 안내입니다.</p>
+            </div>
 
+            <div class="support-source">출처: 정부24</div>
+
+            <!-- 국가지원 박스 -->
+            <div class="support-infoBox">
+                <div class="support-infoCard">
+                    <div class="info-text">
+                        <div class="info-title">지원형태</div>
+                        <div class="info-content">현금</div>
+                    </div>
+                </div>
+
+                <div class="support-infoCard">
+                    <div class="info-text" onclick="toggleAccordion(this)">
+                        <div class="info-title">지원내용</div>
+                        <div class="arrow-icon">∨</div>
+                    </div>
+                    <div class="info-detail">
+                        유실·유기동물 입양(분양) 시 소요되는 부담비용 지원
+                        <br>-지원범위 : 질병 진단비, 치료비, 예방접종, 중성화수술비, 내장형동물등록비, 미용비
+                        <br>-지원비율 : 보조 60%(국고 20%, 지방비 30%), 자부담 40%
+                        <br>-지원한도액 기준 및 범위 : 입양 1마리당 최대 25만원 이내(국비 7.5만원, 지방비 7.5만원, 자부담 10만원)
+                        <br>*지자체별로 자부담분을 지방비로 전액 지원하기도 하므로 자세한 사항은 해당 동물보호센터 관할 지자체에 문의 필요
+                        <br>=>(예시) 치료비 등 소요비용이 25만원 이상일 경우 : 15만원 지원
+                        <br>치료비 등 소요비용이 25만원 미만일 경우 : 소요비용의 60% 지원
+                    </div>
+                </div>
+
+                <div class="support-infoCard">
+                    <div class="info-text" onclick="toggleAccordion(this)">
+                        <div class="info-title">지원대상</div>
+                        <div class="arrow-icon">∨</div>
+                    </div>
+                    <div class="info-detail">
+                        지자체에서 지정한 동물보호센터에서 유실·유기동물을 반려의 목적으로 입양하려는 사람
+                    </div>
+                </div>
+
+                <div class="support-infoCard">
+                    <div class="info-text" onclick="toggleAccordion(this)">
+                        <div class="info-title">절차방법</div>
+                        <div class="arrow-icon">∨</div>
+                    </div>
+                    <div class="info-detail">
+                        유실․유기동물 입양(분양)한 자는 입양(분양)확인서 및 청구서를 지자체에 제출
+                        <br>-입양(분양) 시 진단비, 치료비, 예방접종, 중성화 수술, 내장형 동물등록비, 미용비 중 해당 부분만 지급(영수증 등 증거서류 첨부)
+                        <br>-지급기간: 입양 후 6개월 이내에 신청* 운영 및 집행 시기는 시·군·구청의 여건에 따라 조정될 수 있으므로 해당 시,군,구청에 문의
+                    </div>
+                </div>
+
+                <div class="support-infoCard">
+                    <div class="info-text" onclick="toggleAccordion(this)">
+                        <div class="info-title">신청기한</div>
+                        <div class="arrow-icon">∨</div>
+                    </div>
+                    <div class="info-detail">
+                        운영 및 집행시기는 시·군·구청의 여건에 따라 조정될 수 있음
+                    </div>
+                </div>
+
+                <div class="support-infoCard">
+                    <div class="info-text" onclick="toggleAccordion(this)">
+                        <div class="info-title">구비서류</div>
+                        <div class="arrow-icon">∨</div>
+                    </div>
+                    <div class="info-detail">
+                        <민원인이 제출해야 하는 서류>
+                            <br>①입양비지원신청서 ②분양확인서  ③진료비 등 영수증  ④입금통장사본 ⑤신분증 사본 ⑥동물등록증
+                            <br>⇒입양비 지원 신청자와 입양자가 동일인이어야 함(분양확인서, 동물등록, 통장명의자 등)<br>ㅇ신청서류 제출방법 : 동물보호센터 방문 접수, 동물보호단체가 있는 해당 지자체의 담당부서 방문접수 또는 FAX, 담당자 이메일
+                    </div>
+                </div>
+
+                <div class="support-infoCard">
+                    <div class="info-text" onclick="toggleAccordion(this)">
+                        <div class="info-title">접수기관</div>
+                        <div class="arrow-icon">∨</div>
+                    </div>
+                    <div class="info-detail">
+                        동물복지정책과 / 연락처 044-201-2619
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 자주 묻는 질문 -->
+        <section id="support-question">
+            <div class="question-title">
+                <h2>자주 묻는 질문</h2>
+            </div>
+
+            <div class="question-container">
+                <div class="question-box">
+                    <h3>Q1 입양신청을 어떻게 진행되나요?</h3>
+                    <p class="question">플랫폼을 통해 마음에 드는 아이를 고르거나 '찰떡궁합 친구' 큐레이션을 거친 뒤,
+                        <br>입양 신청서를 작성해 제출하시면 보호소(또는 단체)의 심사를 거쳐 개별 안내해 드립니다.
+                    </p>
+                </div>
+                <div class="question-box">
+                    <h3>Q2 임시보호(임보)는 경험이 있으면 입양 심사에 도움이 되냐요</h3>
+                    <p class="question">네, 매우 큰 도움이 됩니다.
+                        <br>과거 성실하게 임보를 진행한 이력이 있다면 양육 신뢰도와 가산점이 부여되어 입양 심사 시
+                        <br>긍정적인 평가를 받을 수 있습니다.
+                    </p>
+                </div>
+                <div class="question-box">
+                    <h3>Q3 '설문 다시하기'를하면 추천되는 친구가 달라지나요?</h3>
+                    <p class="question">네! 거주 형태, 양육 경험, 선호 조건 등의 설문 내용을 변경하시면
+                        <br>이용자의 라이프스타일에 맞춰 큐레이션된 새로운 찰떡궁합 친구들을 다시 추천받으실 수 있습니다.
+                    </p>
+                </div>
+                <div class="question-box">
+                    <h3>Q4 입양 전후로 지원받을 수 있는 혜택이나 교육이 있나요?</h3>
+                    <p class="question">플랫폼 내 '혜택 및 제휴' 메뉴를 통해 연계된 동물병원 할인, 반려동물 용품 제휴 혜택,
+                        <br>초보 양육자를 위한 가이드와 전문가 상담 정보를 이용하실 수 있습니다.
+                    </p>
+                </div>
+                <div class="question-box">
+                    <h3>Q5 임시보호나 입양을 취소하거나 변경할 수 있나요?</h3>
+                    <p class="question">심사 진행 중에는 마이페이지의 '나의 신청 내역'에서 상태를 확인하실 수 있으며,
+                        <br>변경이나 취소 관련 사항은 1:1 문의나 고객센터를 통해 신속하게 조율하실 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/support.js"></script>
 </body>
 
 </html>

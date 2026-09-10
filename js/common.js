@@ -70,6 +70,7 @@ const reservationBtn = document.querySelector('.reservation-btn'),
     completeModal = document.querySelector('.reservation-complete-modal'),
     confirmBtn = document.querySelector('.reservation-confirm'),
     visitDate = document.querySelector('#visit-data');
+const purposeBtns = document.querySelectorAll('.purpose-btn');
 
 //방문일자 이전 날짜 선택 방지
 const today = new Date(),
@@ -81,6 +82,13 @@ visitDate.min = `${year}-${month}-${day}`;
 
 //예약하기 버튼
 reservationBtn.addEventListener('click', () => {
+    reservationForm.reset();
+    purposeBtns.forEach((btn) => {
+        btn.classList.remove('active');
+    });
+
+    reservationWarning.classList.remove('active');
+
     reservationModal.classList.add('active');
 })
 
@@ -96,6 +104,15 @@ reservationModal.addEventListener('click', (event) => {
     }
 })
 
+purposeBtns.forEach((purBtn) => {
+    purBtn.addEventListener('click', () => {
+        purposeBtns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+        purBtn.classList.add('active');
+    });
+});
+
 //예약 신청
 reservationForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -104,7 +121,7 @@ reservationForm.addEventListener('submit', (event) => {
     const userphone = document.querySelector('#user-phone').value.trim();
     const animalBreed = document.querySelector('#animal-breed').value.trim();
     const visitDateValue = visitDate.value;
-    const purpose = document.querySelector('input[name="purpose"]:checked');
+    const purposeBtn = document.querySelector('.purpose-btn.active');
 
     //미작성 항목 확인
     if (
@@ -112,7 +129,7 @@ reservationForm.addEventListener('submit', (event) => {
         userphone === '' ||
         animalBreed === '' ||
         visitDateValue === '' ||
-        !purpose
+        !purposeBtn
     ) {
         reservationWarning.classList.add('active');
         return;
