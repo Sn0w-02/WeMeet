@@ -1,0 +1,547 @@
+@charset "utf-8";
+
+.mypage-temporary {
+    width: 100%;
+    padding: 6rem 0 10rem;
+}
+
+.temporary-inner {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.temporary-head {
+    margin-bottom: 3rem;
+}
+
+.temporary-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.temporary-title h2 {
+    font-size: 2.225rem;
+    font-weight: 700;
+}
+
+.temporary-title img {
+    width: 2.5rem;
+    object-fit: contain;
+}
+
+.temporary-summary {
+    width: 90%;
+    margin: 0 auto 3rem;
+}
+
+.summary-greeting {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.summary-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem 3rem;
+    border: 1px solid #000159;
+    border-radius: 1.5rem;
+    background: #fff;
+}
+
+.summary-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.summary-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 3.75rem;
+    background: #bbb;
+    transform: translateY(-50%);
+}
+
+.summary-item img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+}
+
+.summary-info h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.summary-info span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.temporary-content {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.temporary-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.history,
+.point {
+    display: none;
+}
+
+.history.active,
+.point.active {
+    display: block;
+}
+
+.history,
+.point {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 1.25rem 0 1.25rem 1.25rem;
+    border: 1px solid #000159;
+    background: #fff;
+}
+
+.current-pet {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-pet {
+    padding: 2rem 3rem;
+}
+
+.current-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.history-title {
+    margin-bottom: 2rem;
+}
+
+.current-title h2,
+.history-title h2,
+.point-history h2,
+.point-exchange h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.diary-btn {
+    width: 7.5rem;
+    height: 2.75rem;
+    border: 1px solid #000159;
+    border-radius: 0.625rem;
+    background: #fff;
+    color: #000159;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.current-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.current-content>img {
+    width: 14rem;
+    height: 14rem;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    background: #f0f0f0;
+    object-fit: cover;
+}
+
+.current-info {
+    flex: 1;
+}
+
+.current-info dl>div {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.8rem 0;
+}
+
+.current-info dt {
+    width: 7rem;
+    flex-shrink: 0;
+    font-weight: 500;
+}
+
+.current-info dd {
+    flex: 1;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.history-list {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.history-card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    background: #fff;
+}
+
+.history-card>img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #f0f0f0;
+    object-fit: cover;
+}
+
+.history-info {
+    padding: 1rem;
+}
+
+.history-info strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.125rem;
+}
+
+.history-info span {
+    display: block;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.point-history {
+    padding: 3rem 4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.point-exchange {
+    padding: 3rem 4rem;
+}
+
+.mypage-side {
+    width: 11rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border: 1px solid #000159;
+    border-left: 0;
+    border-radius: 0 1.25rem 1.25rem 0;
+    background: #fff;
+}
+
+.side-profile {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.side-profile img {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.side-profile strong {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    color: #000159;
+}
+
+.side-profile p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.side-tab {
+    width: 100%;
+}
+
+.side-tab-btn {
+    width: 100%;
+    height: 3.75rem;
+    border: 0;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.side-tab-btn.active {
+    background: #000159;
+    color: #fff;
+    font-weight: 700;
+}
+
+.point-history {
+    padding: 3rem 4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.point-history>h2,
+.point-exchange>h2 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.point-filter {
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.point-category {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.point-category h3 {
+    width: 7rem;
+    flex-shrink: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.category-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.category-list label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.category-list input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #000159;
+}
+
+.point-period {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.period-title {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.point-search-btn {
+    width: 5.5rem;
+    height: 2.5rem;
+    border: 0;
+    background: #000159;
+    color: #fff;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.period-date {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.period-date input {
+    width: 10rem;
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 0.875rem;
+}
+
+.point-result-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.current-point {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-point span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.current-point strong {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.point-result-top>p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.point-table {
+    width: 100%;
+}
+
+.point-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.point-table th {
+    padding: 1rem;
+    background: #E6BB97;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.point-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.point-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.point-exchange {
+    padding: 3rem 4rem;
+}
+
+.exchange-content {
+    width: 100%;
+}
+
+.exchange-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.exchange-current strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.exchange-current p {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.exchange-arrow {
+    font-size: 1.5rem;
+}
+
+.exchange-input {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.exchange-input input {
+    width: 11rem;
+    height: 2.75rem;
+    padding: 0 0.75rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 0.25rem;
+}
+
+.exchange-input input::placeholder {
+    color: #aaa;
+}
+
+.exchange-btn {
+    width: 6rem;
+    height: 2.75rem;
+    border: 0;
+    background: #000159;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.exchange-list {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10rem;
+    gap: 5rem;
+}
+
+
+.exchange-item button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.exchange-item img {
+    max-width: 5rem;
+    max-height: 2rem;
+    object-fit: contain;
+}
+
+.exchange-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
