@@ -13,6 +13,56 @@
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="pages/facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/process.html">입양절차</a></li>
+                            <li><a href="pages/review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/support.html">국가지원</a></li>
+                            <li><a href="pages/benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="pages/login.html" class="login-link">로그인</a>
+
+                <a href="pages/mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="pages/mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
     <section id="benefit-visual">
         <div class="visual-inner">
             <div class="visual-text">
@@ -33,7 +83,8 @@
                 <img src="../img/benefit/sale/예방접종 1.png" alt="">
                 <div class="icon-text">
                     <span>예방접종</span>
-                    <div class="description-tooltip">필수 예방접종 할인과 과잉 진료 없는 제휴 동물병원 진료비 부담 완화 지원
+                    <div class="description-tooltip">필수 예방접종 비용을 합리적인 할인가로 지원하고, 신뢰도 높은 제휴 동물병원을 통해<br>
+                        투명하고 믿을 수 있는 진료 서비스를 제공해 드립니다.
                     </div>
                     <div class="mobile-only">필수 예방접종 · 기본검진 지원</div>
                 </div>
@@ -42,7 +93,8 @@
                 <img src="../img/benefit/sale/병원 1.png" alt="">
                 <div class="icon-text">
                     <span>진료비</span>
-                    <div class="description-tooltip">입양 초기 필수적인 예방접종과 종합 건강검진 비용 할인부터, 제휴 동물병원 이용 시 발생하는 각종 진료비 부담을 덜어주는
+                    <div class="description-tooltip">입양 초기 필수적인 예방접종과 종합 건강검진 비용 할인부터, <br>제휴 동물병원 이용 시 발생하는 각종 진료비 부담을
+                        덜어주는
                         실질적인 의료 지원 혜택을 제공합니다.</div>
                     <div class="mobile-only">
                         진료 · 검진 비용 할인
@@ -53,8 +105,8 @@
                 <img src="../img/benefit/sale/판매용품icon.png" alt="">
                 <div class="icon-text">
                     <span>반려용품</span>
-                    <div class="description-tooltip">사료, 간식, 장난감 등 아이들에게 꼭 필요한 필수 반려용품을 제휴 할인가로 합리적으로 구매할 수 있으며, 입양 초기
-                        준비 비용 부담을 줄여주는 다양한 쇼핑 혜택을 제공합니다.</div>
+                    <div class="description-tooltip">사료, 간식, 장난감 등 아이들에게 꼭 필요한 필수 반려용품을 제휴 할인가로 합리적으로 <br>구매할 수 있으며, 입양
+                        초기 준비 비용 부담을 줄여주는 다양한 쇼핑 혜택을 제공합니다.</div>
                     <div class="mobile-only">
                         사료 · 생활용품 구매 혜택
                     </div>
@@ -64,7 +116,8 @@
                 <img src="../img/benefit/sale/미용 1.png" alt="">
                 <div class="icon-text">
                     <span>미용</span>
-                    <div class="description-tooltip">스트레스를 최소화하는 안전하고 전문적인 펫미용 서비스를 제휴 할인가로 이용할 수 있으며, 아이들의 위생과 청결을 위한
+                    <div class="description-tooltip">스트레스를 최소화하는 안전하고 전문적인 펫미용 서비스를 제휴 할인가로 <br>이용할 수 있으며,아이들의 위생과 청결을
+                        위한
                         맞춤형 그루밍 케어 혜택을 제공합니다.</div>
                     <div class="mobile-only">
                         목욕 · 미용 제휴 할인
@@ -76,7 +129,7 @@
                 <img src="../img/benefit/sale/호텔 1.png" alt="">
                 <div class="icon-text">
                     <span>호텔</span>
-                    <div class="description-tooltip">부득이한 외출 시 아이들이 안전하게 머물 수 있는 전용 펫호텔 서비스를 제휴 할인가로 제공합니다.
+                    <div class="description-tooltip">부득이한 외출 시 아이들이 안전하게 머물 수 있는 <br>전용 펫호텔 서비스를 제휴 할인가로 제공합니다.
                     </div>
                     <div class="mobile-only">
                         펫호텔 · 데이케어 할인
@@ -195,6 +248,108 @@
             </div>
         </div>
     </section>
+
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
+    </section>
+
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <fieldset class="purpose-group">
+                    <legend>방문목적</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="사전만남">사전만남
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="시설방문">시설방문
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="입양신청">입양신청
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
+                    </label>
+                </fieldset>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="./index.html" class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="../img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="../img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 
