@@ -50,7 +50,7 @@ html {
     height: 26.875rem;
 
     background:
-        url("../img/facility/강아지\ 2.png") center / cover no-repeat;
+        url("../img/facility/facility-hero-bg.png") center / cover no-repeat;
 }
 
 #facility-hero::before {
@@ -637,9 +637,7 @@ html {
         height: 64px;
     }
 
-    .gnb {
-        display: none;
-    }
+
 
     .logo {
         font-size: 1.563rem;
@@ -866,18 +864,21 @@ ADOPTOPN-SCHOOL
     /* ====================================
         PROMISE
     ==================================== */
+    #wemeet-promise {
+        background-color: #fbf7f2;
+
+        padding-bottom: 35px;
+    }
 
     .promise-box {
-        padding: 42px 22px;
+
+        font-size: 12px;
+        word-break: keep-all;
+
     }
 
-    .promise-main {
-        font-size: 1rem;
-    }
 
-    .promise-description {
-        font-size: 15px;
-    }
+
 
 
 }
