@@ -84,6 +84,12 @@
     background-color: white;
     color: #2d2d2d;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.pet-list-header a:hover {
+    background-color: #000159;
+    color: #fff;
 }
 
 /* 슬라이드 css */
@@ -379,6 +385,7 @@
         grid-template-columns: 1fr auto;
         align-items: center;
         gap: 1rem;
+        margin-bottom: 1.875rem;
     }
 
     .pet-list-header h3 {
