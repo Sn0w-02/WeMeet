@@ -25,7 +25,6 @@ body {
 }
 
 .main-logo {
-    margin-top: 9.375rem;
     margin-bottom: 3.125rem;
 }
 
@@ -173,7 +172,7 @@ input:focus {
 .social-badge {
     width: 1.563rem;
     height: 1.563rem;
-    border-radius: 25px;
+    border-radius: 1.563rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +188,7 @@ input:focus {
     color: #FFEB00;
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 768px) {
 
     body {
         background-color: #FDF8F4;
@@ -197,14 +196,14 @@ input:focus {
     }
 
     #login {
-        padding: 16px 16px 30px 16px;
+        padding: 1rem 1rem 1.875rem 1rem;
         margin: 0 auto;
     }
 
     .main-logo {
-        font-size: 28px;
-        margin-top: 80px;
-        margin-bottom: 10px;
+        font-size: 1.75rem;
+        margin-top: 5rem;
+        margin-bottom: 0.625rem;
     }
 
     .main-logo img {
@@ -213,23 +212,23 @@ input:focus {
 
     input[type="text"],
     input[type="password"] {
-        height: 46px;
-        font-size: 14px;
-        padding: 0 16px;
+        height: 2.875rem;
+        font-size: 0.875rem;
+        padding: 0 1rem;
     }
 
     .btn-login {
-        width: 100px;
-        height: 42px;
-        font-size: 14px;
+        width: 6.25rem;
+        height: 2.625rem;
+        font-size: 0.875rem;
     }
 
     .btn-social {
-        height: 46px;
-        font-size: 14px;
+        height: 2.875rem;
+        font-size: 0.875rem;
     }
 
     .login-action-row {
-        margin: 12px 0 18px 0;
+        margin: 0.75rem 0 1.125rem 0;
     }
 }
