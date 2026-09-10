@@ -458,9 +458,6 @@
     }
 
     /* 모바일에서는 PC 메뉴 숨김 */
-    /*    .gnb {
-        display: none;
-    } */
 
     .profile-image {
         width: 1.375rem;
