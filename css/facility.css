@@ -701,7 +701,8 @@ html {
     }
 
     .value-description {
-        font-size: 0.875rem;
+        font-size: 1rem;
+        word-break: keep-all;
     }
 
 
@@ -795,6 +796,10 @@ html {
     /* ================================================
 ADOPTOPN-SCHOOL
 ================================================== */
+    #adoption-school {
+        padding: 0;
+    }
+
     .school-wrap {
         display: none;
     }
@@ -802,6 +807,7 @@ ADOPTOPN-SCHOOL
     .school-moblie {
         display: block;
         padding: 1.875rem;
+        align-items: center;
 
     }
 
@@ -813,7 +819,7 @@ ADOPTOPN-SCHOOL
         display: flex;
         gap: 1.875rem;
         margin-bottom: 1.875rem;
-        justify-content: space-between;
+
 
     }
 
@@ -831,6 +837,9 @@ ADOPTOPN-SCHOOL
 
     }
 
+    .section-title {
+        font-size: 24px;
+    }
 
 
 
