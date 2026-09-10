@@ -36,5 +36,10 @@ finish.addEventListener('click', () => {
 fetch("../js/animal.json") //json파일 가져오기
     .then(response => response.json()) //javascript에서 쓸 수 있게 변환
     .then(animalData => { //animalData 변수에 저장
-        console.log(animalData);
+        //console.log(animalData);
+        const result = animalData.filter(animal => {
+            return animal.experiencelevel === experiencelevel.value;
+        })
+        console.log(result)
     })
+
