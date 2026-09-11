@@ -7,9 +7,9 @@ body {
 /* section benefit-visual */
 #benefit-visual {
     width: 100%;
-    height: 720px;
+    height: 45rem;
     margin: 0 auto;
-    background-image: url(../img/benefit/benefit-background-pattern.png), url(../img/benefit-background.png);
+    background-image: url(../img/benefit/benefit-background-pattern.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -17,17 +17,18 @@ body {
 }
 
 .visual-inner {
-    max-width: 1920px;
+    max-width: 120rem;
     height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 5rem;
+    word-break: keep-all;
 }
 
 .visual-text h2 {
-    font-size: 42px;
+    font-size: 2.5rem;
     line-height: 1.5;
     color: #000159;
     text-align: left;
@@ -40,11 +41,10 @@ body {
 
 /* section benefit-sale */
 #benefit-sale {
-    max-width: 1440px;
-    height: 600px;
+    max-width: 90rem;
+    height: 37.5rem;
     margin: 0 auto;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,39 +52,39 @@ body {
 
 #benefit-sale h3 {
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2.375rem;
     color: #000159;
-    margin-bottom: 57px;
+    margin-bottom: 3.563rem;
 }
 
 #benefit-sale span {
-    margin-top: 17px;
+    margin-top: 1.063rem;
 }
 
 .sale-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 44px;
-    padding-left: 50px;
+    gap: 2.75rem;
+    padding-left: 3.125rem;
 }
 
 .icon-card {
     position: relative;
-    width: 252px;
-    height: 330px;
+    width: 15.75rem;
+    height: 20.625rem;
     display: flex;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-card:hover {
-    border: 2px solid #FFF4E6;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 0.125rem solid #FFF4E6;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     transform: translateY(-4px);
 }
 
@@ -94,38 +94,37 @@ body {
 
 .description-tooltip {
     position: absolute;
-    bottom: -100px;
+    bottom: -6.25rem;
     left: 50%;
     transform: translateX(-50%) scale(0.9);
     background: #333333;
     color: #ffffff;
-    padding: 6px 10px;
-    font-size: 18px;
-    border-radius: 6px;
+    padding: 0.375rem 0.625rem;
+    font-size: 1.125rem;
+    border-radius: 0.375rem;
     white-space: nowrap;
     pointer-events: none;
     line-height: 1.5;
-
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
     z-index: 10;
 }
 
 .description-tooltip::after {
     content: '';
     position: absolute;
-    top: -4px;
+    top: -0.25rem;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
-    width: 8px;
-    height: 8px;
+    width: 0.5rem;
+    height: 0.5rem;
     background: #333333;
 }
 
 .icon-card:hover .icon-box {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.313rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .icon-card:hover .description-tooltip {
@@ -136,36 +135,35 @@ body {
 /* section benefit-gift */
 #benefit-gift {
     width: 100%;
-    height: 600px;
+    height: 37.5rem;
     margin: 0 auto;
     text-align: center;
     background-color: #FFF4E6;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .gift-inner {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px
+    padding: 0 1.25rem
 }
 
 .gift-header {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 #benefit-gift h3 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     color: #000159;
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
 #benefit-gift p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #605959;
 }
 
@@ -174,33 +172,32 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .gift-grid {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .gift-card {
-    width: 213px;
-    height: 248px;
+    width: 13.313rem;
+    height: 15.5rem;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     box-sizing: border-box;
-    border: 1px solid #e0e0e0;
+    border: 0.063rem solid #e0e0e0;
     transition: all 0.3s ease;
 }
 
 .gift-card:hover {
-    border: 2px solid #000159;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
+    border: 0.125rem solid #000159;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.25rem);
 }
 
 .gift-card:hover* {
@@ -208,7 +205,7 @@ body {
 }
 
 .sofa-image {
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 .sofa-image img {
@@ -219,23 +216,23 @@ body {
 
 /* section benefit-card */
 #benefit-card {
-    min-height: 600px;
+    min-height: 37.5rem;
     width: 100%;
     background-color: #FFFFF0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px;
+    padding: 5rem 1.25rem;
 
 }
 
 .card-inner {
-    max-width: 1440px;
+    max-width: 90rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 7.5rem;
 }
 
 .card-left {
@@ -246,30 +243,30 @@ body {
 }
 
 .card-title {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
 .card-title span {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000000;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .card-title h3 {
-    font-size: 38px;
+    font-size: 2.375rem;
     font-weight: bold;
     color: #000159;
 }
 
 .card-benefit-wrapper {
-    max-width: 1000px;
+    max-width: 62.5rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 3.75rem;
     align-items: center;
 }
 
@@ -280,96 +277,88 @@ body {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 3.75rem;
     width: 100%;
 }
 
 .card-box {
     background-color: #FFF9E4;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 1.875rem;
+    border-radius: 1.25rem;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     text-align: left;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .card-box img {
-    width: 75px;
-    height: 63px;
+    width: 4.688rem;
+    height: 3.938rem;
 }
 
 .card-box-text h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #000;
 }
 
 .card-box-text p {
-    font-size: 18px;
+    font-size: 1.125;
     color: #000;
 }
 
 /* section benefit-join */
 #benefit-join {
-    max-width: 1440px;
-    height: 600px;
+    max-width: 90rem;
+    height: 37.5rem;
     margin: 0 auto;
     text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 #benefit-join h3 {
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2.375rem;
     color: #000159;
-    margin-bottom: 57px;
+    margin-bottom: 3.563rem;
 }
 
 #benefit-join span {
-    margin-top: 17px;
+    margin-top: 1.063rem;
 }
 
 .join-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 54px;
+    gap: 3.375rem;
 }
 
 .join-box {
-    width: 252px;
-    height: 330px;
+    width: 15.75rem;
+    height: 20.625rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #FAFAFA;
-    border-radius: 10px;
-    border: 1px solid #B6B2B2;
+    border-radius: 0.625rem;
+    border: 0.063rem solid #B6B2B2;
 }
 
+/* ======모바일====== */
 
-
-
-/* ===================모바일======================= */
-
-
-
-
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 768px) {
 
     /* section benefit-visual */
     #benefit-visual {
         width: 100%;
-        max-width: 393px;
-        height: 170px;
-        padding: 0 15px;
+        max-width: 24.563rem;
+        height: 10.625rem;
+        padding: 0 0.938rem;
         box-sizing: border-box;
     }
 
@@ -379,11 +368,11 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 15px;
+        gap: 0.938rem;
     }
 
     .visual-text h2 {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 500;
         text-align: center;
         line-height: 1.3;
@@ -391,7 +380,7 @@ body {
     }
 
     .visual-image {
-        max-width: 160px;
+        max-width: 10rem;
     }
 
     .visual-image img {
@@ -405,7 +394,7 @@ body {
     #benefit-sale {
         max-width: 100%;
         height: auto;
-        padding: 20px 20px;
+        padding: 1.25rem 1.25rem;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -433,9 +422,9 @@ body {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 20px 0;
+        padding: 1.25rem 0;
         box-shadow: none;
-        border-bottom: 1px solid #EBE5DF;
+        border-bottom: 0.063rem solid #EBE5DF;
         border-radius: 0;
         transition: none;
         gap: 60px;
@@ -446,14 +435,14 @@ body {
     }
 
     .icon-card img {
-        width: 64px;
+        width: 4rem;
         height: auto;
     }
 
     .icon-text {
         display: flex;
         flex-direction: column;
-        gap: 50x;
+        gap: 1.563rem;
     }
 
     #benefit-sale span {
@@ -461,7 +450,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 500;
         color: #000159;
         text-align: left;
@@ -492,21 +481,19 @@ body {
     }
 
     .mobile-only {
-        padding-top: 10px;
-        font-size: 14px;
+        padding-top: 0.625rem;
+        font-size: 0.875rem;
         text-align: left;
         color: #424242;
     }
 
-
     /* section benefit-gift */
     #benefit-gift {
         width: 100%;
-        height: 382px;
+        height: 23.875rem;
         margin: 0;
         padding: 0;
         background-color: #FFF4E6;
-
         display: block;
         box-sizing: border-box;
     }
@@ -515,7 +502,7 @@ body {
         width: 100%;
         max-width: none;
         height: 100%;
-        padding: 0 20px;
+        padding: 0 1.25rem;
         box-sizing: border-box;
         position: relative;
     }
@@ -527,30 +514,25 @@ body {
     .gift-header {
         width: 100%;
         margin: 0;
-        padding-top: 43px;
+        padding-top: 2.688rem;
         text-align: left;
         box-sizing: border-box;
     }
 
     #benefit-gift h3 {
-        margin: 0 0 10px 0;
-
-        font-size: 18px;
+        margin: 0 0 0.625rem 0;
+        font-size: 1.125rem;
         line-height: 1.3;
         font-weight: 700;
-
         color: #000159;
     }
 
     #benefit-gift p {
         margin: 0;
-
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.4;
-
         color: #605959;
     }
-
 
     /* -------------------------
        카드 + 소파 영역
@@ -559,11 +541,9 @@ body {
     .gift-content {
         width: 100%;
         margin: 0;
-
         display: block;
         position: relative;
     }
-
 
     /* -------------------------
        카드 그리드
@@ -571,18 +551,13 @@ body {
 
     .gift-grid {
         width: 100%;
-
-        margin-top: 27px;
-
+        margin-top: 1.688rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
-        column-gap: 19px;
-        row-gap: 19px;
-
+        column-gap: 1.188rem;
+        row-gap: 1.188rem;
         box-sizing: border-box;
     }
-
 
     /* -------------------------
        카드
@@ -590,57 +565,45 @@ body {
 
     .gift-card {
         width: 100%;
-        height: 102px;
-
+        height: 6.375rem;
         background-color: #fff;
-
-        border-radius: 12px;
-        border: 1px solid #e0e0e0;
-
+        border-radius: 0.75rem;
+        border: 0.063rem solid #e0e0e0;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
-        gap: 10px;
-
+        gap: 0.625rem;
         box-sizing: border-box;
-
-        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
-
+        box-shadow: 0 0.125rem 0.438rem rgba(0, 0, 0, 0.12);
         transition: all 0.3s ease;
     }
-
 
     /* 카드 이미지 */
 
     .gift-card img {
-        width: 58px;
-        height: 58px;
-
+        width: 3.625rem;
+        height: 3.625rem;
         object-fit: contain;
         flex-shrink: 0;
     }
 
-
     /* 카드 글자 */
 
     .gift-card span {
-        font-size: 14px;
+        font-size: 0.875rem;
         line-height: 1.3;
         color: #222;
-
         white-space: nowrap;
     }
-
 
     /* -------------------------
        모바일 hover
     ------------------------- */
 
     .gift-card:hover {
-        border: 1px solid #e0e0e0;
-        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+        border: 0.063rem solid #e0e0e0;
+        box-shadow: 0 0.125rem 0.438rem rgba(0, 0, 0, 0.12);
         transform: none;
     }
 
@@ -648,20 +611,16 @@ body {
         font-weight: normal;
     }
 
-
     /* -------------------------
        소파 이미지
     ------------------------- */
 
     .sofa-image {
         position: absolute;
-
-        top: -83px;
-        right: -2px;
-
-        width: 82px;
-        max-width: 82px;
-
+        top: -5.188rem;
+        right: -0.125rem;
+        width: 5.125rem;
+        max-width: 5.125rem;
         margin: 0;
         z-index: 2;
     }
@@ -676,7 +635,7 @@ body {
     /* section benefit-card */
     #benefit-card {
         width: 100%;
-        padding: 40px 20px;
+        padding: 2.5rem 1.25rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -684,10 +643,10 @@ body {
 
     .card-inner {
         width: 100%;
-        max-width: 350px;
+        max-width: 21.875rem;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .card-left {
@@ -698,21 +657,21 @@ body {
     }
 
     .card-title {
-        margin-top: 10px;
-        margin-bottom: 12px;
+        margin-top: 0.625rem;
+        margin-bottom: 0.75rem;
         text-align: center;
     }
 
     .card-title span {
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #000000;
         display: block;
-        margin-bottom: 4px;
+        margin-bottom: 0.25rem;
         font-weight: 500;
     }
 
     .card-title h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: bold;
         color: #000159;
         margin: 0;
@@ -725,7 +684,7 @@ body {
 
     .big-card img {
         width: 100%;
-        max-width: 300px;
+        max-width: 18.75rem;
         height: auto;
         display: block;
         margin: 0 auto;
@@ -734,7 +693,7 @@ body {
     /* 지그재그 카드 그리드 영역 */
     .card-benefit-wrapper {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 1.25rem;
         display: flex;
         justify-content: center;
     }
@@ -743,24 +702,26 @@ body {
         display: flex;
         flex-direction: column;
         position: relative;
-        width: 350px;
-        height: 310px;
+        width: 21.875rem;
+        height: 19.375rem;
     }
 
     .card-box {
         position: absolute;
-        width: 166px;
-        height: 100px;
-        background-color: #fff9e4;
-        border-radius: 14px;
-        padding: 12px 14px;
+        width: 10.375rem;
+        height: 6.25rem;
+        background: linear-gradient(135deg, #fdfbf7 0%, #f5efe6 100%);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 0.875rem;
+        padding: 0.75rem 0.875rem;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 6px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        gap: 0.375rem;
+        box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08),
+            0 8px 10px -6px rgba(0, 0, 0, 0.04);
     }
 
     .card-grid .card-box:nth-child(1) {
@@ -770,38 +731,38 @@ body {
     }
 
     .card-grid .card-box:nth-child(2) {
-        top: 45px;
+        top: 2.813rem;
         right: 0;
         z-index: 2;
     }
 
     .card-grid .card-box:nth-child(3) {
-        top: 110px;
+        top: 6.875rem;
         left: 0;
         z-index: 3;
     }
 
     .card-grid .card-box:nth-child(4) {
-        top: 155px;
+        top: 9.688rem;
         right: 0;
         z-index: 4;
     }
 
     .card-box img {
-        width: 26px;
-        height: 26px;
+        width: 1.625rem;
+        height: 1.625rem;
         object-fit: contain;
     }
 
     .card-box-text h4 {
-        font-size: 13px;
+        font-size: 0.813rem;
         font-weight: bold;
         color: #1a1a1a;
-        margin: 0 0 2px 0;
+        margin: 0 0 0.125rem 0;
     }
 
     .card-box-text p {
-        font-size: 11px;
+        font-size: 0.688rem;
         color: #666666;
         margin: 0;
         line-height: 1.2;
@@ -810,48 +771,47 @@ body {
 
     /* section benefit-join */
     #benefit-join {
-        padding: 30px 10px;
+        padding: 1.875rem 0.625rem;
         height: auto;
     }
 
     #benefit-join h3 {
-        font-size: 24px;
-        margin-bottom: 24px;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .join-grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 8px;
+        gap: 0.5rem;
     }
 
     .join-box {
-        width: 118px;
-        height: 160px;
-        border-radius: 8px;
-        padding: 12px 2px;
+        width: 7.375rem;
+        height: 10rem;
+        border-radius: 0.5rem;
+        padding: 0.75rem 0.125rem;
         border: none;
     }
 
     .join-box:nth-child(4),
     .join-box:nth-child(5) {
-        width: 182px;
-        height: 160px;
+        width: 11.375rem;
+        height: 10rem;
         border: none;
     }
 
     .join-box img,
     .join-box svg {
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     #benefit-join span {
-        margin-top: 8px;
-        font-size: 11px;
+        margin-top: 0.5rem;
+        font-size: 0.688rem;
         line-height: 1.2;
     }
-
 
 }

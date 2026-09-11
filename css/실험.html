@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('../img/login/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1b1b4b;
+            /* 이미지의 진한 남색 계열 */
+            margin-bottom: 40px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 15px;
+            /* 입력창 사이 간격 */
+        }
+
+        /* 아이디, 비밀번호 입력창 */
+        .input-field {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1rem;
+            border-radius: 30px;
+            /* 둥근 모서리 */
+            background-color: #ffffff;
+            border: 2px solid transparent;
+            /* 평소에는 테두리 공간만 잡고 투명하게 처리 */
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* 입력창에 마우스를 올렸을 때(hover) 및 포커스(focus) 갔을 때 테두리 생성 */
+        .input-field:hover,
+        .input-field:focus {
+            border-color: #1b1b4b;
+            /* 원하시는 테두리 색상으로 변경 가능 */
+        }
+
+        /* 로그인 버튼 */
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            background-color: #ffffff;
+            border: 2px solid transparent;
+            /* 평소 테두리 없음 */
+            color: #1b1b4b;
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: all 0.2s ease;
+        }
+
+        /* 로그인 버튼 호버 효과 */
+        .login-btn:hover {
+            border-color: #1b1b4b;
+            /* 마우스 올렸을 때 테두리 나타남 */
+            background-color: #f8f9fa;
+        }
+
+        /* 하단 링크 정렬 */
+        .links {
+            margin-top: 20px;
+            width: 100%;
+            text-align: right;
+        }
+
+        .links a {
+            color: #555;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1 class="logo">WeMeet</h1>
+        <form class="login-form">
+            <input type="text" placeholder="아이디" class="input-field">
+            <input type="password" placeholder="비밀번호" class="input-field">
+            <button type="button" class="login-btn">로그인</button>
+        </form>
+        <div class="links">
+            <a href="#">아이디 / 비밀번호 찾기</a>
+        </div>
+    </div>
+</body>
+
+</html>
