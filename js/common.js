@@ -83,6 +83,8 @@ visitDate.min = `${year}-${month}-${day}`;
 //예약하기 버튼
 reservationBtns.forEach((reservationBtn) => {
     reservationBtn.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        gnb.classList.remove('open');
         reservationForm.reset();
         purposeBtns.forEach((btn) => {
             btn.classList.remove('active');
