@@ -316,8 +316,11 @@
     }
 
     #main-visual .mobile-visual {
+        margin: 0 auto;
         display: block;
-        height: 350px;
+        height: 21.875rem;
+        width: 24.563rem;
+        overflow: hidden;
     }
 
     #main-visual .mobile-visual img {
