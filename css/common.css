@@ -191,7 +191,7 @@
     z-index: 500;
 }
 
-.reservation-btn {
+#section-reservation .reservation-btn {
     width: 3.125rem;
     min-height: 9.375rem;
     padding: 0.938rem 0.625rem;
@@ -572,6 +572,16 @@
     .reservation-modal,
     .reservation-complete-modal {
         display: none;
+        width: 24.5625rem;
+        padding: 0 1.5rem;
+    }
+
+    .reservation-modal-inner {
+        position: relative;
+        width: 20.225rem;
+        padding: 1.5rem 2rem 1.5rem;
+        background: #fff;
+        border-radius: 1.25rem;
     }
 
     /* footer */
