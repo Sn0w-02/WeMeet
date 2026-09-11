@@ -9,6 +9,8 @@
     <script src="../js/common.js" defer></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" defer></script>
+    <script src="../js/mypage.js" defer></script>
 </head>
 
 <body>
@@ -66,14 +68,15 @@
         <div class="main-logo"><img src="../img/login/WeMeet.png" alt=""></div>
 
         <div class="input-group">
-            <input type="text" placeholder="아이디(입력 클릭시 입체적으로 변함)">
+            <input type="text" id="loginId" placeholder="아이디">
         </div>
+
         <div class="input-group">
-            <input type="password" placeholder="비밀번호">
+            <input type="password" id="password" placeholder="비밀번호">
         </div>
 
         <div class="login-action-row">
-            <button class="btn-login">로그인</button>
+            <button type="button" id="loginBtn" class="btn-login">로그인</button>
             <a href="#" class="find-links">아이디 / 비밀번호 찾기</a>
         </div>
 
