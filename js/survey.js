@@ -31,7 +31,7 @@ finish.addEventListener('click', () => {
         traits: traits.value,
         ageGroup: ageGroup.value,
         residence: residence.value,
-        household: houseHold.value,
+        houseHold: houseHold.value,
         awayTime: awayTime.value,
         walkTime: walkTime.value
     };
@@ -50,7 +50,7 @@ finish.addEventListener('click', () => {
                 const traitsMatch = animal.personality === answers.traits;
                 const ageGroupMatch = animal.ageGroup === answers.ageGroup;
                 const residenceMatch = animal.residence === answers.residence;
-                const houseHold = animal.household === answers.houseHold;
+                const houseHoldMatch = animal.household === answers.houseHold;
                 const awayTimeMatch = animal.awayTime === answers.awayTime;
                 const walkTimeMatch = animal.walkTime === answers.walkTime;
 
@@ -62,7 +62,7 @@ finish.addEventListener('click', () => {
                     traitsMatch &&
                     ageGroupMatch &&
                     residenceMatch &&
-                    houseHold &&
+                    houseHoldMatch &&
                     awayTimeMatch &&
                     walkTimeMatch
                 )
@@ -78,9 +78,9 @@ finish.addEventListener('click', () => {
                 const card = document.createElement("div");
                 card.classList.add('recommend-card');
                 card.innerHTML = `
-                <a herf="../pages/animal-detail.html" alt="">
+                <a href="../pages/animal-detail.html">
                     <div class="recommend-img">
-                        <img src=${animal.image} alt={animal.name}>
+                        <img src="${animal.image}" alt="${animal.name}">
                     </div>
                     <div class="recommend-info">
                         <h4>이름: ${animal.name}</h4>
@@ -90,7 +90,7 @@ finish.addEventListener('click', () => {
                     </div>
                 </a>
                 `
-                recommendList.appendChild('card');
+                recommendList.appendChild(card);
             });
             if (result.length === 0) {
 
@@ -102,8 +102,6 @@ finish.addEventListener('click', () => {
 
                 `;
             }
-
         });
-
 });
 
