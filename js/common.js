@@ -62,7 +62,7 @@ window.addEventListener('resize', () => {
 
 
 //예약하기
-const reservationBtn = document.querySelector('.reservation-btn'),
+const reservationBtns = document.querySelectorAll('.reservation-btn'),
     reservationModal = document.querySelector('.reservation-modal'),
     reservationClose = document.querySelector('.reservation-close'),
     reservationForm = document.querySelector('#reservation-form'),
@@ -81,16 +81,19 @@ const today = new Date(),
 visitDate.min = `${year}-${month}-${day}`;
 
 //예약하기 버튼
-reservationBtn.addEventListener('click', () => {
-    reservationForm.reset();
-    purposeBtns.forEach((btn) => {
-        btn.classList.remove('active');
-    });
+reservationBtns.forEach((reservationBtn) => {
+    reservationBtn.addEventListener('click', () => {
+        reservationForm.reset();
+        purposeBtns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
 
-    reservationWarning.classList.remove('active');
+        reservationWarning.classList.remove('active');
 
-    reservationModal.classList.add('active');
+        reservationModal.classList.add('active');
+    })
 })
+
 
 //예약 모달 닫기
 reservationClose.addEventListener('click', () => {
