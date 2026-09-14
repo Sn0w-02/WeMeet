@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>아이디 / 비밀번호 찾기</title>
+
+    <link rel="stylesheet" href="./css/find-account.css">
+</head>
+
+<body>
+
+    <main class="find-account">
+
+        <div class="find-inner">
+
+            <h1>아이디 · 비밀번호 찾기</h1>
+
+            <p class="description">
+                가입할 때 입력한 정보를 통해 계정을 찾아보세요.
+            </p>
+
+
+            <!-- 아이디 찾기 -->
+            <section class="find-box">
+
+                <h2>아이디 찾기</h2>
+
+                <div class="input-group">
+                    <label for="findName">이름</label>
+                    <input type="text" id="findName" placeholder="이름을 입력해주세요">
+                </div>
+
+                <div class="input-group">
+                    <label for="findPhone">전화번호</label>
+                    <input type="text" id="findPhone" placeholder="010-1234-5678">
+                </div>
+
+                <button type="button" id="findIdBtn">
+                    아이디 찾기
+                </button>
+
+                <p id="idResult" class="result"></p>
+
+            </section>
+
+
+            <!-- 비밀번호 찾기 -->
+            <section class="find-box">
+
+                <h2>비밀번호 찾기</h2>
+
+                <div class="input-group">
+                    <label for="findLoginId">아이디</label>
+                    <input type="text" id="findLoginId" placeholder="아이디를 입력해주세요">
+                </div>
+
+                <div class="input-group">
+                    <label for="findEmail">이메일</label>
+                    <input type="email" id="findEmail" placeholder="이메일을 입력해주세요">
+                </div>
+
+                <button type="button" id="findPwBtn">
+                    비밀번호 찾기
+                </button>
+
+                <p id="pwResult" class="result"></p>
+
+            </section>
+
+
+            <a href="./login.html" class="login-link">
+                로그인하러 가기
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="./js/user.js"></script>
+    <script src="./js/find-account.js"></script>
+
+</body>
+
+</html>
