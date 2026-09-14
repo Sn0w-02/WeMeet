@@ -15,7 +15,7 @@ fetch('../js/animal.json').then(response => response.json())
     .then(data => {
         animals = data;
         //console.log('data', animals); //객체 확인함.
-    })
+    });
 /* .catch(error=>{
     console.error("JSON 불러오기 오류:",error) 없어도 된다고 생각함
 }) */
@@ -49,19 +49,28 @@ finish.addEventListener('click', () => {
     }
     //console.log('선택한답', answers)
 
+    let typeAnimals;
+    if (answers.type === 'any') {
+        typeAnimals = animals;
+    }else {
+        typeAnimals = animals.filter(animal => {
+            return animal.type === answers.type;
+        })
+    }
+
     //점수 계산
-    recommendedAnimals = animals.map(animal => {
+    recommendedAnimals = typeAnimals.map(animal => {
         let score = 0;
         if (
             animal.experienceLevel.includes(answers.experienceLevel)
         ) { score++; }
-        if (answers.type === 'any' || answers.type === animal.type) { score++; }
+        //if (answers.type === 'any' || answers.type === animal.type) { score++; }
         if (answers.size === 'any' || answers.size === animal.size) { score++; }
-        if (answers.personality.includes(answers.personality)) { score++; }
+        if (answers.personality === 'any'||animal.personality.includes(answers.personality)) { score++; }
         if (answers.ageGroup === 'any' || answers.ageGroup === animal.ageGroup) { score++; }
-        if (answers.residence.includes(answers.residence)) { score++; }
+        if (answers.residence === 'any' || animal.residence.includes(answers.residence)) { score++; }
         if (animal.household.includes(answers.houseHold)) { score++; }
-        if (animal.awayTime === answers.awayTime) { score++; }
+        if (answers.awayTime === animal.awayTime) { score++; }
         if (answers.walkTime === 'any' || animal.walkTime === answers.walkTime) { score++; }
 
         //점수가 추가된 동물 반환
@@ -76,7 +85,11 @@ finish.addEventListener('click', () => {
             score: score
         };
     });
-    recommendedAnimals.sort((a, b) => {
+    recommendedAnimals=recommendedAnimals.filter(animal=>{
+        return animal.score >= 5;
+    });
+
+    recommendedAnimals.sort((a,b) =>{
         return b.score - a.score;
     });
 
@@ -115,6 +128,7 @@ function renderAnimals() {
             </div>
             `;
         }
+        //else가 필요한가?
         else {
             card.innerHTML = `
             <div class="recommend-box">
@@ -135,9 +149,10 @@ function renderAnimals() {
         recommendList.appendChild(card);
     });
     if (showCount >= recommendedAnimals.length) {
-        listBtn.style.display = 'block';
-    }
+        listBtn.style.display = 'none';
+    }else{listBtn.style.display='block';}
 }
+
 listBtn.addEventListener('click', () => {
     showCount = showCount + 3;
     renderAnimals();

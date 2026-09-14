@@ -8,7 +8,7 @@
 .survey-main {
     position: relative;
     width: 75rem;
-    margin: 0 auto 9.375rem;
+    margin: 0 auto 6.25rem;
 }
 
 .survey-main .image {
@@ -125,7 +125,7 @@
 }
 
 .title-group {
-    margin-bottom: 1.875rem;
+    margin-bottom: 3.125rem;
 }
 
 .title-group .top {
@@ -146,13 +146,6 @@
     margin: 1rem 0;
 }
 
-.recommend-box.result {
-    display: grid;
-    grid-template-columns: 4, 1fr;
-    flex: 1;
-    margin-bottom: 1rem;
-}
-
 .list-btn {
     width: 7.25rem;
     height: 2.5rem;
@@ -161,14 +154,14 @@
     font-size: 1.125rem;
     font-weight: 700;
     color: #000159;
+    margin: 0 auto;
 }
 
 .recommend-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-    margin-bottom: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.125rem;
+    margin-bottom: 3.125rem;
 }
 
 .recommend-box {
@@ -178,16 +171,18 @@
 }
 
 .recommend-img {
-    width: 24.25rem;
-    height: 24.25rem;
+    width: 27.938rem;
+    height: 21rem;
+    overflow: hidden;
     margin-bottom: 1.875rem;
 }
 
 .recommend-img img {
     width: 100%;
-    height: 100%;
 }
-
+.recommend-info {
+    padding: 1.25rem 3.125rem;
+}
 .recommend-info>div {
     display: flex;
     justify-content: space-around;
