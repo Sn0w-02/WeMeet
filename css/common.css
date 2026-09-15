@@ -75,17 +75,17 @@
 }
 
 /* login */
-.profile-link,
-.mobile-user-link {
-    display: none;
-}
-
 .login-link {
     display: block;
 }
 
-.login-link.active {
-    display: block;
+.login-link.hide {
+    display: none;
+}
+
+.profile-link,
+.mobile-user-link {
+    display: none;
 }
 
 .profile-link.active {
@@ -105,6 +105,14 @@
     height: 3.5rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.logout-btn {
+    display: none;
+}
+
+.logout-btn.active {
+    display: block;
 }
 
 /* mobile menu button */
@@ -532,6 +540,11 @@
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
+    }
+
+    /* logout */
+    .logout-btn.active {
+        display: none;
     }
 
     /* menu button */
