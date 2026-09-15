@@ -705,7 +705,7 @@
     }
 
     .process-item:nth-child(4) .process-content h2::before {
-        width: 67%;
+        width: 55%;
     }
 
     .process-item:nth-child(5) .process-content h2::before {
