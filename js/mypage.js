@@ -24,7 +24,7 @@ const surveyTags = document.querySelector(".survey-tags");
 const favoriteList = document.querySelector(".favorite-list");
 
 
-fetch("../js/user.json")
+fetch("https://sn0w-02.github.io/WeMeet/js/user.json")
     .then(response => response.json())
     .then(users => {
         const user = users[0];

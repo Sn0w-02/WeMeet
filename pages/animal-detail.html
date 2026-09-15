@@ -50,7 +50,7 @@
                 </a>
 
                 <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
-                    <img src="../img/mobile-User.png" alt="">
+
                 </a>
             </div>
 
@@ -368,13 +368,13 @@
         </div>
         <img src="../img/animal-detail/checkhouse.png" alt="">
     </section>
-    
-     <!--============= fixed ===========-->
+
+    <!-- fixed -->
     <section id="section-reservation">
         <button type="button" class="reservation-btn">예약하기</button>
     </section>
 
-    <!--============ 예약하기 모달 ================-->
+    <!-- 예약하기 모달 -->
     <div class="reservation-modal">
         <div class="reservation-modal-inner">
             <button type="button" class="reservation-close" aria-label="예약창 닫기">
@@ -398,22 +398,16 @@
                     <label for="visit-data">방문일자</label>
                     <input type="date" id="visit-data" name="visitData">
                 </div>
-                <fieldset class="purpose-group">
-                    <legend>방문목적</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="사전만남">사전만남
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="시설방문">시설방문
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="입양신청">입양신청
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
-                    </label>
-                </fieldset>
-                <!--=========== 미작성 경고 ============-->
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
+                <!-- 미작성 경고 -->
                 <p class="reservation-warning">
                     작성되지 않은 항목이 있습니다.
                     모든 항목을 작성해 주세요.
@@ -424,7 +418,7 @@
             </form>
         </div>
     </div>
-    <!--=========== 예약완료 모달 ===============-->
+    <!-- 예약완료 모달 -->
     <div class="reservation-complete-modal">
         <div class="reservation-complete-inner">
             <p>
