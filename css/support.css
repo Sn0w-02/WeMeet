@@ -7,7 +7,8 @@ body {
 
 .container {
     max-width: 90rem;
-    height: 67.938rem;
+    /* height: 67.938rem; */
+    min-height: 67.938rem;
     margin: 0 auto;
     padding: 7.188rem 7.188rem;
 }
@@ -49,8 +50,13 @@ body {
 }
 
 .support-infoCard {
-    background-color: #fff;
+    background-color: transparent;
     border-bottom: 0.063rem solid #07087C;
+    transition: 0.3s;
+}
+
+.support-infoCard:hover {
+    background-color: #FDF8F4;
 }
 
 .support-infoCard:last-child {
@@ -61,24 +67,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.125rem 0.625rem;
     cursor: pointer;
     user-select: none;
-    background-color: #fff;
     transition: background-color 0.2s;
-}
-
-.info-text:hover {
-    background-color: #fafafa;
-}
-
-.info-text {
-    display: flex;
-    align-items: center;
     font-size: 1.5rem;
     font-weight: 600;
     color: #2d2d2d;
     padding: 3.125rem;
+}
+
+.info-left {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+.info-text:hover {
+    background-color: transparent;
 }
 
 .arrow-icon {
@@ -92,7 +98,7 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
-    background-color: white;
+    background-color: transparent;
     padding: 0 3.125rem;
     font-size: 1.125rem;
     color: #2d2d2d;
@@ -116,10 +122,16 @@ body {
     margin-top: 4.375rem;
 }
 
+.question-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
 .question-title h2 {
     font-size: 2rem;
     color: #2d2d2d;
-    margin-bottom: 6.25rem;
     font-weight: bold;
 }
 
@@ -144,40 +156,40 @@ body {
 
 
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 768px) {
     body {
         background-color: #FDF8F4;
     }
 
     .container {
-        max-width: 353px;
-        height: 1400px;
+        max-width: 22.063rem;
+        min-height: 100vh;
         margin: 0 auto;
-        padding: 45px 20px;
+        padding: 0 1.25rem;
     }
 
     /* 제목칸 */
     #support-info {
-        margin-top: 45px;
-        margin-bottom: 30px;
+        margin-top: 2.813rem;
+        margin-bottom: 1.875rem;
     }
 
     .support-title {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     .support-title h2 {
-        font-size: 22px;
+        font-size: 1.375rem;
         color: #000000;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 0.938rem;
     }
 
     .support-title .support-subtitle {
         margin-top: 0;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #000000;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
 
     .support-source {
@@ -203,10 +215,10 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 18px 10px;
-        font-size: 18px;
+        padding: 1.125rem 0.625rem;
+        font-size: 1.125rem;
         color: #000000;
-        padding: 20px;
+        padding: 1.25rem;
         cursor: pointer;
         user-select: none;
         background-color: #fff;
@@ -217,8 +229,17 @@ body {
         background-color: #fafafa;
     }
 
+    .info-left {
+        gap: 1.875rem;
+    }
+
+    .info-left img {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
     .arrow-icon {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #2d2d2d;
         transition: transform 0.3s ease;
     }
@@ -229,15 +250,13 @@ body {
         overflow: hidden;
         transition: max-height 0.3s ease;
         background-color: #fff;
-        padding: 0 10px;
-        font-size: 14px;
+        padding: 0 0.625rem;
+        font-size: 0.875rem;
         color: #2d2d2d;
         display: flex;
         flex-direction: column;
         justify-content: center;
         line-height: 1.8;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .support-infoCard.active .arrow-icon {
@@ -245,34 +264,41 @@ body {
     }
 
     .support-infoCard.active .info-detail {
-        max-height: 800px;
-        padding: 20px 20px;
-        word-break: keep-all;
-        overflow-wrap: break-word;
+        max-height: 62.5rem;
+        padding: 1.25rem 1.25rem;
         word-break: normal;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
     }
 
     /* 자주 묻는 질문 */
     #support-question {
-        margin-top: 70px;
+        margin-top: 4.375rem;
+        word-break: keep-all;
+    }
+
+    .question-title {
+        margin-bottom: 1rem;
+    }
+
+    .question-title img {
+        width: 4.375rem;
+        height: 4.375rem;
     }
 
     .question-title h2 {
-        font-size: 22px;
+        font-size: 1.375rem;
         color: #2d2d2d;
-        margin-bottom: 45px;
     }
 
     .question-box h3 {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: #2d2d2d;
-        margin-bottom: 15px;
+        margin-bottom: 0.938rem;
     }
 
     .question-box p {
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #2d2d2d;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 }

@@ -4,12 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>support</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/support.css">
+    <title>WeMeet || 국가지원</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/support.css">
+    <script src="../js/common.js" defer></script>
+    <script src="../js/support.js"></script>
 </head>
 
-<body> 
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="index.html"><img src="../img/logo.png" alt="WeMeet"></a></h1>
+
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="process.html">입양절차</a></li>
+                            <li><a href="review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="support.html">국가지원</a></li>
+                            <li><a href="benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="login.html" class="login-link">로그인</a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
+                    <img src="../img/mobile-User.png" alt="">
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
     <div class="container">
         <section id="support-info">
             <!-- 국가지원 제목칸 -->
@@ -23,19 +76,26 @@
             <!-- 국가지원 박스 -->
             <div class="support-infoBox">
                 <div class="support-infoCard">
+
                     <div class="info-text">
-                        <div class="info-title">지원형태</div>
+                        <div class="info-left">
+                            <img src="../img/support/Giftbox.png" alt="">
+                            <div class="info-title">지원형태</div>
+                        </div>
                         <div class="info-content">현금</div>
                     </div>
                 </div>
 
                 <div class="support-infoCard">
                     <div class="info-text" onclick="toggleAccordion(this)">
-                        <div class="info-title">지원내용</div>
+                        <div class="info-left">
+                            <img src="../img/support/Handshake.png" alt="">
+                            <div class="info-title">지원내용</div>
+                        </div>
                         <div class="arrow-icon">∨</div>
                     </div>
                     <div class="info-detail">
-                        유실·유기동물 입양(분양) 시 소요되는 부담비용 지원
+                        유실·유기동물 입양(분양) 시 소요되는 부담비용 <br>지원
                         <br>-지원범위 : 질병 진단비, 치료비, 예방접종, 중성화수술비, 내장형동물등록비, 미용비
                         <br>-지원비율 : 보조 60%(국고 20%, 지방비 30%), 자부담 40%
                         <br>-지원한도액 기준 및 범위 : 입양 1마리당 최대 25만원 이내(국비 7.5만원, 지방비 7.5만원, 자부담 10만원)
@@ -47,7 +107,10 @@
 
                 <div class="support-infoCard">
                     <div class="info-text" onclick="toggleAccordion(this)">
-                        <div class="info-title">지원대상</div>
+                        <div class="info-left">
+                            <img src="../img/support/People.png" alt="">
+                            <div class="info-title">지원대상</div>
+                        </div>
                         <div class="arrow-icon">∨</div>
                     </div>
                     <div class="info-detail">
@@ -57,7 +120,10 @@
 
                 <div class="support-infoCard">
                     <div class="info-text" onclick="toggleAccordion(this)">
-                        <div class="info-title">절차방법</div>
+                        <div class="info-left">
+                            <img src="../img/support/Checklist.png" alt="">
+                            <div class="info-title">절차방법</div>
+                        </div>
                         <div class="arrow-icon">∨</div>
                     </div>
                     <div class="info-detail">
@@ -69,7 +135,10 @@
 
                 <div class="support-infoCard">
                     <div class="info-text" onclick="toggleAccordion(this)">
-                        <div class="info-title">신청기한</div>
+                        <div class="info-left">
+                            <img src="../img/support/Calendar.png" alt="">
+                            <div class="info-title">신청기한</div>
+                        </div>
                         <div class="arrow-icon">∨</div>
                     </div>
                     <div class="info-detail">
@@ -79,7 +148,10 @@
 
                 <div class="support-infoCard">
                     <div class="info-text" onclick="toggleAccordion(this)">
-                        <div class="info-title">구비서류</div>
+                        <div class="info-left">
+                            <img src="../img/support/Folder.png" alt="">
+                            <div class="info-title">구비서류</div>
+                        </div>
                         <div class="arrow-icon">∨</div>
                     </div>
                     <div class="info-detail">
@@ -91,7 +163,10 @@
 
                 <div class="support-infoCard">
                     <div class="info-text" onclick="toggleAccordion(this)">
-                        <div class="info-title">접수기관</div>
+                        <div class="info-left">
+                            <img src="../img/support/Hall.png" alt="">
+                            <div class="info-title">접수기관</div>
+                        </div>
                         <div class="arrow-icon">∨</div>
                     </div>
                     <div class="info-detail">
@@ -103,7 +178,9 @@
 
         <!-- 자주 묻는 질문 -->
         <section id="support-question">
+
             <div class="question-title">
+                <img src="../img/support/support-puppy.png" alt="">
                 <h2>자주 묻는 질문</h2>
             </div>
 
@@ -115,36 +192,133 @@
                     </p>
                 </div>
                 <div class="question-box">
-                    <h3>Q2 임시보호(임보)는 경험이 있으면 입양 심사에 도움이 되냐요</h3>
+                    <h3>Q2 임시보호(임보)는 경험이 있으면 입양 심사에 도움이 되나요</h3>
                     <p class="question">네, 매우 큰 도움이 됩니다.
-                        <br>과거 성실하게 임보를 진행한 이력이 있다면 양육 신뢰도와 가산점이 부여되어 입양 심사 시
-                        <br>긍정적인 평가를 받을 수 있습니다.
+                        <br>과거 성실하게 임보를 진행한 이력이 있다면 <br>양육 신뢰도와 가산점이 부여되어 입양 심사 시
+                        긍정적인 평가를 받을 수 있습니다.
                     </p>
                 </div>
                 <div class="question-box">
-                    <h3>Q3 '설문 다시하기'를하면 추천되는 친구가 달라지나요?</h3>
+                    <h3>Q3 '설문 다시하기'를 하면 추천되는 친구가 달라지나요?</h3>
                     <p class="question">네! 거주 형태, 양육 경험, 선호 조건 등의 설문 내용을 변경하시면
-                        <br>이용자의 라이프스타일에 맞춰 큐레이션된 새로운 찰떡궁합 친구들을 다시 추천받으실 수 있습니다.
+                        이용자의 라이프스타일에 맞춰 큐레이션된 <br>새로운 찰떡궁합 친구들을 다시 추천받으실 수 있습니다.
                     </p>
                 </div>
                 <div class="question-box">
                     <h3>Q4 입양 전후로 지원받을 수 있는 혜택이나 교육이 있나요?</h3>
                     <p class="question">플랫폼 내 '혜택 및 제휴' 메뉴를 통해 연계된 동물병원 할인, 반려동물 용품 제휴 혜택,
-                        <br>초보 양육자를 위한 가이드와 전문가 상담 정보를 이용하실 수 있습니다.
+                        초보 양육자를 위한 가이드와 전문가 상담 정보를 이용하실 수 있습니다.
                     </p>
                 </div>
                 <div class="question-box">
                     <h3>Q5 임시보호나 입양을 취소하거나 변경할 수 있나요?</h3>
                     <p class="question">심사 진행 중에는 마이페이지의 '나의 신청 내역'에서 상태를 확인하실 수 있으며,
-                        <br>변경이나 취소 관련 사항은 1:1 문의나 고객센터를 통해 신속하게 조율하실 수 있습니다.
+                        변경이나 취소 관련 사항은 1:1 문의나 고객센터를 통해 신속하게 조율하실 수 있습니다.
                     </p>
                 </div>
             </div>
         </section>
     </div>
 
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
+    </section>
 
-    <script src="js/support.js"></script>
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <fieldset class="purpose-group">
+                    <legend>방문목적</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="사전만남">사전만남
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="시설방문">시설방문
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="입양신청">입양신청
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
+                    </label>
+                </fieldset>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="./index.html" class="footer-logo">
+                    <img src="../img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="../img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="../img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -396,7 +396,7 @@ main {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         width: calc(100% - 2.5rem);
-        margin: 3rem auto 4rem;
+        margin: 2.5rem auto 2.5rem;
     }
 
     .summary-card {
@@ -419,6 +419,7 @@ main {
 
     .summary-img {
         width: 7.5rem;
+        height: 7.5rem;
         border-radius: 0.875rem;
     }
 
@@ -454,14 +455,13 @@ main {
         flex-direction: column;
         gap: 1.5rem;
         width: calc(100% - 2.5rem);
-        margin: 0 auto 4rem;
+        margin: 0 auto 2.5rem;
         padding: 1.5rem;
-
     }
 
     .profile-img {
         width: 100%;
-        height: 12rem;
+        height: 15rem;
         border-radius: 0.875rem;
     }
 
@@ -556,7 +556,7 @@ main {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         width: 100%;
-        padding: 3rem 1.25rem;
+        padding: 1.5rem 1.25rem;
     }
 
     .benefit-banner {

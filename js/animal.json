@@ -30,7 +30,8 @@
             "apt",
             "villa",
             "house",
-            "officetel"
+            "officetel",
+            "any"
         ],
         "household": [
             "yes",

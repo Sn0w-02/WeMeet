@@ -58,8 +58,6 @@ function playCurrentVideo(swiperInstance) {
 }
 
 
-
-
 //pet-list
 const petListSwiper = new Swiper('.pet-list-swiper', {
     spaceBetween: 30,
