@@ -156,7 +156,7 @@ body {
 
 
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 768px) {
     body {
         background-color: #FDF8F4;
     }
@@ -257,8 +257,6 @@ body {
         flex-direction: column;
         justify-content: center;
         line-height: 1.8;
-        word-break: keep-all;
-        overflow-wrap: break-word;
     }
 
     .support-infoCard.active .arrow-icon {
@@ -268,10 +266,8 @@ body {
     .support-infoCard.active .info-detail {
         max-height: 62.5rem;
         padding: 1.25rem 1.25rem;
-        word-break: keep-all;
-        overflow-wrap: break-word;
         word-break: normal;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
     }
 
     /* 자주 묻는 질문 */
