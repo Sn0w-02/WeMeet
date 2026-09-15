@@ -10,6 +10,7 @@ const profileLink = document.querySelector('.profile-link');
 const mobileUserLink = document.querySelector('.mobile-user-link');
 
 if (isLoggedIn === 'true') {
+    loginLink.style.display = 'none'
     loginLink.classList.remove('active')
     profileLink.classList.add('active')
     mobileUserLink.classList.add('active')

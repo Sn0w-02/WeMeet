@@ -75,10 +75,13 @@
 }
 
 /* login */
-.login-link,
 .profile-link,
 .mobile-user-link {
     display: none;
+}
+
+.login-link {
+    display: block;
 }
 
 .login-link.active {
