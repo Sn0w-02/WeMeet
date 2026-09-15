@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url(reset.css);
 
 #survey {
     width: 90rem;
@@ -9,16 +8,15 @@
 .survey-main {
     position: relative;
     width: 75rem;
-    margin: 0 auto 9.375rem;
+    margin: 0 auto 6.25rem;
 }
-
 
 .survey-main .image {
     position: absolute;
-    background: no-repeat;
-    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
 }
-
 
 .survey-main .image.bg01 {
     width: 37.5rem;
@@ -61,19 +59,18 @@
     right: 20rem;
 }
 
-.survey-main .maintitle-group {
+.survey-main .main-title-group {
     padding: 10rem 0 4.375rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
-
-.survey-main .maintitle-group>div {
+.survey-main .main-title-group>div {
     text-align: center;
 }
 
-.survey-main .maintitle-group .title {
+.survey-main .main-title-group .title {
     font-size: 1.875rem;
     margin-bottom: 1rem;
 }
@@ -92,7 +89,7 @@
     margin-bottom: 1.875rem;
 }
 
-.survey-question .choice {
+.survey-question .answers {
     display: flex;
     gap: 5.938rem;
     font-size: 1.125rem;
@@ -119,10 +116,17 @@
 .survey-recommend {
     background: #FDF8F4;
     padding: 5rem 0;
+    align-items: center;
 }
 
-.survey-recommend .title-group {
+.survey-recommend .recommend-inner {
+    width: 90rem;
+    margin: 0 auto;
     text-align: center;
+}
+
+.title-group {
+    margin-bottom: 3.125rem;
 }
 
 .title-group .top {
@@ -143,86 +147,75 @@
     margin: 1rem 0;
 }
 
-/* 반응형 모바일 */
-@media (max-width: 768px) {
-    #survey {
-        width: 100%;
-    }
+.list-btn {
+    width: 7.25rem;
+    height: 2.5rem;
+    border: 1px solid #000159;
+    border-radius: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000159;
+    margin: 0 auto;
+    display: none;
+}
 
-    .survey-main {
-        width: 80%;
-        margin: 50px auto;
-    }
+.list-btn.active {
+    display: block;
+}
 
-    /*  .survey-main .image {
-        display: none;
-    } */
+/* 추천 동물 리스트 */
+.recommend-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.125rem;
+    margin-bottom: 3.125rem;
+}
 
-    .survey-main .maintitle-group {
-        padding: 0;
-        margin-bottom: 50px;
-        display: block;
-        justify-content: flex-start;
-    }
+.recommend-box {
+    width: 20.188rem;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.563rem;
+    border: 0.063rem solid #C5C5C5;
+}
 
-    .survey-main .maintitle-group .title {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 16px;
-        color: #000159;
-    }
+.recommend-img {
+    width: 20.188rem;
+    height: 21rem;
+    overflow: hidden;
+    margin-bottom: 0 auto 1.25rem;
+}
 
-    .maintitle-group>img {
-        display: none;
-    }
+.recommend-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
-    .survey-main .survey-item {
-        padding: 0;
-        word-break: keep-all;
-    }
+.recommend-info {
+    padding: 1rem
+}
 
-    .survey-question {
-        margin-bottom: 40px;
-    }
+.recommend-info .info-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
 
-    .survey-question .question {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 15px;
-    }
+.recommend-info h3 {
+    font-size: 1.25rem;
+}
 
-    .survey-question .choice {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-        font-size: 14px;
+.recommend-info p {
+    font-size: 1rem;
+}
 
-    }
-
-    .survey-main .finish {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .survey-recommend {
-        padding: 50px 0;
-    }
-
-    .title-group .top {
-        margin-bottom: 50px;
-    }
-
-    .title-group .top img {
-        display: none;
-    }
-
-    .title-group .top .title {
-        font-size: 22px;
-        margin: 0;
-    }
-
-    .title-group .title-text {
-        display: none;
-    }
+.recommend-tags span {
+    display: inline-block;
+    padding: 0.313rem;
+    border-radius: 0.875rem;
+    background: #FFEEE3;
+    margin: 0 0.313rem;
 }

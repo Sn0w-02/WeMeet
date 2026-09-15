@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+    #animal-detail {
+        width: calc(100% - 40px);
+        margin: 20px auto 0;
+    }
+
+    /* ========= 프로필 ============= */
+    #animal-profile {
+        gap: 26px;
+        padding: 28px;
+        margin-bottom: 4.688rem;
+    }
+
+    #animal-profile .web {
+        display: none;
+    }
+
+    .profile-detail .mobile {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
+
+    .profile-detail .detail-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        margin-bottom: 28px;
+    }
+
+    .profile-detail .title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .profile-detail .content {
+        justify-content: space-between;
+        gap: 13px;
+    }
+
+    .content .left-box>div,
+    .content .right-box>div {
+        gap: 6px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .content .left-box>div:last-child,
+    .content .right-box>div:last-child {
+        margin-bottom: 0;
+    }
+
+    .content .left-box>div img,
+    .content .right-box>div img {
+        width: 25px;
+        height: auto;
+    }
+
+    .content .left-box>div .sub-title,
+    .content .right-box>div .sub-title {
+        font-weight: 500;
+        margin-right: 6px;
+    }
+
+    /* =========== 사랑이 특성 ================ */
+    #animal-trait {
+        display: block;
+        padding: 28px;
+    }
+
+    #animal-trait .like {
+        margin-bottom: 75px;
+    }
+
+    .like .like-title,
+    .bad .bad-title {
+        margin-bottom: 20px;
+    }
+
+    .like .like-title img,
+    .bad .bad-title img {
+        width: 32px;
+    }
+
+    .like .like-title h2,
+    .bad .bad-title h2 {
+        font-weight: 500;
+    }
+
+    .like .like-content,
+    .bad .bad-content {
+        gap: 30px;
+    }
+
+    .like .like-content>div .icon,
+    .bad .bad-content>div .icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 15px;
+    }
+
+    .like .like-content>div p,
+    .bad .bad-content>div p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #animal-trait .bad::before {
+        top: 18%;
+        transform: rotate(90deg);
+    }
+
+    /* ========== 기본정보 ============ */
+    #detail-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .animal-info,
+    .animal-care {
+        width: 100%;
+        height: 100%;
+        padding: 40px 28px;
+        margin-bottom: 4.688rem;
+    }
+
+    .animal-info h2,
+    .animal-care h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 35px;
+    }
+
+    .animal-info h4,
+    .animal-care h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .animal-info>div p,
+    .animal-care p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .animal-care .care-list {
+        gap: 2rem;
+    }
+
+    #detail-info .animal-info {
+        background-size: auto 357px;
+    }
+
+    .animal-info .info-sub-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 0.625rem;
+    }
+
+    .animal-info .info-flex>.info-class {
+        margin-bottom: 0;
+    }
+
+    .animal-info .gap {
+        margin-bottom: 25px;
+    }
+
+    .animal-info .info-flex {
+        margin-bottom: 25px;
+    }
+
+    .gap,
+    .info-flex:last-child {
+        margin-bottom: 0;
+    }
+
+    .animal-info .gap .info-class {
+        margin-bottom: 15px;
+    }
+
+    /* 이렇게 돌봐 주세요 */
+    .animal-care {
+        background-position: 90% 5%;
+        background-size: auto 105px;
+    }
+
+    .animal-care h4.care-list {
+        gap: 25px;
+    }
+
+    .animal-care .care-list img {
+        width: 2rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .animal-care .howto {
+        margin-bottom: 25px;
+    }
+
+    .animal-care .howto:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ============ 임보기록 ================ */
+    .animal-record {
+        width: calc(100% - 40px);
+        /* margin: 0 auto; */
+        padding: 40px 0;
+    }
+
+    .animal-record .record-title {
+        margin-bottom: 15px;
+    }
+
+    .animal-record .record-title h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .animal-record .record-title img {
+        display: none;
+    }
+
+    .animal-record>p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .animal-record table {
+        margin-bottom: 15px;
+    }
+
+    .animal-record table .hide {
+        display: none;
+    }
+
+    .animal-record table tr th,
+    .animal-record table tr td {
+        font-size: 14px;
+        padding: 5px 10px;
+        word-break: keep-all;
+    }
+
+    .animal-record table tr th {
+        font-weight: 600;
+        padding: 5px 10px;
+    }
+
+    .animal-record table td img {
+        width: 25px;
+    }
+
+    .pagination .back,
+    .pagination .next {
+        font-size: 14px;
+    }
+
+    /* ============ 체크사항 ============== */
+    #check {
+        position: relative;
+        width: calc(100% - 40px);
+        margin: 40px auto;
+        padding: 28px;
+    }
+
+    #check>img {
+        position: absolute;
+        width: 70px;
+        top: 20px;
+        right: 20px;
+    }
+
+    #check .check-list h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    #check .check-list>div {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+   
+    .check-list div img {
+        width: 20px;
+    }
+
+    .check-list div p {
+        font-size: 14px;
+        word-break: keep-all;
+    }
+}

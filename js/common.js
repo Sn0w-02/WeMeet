@@ -1,4 +1,66 @@
 //html 요소
+//로그인 상태
+//로컬스토리지
+const isLoggedIn = localStorage.getItem('isLoggedIn');
+const loginId = localStorage.getItem('loginId');
+
+//로그인 프로필
+const loginLink = document.querySelector('.login-link');
+const profileLink = document.querySelector('.profile-link');
+const mobileUserLink = document.querySelector('.mobile-user-link');
+
+//로그아웃
+const logoutBtns = document.querySelectorAll('.logout-btn');
+
+if (isLoggedIn === 'true') {
+    loginLink.classList.add('hide')
+    profileLink.classList.add('active')
+    mobileUserLink.classList.add('active')
+
+    logoutBtns.forEach((logoutBtn) => {
+        logoutBtn.classList.add('active')
+    })
+
+    fetch('https://sn0w-02.github.io/WeMeet/js/user.json')
+        .then(response => response.json())
+        .then(data => {
+            const loginUser = data.find(function (user) {
+                return user.loginId === loginId;
+            });
+            if (loginUser) {
+                const profileText = document.createElement('span');
+                const profileImg = document.createElement('img');
+                const mobileUserImg = document.createElement('img');
+
+                profileText.textContent = `${loginUser.myPet.name}의 단짝 ${loginUser.name}님`
+                profileImg.src = loginUser.profileImage;
+                profileImg.alt = `${loginUser.name}님의 프로필`;
+
+                mobileUserImg.src = loginUser.profileImage;
+                mobileUserImg.alt = `${loginUser.name}님의 프로필`;
+
+                profileLink.appendChild(profileText);
+                profileLink.appendChild(profileImg);
+
+                mobileUserLink.appendChild(mobileUserImg);
+            } else {
+                loginLink.classList.remove('hide')
+                profileLink.classList.remove('active')
+                mobileUserLink.classList.remove('active')
+            }
+
+            logoutBtns.forEach((logoutBtn) => {
+                logoutBtn.addEventListener('click', () => {
+                    localStorage.removeItem('isLoggedIn')
+                    localStorage.removeItem('loginId')
+
+                    location.reload();
+                })
+            })
+
+        })
+}
+
 //gnb
 const menuBtn = document.querySelector('.menu-btn'),
     gnb = document.querySelector('.gnb'),
@@ -62,7 +124,7 @@ window.addEventListener('resize', () => {
 
 
 //예약하기
-const reservationBtn = document.querySelector('.reservation-btn'),
+const reservationBtns = document.querySelectorAll('.reservation-btn'),
     reservationModal = document.querySelector('.reservation-modal'),
     reservationClose = document.querySelector('.reservation-close'),
     reservationForm = document.querySelector('#reservation-form'),
@@ -81,16 +143,21 @@ const today = new Date(),
 visitDate.min = `${year}-${month}-${day}`;
 
 //예약하기 버튼
-reservationBtn.addEventListener('click', () => {
-    reservationForm.reset();
-    purposeBtns.forEach((btn) => {
-        btn.classList.remove('active');
-    });
+reservationBtns.forEach((reservationBtn) => {
+    reservationBtn.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        gnb.classList.remove('open');
+        reservationForm.reset();
+        purposeBtns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
 
-    reservationWarning.classList.remove('active');
+        reservationWarning.classList.remove('active');
 
-    reservationModal.classList.add('active');
+        reservationModal.classList.add('active');
+    })
 })
+
 
 //예약 모달 닫기
 reservationClose.addEventListener('click', () => {

@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+    #survey {
+        width: 100%;
+    }
+
+    .survey-main {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .survey-main .image.bg01 {
+        top: 10rem;
+    }
+
+    .survey-main .image.bg02 {
+        display: none;
+    }
+
+    .survey-main .image.bg03 {
+        display: none;
+    }
+
+    .survey-main .image.bg04 {
+        bottom: 20rem;
+        right: 10rem;
+    }
+
+    .survey-main .image.bg05 {
+        bottom: 35rem;
+        right: 5rem;
+    }
+
+    .survey-main .main-title-group {
+        padding: 0;
+        margin-bottom: 50px;
+        display: block;
+        justify-content: flex-start;
+    }
+
+    .survey-main .main-title-group .title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #000159;
+    }
+
+    .main-title-group>img {
+        display: none;
+    }
+
+    .survey-main .survey-item {
+        padding: 0;
+        word-break: keep-all;
+    }
+
+    .survey-question {
+        margin-bottom: 40px;
+    }
+
+    .survey-question .question {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .survey-question .answers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .survey-main .finish {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .survey-recommend {
+        padding: 50px 0;
+    }
+
+    .survey-recommend .recommend-inner {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+    .title-group .top {
+        margin-bottom: 50px;
+    }
+
+    .title-group .top img {
+        display: none;
+    }
+
+    .title-group .top .title {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .title-group .title-text {
+        display: none;
+    }
+
+    .recommend-box.result {
+        grid-template-columns: 2, 1fr;
+    }
+
+    .list-btn {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /* 추천 동물 리스트 */
+    .recommend-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .recommend-box {
+        width: 10.375rem;
+        height: auto;
+    }
+
+    .recommend-img {
+        width: 100%;
+        height: 10.375rem;
+    }
+
+    .recommend-info {
+        padding: 1rem;
+    }
+
+    .recommend-info .info-text {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .recommend-info h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .recommend-info p {
+        font-size: 0.75rem;
+    }
+
+    .recommend-tags span {
+        font-size: 0.75rem;
+        display: inline-block;
+        padding: 0.313rem;
+        margin: 0.313rem;
+        border-radius: 0.875rem;
+        background: #FFEEE3;
+    }
+}

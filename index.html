@@ -1,14 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Swiper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="WeMeet"></a></h1>
 
+            <nav class="gnb" aria-label="주요메뉴">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <a href="pages/facility.html" class="gnb-link">시설안내</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/animal.html" class="gnb-link">보호중인 아이들</a>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/process.html" class="gnb-link">입양안내</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/process.html">입양절차</a></li>
+                            <li><a href="pages/review.html">입양후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item">
+                        <a href="pages/support.html" class="gnb-link">혜택 및 제휴</a>
+                        <ul class="sub-menu">
+                            <li><a href="pages/support.html">국가지원</a></li>
+                            <li><a href="pages/benefit.html">제휴혜택</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb-item mobile">
+                        <a href="pages/survey.html" class="gnb-link">설문하기</a>
+                    </li>
+                    <li class="gnb-item mobile">
+                        <button type="button" class="reservation-btn gnb-link">방문예약</button>
+                    </li>
+                    <li class="gnb-item mobile">
+                        <button type="button" class="logout-btn gnb-link">로그아웃</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-user">
+                <a href="pages/login.html" class="login-link">로그인</a>
+
+                <a href="pages/mypage.html" class="profile-link">
+
+                </a>
+
+                <button type="button" class="logout-btn">로그아웃</button>
+
+                <a href="pages/mypage.html" class="mobile-user-link" aria-label="마이페이지">
+
+                </a>
+            </div>
+
+            <!-- 모바일 메뉴 버튼 -->
+            <button type="button" class="menu-btn" aria-label="메뉴열기" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- main-visual -->
+        <section id="main-visual">
+            <!-- Swiper -->
+            <div class="swiper main-visual-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video class="main-video" autoplay muted playsinline>
+                            <source src="video/main1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="main-video" autoplay muted playsinline>
+                            <source src="video/main2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="swiper-slide">
+                        <video class="main-video" autoplay muted playsinline>
+                            <source src="video/main3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="mobile-visual">
+                <img src="img/facility/mobile_main.png" alt="">
+            </div>
+        </section>
+
+        <!-- pet-list -->
+        <section id="pet-list">
+            <div class="pet-list-header">
+                <h3>현재! 보호중인 아이들</h3>
+                <p>평생을 함께할 가족을 애타게 기다리고 있어요</p>
+                <a href="pages/animal.html">아이들 더보기 →</a>
+            </div>
+
+            <div class="swiper pet-list-swiper">
+                <div class="swiper-wrapper">
+                    <!-- 슬라이드1 -->
+                    <div class="swiper-slide">
+                        <div class="pet-cards">
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드2 -->
+                    <div class="swiper-slide">
+                        <div class="pet-cards">
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드3 -->
+                    <div class="swiper-slide">
+                        <div class="pet-cards">
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pet-card">
+                                <img src="img/dog&cat/dog9.jpg" alt="멍이프로필사진">
+                                <div class="pet-card-detail">
+                                    <h4>멍이</h4>
+                                    <p class="pet-card-text">프렌치 불독/1살/1.8kg</p>
+                                    <div class="tag-wrapper">
+                                        <span class="pet-card-tag">중성화 완료</span>
+                                        <span class="pet-card-tag">건강 상태 양호</span>
+                                    </div>
+                                    <div class="tags-wrapper">
+                                        <span class="pet-card-tags">#입양가능</span>
+                                        <span class="pet-card-tags1">#활발함</span>
+                                        <span class="pet-card-tags1">#사람을 좋아함</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 필요에 따라 swiper-slide를 추가할 수 있습니다 -->
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <!-- service -->
+        <section id="service">
+            <h3>따뜻한 보호소 WeMeet</h3>
+            <div class="card-list">
+                <div class="service-card">
+                    <a href="pages/facility.html">
+                        <img src="img/main_service/main-cardlist01.png" alt="">
+                        <p class="card-text">보호소 WeMeet의 <br>구석구석</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="pages/animal.html">
+                        <img src="img/main_service/main-cardlist02.png" alt="">
+                        <p class="card-text">WeMeet의<br> 사랑스런 아이들</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="pages/process.html">
+                        <img src="img/main_service/main-cardlist03.png" alt="">
+                        <p class="card-text">사랑스런 아이들의<br> 입양 절차 안내</p>
+                    </a>
+                </div>
+                <div class="service-card">
+                    <a href="pages/benefit.html">
+                        <img src="img/main_service/main-cardlist04.png" alt="">
+                        <p class="card-text">사랑스런 아이들의<br> 입양시 특별한 혜택</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- guide -->
+        <section id="guide">
+            <div class="guide-left">
+                <img src="img/guide/guide-banner.png" alt="반려동물과 보호자 이미지">
+            </div>
+            <div class="guide-right">
+                <div class="guide-title">
+                    <p>입양은 끝이 아닌 시작!</p>
+                    <p><strong>WeMeet</strong> 이 함께 합니다.</p>
+                </div>
+                <div class="guide-card">
+                    <div class="guide-item">
+                        <a href="pages/survey.html">
+                            <div class="card-icon">
+                                <img src="img/guide/guide-test-icon.png" alt="성향 테스트 아이콘">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-flex">
+                                    <h4 class="card-name">성향 테스트</h4>
+                                    <div class="card-arrow">
+                                        <span>go</span>
+                                        <img src="img/guide/arrow-icon.png" alt="바로가기">
+                                    </div>
+                                </div>
+                                <p class="card-desc">
+                                    나는 어떤 성향의 아이와 맞을까?
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="guide-item beige">
+                        <button type="button" class="reservation-btn">
+                            <div class="card-icon">
+                                <img src="img/guide/guide-school-icon.png" alt="방문예약">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-flex">
+                                    <h4 class="card-name">방문 예약하기</h4>
+                                    <div class="card-arrow">
+                                        <span>go</span>
+                                        <img src="img/guide/arrow-icon.png" alt="바로가기">
+                                    </div>
+                                </div>
+                                <p class="card-desc">
+                                    사랑스런 아이들을 직접 만나보세요
+                                </p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+    </main>
+
+    <!-- fixed -->
+    <section id="section-reservation">
+        <button type="button" class="reservation-btn">예약하기</button>
+    </section>
+
+    <!-- 예약하기 모달 -->
+    <div class="reservation-modal">
+        <div class="reservation-modal-inner">
+            <button type="button" class="reservation-close" aria-label="예약창 닫기">
+                X
+            </button>
+            <h2>지점 방문예약</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name" name="name" placeholder="이름을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="animal-breed">품종</label>
+                    <input type="text" id="animal-breed" name="animalBreed" placeholder="품종을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="visit-data">방문일자</label>
+                    <input type="date" id="visit-data" name="visitData">
+                </div>
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
+                <!-- 미작성 경고 -->
+                <p class="reservation-warning">
+                    작성되지 않은 항목이 있습니다.
+                    모든 항목을 작성해 주세요.
+                </p>
+                <button type="submit" class="reservation-submit">
+                    신청하기
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- 예약완료 모달 -->
+    <div class="reservation-complete-modal">
+        <div class="reservation-complete-inner">
+            <p>
+                신청해 주셔서 감사합니다
+            </p>
+            <button type="button" class="reservation-confirm">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="./index.html" class="footer-logo">
+                    <img src="img/footer-logo.png" alt="WeMeet">
+                </a>
+                <p class="copyright">
+                    ©2026 WeMeet. All rights reserved.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-info-group">
+                    <p>상호 : 서울 동물 보호센터 위밋</p>
+                    <p>사업자번호 : 123-45-56789</p>
+                </div>
+                <div class="footer-info-group">
+                    <p>Tel : 02-1234-5678</p>
+                    <p>주소 : 서울특별시 강서구 화곡로 149</p>
+                </div>
+            </div>
+
+            <div class="footer-sns">
+                <a href="#" aria-label="인스타그램">
+                    <img src="img/instar.png" alt="Instagram"></img>
+                </a>
+                <a href="#" aria-label="유튜브">
+                    <img src="img/youtube.png" alt="Youtube"></img>
+                </a>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
