@@ -13,8 +13,9 @@
 
 .survey-main .image {
     position: absolute;
-    background: no-repeat;
-    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
 }
 
 .survey-main .image.bg01 {
@@ -157,33 +158,41 @@
     margin: 0 auto;
 }
 
+/* 추천 동물 리스트 */
 .recommend-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 3.125rem;
     margin-bottom: 3.125rem;
 }
 
 .recommend-box {
+    width: 20.188rem;
+    height: 100%;
+    overflow: hidden;
     border-radius: 1.563rem;
     border: 0.063rem solid #C5C5C5;
-    overflow: hidden;
 }
 
 .recommend-img {
-    width: 27.938rem;
+    width: 20.188rem;
     height: 21rem;
     overflow: hidden;
-    margin-bottom: 1.875rem;
+    margin-bottom: 0 auto 1.25rem;
 }
 
 .recommend-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
+
 .recommend-info {
-    padding: 1.25rem 3.125rem;
+    padding: 1rem
 }
-.recommend-info>div {
+
+.recommend-info .info-text {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -200,7 +209,8 @@
 
 .recommend-tags span {
     display: inline-block;
-    padding: 0.313rem 1rem;
+    padding: 0.313rem;
     border-radius: 0.875rem;
     background: #FFEEE3;
+    margin: 0 0.313rem;
 }

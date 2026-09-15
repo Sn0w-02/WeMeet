@@ -52,7 +52,7 @@ finish.addEventListener('click', () => {
     let typeAnimals;
     if (answers.type === 'any') {
         typeAnimals = animals;
-    }else {
+    } else {
         typeAnimals = animals.filter(animal => {
             return animal.type === answers.type;
         })
@@ -66,7 +66,7 @@ finish.addEventListener('click', () => {
         ) { score++; }
         //if (answers.type === 'any' || answers.type === animal.type) { score++; }
         if (answers.size === 'any' || answers.size === animal.size) { score++; }
-        if (answers.personality === 'any'||animal.personality.includes(answers.personality)) { score++; }
+        if (answers.personality === 'any' || animal.personality.includes(answers.personality)) { score++; }
         if (answers.ageGroup === 'any' || answers.ageGroup === animal.ageGroup) { score++; }
         if (answers.residence === 'any' || animal.residence.includes(answers.residence)) { score++; }
         if (animal.household.includes(answers.houseHold)) { score++; }
@@ -85,15 +85,15 @@ finish.addEventListener('click', () => {
             score: score
         };
     });
-    recommendedAnimals=recommendedAnimals.filter(animal=>{
+    recommendedAnimals = recommendedAnimals.filter(animal => {
         return animal.score >= 5;
     });
 
-    recommendedAnimals.sort((a,b) =>{
+    recommendedAnimals.sort((a, b) => {
         return b.score - a.score;
     });
 
-    showCount = 3;
+    showCount = 4;
     //화면에 출력
     renderAnimals();
 
@@ -108,40 +108,42 @@ function renderAnimals() {
     animalsToShow.forEach(animal => {
         const card = document.createElement('div');
 
-        card.className = 'recommend-card';
+        card.className = 'recommend-box';
 
         if (animal.image) {
             card.innerHTML = `
-            <div class="recommend-box">
-                <div class="recommend-img">
-                    <img src="${animal.image}" alt="${animal.name}">
-                </div>
-                <div class="recommend-info">
-                    <div>
-                        <h3>${animal.name}</h3>
-                        <p>${animal.breed} / ${animal.ageMonths} / ${animal.gender}</p>
+                <a href="./animal-detail.html"alt="">
+                    <div class="recommend-img">
+                        <img src="${animal.image}" alt="${animal.name}">
                     </div>
-                    <div class="recommend-tags">
-                        ${animal.tags.map(tag => `<span>${tag}</span>`).join('')}
+                    <div class="recommend-info">
+                        <div class="info-text">
+                            <h3>${animal.name}</h3>
+                            <p>${animal.breed} / ${animal.ageMonths} / ${animal.gender}</p>
+                        </div>
+                        <div class="recommend-tags">
+                            ${animal.tags.map(tag => `<span>${tag}</span>`).join('')}
+                        </div>
                     </div>
-                </div>
-            </div>
+                </a>
             `;
         }
         //else가 필요한가?
         else {
             card.innerHTML = `
             <div class="recommend-box">
-                <div class="recommend-image no-image">이미지 준비중</div>
-                <div class="recommend-info">
-                    <div>
-                        <h3>${animal.name}</h3>
-                        <p>${animal.breed} / ${animal.ageMonths} / ${animal.gender}</p>
+                <a href="" alt="">
+                    <div class="recommend-image no-image">이미지 준비중</div>
+                    <div class="recommend-info">
+                        <div>
+                            <h3>${animal.name}</h3>
+                            <p>${animal.breed} / ${animal.ageMonths} / ${animal.gender}</p>
+                        </div>
+                        <div class="recommend-tags">
+                            ${animal.tags.map(tag => `<span>${tag}</span>`).join('')}
+                        </div>
                     </div>
-                    <div class="recommend-tags">
-                        ${animal.tags.map(tag => `<span>${tag}</span>`).join('')}
-                    </div>
-                </div>
+                </a>
             </div>
             `;
         }
@@ -150,7 +152,7 @@ function renderAnimals() {
     });
     if (showCount >= recommendedAnimals.length) {
         listBtn.style.display = 'none';
-    }else{listBtn.style.display='block';}
+    } else { listBtn.style.display = 'block'; }
 }
 
 listBtn.addEventListener('click', () => {
