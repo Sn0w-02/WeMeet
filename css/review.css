@@ -6,6 +6,7 @@
     max-width: calc(100% - 40px);
     margin: 0 auto;
 }
+
 #adoption-review {
     padding: 85px 0 75px;
 }
@@ -56,78 +57,177 @@
     font-size: 20px;
 }
 
+
+/* ========================================
+    리스트
+======================================== */
+
 .review-list {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+
+    gap: 16px;
+
+    margin: 0;
+    padding: 0;
 }
 
-.review-card {
+.review-item {
+    position: relative;
 
-    min-height: 128px;
-    padding: 12px 70px;
     display: grid;
-    grid-template-columns: 180px 140px 190px 1fr;
+    grid-template-columns: 90px 115px 160px 1fr 30px;
     align-items: center;
-    column-gap: 24px;
-    border-radius: 20px;
-    background: #fbf7f2;
-    box-shadow: 2px 4px 7px 0 rgba(0, 1, 89, 0.07);
+
+    column-gap: 25px;
+
+    min-height: 120px;
+
+    padding: 16px 25px;
+
+    background: #fffaf6;
+
+    border: 1px solid #f1e9e2;
+    border-radius: 18px;
+
+    box-shadow: 2px 4px 10px rgba(0, 1, 89, 0.04);
 }
 
-.pet-image {
-    width: 109px;
-    height: 97px;
+
+/* 이미지 */
+
+.review-image {
+    width: 78px;
+    height: 78px;
+
     overflow: hidden;
-    border-radius: 20px;
+
+    border-radius: 14px;
 }
 
-.pet-image img {
+.review-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
+    transition: transform 0.3s;
 }
 
-.pet-info,
-.adoption-date {
+.review-item:hover .review-image img {
+    transform: scale(1.05);
+}
+
+
+/* 동물 정보 */
+
+.review-animal {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-size: 16px;
+
+    gap: 6px;
 }
 
-.pet-info strong,
-.adoption-date strong {
+.review-animal strong {
+    color: #222;
+    font-size: 16px;
     font-weight: 700;
-    font-size: 18px;
 }
 
-.review-text {
+.review-animal span {
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* 날짜 */
+
+.review-date>.date-title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+    color: #555;
+
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.6;
 }
 
-.pagination {
-    padding: 75px 0 20px;
+.review-date>span {
+    color: #888;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* 후기 내용 */
+
+.review-content {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    word-break: keep-all;
+}
+
+
+/* 상세 아이콘 */
+
+.review-more {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    font-size: 18px;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    color: #000159;
+
+    font-size: 17px;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.review-more:hover {
+    background: #f0f0f8;
+}
+
+
+/* ========================================
+    페이지네이션
+======================================== */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 50px;
+}
+
+.pagination a,
+.pagination strong {
+    color: #222;
+
+    font-size: 16px;
+}
+
+.pagination strong {
+    font-weight: 700;
 }
 
 @media (max-width:768px) {
     .inner {
         max-width: calc(100% - 32px);
     }
-
-    #review-header {
-        height: 60px;
-    }
-
-    .logo {
-        width: 125px;
-    }
-
 
     .header-user span {
         display: none;
@@ -177,73 +277,255 @@
         font-size: 14px;
     }
 
+    /* ========================================
+    리스트
+======================================== */
+
     .review-list {
+        display: flex;
+        flex-direction: column;
+
         gap: 16px;
+
+        margin: 0;
+        padding: 0;
     }
 
-    .review-card {
-        min-height: 250px;
-        padding: 14px;
-        /* grid-template-columns: 78px 1fr 72px;
-        grid-template-rows: auto auto; */
-        /*      column-gap: 12px; */
+    .review-item {
+        position: relative;
+
+        display: grid;
+        grid-template-columns: 90px 115px 120px 1fr 30px;
+        align-items: center;
+
+        column-gap: 25px;
+
+        min-height: 105px;
+
+        padding: 16px 25px;
+
+        background: #fffaf6;
+
+        border: 1px solid #f1e9e2;
+        border-radius: 18px;
+
+        box-shadow: 2px 4px 10px rgba(0, 1, 89, 0.04);
+    }
+
+
+    /* 이미지 */
+
+    .review-image {
+        width: 78px;
+        height: 78px;
+
+        overflow: hidden;
+
         border-radius: 14px;
     }
 
-    .pet-image {
-        width: 85px;
-        height: 85px;
+    .review-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: transform 0.3s;
+    }
+
+    .review-item:hover .review-image img {
+        transform: scale(1.05);
+    }
+
+
+    /* 동물 정보 */
+
+    .review-animal {
+        display: flex;
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+    .review-animal strong {
+        color: #222;
+
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .review-animal span {
+        color: #666;
+
+        font-size: 16px;
+    }
+
+
+    /* 날짜 */
+
+    .review-date {
+        display: flex;
+        flex-direction: column;
+
+        gap: 6px;
+
+        color: #555;
+
 
     }
 
-    .pet-info,
-    .adoption-date {
-        gap: 4px;
+    .date-title {
+        color: #888;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+
+
+    /* 상세 아이콘 */
+
+    .review-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+
+        color: #000159;
+
+        font-size: 17px;
+
+        border-radius: 50%;
+
+        transition: 0.3s;
+    }
+
+    .review-more:hover {
+        background: #f0f0f8;
+    }
+
+
+    /* ========================================
+    페이지네이션
+======================================== */
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 15px;
+
+        margin-top: 50px;
+    }
+
+    .pagination a,
+    .pagination strong {
+        color: #222;
+
+        font-size: 16px;
+    }
+
+    .pagination strong {
+        font-weight: 700;
+    }
+
+
+
+    /* 리스트 */
+
+    .review-list {
+        gap: 18px;
+    }
+
+
+    .review-item {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+
+        gap: 6px 18px;
+
+        padding: 20px;
+        min-height: 250px;
+        border-radius: 12px;
+        box-shadow: none;
+    }
+
+
+
+    /* 사진 */
+    .review-image {
+        grid-row: 1 / 3;
+
+        width: 100px;
+        height: 100px;
+
+        border-radius: 10px;
+    }
+
+
+    /* 이름 + 품종 */
+    .review-animal {
+        align-self: end;
+        gap: 5px;
+    }
+
+
+
+
+
+
+    /* 날짜 */
+    .review-date {
+        /* align-self:start;는 grid나 flex안에서 "이 요소 하나만 "세로 방향으로 어디에 붙을지 정하는 속성 start:위,center:가운데,end:아래쪽 그럼 align-items와의 차이점은?= align-items는 부모에 쓰고, 자식 전체를 한꺼번에 정렬하는 것 반면 self는 자식 하나에 쓰고 그 요소만 따로 정렬한다 그러면 부모자 전체적으로 가운데 정렬되어 있어도 날짜만 위쪽에 붙일 수 있다*/
+        align-self: start;
+        /* 내 위치 */
+        flex-direction: row;
+        /* flex-direction:row;는 flex안에 자식들을 가로로 나란히 놓은 것 */
+        align-items: center;
+        /* 내 안의 자식들 위치 */
+
+        gap: 5px;
+
+        margin-top: 7px;
+
         font-size: 14px;
     }
 
-    .review-text {
-        grid-column: 2 / 4;
-        margin-top: 7px;
+    .date-title {
         font-size: 15px;
-        line-height: 1.45;
     }
+
+
+    /* 후기 내용 */
+    /* grid-column 속성으로 카드아래 부분을 전체 차지 
+    flex-direction:row;와의 차이점은 이 요소가 가로로 몇 칸을 차지할 지 정하는 것,
+    즉 자기 자신이 grid에서 가로 2칸을 차지한다.*/
+    .review-content {
+        grid-column: 1 / 3;
+        margin: 0;
+
+        color: #333;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.7;
+
+        word-break: keep-all;
+    }
+
+    /* 상세 아이콘 모바일에서 숨기기 */
+
+    .review-more {
+        display: none;
+    }
+
+
+    /* 페이지네이션 */
 
     .pagination {
-        padding: 42px 0 5px;
-        font-size: 20px;
+        margin-top: 35px;
     }
 
-    #review-footer {
-        padding: 22px 0;
-    }
-
-    .footer-inner {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        text-align: center;
-    }
-
-    .footer-brand img {
-        width: 145px;
-        margin: 0 auto;
-    }
-
-    .footer-title {
-        display: flex;
-    }
-
-    .footer-text {
-        font-size: 8px;
-    }
-
-    .footer-sns {
-        justify-content: center;
-    }
-
-    .footer-sns img {
-        width: 28px;
-        height: 28px;
-    }
 }
