@@ -98,6 +98,7 @@ finish.addEventListener('click', () => {
     renderAnimals();
 
     document.querySelector('.survey-recommend').scrollIntoView({ behavior: 'smooth' });
+    listBtn.classList.add('active');
 });
 
 function renderAnimals() {
@@ -150,13 +151,13 @@ function renderAnimals() {
 
         recommendList.appendChild(card);
     });
-    if (showCount >= recommendedAnimals.length) {
-        listBtn.style.display = 'none';
-    } else { listBtn.style.display = 'block'; }
+    /* if (showCount >= recommendedAnimals.length) {
+        listBtn.style.display = 'block';
+    } else { listBtn.style.display = 'none'; } */
 }
 
 listBtn.addEventListener('click', () => {
-    showCount = showCount + 3;
+    showCount = showCount + 4;
     renderAnimals();
 });
 
