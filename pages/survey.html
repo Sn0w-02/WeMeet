@@ -109,10 +109,10 @@
                             <input type="radio" name="size" value="small"> 소형
                         </label>
                         <label>
-                            <input type="radio" name="size" value="Medium"> 중형
+                            <input type="radio" name="size" value="medium"> 중형
                         </label>
                         <label>
-                            <input type="radio" name="size" value="Large"> 대형
+                            <input type="radio" name="size" value="large"> 대형
                         </label>
                         <label>
                             <input type="radio" name="size" value="any"> 상관없다
@@ -123,19 +123,22 @@
                     <h3 class="question">Q. 어떤 성격을 좋아하시나요?</h3>
                     <div class="answers">
                         <label>
-                            <input type="radio" name="traits" value="charm"> 애교가 많은
+                            <input type="radio" name="personality" value="charm"> 애교형
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="calm"> 차분한
+                            <input type="radio" name="personality" value="introverted"> 내향형
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="active"> 활발한
+                            <input type="radio" name="personality" value="calm"> 차분함
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="independent"> 독립적인
+                            <input type="radio" name="personality" value="active"> 활동형
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="any"> 상관없다
+                            <input type="radio" name="personality" value="independent"> 독립형
+                        </label>
+                        <label>
+                            <input type="radio" name="personality" value="any"> 상관없다
                         </label>
                     </div>
                 </div>
@@ -143,13 +146,13 @@
                     <h3 class="question">Q. 선호하시는 연령을 알려주세요~</h3>
                     <div class="answers">
                         <label>
-                            <input type="radio" name="agegroup" value="young"> 1년미만
+                            <input type="radio" name="agegroup" value="young"> 1살이하
                         </label>
                         <label>
-                            <input type="radio" name="agegroup" value="adult"> 성견 • 성묘
+                            <input type="radio" name="agegroup" value="adult"> 1살~6살
                         </label>
                         <label>
-                            <input type="radio" name="agegroup" value="old"> 노령견 • 노령묘
+                            <input type="radio" name="agegroup" value="old"> 6살이상
                         </label>
                         <label>
                             <input type="radio" name="agegroup" value="any"> 상관없다
@@ -244,10 +247,10 @@
                 </div>
                 <p class="title-text">여러분들과 어울리는 아이들을 소개합니다</p>
             </div>
+
             <!-- json data를 script로 구현 -->
-            <div class="recommend-box">
-                <div class="recommend-list"></div>
-            </div>
+            <div class="recommend-list"></div>
+
             <button type="button" class="list-btn">더보기 ↓</button>
         </div>
     </div>
