@@ -10,10 +10,10 @@
     #animal-profile {
         gap: 26px;
         padding: 28px;
-        margin-bottom: 4.688rem;
+        margin-bottom: 40px;
     }
 
-    #animal-profile .web {
+    #animal-profile .web-img {
         display: none;
     }
 
@@ -32,7 +32,7 @@
         margin-bottom: 28px;
     }
 
-    .profile-detail .title {
+    .profile-detail .main-title {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 0;
@@ -72,6 +72,7 @@
     #animal-trait {
         display: block;
         padding: 28px;
+        margin-bottom: 40px;
     }
 
     #animal-trait .like {
@@ -130,7 +131,7 @@
         width: 100%;
         height: 100%;
         padding: 40px 28px;
-        margin-bottom: 4.688rem;
+        margin-bottom: 40px;
     }
 
     .animal-info h2,
@@ -287,12 +288,12 @@
         font-weight: 600;
         margin-bottom: 20px;
     }
-    
+
     #check .check-list>div {
         gap: 15px;
         margin-bottom: 20px;
     }
-   
+
     .check-list div img {
         width: 20px;
     }
