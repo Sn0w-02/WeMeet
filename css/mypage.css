@@ -43,6 +43,7 @@ main {
 
 .summary-card.d-day {
     border: 1px solid #000159;
+    background-image: url(../img/mypage/d-day-bg.png);
 }
 
 .summary-card.history {
@@ -132,11 +133,8 @@ main {
 }
 
 .history-icon {
-    display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: #000159;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .history-list strong {
@@ -448,6 +446,11 @@ main {
 
     .history-list li {
         font-size: 0.7875rem;
+    }
+
+    .history-icon {
+        width: 1.125rem;
+        height: 1.125rem;
     }
 
     /* profile */
