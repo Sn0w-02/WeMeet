@@ -9,11 +9,17 @@ const loginLink = document.querySelector('.login-link');
 const profileLink = document.querySelector('.profile-link');
 const mobileUserLink = document.querySelector('.mobile-user-link');
 
+//로그아웃
+const logoutBtns = document.querySelectorAll('.logout-btn');
+
 if (isLoggedIn === 'true') {
-    loginLink.style.display = 'none'
-    loginLink.classList.remove('active')
+    loginLink.classList.add('hide')
     profileLink.classList.add('active')
     mobileUserLink.classList.add('active')
+
+    logoutBtns.forEach((logoutBtn) => {
+        logoutBtn.classList.add('active')
+    })
 
     fetch('https://sn0w-02.github.io/WeMeet/js/user.json')
         .then(response => response.json())
@@ -28,20 +34,30 @@ if (isLoggedIn === 'true') {
 
                 profileText.textContent = `${loginUser.myPet.name}의 단짝 ${loginUser.name}님`
                 profileImg.src = loginUser.profileImage;
-                profileImg.alt = '${loginUser.name}님의 프로필';
+                profileImg.alt = `${loginUser.name}님의 프로필`;
 
                 mobileUserImg.src = loginUser.profileImage;
-                mobileUserImg.alt = '${loginUser.name}님의 프로필';
+                mobileUserImg.alt = `${loginUser.name}님의 프로필`;
 
                 profileLink.appendChild(profileText);
                 profileLink.appendChild(profileImg);
 
                 mobileUserLink.appendChild(mobileUserImg);
             } else {
-                loginLink.classList.add('active')
+                loginLink.classList.remove('hide')
                 profileLink.classList.remove('active')
                 mobileUserLink.classList.remove('active')
             }
+
+            logoutBtns.forEach((logoutBtn) => {
+                logoutBtn.addEventListener('click', () => {
+                    localStorage.removeItem('isLoggedIn')
+                    localStorage.removeItem('loginId')
+
+                    location.reload();
+                })
+            })
+
         })
 }
 
