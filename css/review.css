@@ -229,9 +229,7 @@
         max-width: calc(100% - 32px);
     }
 
-    .header-user span {
-        display: none;
-    }
+  
 
     .header-user img {
         width: 32px;
