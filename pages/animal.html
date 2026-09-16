@@ -40,13 +40,22 @@
                             <li><a href="benefit.html">제휴혜택</a></li>
                         </ul>
                     </li>
+                    <li class="gnb-item mobile">
+                        <button type="button" class="logout-btn gnb-link">로그아웃</button>
+                    </li>
                 </ul>
             </nav>
             <div class="header-user">
                 <a href="login.html" class="login-link">로그인</a>
-                <a href="mypage.html" class="profile-link"></a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <button type="button" class="logout-btn">로그아웃</button>
+
                 <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
-                    <img src="../img/mobile-User.png" alt="">
+
                 </a>
             </div>
 
@@ -77,7 +86,7 @@
                 <div class="filter-btn">
                     <p class="filter-name">동물</p>
                     <div class="filter-list btn">
-                        <button type="button" class="animal" data-type="all">전체</button>
+                        <button type="button" class="animal" data-type="any">전체</button>
                         <button type="button" class="animal" data-type="dog">강아지</button>
                         <button type="button" class="animal" data-type="cat">고양이</button>
                     </div>
@@ -85,18 +94,18 @@
                 <div class="filter-btn">
                     <p class="filter-name">성별</p>
                     <div class="filter-list btn">
-                        <button type="button" class="gender" data-type="gender-all">전체</button>
+                        <button type="button" class="gender" data-type="all">전체</button>
                         <button type="button" class="gender" data-type="male">남</button>
                         <button type="button" class="gender" data-type="female">여</button>
                     </div>
                 </div>
                 <div class="filter-radio">
                     <p class="filter-name">나이</p>
-                    <div class="filter-list radio">
-                        <label><input type="radio" name="age" value="one">1살이하</label>
-                        <label><input type="radio" name="age" value="three">2~3살</label>
-                        <label><input type="radio" name="age" value="seven">4~7살</label>
-                        <label><input type="radio" name="age" value="eight">8살이상</label>
+                    <div class="filter-list radio"><!-- json-name=ageGroup -->
+                        <label><input type="radio" name="age" value="young">1살이하</label>
+                        <label><input type="radio" name="age" value="adult">1~6살</label>
+                        <label><input type="radio" name="age" value="old">6살이상</label>
+                        <label><input type="radio" name="age" value="any">상관없다</label>
                     </div>
                 </div>
                 <div class="filter-radio">
@@ -105,22 +114,23 @@
                         <label><input type="radio" name="size" value="small">소형</label>
                         <label><input type="radio" name="size" value="medium">중형</label>
                         <label><input type="radio" name="size" value="large">대형</label>
+                        <!-- <label><input type="radio" name="size" value="any">상관없음</label> -->
                     </div>
                 </div>
                 <div class="filter-radio">
                     <p class="filter-name">성향</p>
                     <div class="filter-list radio">
-                        <div>
-                            <label><input type="checkbox" name="Propensity" value="outgoing">외향적</label>
-                            <label><input type="checkbox" name="Propensity" value="active">활동적</label>
-                        </div>
-                        <div>
-                            <label><input type="checkbox" name="Propensity" value="affectionate">애교형</label>
-                            <label><input type="checkbox" name="Propensity" value="introverted">내향적</label>
+                        <div><!-- json-name=traits -->
+                            <label><input type="checkbox" name="Propensity" value="charm">애교형</label>
+                            <label><input type="checkbox" name="Propensity" value="introverted">내향형</label>
                         </div>
                         <div>
                             <label><input type="checkbox" name="Propensity" value="calm">차분함</label>
                             <label><input type="checkbox" name="Propensity " value="independent">독립형</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="Propensity" value="active">활동형</label>
+                            <label><input type="checkbox" name="Propensity" value="outgoing">상관없다</label>
                         </div>
                     </div>
                 </div>
@@ -128,11 +138,11 @@
                 <!-- mobile에서 활성화 -->
                 <div class="select-mobile">
                     <p class="filter-name">나이</p>
-                    <select id="list">
-                        <option class="age" value="one">1살이하</option>
-                        <option class="age" value="two">2~3살이하</option>
-                        <option class="age" value="seven">4~7살이하</option>
-                        <option class="age" value="eight">8살이상</option>
+                    <select id="list"><!-- json-name=agegroup -->
+                        <option class="age" value="young">1살이하</option>
+                        <option class="age" value="adult">1살~6살</option>
+                        <option class="age" value="old">6살이상</option>
+                        <option class="age" value="any">상관없다</option>
                     </select>
                 </div>
                 <div class="select-mobile">
@@ -145,13 +155,13 @@
                 </div>
                 <div class="select-mobile">
                     <p class="filter-name">성향</p>
-                    <select id="list">
-                        <option class="Propensity" value="outgoing">외향적</option>
-                        <option class="Propensity" value="introverted">내향적</option>
-                        <option class="Propensity" value="active">활동적</option>
+                    <select id="list"><!-- json-name=traits -->
+                        <option class="Propensity" value="introverted">내향형</option>
+                        <option class="Propensity" value="active">활동형</option>
                         <option class="Propensity" value="calm">차분함</option>
-                        <option class="Propensity" value="affectionate">애교형</option>
-                        <option class="Propensity" value="independent">독립적</option>
+                        <option class="Propensity" value="charm">애교형</option>
+                        <option class="Propensity" value="independent">독립형</option>
+                        <option class="Propensity" value="any">상관없다</option>
                     </select>
                 </div>
 
@@ -198,21 +208,15 @@
                     <label for="visit-data">방문일자</label>
                     <input type="date" id="visit-data" name="visitData">
                 </div>
-                <fieldset class="purpose-group">
-                    <legend>방문목적</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="사전만남">사전만남
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="시설방문">시설방문
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="입양신청">입양신청
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
-                    </label>
-                </fieldset>
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
                 <!-- 미작성 경고 -->
                 <p class="reservation-warning">
                     작성되지 않은 항목이 있습니다.
@@ -235,6 +239,7 @@
             </button>
         </div>
     </div>
+
     <!--======== footer =============-->
     <footer class="footer">
         <div class="footer-inner">

@@ -41,13 +41,22 @@
                             <li><a href="benefit.html">제휴혜택</a></li>
                         </ul>
                     </li>
+                    <li class="gnb-item mobile">
+                        <button type="button" class="logout-btn gnb-link">로그아웃</button>
+                    </li>
                 </ul>
             </nav>
             <div class="header-user">
                 <a href="login.html" class="login-link">로그인</a>
-                <a href="mypage.html" class="profile-link"></a>
+
+                <a href="mypage.html" class="profile-link">
+
+                </a>
+
+                <button type="button" class="logout-btn">로그아웃</button>
+
                 <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
-                    <img src="../img/mobile-User.png" alt="">
+
                 </a>
             </div>
 
@@ -94,11 +103,11 @@
                         <label>
                             <input type="radio" name="type" value="cat"> 고양이
                         </label>
-                        <label>
+                        <!-- <label>
                             <input type="radio" name="type" value="both"> 둘 다 좋다
-                        </label>
+                        </label> -->
                         <label>
-                            <input type="radio" name="type" value="notyet"> 아직 잘 모르겠다
+                            <input type="radio" name="type" value="any"> 상관없다
                         </label>
                     </div>
                 </div>
@@ -109,10 +118,10 @@
                             <input type="radio" name="size" value="small"> 소형
                         </label>
                         <label>
-                            <input type="radio" name="size" value="Medium"> 중형
+                            <input type="radio" name="size" value="medium"> 중형
                         </label>
                         <label>
-                            <input type="radio" name="size" value="Large"> 대형
+                            <input type="radio" name="size" value="large"> 대형
                         </label>
                         <label>
                             <input type="radio" name="size" value="any"> 상관없다
@@ -123,19 +132,22 @@
                     <h3 class="question">Q. 어떤 성격을 좋아하시나요?</h3>
                     <div class="answers">
                         <label>
-                            <input type="radio" name="traits" value="charm"> 애교가 많은
+                            <input type="radio" name="personality" value="charm"> 애교형
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="calm"> 차분한
+                            <input type="radio" name="personality" value="introverted"> 내향형
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="Active"> 활발한
+                            <input type="radio" name="personality" value="calm"> 차분함
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="independent"> 독립적인
+                            <input type="radio" name="personality" value="active"> 활동형
                         </label>
                         <label>
-                            <input type="radio" name="traits" value="any"> 상관없다
+                            <input type="radio" name="personality" value="independent"> 독립형
+                        </label>
+                        <label>
+                            <input type="radio" name="personality" value="any"> 상관없다
                         </label>
                     </div>
                 </div>
@@ -143,13 +155,13 @@
                     <h3 class="question">Q. 선호하시는 연령을 알려주세요~</h3>
                     <div class="answers">
                         <label>
-                            <input type="radio" name="agegroup" value="young"> 1년미만
+                            <input type="radio" name="agegroup" value="young"> 1살이하
                         </label>
                         <label>
-                            <input type="radio" name="agegroup" value="adult"> 성견 • 성묘
+                            <input type="radio" name="agegroup" value="adult"> 1살~6살
                         </label>
                         <label>
-                            <input type="radio" name="agegroup" value="old"> 노령견 • 노령묘
+                            <input type="radio" name="agegroup" value="old"> 6살이상
                         </label>
                         <label>
                             <input type="radio" name="agegroup" value="any"> 상관없다
@@ -200,7 +212,7 @@
                             <input type="radio" name="awaytime" value="4to8"> 4 ~ 8시간
                         </label>
                         <label>
-                            <input type="radio" name="awaytime" value="8plus"> 8시간 이상
+                            <input type="radio" name="awaytime" value="over8"> 8시간 이상
                         </label>
                     </div>
                 </div>
@@ -244,10 +256,10 @@
                 </div>
                 <p class="title-text">여러분들과 어울리는 아이들을 소개합니다</p>
             </div>
+
             <!-- json data를 script로 구현 -->
-            <div class="recommend-box">
-                <div class="recommend-list"></div>
-            </div>
+            <div class="recommend-list"></div>
+
             <button type="button" class="list-btn">더보기 ↓</button>
         </div>
     </div>
@@ -281,21 +293,15 @@
                     <label for="visit-data">방문일자</label>
                     <input type="date" id="visit-data" name="visitData">
                 </div>
-                <fieldset class="purpose-group">
-                    <legend>방문목적</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="사전만남">사전만남
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="시설방문">시설방문
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="입양신청">입양신청
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
-                    </label>
-                </fieldset>
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
                 <!-- 미작성 경고 -->
                 <p class="reservation-warning">
                     작성되지 않은 항목이 있습니다.

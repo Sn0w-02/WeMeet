@@ -65,3 +65,19 @@ fetch("https://sn0w-02.github.io/WeMeet/js/user.json")
     .catch(error => {
         console.log(error);
     });
+
+
+
+//benefit
+var benefitSwiper = new Swiper('.benefit-swiper', {
+    loop: true,
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});

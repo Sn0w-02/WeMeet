@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/animal-detail.css">
     <link rel="stylesheet" href="../css/animal-detail-m.css">
     <script src="../js/common.js" defer></script>
+    <script src="../js/animal-detail.js" defer></script>
 </head>
 
 <body>
@@ -40,6 +41,9 @@
                             <li><a href="benefit.html">제휴혜택</a></li>
                         </ul>
                     </li>
+                    <li class="gnb-item mobile">
+                        <button type="button" class="logout-btn gnb-link">로그아웃</button>
+                    </li>
                 </ul>
             </nav>
             <div class="header-user">
@@ -49,8 +53,10 @@
 
                 </a>
 
+                <button type="button" class="logout-btn">로그아웃</button>
+
                 <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
-                    <img src="../img/mobile-User.png" alt="">
+
                 </a>
             </div>
 
@@ -67,56 +73,56 @@
 
         <!--================ 프로필 ================-->
         <section id="animal-profile">
-            <img class="web" src="../img/animal-detail/love.png" alt="">
+            <img class="web-img" src="../img/animal-detail/love.png" alt="">
             <div class="profile-detail">
                 <div class="detail-top">
                     <img class="mobile" src="../img/animal-detail/love.png" alt="">
-                    <h1 class="title">“사람을 좋아하지만 <br>
+                    <h1 class="main-title">“사람을 좋아하지만 <br>
                         천천히 마음을 여는 다정한 아이에요.”</h1>
                 </div>
                 <div class="content">
                     <div class="left-box">
                         <div>
                             <img src="../img/animal-detail/Tag.png" alt="">
-                            <h4 class="sub-title">이름</h4>
-                            <p class="description">사랑이</p>
+                            <h4 class="sub-title name">이름</h4>
+                            <p class="desc name">사랑이</p>
                         </div>
                         <div>
                             <img src="../img/animal-detail/PawPrint.png" alt="">
-                            <h4 class="sub-title">품종</h4>
-                            <p class="description">포메라니안</p>
+                            <h4 class="sub-title breed">품종</h4>
+                            <p class="desc breed">포메라니안</p>
                         </div>
                         <div>
                             <img src="../img/animal-detail/genderIntersex.png" alt="">
-                            <h4 class="sub-title">성별</h4>
-                            <p class="description">여아</p>
+                            <h4 class="sub-title gender">성별</h4>
+                            <p class="desc gender">여아</p>
                         </div>
                         <div>
                             <img src="../img/animal-detail/Heart.png" alt="">
-                            <h4 class="sub-title">나이</h4>
-                            <p class="description">3살</p>
+                            <h4 class="sub-title age">나이</h4>
+                            <p class="desc age">3살</p>
                         </div>
                     </div>
                     <div class="right-box">
                         <div>
                             <img src="../img/animal-detail/scales 1.png" alt="">
-                            <h4 class="sub-title">몸무게</h4>
-                            <p class="description">2.7kg</p>
+                            <h4 class="sub-title weight">몸무게</h4>
+                            <p class="desc weight">2.7kg</p>
                         </div>
                         <div>
                             <img src="../img/animal-detail/syringe 1.png" alt="">
-                            <h4 class="sub-title">중성화</h4>
-                            <p class="description">완료</p>
+                            <h4 class="sub-title neutered">중성화</h4>
+                            <p class="desc neutered">완료</p>
                         </div>
                         <div>
                             <img src="../img/animal-detail/shield-check 1.png" alt="">
-                            <h4 class="sub-title">예방접종</h4>
-                            <p class="description">완료</p>
+                            <h4 class="sub-title vaccinated">예방접종</h4>
+                            <p class="desc vaccinated">완료</p>
                         </div>
                         <div>
                             <img src="../img/animal-detail/clipboard-text 1.png" alt="">
-                            <h4 class="sub-title">임보상황</h4>
-                            <p class="description">진행중</p>
+                            <h4 class="sub-title fosterstatus">임보상황</h4>
+                            <p class="desc fosterstatus">진행중</p>
                         </div>
                     </div>
                 </div>
@@ -187,31 +193,31 @@
                 <div>
                     <div class="gap">
                         <h4 class="info-class">성격</h4>
-                        <p class="info-description">
+                        <p class="info-desc">
                             애교 많음, 활발함, 영리함, 호기심 많음, 보호자와 잘 지냄, 경계심이 강해 예민할 수 있음.
                         </p>
                     </div>
                     <div class="gap">
                         <h4 class="info-class">색상</h4>
-                        <p class="info-description">
+                        <p class="info-desc">
                             화이트, 세이지, 블랙, 브라운, 블루, 세이블, 크림, 믹스 등
                         </p>
                     </div>
                     <div class="info-flex">
                         <h4 class="info-class">수명</h4>
-                        <p class="info-description">12 ~ 16년</p>
+                        <p class="info-desc">12 ~ 16년</p>
                     </div>
                     <div class="info-flex">
                         <h4 class="info-class">무게</h4>
-                        <p class="info-description">1.4 ~3.2kg(성체)</p>
+                        <p class="info-desc">1.4 ~3.2kg(성체)</p>
                     </div>
                     <div class="info-flex">
                         <h4 class="info-class">크기/높이</h4>
-                        <p class="info-description">18 ~ 24cm (어깨높이)</p>
+                        <p class="info-desc">18 ~ 24cm (어깨높이)</p>
                     </div>
                     <div class="info-flex">
                         <h4 class="info-class">출생지</h4>
-                        <p class="info-description">독일,폴란드</p>
+                        <p class="info-desc">독일,폴란드</p>
                     </div>
                 </div>
             </div>
@@ -368,13 +374,13 @@
         </div>
         <img src="../img/animal-detail/checkhouse.png" alt="">
     </section>
-    
-     <!--============= fixed ===========-->
+
+    <!-- fixed -->
     <section id="section-reservation">
         <button type="button" class="reservation-btn">예약하기</button>
     </section>
 
-    <!--============ 예약하기 모달 ================-->
+    <!-- 예약하기 모달 -->
     <div class="reservation-modal">
         <div class="reservation-modal-inner">
             <button type="button" class="reservation-close" aria-label="예약창 닫기">
@@ -398,22 +404,16 @@
                     <label for="visit-data">방문일자</label>
                     <input type="date" id="visit-data" name="visitData">
                 </div>
-                <fieldset class="purpose-group">
-                    <legend>방문목적</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="사전만남">사전만남
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="시설방문">시설방문
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="입양신청">입양신청
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
-                    </label>
-                </fieldset>
-                <!--=========== 미작성 경고 ============-->
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
+                <!-- 미작성 경고 -->
                 <p class="reservation-warning">
                     작성되지 않은 항목이 있습니다.
                     모든 항목을 작성해 주세요.
@@ -424,7 +424,7 @@
             </form>
         </div>
     </div>
-    <!--=========== 예약완료 모달 ===============-->
+    <!-- 예약완료 모달 -->
     <div class="reservation-complete-modal">
         <div class="reservation-complete-inner">
             <p>

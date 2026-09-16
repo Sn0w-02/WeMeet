@@ -11,9 +11,6 @@
 </head>
 
 <body>
-
-
-
     <!-- header -->
     <header class="header">
         <div class="header-inner">
@@ -41,6 +38,9 @@
                             <li><a href="benefit.html">제휴혜택</a></li>
                         </ul>
                     </li>
+                    <li class="gnb-item mobile">
+                        <button type="button" class="logout-btn gnb-link">로그아웃</button>
+                    </li>
                 </ul>
             </nav>
             <div class="header-user">
@@ -50,8 +50,10 @@
 
                 </a>
 
+                <button type="button" class="logout-btn">로그아웃</button>
+
                 <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
-                    <img src="../img/mobile-User.png" alt="">
+
                 </a>
             </div>
 
@@ -66,8 +68,6 @@
 
     <!-- main -->
     <main>
-
-
         <section id="adoption-process">
             <div class="inner process-inner">
                 <div class="process-heading">
@@ -82,7 +82,7 @@
                 <div class="process-list">
                     <div class="process-item">
                         <div class="process-icon">
-                            <img src="../img/process/말풍선이미지수정완료.png" alt="품종 문의 아이콘">
+                            <img src="../img/process/process-inquiry-icon.png" alt="품종 문의 아이콘">
                         </div>
                         <div class="process-center">
                             <div class="process-number">01</div>
@@ -99,7 +99,7 @@
 
                     <div class="process-item">
                         <div class="process-icon">
-                            <img src="../img/process/개집이미지 수정완료.png" alt="보호소 방문 및 상담 아이콘">
+                            <img src="../img/process/process-shelter-icon.png" alt="보호소 방문 및 상담 아이콘">
                         </div>
                         <div class="process-center">
                             <div class="process-number">02</div>
@@ -116,7 +116,7 @@
 
                     <div class="process-item">
                         <div class="process-icon">
-                            <img src="../img/process/심박이미지수정완료.png" alt="건강상태 확인 아이콘">
+                            <img src="../img/process/process-health-icon.png" alt="건강상태 확인 아이콘">
                         </div>
                         <div class="process-center">
                             <div class="process-number">03</div>
@@ -133,7 +133,7 @@
 
                     <div class="process-item">
                         <div class="process-icon">
-                            <img src="../img/process/문서이미지수정완료.png" alt="WeMeet Time 아이콘">
+                            <img src="../img/process/process-contract-icon.png" alt="WeMeet Time 아이콘">
                         </div>
                         <div class="process-center">
                             <div class="process-number">04</div>
@@ -150,7 +150,7 @@
 
                     <div class="process-item">
                         <div class="process-icon">
-                            <img src="../img/process/강아지 백터사이즈 조정 이미지.png" alt="계약서 작성 아이콘">
+                            <img src="../img/process/process-wemeet-time-icon.png" alt="계약서 작성 아이콘">
                         </div>
                         <div class="process-center">
                             <div class="process-number">05</div>
@@ -167,7 +167,7 @@
 
                     <div class="process-item last">
                         <div class="process-icon">
-                            <img src="../img/process/손하트이미지수저완료.png" alt="입양 후 관리 아이콘">
+                            <img src="../img/process/process-care-icon.png" alt="입양 후 관리 아이콘">
                         </div>
                         <div class="process-center">
                             <div class="process-number">06</div>
@@ -185,7 +185,7 @@
 
             <div class="process-infotext">
                 <p class="infotxet">한 생명의 평생을 책임지는 소중한 약속, <br>WeMeet이 함께 동행하겠습니다</p>
-                <button><a href="#">보호동물 보러가기</a></button>
+                <button><a href="../pages/animal.html">보호동물 보러가기</a></button>
             </div>
         </section>
 
@@ -194,39 +194,39 @@
                 <div class="location-heading">
                     <div class="location-title">
                         <h2>시설 위치 안내</h2>
-                        <img src="../img/process/입양절차 위치아이콘.png" alt="">
+                        <img src="../img/process/process-location-title-icon.png" alt="">
                     </div>
                     <p>전국의 WeMeet 보호센터를 만나보세요</p>
                 </div>
 
                 <div class="location-map">
-                    <img src="../img/process/입양절차페이지아이콘.png" alt="전국 WeMeet 보호센터 위치 지도">
+                    <img src="../img/process/process-location-map.png" alt="전국 WeMeet 보호센터 위치 지도">
                 </div>
 
                 <div class="shelter-list">
-                    <div class="shelter-card"><strong>서울 동물보호센터</strong><span>02-1234-5678</span>
-                        <p>서울특별시 강서구 화곡로 149</p>
+                    <div class="shelter-card"><strong>서울 동물보호센터</strong>
+                        <p>서울특별시 강서구 화곡로 149</p><span>02-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>강원 동물보호센터</strong><span>033-1234-5678</span>
-                        <p>강원도 춘천시 중앙로 321</p>
+                    <div class="shelter-card"><strong>강원 동물보호센터</strong>
+                        <p>강원도 춘천시 중앙로 321</p><span>033-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>대전 동물보호센터</strong><span>042-1234-5678</span>
-                        <p>대전광역시 중구 대학로 1234</p>
+                    <div class="shelter-card"><strong>대전 동물보호센터</strong>
+                        <p>대전광역시 중구 대학로 1234</p><span>042-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>대구 동물보호센터</strong><span>053-1234-5678</span>
-                        <p>대구광역시 서구 국채로 145</p>
+                    <div class="shelter-card"><strong>대구 동물보호센터</strong>
+                        <p>대구광역시 서구 국채로 145</p><span>053-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>광주 동물보호센터</strong><span>062-1234-5678</span>
-                        <p>광주광역시 북구 용봉로 55</p>
+                    <div class="shelter-card"><strong>광주 동물보호센터</strong>
+                        <p>광주광역시 북구 용봉로 55</p><span>062-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>부산 동물보호센터</strong><span>051-1234-5678</span>
-                        <p>부산광역시 해운대구 반려동물로 123</p>
+                    <div class="shelter-card"><strong>부산 동물보호센터</strong>
+                        <p>부산광역시 해운대구 반려동물로 123</p><span>051-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>경남 동물보호센터</strong><span>055-1234-5678</span>
-                        <p>경상남도 창원시 의창대로 300</p>
+                    <div class="shelter-card"><strong>경남 동물보호센터</strong>
+                        <p>경상남도 창원시 의창대로 300</p><span>055-1234-5678</span>
                     </div>
-                    <div class="shelter-card"><strong>제주 동물보호센터</strong><span>064-1234-5678</span>
-                        <p>제주특별자치도 제주시 서광로 242</p>
+                    <div class="shelter-card"><strong>제주 동물보호센터</strong>
+                        <p>제주특별자치도 제주시 서광로 242</p><span>064-1234-5678</span>
                     </div>
                 </div>
             </div>
@@ -263,21 +263,15 @@
                     <label for="visit-data">방문일자</label>
                     <input type="date" id="visit-data" name="visitData">
                 </div>
-                <fieldset class="purpose-group">
-                    <legend>방문목적</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="사전만남">사전만남
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="시설방문">시설방문
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="입양신청">입양신청
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
-                    </label>
-                </fieldset>
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
                 <!-- 미작성 경고 -->
                 <p class="reservation-warning">
                     작성되지 않은 항목이 있습니다.

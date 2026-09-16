@@ -8,13 +8,14 @@
 .survey-main {
     position: relative;
     width: 75rem;
-    margin: 0 auto 9.375rem;
+    margin: 0 auto 6.25rem;
 }
 
 .survey-main .image {
     position: absolute;
-    background: no-repeat;
-    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
 }
 
 .survey-main .image.bg01 {
@@ -124,6 +125,10 @@
     text-align: center;
 }
 
+.title-group {
+    margin-bottom: 3.125rem;
+}
+
 .title-group .top {
     display: flex;
     justify-content: center;
@@ -142,18 +147,6 @@
     margin: 1rem 0;
 }
 
-.recommend-box {
-    width: 90rem;
-    margin-top: 4.5rem;
-}
-
-.recommend-box.result {
-    display: grid;
-    grid-template-columns: 4, 1fr;
-    flex: 1;
-    margin-bottom: 1rem;
-}
-
 .list-btn {
     width: 7.25rem;
     height: 2.5rem;
@@ -162,4 +155,67 @@
     font-size: 1.125rem;
     font-weight: 700;
     color: #000159;
+    margin: 0 auto;
+    display: none;
+}
+
+.list-btn.active {
+    display: block;
+}
+
+/* 추천 동물 리스트 */
+.recommend-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
+.recommend-box {
+    width: 20.188rem;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1.563rem;
+    border: 0.063rem solid #C5C5C5;
+}
+
+.recommend-img {
+    width: 20.188rem;
+    height: 21rem;
+    overflow: hidden;
+    margin-bottom: 0 auto 1.25rem;
+}
+
+.recommend-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recommend-info {
+    padding: 1rem
+}
+
+.recommend-info .info-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.recommend-info h3 {
+    font-size: 1.25rem;
+}
+
+.recommend-info p {
+    font-size: 1rem;
+}
+
+.recommend-tags span {
+    display: inline-block;
+    padding: 0.313rem;
+    border-radius: 0.875rem;
+    background: #FFEEE3;
+    margin: 0 0.313rem;
 }

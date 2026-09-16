@@ -18,7 +18,7 @@
     margin-bottom: 4.688rem;
 }
 
-#animal-profile .web {
+#animal-profile .web-img {
     width: 29.25rem;
     height: 100%;
     border-radius: 50%;
@@ -28,7 +28,7 @@
     display: none;
 }
 
-.profile-detail .title {
+.profile-detail .main-title {
     font-size: 1.875rem;
     font-weight: 600;
     margin-bottom: 5.938rem;
@@ -201,7 +201,7 @@
     color: #000159;
 }
 
-.animal-info .info-flex > .info-class {
+.animal-info .info-flex>.info-class {
     margin-bottom: 3rem;
 }
 
@@ -334,4 +334,3 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
-

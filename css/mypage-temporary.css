@@ -1,0 +1,867 @@
+@charset "utf-8";
+
+.mypage-temporary {
+    width: 100%;
+    padding: 6rem 0 10rem;
+}
+
+.temporary-inner {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.temporary-head {
+    margin-bottom: 3rem;
+}
+
+.temporary-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.temporary-title h2 {
+    font-size: 2.225rem;
+    font-weight: 700;
+}
+
+.temporary-title img {
+    width: 2.5rem;
+    object-fit: contain;
+}
+
+.temporary-summary {
+    width: 90%;
+    margin: 0 auto 3rem;
+}
+
+.summary-greeting {
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.summary-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem 3rem;
+    border: 1px solid #000159;
+    border-radius: 1.5rem;
+    background: #fff;
+}
+
+.summary-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.summary-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 3.75rem;
+    background: #bbb;
+    transform: translateY(-50%);
+}
+
+.summary-item img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+}
+
+.summary-info h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.summary-info span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.temporary-content {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.temporary-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.history,
+.point {
+    display: none;
+    overflow: hidden;
+    border: 1px solid #000159;
+    border-radius: 1.25rem 0 1.25rem 1.25rem;
+    background: #fff;
+}
+
+.history.active,
+.point.active {
+    display: block;
+}
+
+.current-pet {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-pet {
+    padding: 2rem 3rem;
+}
+
+.current-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.history-title {
+    margin-bottom: 2rem;
+}
+
+.current-title h2,
+.history-title h2,
+.point-history h2,
+.point-exchange h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.diary-btn {
+    width: 7.5rem;
+    height: 2.75rem;
+    border: 1px solid #000159;
+    border-radius: 0.625rem;
+    background: #fff;
+    color: #000159;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.current-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.current-content>img {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 2rem;
+    background: #f0f0f0;
+    object-fit: cover;
+}
+
+.current-info {
+    flex: 1;
+}
+
+.current-info dl>div {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.8rem 0;
+}
+
+.current-info dt {
+    width: 7rem;
+    font-weight: 500;
+}
+
+.current-info dd {
+    flex: 1;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.history-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    padding: 2rem;
+}
+
+.history-card {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 0.75rem;
+    background: #fff;
+}
+
+.history-card>img {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    background: #f0f0f0;
+    object-fit: cover;
+}
+
+.history-info {
+    padding: 1rem;
+}
+
+.history-info strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.125rem;
+}
+
+.history-info span {
+    display: block;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.mypage-side {
+    width: 11rem;
+    overflow: hidden;
+    border: 1px solid #000159;
+    border-left: 0;
+    border-radius: 0 1.25rem 1.25rem 0;
+    background: #fff;
+}
+
+.side-profile {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.side-profile img {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.side-profile strong {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    color: #000159;
+}
+
+.side-profile p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.side-tab {
+    width: 100%;
+}
+
+.side-tab-btn {
+    width: 100%;
+    height: 3.75rem;
+    border: 0;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.side-tab-btn.active {
+    background: #000159;
+    color: #fff;
+    font-weight: 700;
+}
+
+.point-history {
+    padding: 3rem 4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.point-history>h2,
+.point-exchange>h2 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.point-filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 2.5rem;
+    margin-bottom: 3rem;
+    row-gap: 1rem;
+}
+
+.category-title {
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.period-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.period-top h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.category-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+}
+
+.category-list label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.category-list input {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+}
+
+.period-date {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 50%;
+}
+
+.period-date input {
+    flex: 1;
+    min-width: 0;
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 0.875rem;
+}
+
+.point-search-btn {
+    width: 5.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background: #000159;
+    color: #fff;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.point-result-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.current-point {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-point span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.current-point strong {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.point-result-top>p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.point-table {
+    width: 100%;
+}
+
+.point-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.point-table th {
+    padding: 1rem;
+    background: #E6BB97;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.point-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.point-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.point-exchange {
+    padding: 3rem 4rem;
+}
+
+.exchange-content {
+    width: 100%;
+}
+
+.exchange-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.exchange-current strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.exchange-current p {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.exchange-arrow {
+    font-size: 1.5rem;
+}
+
+.exchange-input {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.exchange-input input {
+    width: 11rem;
+    height: 2.75rem;
+    padding: 0 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background: #fff;
+}
+
+.exchange-input input::placeholder {
+    color: #aaa;
+}
+
+.exchange-btn {
+    width: 6rem;
+    height: 2.75rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background: #000159;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.exchange-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 5rem;
+    padding: 0 10rem;
+}
+
+.exchange-item button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+.exchange-item img {
+    max-width: 5rem;
+    max-height: 2rem;
+    object-fit: contain;
+}
+
+.exchange-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .mypage-temporary {
+        padding: 2rem 1.25rem 4rem;
+    }
+
+    .temporary-head {
+        margin-bottom: 2rem;
+    }
+
+    .temporary-title {
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
+    .temporary-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .temporary-title img,
+    .summary-greeting,
+    .mypage-side {
+        display: none;
+    }
+
+    .temporary-summary,
+    .temporary-content {
+        width: 100%;
+    }
+
+    .temporary-summary {
+        margin-bottom: 2rem;
+    }
+
+    .summary-list {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1.25rem 0.5rem;
+        border-color: #aaa;
+        border-radius: 0.75rem;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0 0.3rem;
+        text-align: center;
+    }
+
+    .summary-item:not(:last-child)::after {
+        height: 2.5rem;
+    }
+
+    .summary-item img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .summary-info {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .summary-info h3 {
+        margin: 0;
+        font-size: 0.7rem;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+    .summary-info span {
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .temporary-content {
+        display: block;
+    }
+
+    .history,
+    .point,
+    .history.active,
+    .point.active {
+        display: block;
+        overflow: visible;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .history {
+        margin-bottom: 3rem;
+    }
+
+    .current-pet,
+    .history-pet {
+        padding: 0;
+    }
+
+    .current-pet {
+        padding-bottom: 2rem;
+        border-bottom: 0;
+    }
+
+    .current-title {
+        margin-bottom: 1rem;
+    }
+
+    .current-title h2,
+    .history-title h2,
+    .point-history>h2,
+    .point-exchange>h2 {
+        font-size: 1.25rem;
+    }
+
+    .diary-btn {
+        width: 5.5rem;
+        height: 2.25rem;
+        font-size: 0.8rem;
+    }
+
+    .current-content {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.25rem;
+    }
+
+    .current-content>img {
+        width: 8.5rem;
+        height: 8.5rem;
+        border-radius: 0.75rem;
+    }
+
+    .current-info {
+        width: 100%;
+    }
+
+    .current-info dl>div {
+        padding: 0.35rem 0;
+        font-size: 0.8rem;
+    }
+
+    .current-info dt {
+        width: 6rem;
+        text-align: center;
+    }
+
+    .current-info dd {
+        line-height: 1.4;
+    }
+
+    .history-title {
+        margin-bottom: 1.25rem;
+    }
+
+    .history-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .history-info {
+        padding: 0.6rem 0.75rem;
+    }
+
+    .history-info strong {
+        font-size: 0.9rem;
+    }
+
+    .history-info span {
+        font-size: 0.75rem;
+    }
+
+    .point-history {
+        padding: 2rem 1rem;
+        margin-bottom: 3rem;
+        border: 1px solid #aaa;
+        border-radius: 0.75rem;
+        background: #FDF8F4;
+    }
+
+    .point-history>h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .point-filter {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .category-title {
+        order: 1;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .category-list {
+        order: 2;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .period-top {
+        order: 3;
+        width: 100%;
+    }
+
+    .period-date {
+        order: 4;
+        width: 100%;
+    }
+
+    .period-top h3 {
+        font-size: 0.8rem;
+    }
+
+    .category-list label {
+        font-size: 0.75rem;
+    }
+
+    .category-list input {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .point-search-btn {
+        width: 5rem;
+        height: 2rem;
+        border-radius: 0.25rem;
+        font-size: 0.75rem;
+    }
+
+    .period-date {
+        gap: 0.5rem;
+    }
+
+    .period-date input {
+        width: 0;
+        height: 2.25rem;
+        padding: 0 0.4rem;
+        font-size: 0.75rem;
+    }
+
+    .point-result-top {
+        align-items: center;
+        margin-bottom: 0.75rem;
+    }
+
+    .current-point {
+        gap: 0.4rem;
+    }
+
+    .current-point span,
+    .point-result-top>p {
+        font-size: 0.7rem;
+    }
+
+    .current-point strong {
+        font-size: 0.9rem;
+    }
+
+    .point-table th,
+    .point-table td {
+        padding: 0.75rem 0.25rem;
+        font-size: 0.7rem;
+    }
+
+    .point-exchange {
+        padding: 0;
+    }
+
+    .point-exchange>h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .exchange-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .exchange-current strong {
+        font-size: 0.8rem;
+    }
+
+    .exchange-current p {
+        font-size: 0.75rem;
+    }
+
+    .exchange-arrow {
+        display: none;
+    }
+
+    .exchange-input {
+        width: 85%;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .exchange-input input {
+        flex: 1;
+        width: 0;
+        min-width: 0;
+        border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    .exchange-btn {
+        width: 6rem;
+        margin-left: -1rem;
+        border-radius: 0.25rem;
+    }
+
+    .exchange-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .exchange-item button {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .exchange-item img {
+        max-width: 5rem;
+    }
+
+    .exchange-item span {
+        font-size: 0.75rem;
+    }
+}

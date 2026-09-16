@@ -10,9 +10,27 @@
         margin: 50px auto;
     }
 
-    /*  .survey-main .image {
+    .survey-main .image.bg01 {
+        top: 10rem;
+    }
+
+    .survey-main .image.bg02 {
         display: none;
-    } */
+    }
+
+    .survey-main .image.bg03 {
+        display: none;
+    }
+
+    .survey-main .image.bg04 {
+        bottom: 20rem;
+        right: 10rem;
+    }
+
+    .survey-main .image.bg05 {
+        bottom: 35rem;
+        right: 5rem;
+    }
 
     .survey-main .main-title-group {
         padding: 0;
@@ -94,5 +112,49 @@
         width: 100px;
         height: 35px;
         font-size: 14px;
+    }
+
+    /* 추천 동물 리스트 */
+    .recommend-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .recommend-box {
+        width: 10.375rem;
+        height: auto;
+    }
+
+    .recommend-img {
+        width: 100%;
+        height: 10.375rem;
+    }
+
+    .recommend-info {
+        padding: 1rem;
+    }
+
+    .recommend-info .info-text {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .recommend-info h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .recommend-info p {
+        font-size: 0.75rem;
+    }
+
+    .recommend-tags span {
+        font-size: 0.75rem;
+        display: inline-block;
+        padding: 0.313rem;
+        margin: 0.313rem;
+        border-radius: 0.875rem;
+        background: #FFEEE3;
     }
 }
