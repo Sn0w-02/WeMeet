@@ -4,7 +4,7 @@
 const isLoggedIn = localStorage.getItem('isLoggedIn');
 const loginId = localStorage.getItem('loginId');
 //이미지 깨짐으로 basePath 추가
-const basePath = location.hostname.includes('github.io') ? '/WeMee/' : '/';
+const basePath = location.hostname.includes('github.io') ? '/WeMee/' : '../';
 
 //로그인 프로필
 const loginLink = document.querySelector('.login-link');
