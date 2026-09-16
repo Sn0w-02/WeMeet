@@ -35,10 +35,10 @@ if (isLoggedIn === 'true') {
                 const mobileUserImg = document.createElement('img');
 
                 profileText.textContent = `${loginUser.myPet.name}의 단짝 ${loginUser.name}님`
-                profileImg.src = loginUser.profileImage;
+                profileImg.src = basePath + loginUser.profileImage;
                 profileImg.alt = `${loginUser.name}님의 프로필`;
 
-                mobileUserImg.src = loginUser.profileImage;
+                mobileUserImg.src = basePath + loginUser.profileImage;
                 mobileUserImg.alt = `${loginUser.name}님의 프로필`;
 
                 profileLink.appendChild(profileText);
