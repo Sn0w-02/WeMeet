@@ -357,7 +357,7 @@ body {
     #benefit-visual {
         width: 100%;
         max-width: 24.563rem;
-        height: 10.625rem;
+        max-height: 10.625rem;
         padding: 0 0.938rem;
         box-sizing: border-box;
     }
@@ -412,6 +412,7 @@ body {
         align-items: stretch;
         gap: 0;
         width: 100%;
+        padding-left: 0;
     }
 
     .icon-card {
@@ -428,6 +429,7 @@ body {
         border-radius: 0;
         transition: none;
         gap: 60px;
+        padding-left: 3rem;
     }
 
     .icon-card:last-child {
@@ -481,7 +483,7 @@ body {
     }
 
     .mobile-only {
-        padding-top: 0.625rem;
+        padding-bottom: 0.5rem;
         font-size: 0.875rem;
         text-align: left;
         color: #424242;
@@ -639,6 +641,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .card-inner {
@@ -717,7 +720,7 @@ body {
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         gap: 0.375rem;
         box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08),
@@ -749,9 +752,17 @@ body {
     }
 
     .card-box img {
+        position: absolute;
+        top: 0.75rem;
+        left: 0.875rem;
         width: 1.625rem;
         height: 1.625rem;
         object-fit: contain;
+    }
+
+    .card-box-text {
+        width: 100%;
+        text-align: center;
     }
 
     .card-box-text h4 {
@@ -781,9 +792,8 @@ body {
     }
 
     .join-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         gap: 0.5rem;
     }
 
@@ -792,14 +802,22 @@ body {
         height: 10rem;
         border-radius: 0.5rem;
         padding: 0.75rem 0.125rem;
-        border: none;
+        box-shadow: 0 0.3rem rgba(0, 0, 0, 0.08);
+        border: 0.063rem solid #FFF4E6;
     }
 
-    .join-box:nth-child(4),
+    .join-box:nth-child(1),
+    .join-box:nth-child(2),
+    .join-box:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .join-box:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
     .join-box:nth-child(5) {
-        width: 11.375rem;
-        height: 10rem;
-        border: none;
+        grid-column: 4 / span 2;
     }
 
     .join-box img,
