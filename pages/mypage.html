@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeMeet || 마이페이지</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/mypage.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
     <script src="../js/common.js" defer></script>
     <script src="../js/mypage.js" defer></script>
 </head>
@@ -49,7 +51,7 @@
                 </a>
 
                 <a href="mypage.html" class="mobile-user-link" aria-label="마이페이지">
-                    <img src="../img/mobile-User.png" alt="">
+
                 </a>
             </div>
 
@@ -72,15 +74,29 @@
                 </h2>
 
                 <div class="summary-content">
+
                     <div class="summary-img">
-                        <img src="../img/mypage/mypage-profile.png" alt="해피">
+                        <img id="ddayProfileImg" src="../img/mypage/mypage-profile.png" alt="해피">
                     </div>
 
                     <div class="d-day-info">
-                        <p class="adaptation-status">적응 완료기</p>
-                        <strong class="d-day-text">D+120</strong>
-                        <button type="button" class="btn photo-change-btn">사진 변경</button>
+
+                        <p class="adaptation-status">
+                            적응 완료기
+                        </p>
+
+                        <strong class="d-day-text">
+                            D+120
+                        </strong>
+
+                        <button type="button" class="btn photo-change-btn" id="ddayPhotoBtn">
+                            사진 변경
+                        </button>
+
+                        <input type="file" id="ddayImageInput" accept="image/*">
+
                     </div>
+
                 </div>
             </div>
 
@@ -95,21 +111,27 @@
                     <div class="history-info">
                         <ul class="history-list">
                             <li>
-                                <span class="history-icon"></span>
-                                주인 찾은 아이 내역 : 총
-                                <strong class="history-complete-count">6</strong>건
+                                <span class="history-icon"><img src="../img/mypage/history-ico01.png" alt=""></span>
+                                <p>
+                                    주인 찾은 아이 내역 : 총
+                                    <strong class="history-complete-count">6</strong>건
+                                </p>
                             </li>
 
                             <li>
-                                <span class="history-icon"></span>
-                                임시보호 진행 중 :
-                                <strong class="history-progress-count">1</strong>건
+                                <span class="history-icon"><img src="../img/mypage/history-ico02.png" alt=""></span>
+                                <p>
+                                    임시보호 진행 중 :
+                                    <strong class="history-progress-count">1</strong>건
+                                </p>
                             </li>
 
                             <li>
-                                <span class="history-icon"></span>
-                                현재 누적 가산점 :
-                                <strong class="history-point">+15</strong>점
+                                <span class="history-icon"><img src="../img/mypage/history-ico03.png" alt=""></span>
+                                <p>
+                                    현재 누적 가산점 :
+                                    <strong class="history-point">+15</strong>점
+                                </p>
                             </li>
                         </ul>
 
@@ -198,19 +220,13 @@
                     <div class="swiper benefit-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="../img/mypage/benefit-banner01.png" alt="혜택 배너 1">
-                                </a>
+                                <img src="../img/mypage/benefit-banner01.png" alt="혜택 배너 1">
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="../img/mypage/benefit-banner02.jpg" alt="혜택 배너 2">
-                                </a>
+                                <img src="../img/mypage/benefit-banner02.png" alt="혜택 배너 2">
                             </div>
                             <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="../img/mypage/benefit-banner03.jpg" alt="혜택 배너 3">
-                                </a>
+                                <img src="../img/mypage/benefit-banner03.png" alt="혜택 배너 3">
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -258,21 +274,15 @@
                     <label for="visit-data">방문일자</label>
                     <input type="date" id="visit-data" name="visitData">
                 </div>
-                <fieldset class="purpose-group">
-                    <legend>방문목적</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="사전만남">사전만남
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="시설방문">시설방문
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="입양신청">입양신청
-                    </label>
-                    <label>
-                        <input type="radio" name="purpose" value="임시보호신청">임시보호신청
-                    </label>
-                </fieldset>
+                <div class="purpose-group">
+                    <h4 class="purpose-title">방문목적</h4>
+                    <div class="purpose-content">
+                        <button type="button" class="purpose-btn">사전만남</button>
+                        <button type="button" class="purpose-btn">시설방문</button>
+                        <button type="button" class="purpose-btn">입양신청</button>
+                        <button type="button" class="purpose-btn">임시보호신청</button>
+                    </div>
+                </div>
                 <!-- 미작성 경고 -->
                 <p class="reservation-warning">
                     작성되지 않은 항목이 있습니다.

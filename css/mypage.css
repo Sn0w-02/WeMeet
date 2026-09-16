@@ -23,6 +23,10 @@ main {
     border-radius: 0.625rem;
 }
 
+#ddayImageInput {
+    display: none;
+}
+
 /* summary */
 #mypage-summary {
     display: grid;
@@ -43,6 +47,7 @@ main {
 
 .summary-card.d-day {
     border: 1px solid #000159;
+    background-image: url(../img/mypage/d-day-bg.png);
 }
 
 .summary-card.history {
@@ -132,11 +137,8 @@ main {
 }
 
 .history-icon {
-    display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: #000159;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .history-list strong {
@@ -319,6 +321,13 @@ main {
     background: #FDF8F4;
 }
 
+.benefit-banner {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+
 .benefit-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -329,27 +338,15 @@ main {
     padding: 4rem 1.25rem;
 }
 
-.benefit-banner {
-    min-width: 0;
-    overflow: hidden;
-    border-radius: 1.25rem;
-}
-
 .benefit-swiper {
     width: 100%;
     height: 100%;
-}
-
-.benefit-swiper .swiper-slide a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    padding: 3.5rem 0;
 }
 
 .benefit-swiper .swiper-slide img {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .benefit-help {
@@ -401,7 +398,7 @@ main {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         width: calc(100% - 2.5rem);
-        margin: 3rem auto 4rem;
+        margin: 2.5rem auto 2.5rem;
     }
 
     .summary-card {
@@ -424,6 +421,7 @@ main {
 
     .summary-img {
         width: 7.5rem;
+        height: 7.5rem;
         border-radius: 0.875rem;
     }
 
@@ -454,19 +452,23 @@ main {
         font-size: 0.7875rem;
     }
 
+    .history-icon {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
     /* profile */
     #mypage-profile {
         flex-direction: column;
         gap: 1.5rem;
         width: calc(100% - 2.5rem);
-        margin: 0 auto 4rem;
+        margin: 0 auto 2.5rem;
         padding: 1.5rem;
-
     }
 
     .profile-img {
         width: 100%;
-        height: 12rem;
+        height: 15rem;
         border-radius: 0.875rem;
     }
 
@@ -561,7 +563,7 @@ main {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         width: 100%;
-        padding: 3rem 1.25rem;
+        padding: 1.5rem 1.25rem;
     }
 
     .benefit-banner {

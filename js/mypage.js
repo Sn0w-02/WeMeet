@@ -1,3 +1,37 @@
+/* Img Upload */
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ddayPhotoBtn = document.getElementById("ddayPhotoBtn");
+    const ddayImageInput = document.getElementById("ddayImageInput");
+    const ddayProfileImg = document.getElementById("ddayProfileImg");
+
+    ddayPhotoBtn.addEventListener("click", function () {
+
+        ddayImageInput.click();
+
+    });
+
+    ddayImageInput.addEventListener("change", function () {
+
+        const file = this.files[0];
+
+        if (!file) {
+            return;
+        }
+
+        if (!file.type.startsWith("image/")) {
+            alert("이미지 파일만 선택해주세요.");
+            return;
+        }
+
+        const imageURL = URL.createObjectURL(file);
+
+        ddayProfileImg.src = imageURL;
+
+    });
+
+});
+
 /* summary */
 const petName = document.querySelector(".pet-name");
 const petImage = document.querySelector(".summary-card.d-day .summary-img img");
