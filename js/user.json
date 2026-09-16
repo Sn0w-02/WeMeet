@@ -8,10 +8,10 @@
         "email": "wemeet@example.com",
         "nickname": "wemeet",
         "message": "나에게 와줘서 고마워",
-        "profileImage": "../img/mypage/mypage-profile.png",
+        "profileImage": "img/mypage/mypage-profile.png",
         "myPet": {
             "name": "해피",
-            "image": "../img/mypage/mypage-profile.png",
+            "image": "img/mypage/mypage-profile.png",
             "adoptedDate": "2026-05-10"
         },
         "survey": {
