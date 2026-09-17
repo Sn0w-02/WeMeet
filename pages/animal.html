@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/animal.css">
-    <link rel="stylesheet" href="../css/animal-m.css">
     <script src="../js/common.js" defer></script>
     <script src="../js/animal.js" defer></script>
 
@@ -88,7 +87,7 @@
                 <div class="filter-btn">
                     <p class="filter-name">동물</p>
                     <div class="filter-list btn">
-                        <button type="button" class="animal" data-type="any">전체</button>
+                        <button type="button" class="animal active" data-type="any">전체</button>
                         <button type="button" class="animal" data-type="dog">강아지</button>
                         <button type="button" class="animal" data-type="cat">고양이</button>
                     </div>
@@ -96,7 +95,7 @@
                 <div class="filter-btn">
                     <p class="filter-name">성별</p>
                     <div class="filter-list btn">
-                        <button type="button" class="gender" data-type="all">전체</button>
+                        <button type="button" class="gender active" data-type="all">전체</button>
                         <button type="button" class="gender" data-type="male">남</button>
                         <button type="button" class="gender" data-type="female">여</button>
                     </div>
@@ -104,76 +103,66 @@
                 <div class="filter-radio">
                     <p class="filter-name">나이</p>
                     <div class="filter-list radio"><!-- json-name=ageGroup -->
+                        <label><input type="radio" name="age" value="any" checked>전체</label>
                         <label><input type="radio" name="age" value="young">1살이하</label>
                         <label><input type="radio" name="age" value="adult">1~6살</label>
                         <label><input type="radio" name="age" value="old">6살이상</label>
-                        <label><input type="radio" name="age" value="any">상관없다</label>
                     </div>
                 </div>
                 <div class="filter-radio">
                     <p class="filter-name">크기</p>
                     <div class="filter-list radio">
+                        <label><input type="radio" name="size" value="any" checked>전체</label>
                         <label><input type="radio" name="size" value="small">소형</label>
                         <label><input type="radio" name="size" value="medium">중형</label>
                         <label><input type="radio" name="size" value="large">대형</label>
-                        <!-- <label><input type="radio" name="size" value="any">상관없음</label> -->
                     </div>
                 </div>
                 <div class="filter-radio">
                     <p class="filter-name">성향</p>
 
                     <div class="filter-list radio">
-                        <div>
-                            <label>
-                                <input type="checkbox" name="personality" value="charm">
-                                애교형
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="personality" value="introverted">
-                                내향형
-                            </label>
-                        </div>
-
-                        <div>
-                            <label>
-                                <input type="checkbox" name="personality" value="calm">
-                                차분함
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="personality" value="independent">
-                                독립형
-                            </label>
-                        </div>
-
-                        <div>
-                            <label>
-                                <input type="checkbox" name="personality" value="active">
-                                활동형
-                            </label>
-
-                            <label>
-                                <input type="checkbox" name="personality" value="any">
-                                상관없다
-                            </label>
-                        </div>
+                        <label>
+                            <input type="checkbox" name="personality" value="any" checked>
+                            전체
+                        </label>
+                        <label>
+                            <input type="checkbox" name="personality" value="charm">
+                            애교형
+                        </label>
+                        <label>
+                            <input type="checkbox" name="personality" value="introverted">
+                            내향형
+                        </label>
+                        <label>
+                            <input type="checkbox" name="personality" value="calm">
+                            차분함
+                        </label>
+                        <label>
+                            <input type="checkbox" name="personality" value="independent">
+                            독립형
+                        </label>
+                        <label>
+                            <input type="checkbox" name="personality" value="active">
+                            활동형
+                        </label>
                     </div>
                 </div>
 
                 <!-- mobile에서 활성화 -->
                 <div class="select-mobile">
                     <p class="filter-name">나이</p>
-                    <select id="list"><!-- json-name=agegroup -->
+                    <select id="mobile-age"><!-- json-name=agegroup -->
+                        <option class="age" value="any">전체</option>
                         <option class="age" value="young">1살이하</option>
                         <option class="age" value="adult">1살~6살</option>
                         <option class="age" value="old">6살이상</option>
-                        <option class="age" value="any">상관없다</option>
                     </select>
                 </div>
                 <div class="select-mobile">
                     <p class="filter-name">크기</p>
-                    <select id="list">
+                    <select id="mobile-size">
+                        <option class="size" value="any">전체</option>
                         <option class="size" value="small">소형</option>
                         <option class="size" value="medium">중형</option>
                         <option class="size" value="large">대형</option>
@@ -181,18 +170,18 @@
                 </div>
                 <div class="select-mobile">
                     <p class="filter-name">성향</p>
-                    <select id="list"><!-- json-name=traits -->
+                    <select id="mobile-personality"><!-- json-name=traits -->
+                        <option class="Propensity" value="any">전체</option>
                         <option class="Propensity" value="introverted">내향형</option>
                         <option class="Propensity" value="active">활동형</option>
                         <option class="Propensity" value="calm">차분함</option>
                         <option class="Propensity" value="charm">애교형</option>
                         <option class="Propensity" value="independent">독립형</option>
-                        <option class="Propensity" value="any">상관없다</option>
                     </select>
                 </div>
 
                 <div class="btn-set">
-                    <button type="button" class="finish-btn" value="finish">완료</button>
+                    <button type="button" class="finish-btn" value="finish">검색</button>
                     <button type="button" class="reset-btn" value="reset">초기화</button>
                 </div>
             </div>
