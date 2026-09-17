@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const loginId = loginIdInput.value.trim();
         const password = passwordInput.value.trim();
 
-        fetch('../js/user.json')
+        fetch('https://sn0w-02.github.io/WeMeet/js/user.json')
             .then(response => response.json())
             .then(data => {
                 // 아이디와 비밀번호가 일치하는 회원 찾기
@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     //로그인 정보 로컬스토리지에 저장
                     localStorage.setItem('isLoggedIn', 'true');
                     localStorage.setItem('loginId', user.loginId);
+                    //관심동물 리스트 추가
+                    localStorage.setItem('favoriteAnimalIds', JSON.stringify(user.favoriteAnimalIds))
 
                     alert('환영합니다!');
                     window.location.href = '../index.html';

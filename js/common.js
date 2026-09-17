@@ -55,6 +55,8 @@ if (isLoggedIn === 'true') {
                 logoutBtn.addEventListener('click', () => {
                     localStorage.removeItem('isLoggedIn')
                     localStorage.removeItem('loginId')
+                    //관심동물 리스트 제거 추가
+                    localStorage.removeItem('favoriteAnimalIds')
 
                     location.reload();
                 })
