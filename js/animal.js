@@ -1046,41 +1046,80 @@ function showAnimals(items) {
 
 // 검색 버튼을 누르면 선택한 조건에 맞는 동물만 남긴다.
 searchBtn.addEventListener('click', () => {
-    const filters = getSelectedFilters()
+    // 선택한 모든 조건으로 동물을 필터링하는 함수
+    function applyFilters() {
+        const filters = getSelectedFilters();
 
-    const filteredAnimals = animals.filter((animal) => {
-        const animalMatch =
-            filters.type === 'any' ||
-            animal.type === filters.type;
+        const filteredAnimals = animals.filter((animal) => {
+            const animalMatch =
+                filters.type === 'any' ||
+                animal.type === filters.type;
 
-        const genderMatch =
-            filters.gender === 'all' ||
-            animal.gender === filters.gender;
+            const genderMatch =
+                filters.gender === 'all' ||
+                animal.gender === filters.gender;
 
-        const ageMatch =
-            filters.age === 'any' ||
-            animal.ageGroup === filters.age;
+            const ageMatch =
+                filters.age === 'any' ||
+                animal.ageGroup === filters.age;
 
-        const sizeMatch =
-            filters.size === 'any' ||
-            animal.size === filters.size;
+            const sizeMatch =
+                filters.size === 'any' ||
+                animal.size === filters.size;
 
-        const personalityMatch =
-            filters.personalities.length === 0 ||
-            filters.personalities.every((personality) => {
-                return animal.personality.includes(personality);
-            });
+            const personalityMatch =
+                filters.personalities.length === 0 ||
+                filters.personalities.every((personality) => {
+                    return animal.personality.includes(personality);
+                });
 
-        return (
-            animalMatch &&
-            genderMatch &&
-            ageMatch &&
-            sizeMatch &&
-            personalityMatch
-        );
-    });
+            return (
+                animalMatch &&
+                genderMatch &&
+                ageMatch &&
+                sizeMatch &&
+                personalityMatch
+            );
+        });
 
-    // 필터링된 동물 출력
-    showAnimals(filteredAnimals);
-    showAnimals(animals);
+        showAnimals(filteredAnimals);
+    }
+
+    // 완료 버튼을 눌러도 필터 실행
+    searchBtn.addEventListener('click', applyFilters);
+
+
 });
+
+resetBtn.addEventListener('click', () => {
+    //동물,성별 선택값 초기화
+    selectedAnimal = 'any'
+    selectedGender = 'all'
+
+    //라디오와 체크박스 초기화
+    document.querySelectorAll('.filter input')
+        .forEach((input) => {
+            input.checked = false;
+        });
+    animalButtons.forEach((button) => {
+        button.classList.remove('active')
+    });
+    genderButtons.forEach((button) => {
+        button.classList.remove('active')
+    })
+
+});
+
+//모바일초기화
+document.querySelectorAll('.select-mobile select')
+    .forEach((select) => {
+        const anyOption = [...select.options].find((option) => {
+            return option.value === 'any';
+        });
+        if (anyOption) {
+            select.value = 'any';
+
+        }
+    });
+// 필터링된 동물 출력
+showAnimals(animals);
