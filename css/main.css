@@ -169,6 +169,7 @@
 /* service */
 #service {
     width: 90rem;
+    max-width: 100%;
     padding: 4rem;
     border-radius: 1.25rem;
     background: #FDF8F4;
@@ -218,7 +219,8 @@
 
 /* guide */
 #guide {
-    max-width: 90rem;
+    width: 90rem;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

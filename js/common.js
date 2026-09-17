@@ -3,6 +3,8 @@
 //로컬스토리지
 const isLoggedIn = localStorage.getItem('isLoggedIn');
 const loginId = localStorage.getItem('loginId');
+//이미지 깨짐으로 basePath 추가
+const basePath = location.hostname.includes('github.io') ? '/WeMeet/' : '/';
 
 //로그인 프로필
 const loginLink = document.querySelector('.login-link');
@@ -33,10 +35,10 @@ if (isLoggedIn === 'true') {
                 const mobileUserImg = document.createElement('img');
 
                 profileText.textContent = `${loginUser.myPet.name}의 단짝 ${loginUser.name}님`
-                profileImg.src = loginUser.profileImage;
+                profileImg.src = basePath + loginUser.profileImage;
                 profileImg.alt = `${loginUser.name}님의 프로필`;
 
-                mobileUserImg.src = loginUser.profileImage;
+                mobileUserImg.src = basePath + loginUser.profileImage;
                 mobileUserImg.alt = `${loginUser.name}님의 프로필`;
 
                 profileLink.appendChild(profileText);
