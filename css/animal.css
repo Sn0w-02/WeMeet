@@ -53,6 +53,7 @@
 .filter>div {
     margin-bottom: 2.25rem;
 }
+
 .filter>div:last-child {
     margin-bottom: 0;
 }
@@ -81,7 +82,8 @@
     border-radius: 0.5rem;
 }
 
-.filter .filter-list.btn button:hover {
+.filter .filter-list.btn button:hover,
+.filter .filter-list.btn button.active {
     color: #fff;
     background: #07087C;
 }

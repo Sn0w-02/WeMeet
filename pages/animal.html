@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/animal.css">
     <link rel="stylesheet" href="../css/animal-m.css">
     <script src="../js/common.js" defer></script>
+    <script src="../js/animal.js" defer></script>
+
 </head>
 
 <body>
@@ -74,7 +76,7 @@
             <img src="../img/animal/hidog.png" alt="">
             <div class="title-group">
                 <p class="subtitle">FIND YOUR FAMILY</p>
-                <h2 class="title">보호중인 동물 <span></span>마리</h2>
+                <h2 class="title">보호중인 동물 <span class="animal-count">0</span>마리</h2>
                 <p class="text">나와 잘 맞는 반려동물을 찾아보세요</p>
             </div>
         </div>
@@ -119,18 +121,42 @@
                 </div>
                 <div class="filter-radio">
                     <p class="filter-name">성향</p>
+
                     <div class="filter-list radio">
-                        <div><!-- json-name=traits -->
-                            <label><input type="checkbox" name="Propensity" value="charm">애교형</label>
-                            <label><input type="checkbox" name="Propensity" value="introverted">내향형</label>
-                        </div>
                         <div>
-                            <label><input type="checkbox" name="Propensity" value="calm">차분함</label>
-                            <label><input type="checkbox" name="Propensity " value="independent">독립형</label>
+                            <label>
+                                <input type="checkbox" name="personality" value="charm">
+                                애교형
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="personality" value="introverted">
+                                내향형
+                            </label>
                         </div>
+
                         <div>
-                            <label><input type="checkbox" name="Propensity" value="active">활동형</label>
-                            <label><input type="checkbox" name="Propensity" value="outgoing">상관없다</label>
+                            <label>
+                                <input type="checkbox" name="personality" value="calm">
+                                차분함
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="personality" value="independent">
+                                독립형
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>
+                                <input type="checkbox" name="personality" value="active">
+                                활동형
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="personality" value="any">
+                                상관없다
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -172,9 +198,17 @@
             </div>
 
             <!-- javascript로 동물 리스트 불러오기 -->
-            <div class="animal-cardlist">
-                <h2 class="result">검색 결과</h2>
-                SPACE TEST
+            <div class="animal-cardlist" aria-live="polite">
+                <h2 class="result">
+                    검색 결과 <span class="result-count">0</span>마리
+                </h2>
+
+                <!-- 자바스크립트가 카드를 넣는 위치 -->
+                <div class="animal-list"></div>
+
+                <p class="no-result" hidden>
+                    조건에 맞는 동물이 없습니다.
+                </p>
             </div>
         </div>
     </section>
