@@ -1,5 +1,8 @@
 let animals;
 
+//관심동물 정보
+let favoriteAnimalIds = JSON.parse(localStorage.getItem('favoriteAnimalIds')) || [];
+
 fetch("https://sn0w-02.github.io/WeMeet/js/animal.json")
     .then((response) => response.json())
     .then((data) => {
@@ -179,7 +182,7 @@ function showAnimals(items) {
                 <article class="animal-card">
                     <button
                         type="button"
-                        class="favorite-btn"
+                        class="favorite-btn ${favoriteAnimalIds.includes(animal.id) ? 'active' : ''}"
                         data-id="${animal.id}"
                         aria-label="${animal.name} 관심 등록"
                     >
@@ -338,6 +341,23 @@ animalList.addEventListener('click', (e) => {
     const favoriteBtn = e.target.closest('.favorite-btn');
 
     if (favoriteBtn) {
-        favoriteBtn.classList.toggle('active');
+        const animalId = Number(favoriteBtn.dataset.id);
+
+        if (favoriteAnimalIds.includes(animalId)) {
+            favoriteAnimalIds = favoriteAnimalIds.filter((id) => {
+                return id !== animalId;
+            });
+
+            favoriteBtn.classList.remove('active');
+        } else {
+            favoriteAnimalIds.push(animalId);
+
+            favoriteBtn.classList.add('active');
+        }
+
+        localStorage.setItem(
+            'favoriteAnimalIds',
+            JSON.stringify(favoriteAnimalIds)
+        );
     }
 });
