@@ -1,859 +1,14 @@
-const animals = [
-    {
-        "id": 1,
-        "name": "사랑이",
-        "type": "dog",
-        "breed": "포메라니안",
-        "gender": "여",
-        "ageMonths": "4살",
-        "ageGroup": "adult",
-        "weight": 2.7,
-        "size": "small",
-        "image": "../img/animal-detail/love.png",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "progress",
-        "personality": [
-            "charm",
-            "active"
-        ],
-        "traits": [
-            "애교",
-            "활발"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel",
-            "any"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "2to4",
-        "walkTime": "30to60",
-        "tags": [
-            "#입양가능",
-            "#애교형",
-            "#활발함"
-        ],
-        "detail": {
-            "intro": "사람을 좋아하지만 천천히 마음을 여는 다정한 아이에요.",
-            "likes": [
-                "사람과 함께 있는 시간",
-                "산책하고 냄새 맡기",
-                "공놀이와 장난감 놀이"
-            ],
-            "dislikes": [
-                "갑작스러운 큰 소리",
-                "낯선 사람의 빠른 접근",
-                "오랜 시간 혼자 있기"
-            ],
-            "breedInfo": {
-                "personality": "애교가 많고 활발하며 영리하고 호기심이 많아요. 보호자와 잘 지내지만 경계심이 있거나 예민할 수 있어요.",
-                "colors": [
-                    "화이트",
-                    "세이지",
-                    "블랙",
-                    "브라운",
-                    "블루",
-                    "세이블",
-                    "크림",
-                    "믹스"
-                ],
-                "lifespan": "12~16년",
-                "adultWeight": "1.4~3.2kg",
-                "height": "18~24cm",
-                "breedOrigin": "독일, 폴란드"
-            },
-            "care": [
-                {
-                    "title": "충분한 산책",
-                    "description": "하루 한 번 이상 산책과 놀이가 필요해요."
-                },
-                {
-                    "title": "꾸준한 빗질",
-                    "description": "털 빠짐이 많아 주 3~4회 이상 빗질해 주세요."
-                },
-                {
-                    "title": "식사량 관리",
-                    "description": "먹는 것을 좋아해 하루 두 번 급여량을 지켜주세요."
-                },
-                {
-                    "title": "기본 훈련",
-                    "description": "지금부터 기본 예절 교육을 시작해 주세요."
-                },
-                {
-                    "title": "함께하는 시간",
-                    "description": "사람을 좋아해 오랜 시간 혼자 있는 생활은 힘들 수 있어요."
-                }
-            ]
-        }
-    },
-    {
-        "id": 2,
-        "name": "보리",
-        "type": "dog",
-        "breed": "코커스패니얼",
-        "gender": "여",
-        "ageMonths": "6살",
-        "ageGroup": "adult",
-        "weight": 12.5,
-        "size": "medium",
-        "image": "../img/dog&cat/dog-3.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "progress",
-        "personality": [
-            "calm",
-            "independent"
-        ],
-        "traits": [
-            "차분",
-            "독립적",
-            "산책견"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "30to60",
-        "tags": [
-            "#입양가능",
-            "#차분함",
-            "#독립적"
-        ],
-        "detail": {
-            "intro": "차분하고 독립적인 편이지만 산책 시간에는 보호자와 함께 걷는 것을 좋아하는 아이에요.",
-            "likes": [
-                "규칙적인 산책",
-                "조용한 휴식",
-                "익숙한 사람과 천천히 교감하기"
-            ],
-            "dislikes": [
-                "지나치게 소란스러운 환경",
-                "과도한 스킨십",
-                "갑작스러운 생활 패턴 변화"
-            ],
-            "breedInfo": {
-                "personality": "코커스패니얼은 사람과의 교감을 좋아하고 밝은 성격을 가진 경우가 많으며 산책과 놀이를 즐기는 편이에요.",
-                "colors": [
-                    "골드",
-                    "브라운",
-                    "블랙",
-                    "화이트"
-                ],
-                "lifespan": "10~14년",
-                "adultWeight": "10~16kg",
-                "height": "35~43cm",
-                "breedOrigin": "영국"
-            },
-            "care": [
-                {
-                    "title": "규칙적인 산책",
-                    "description": "하루 30~60분 정도 무리하지 않는 산책을 권장해요."
-                },
-                {
-                    "title": "안정적인 환경",
-                    "description": "생활 패턴이 자주 바뀌지 않는 차분한 환경이 좋아요."
-                },
-                {
-                    "title": "적당한 거리",
-                    "description": "혼자 쉬는 시간을 존중하면서 천천히 교감해 주세요."
-                }
-            ]
-        }
-    },
-    {
-        "id": 3,
-        "name": "까미",
-        "type": "cat",
-        "breed": "코리안 숏헤어",
-        "gender": "여",
-        "ageMonths": "4살",
-        "ageGroup": "adult",
-        "weight": 4.3,
-        "size": "medium",
-        "image": "../img/dog&cat/cat-1.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "progress",
-        "personality": [
-            "calm",
-            "introverted",
-            "charm"
-        ],
-        "traits": [
-            "차분",
-            "애교"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#차분함",
-            "#애교형"
-        ],
-        "detail": {
-            "intro": "차분한 편이지만 익숙해진 사람에게는 먼저 다가와 애교를 보여주는 아이에요.",
-            "likes": [
-                "조용한 공간에서 쉬기",
-                "보호자 옆에서 낮잠 자기",
-                "낚싯대 장난감 놀이"
-            ],
-            "dislikes": [
-                "갑작스러운 큰 소리",
-                "과도하게 안아 올리기",
-                "낯선 환경의 잦은 변화"
-            ],
-            "breedInfo": {
-                "personality": "환경 적응력이 좋은 편이며 개체에 따라 독립성과 애교가 모두 나타날 수 있어요.",
-                "colors": [
-                    "고등어",
-                    "치즈",
-                    "턱시도",
-                    "삼색",
-                    "화이트",
-                    "믹스"
-                ],
-                "lifespan": "12~18년",
-                "adultWeight": "3~6kg",
-                "height": "23~25cm",
-                "breedOrigin": "대한민국"
-            },
-            "care": [
-                {
-                    "title": "놀이 시간",
-                    "description": "하루 여러 번 짧은 놀이로 적절한 활동량을 채워 주세요."
-                },
-                {
-                    "title": "숨을 공간",
-                    "description": "낯선 상황에서 스스로 쉴 수 있는 조용한 공간이 필요해요."
-                },
-                {
-                    "title": "체중 관리",
-                    "description": "적정 급여량과 주기적인 체중 확인이 필요해요."
-                }
-            ]
-        }
-    },
-    {
-        "id": 4,
-        "name": "초코",
-        "type": "dog",
-        "breed": "말티즈",
-        "gender": "여",
-        "ageMonths": "4살",
-        "ageGroup": "adult",
-        "weight": 6.2,
-        "size": "small",
-        "image": "../img/dog&cat/dog-2.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "active",
-            "charm"
-        ],
-        "traits": [
-            "산책",
-            "활동적"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "2to4",
-        "walkTime": "60to120",
-        "tags": [
-            "#입양가능",
-            "#산책좋아함",
-            "#활동적"
-        ],
-        "detail": null
-    },
-    {
-        "id": 5,
-        "name": "바람",
-        "type": "dog",
-        "breed": "진도 믹스",
-        "gender": "남",
-        "ageMonths": "5살",
-        "ageGroup": "adult",
-        "weight": 16.5,
-        "size": "large",
-        "image": "../img/dog&cat/dog8.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "calm",
-            "active"
-        ],
-        "traits": [
-            "영리",
-            "훈련 적응"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before"
-        ],
-        "residence": [
-            "villa",
-            "house"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "60to120",
-        "tags": [
-            "#입양가능",
-            "#영리함",
-            "#훈련적응"
-        ],
-        "detail": null
-    },
-    {
-        "id": 6,
-        "name": "땅콩",
-        "type": "dog",
-        "breed": "푸들",
-        "gender": "남",
-        "ageMonths": "3살",
-        "ageGroup": "adult",
-        "weight": 8.5,
-        "size": "medium",
-        "image": "../img/dog&cat/dog-1.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "charm",
-            "calm"
-        ],
-        "traits": [
-            "애교",
-            "순둥"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "30to60",
-        "tags": [
-            "#입양가능",
-            "#애교형",
-            "#순둥이"
-        ],
-        "detail": null
-    },
-    {
-        "id": 7,
-        "name": "까불이",
-        "type": "dog",
-        "breed": "래브라도 리트리버",
-        "gender": "남",
-        "ageMonths": "6살",
-        "ageGroup": "adult",
-        "weight": 18.2,
-        "size": "large",
-        "image": "../img/dog&cat/dog-5.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "charm",
-            "active"
-        ],
-        "traits": [
-            "똑똑",
-            "충성심"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before"
-        ],
-        "residence": [
-            "villa",
-            "house"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "2to4",
-        "walkTime": "60to120",
-        "tags": [
-            "#입양가능",
-            "#똑똑함",
-            "#충성심"
-        ],
-        "detail": null
-    },
-    {
-        "id": 8,
-        "name": "구름",
-        "type": "dog",
-        "breed": "스피츠 믹스",
-        "gender": "남",
-        "ageMonths": "3살",
-        "ageGroup": "adult",
-        "weight": 5.8,
-        "size": "small",
-        "image": "../img/dog&cat/dog-6.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "active"
-        ],
-        "traits": [
-            "명랑",
-            "활동적"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "2to4",
-        "walkTime": "60to120",
-        "tags": [
-            "#입양가능",
-            "#명랑함",
-            "#활동적"
-        ],
-        "detail": null
-    },
-    {
-        "id": 9,
-        "name": "태리",
-        "type": "dog",
-        "breed": "비글",
-        "gender": "남",
-        "ageMonths": "8살",
-        "ageGroup": "old",
-        "weight": 14.8,
-        "size": "medium",
-        "image": "../img/dog&cat/dog4.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "calm",
-            "charm"
-        ],
-        "traits": [
-            "신중",
-            "교감"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "30to60",
-        "tags": [
-            "#입양가능",
-            "#신중함",
-            "#교감형"
-        ],
-        "detail": null
-    },
-    {
-        "id": 10,
-        "name": "단풍",
-        "type": "cat",
-        "breed": "러시안블루",
-        "gender": "남",
-        "ageMonths": "5살",
-        "ageGroup": "adult",
-        "weight": 5.1,
-        "size": "large",
-        "image": "../img/dog&cat/cat-2.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "calm",
-            "independent"
-        ],
-        "traits": [
-            "느긋",
-            "독립적"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "over8",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#느긋함",
-            "#독립적"
-        ],
-        "detail": null
-    },
-    {
-        "id": 11,
-        "name": "설이",
-        "type": "cat",
-        "breed": "샴 믹스",
-        "gender": "여",
-        "ageMonths": "2살",
-        "ageGroup": "adult",
-        "weight": 3.6,
-        "size": "small",
-        "image": "../img/dog&cat/cat-6.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "active",
-            "charm"
-        ],
-        "traits": [
-            "호기심",
-            "사람 친화"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "2to4",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#호기심",
-            "#사람친화"
-        ],
-        "detail": null
-    },
-    {
-        "id": 12,
-        "name": "호두",
-        "type": "cat",
-        "breed": "코리안 숏헤어",
-        "gender": "남",
-        "ageMonths": "3살",
-        "ageGroup": "adult",
-        "weight": 4.2,
-        "size": "medium",
-        "image": "../img/dog&cat/cat-4.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "active"
-        ],
-        "traits": [
-            "활발",
-            "장난기"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#활발함",
-            "#장난꾸러기"
-        ],
-        "detail": null
-    },
-    {
-        "id": 13,
-        "name": "모찌",
-        "type": "cat",
-        "breed": "페르시안",
-        "gender": "여",
-        "ageMonths": "3살",
-        "ageGroup": "adult",
-        "weight": 3.8,
-        "size": "small",
-        "image": "../img/dog&cat/cat-7.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "calm"
-        ],
-        "traits": [
-            "조용",
-            "순둥"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "over8",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#조용함",
-            "#순둥이"
-        ],
-        "detail": null
-    },
-    {
-        "id": 14,
-        "name": "밤이",
-        "type": "cat",
-        "breed": "코리안 숏헤어",
-        "gender": "남",
-        "ageMonths": "4살",
-        "ageGroup": "adult",
-        "weight": 4.5,
-        "size": "medium",
-        "image": "../img/dog&cat/cat5.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "calm",
-            "charm"
-        ],
-        "traits": [
-            "낯가림",
-            "애교"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#낯가림",
-            "#애교형"
-        ],
-        "detail": null
-    },
-    {
-        "id": 15,
-        "name": "치즈",
-        "type": "cat",
-        "breed": "아메리칸 숏헤어",
-        "gender": "남",
-        "ageMonths": "2살",
-        "ageGroup": "adult",
-        "weight": 3.9,
-        "size": "small",
-        "image": "../img/dog&cat/cat7.jpg",
-        "neutered": true,
-        "vaccinated": true,
-        "fosterStatus": "none",
-        "personality": [
-            "calm",
-            "charm"
-        ],
-        "traits": [
-            "온순",
-            "교감"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before",
-            "no"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes",
-            "no"
-        ],
-        "awayTime": "4to8",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#온순함",
-            "#교감형"
-        ],
-        "detail": null
-    },
-    {
-        "id": 16,
-        "name": "콩이",
-        "type": "cat",
-        "breed": "코리안 숏헤어",
-        "gender": "여",
-        "ageMonths": "4개월",
-        "ageGroup": "young",
-        "weight": 1.2,
-        "size": "small",
-        "image": "../img/dog&cat/cat8.jpg",
-        "neutered": false,
-        "vaccinated": false,
-        "fosterStatus": "none",
-        "personality": [
-            "active"
-        ],
-        "traits": [
-            "아기",
-            "장난꾸러기"
-        ],
-        "experienceLevel": [
-            "yes",
-            "before"
-        ],
-        "residence": [
-            "apt",
-            "villa",
-            "house",
-            "officetel"
-        ],
-        "household": [
-            "yes"
-        ],
-        "awayTime": "under2",
-        "walkTime": "none",
-        "tags": [
-            "#입양가능",
-            "#아기고양이",
-            "#장난꾸러기"
-        ],
-        "detail": null
-    }
-]
+let animals;
 
-
+fetch("https://sn0w-02.github.io/WeMeet/js/animal.json")
+    .then((response) => response.json())
+    .then((data) => {
+        animals = data;
+        showAnimals(animals);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
 
 const animalList = document.querySelector('.animal-list')
 const animalCount = document.querySelector('.animal-count')
@@ -867,6 +22,11 @@ const genderButtons = document.querySelectorAll('.gender')
 
 let selectedAnimal = 'any'
 let selectedGender = 'all'
+
+//모바일 option 추가
+const mobileAge = document.querySelector('#mobile-age')
+const mobileSize = document.querySelector('#mobile-size')
+const mobilePersonality = document.querySelector('#mobile-personality')
 
 
 function setActiveButton(buttons, clickedButton) {
@@ -960,6 +120,29 @@ function getSelectedFilters() {
         personalities: personalities
     };
 }
+
+//모바일 필터
+function getMobileFilters() {
+    let gender = 'all';
+
+    if (selectedGender === 'male') {
+        gender = '남';
+    }
+
+    if (selectedGender === 'female') {
+        gender = '여';
+    }
+
+    return {
+        type: selectedAnimal,
+        gender: gender,
+        age: mobileAge.value,
+        size: mobileSize.value,
+        personality: mobilePersonality.value
+    };
+}
+
+
 // 동물 데이터를 카드로 만들어 화면에 출력
 function showAnimals(items) {
     // 동물 마릿수 출력
@@ -1042,54 +225,63 @@ function showAnimals(items) {
 }
 
 
-
-
 // 검색 버튼을 누르면 선택한 조건에 맞는 동물만 남긴다.
-searchBtn.addEventListener('click', () => {
-    // 선택한 모든 조건으로 동물을 필터링하는 함수
-    function applyFilters() {
-        const filters = getSelectedFilters();
+// 선택한 모든 조건으로 동물을 필터링하는 함수
+function applyFilters() {
+    let filters;
 
-        const filteredAnimals = animals.filter((animal) => {
-            const animalMatch =
-                filters.type === 'any' ||
-                animal.type === filters.type;
+    if (window.innerWidth <= 768) {
+        filters = getMobileFilters();
+    } else {
+        filters = getSelectedFilters();
+    }
 
-            const genderMatch =
-                filters.gender === 'all' ||
-                animal.gender === filters.gender;
+    const filteredAnimals = animals.filter((animal) => {
+        const animalMatch =
+            filters.type === 'any' ||
+            animal.type === filters.type;
 
-            const ageMatch =
-                filters.age === 'any' ||
-                animal.ageGroup === filters.age;
+        const genderMatch =
+            filters.gender === 'all' ||
+            animal.gender === filters.gender;
 
-            const sizeMatch =
-                filters.size === 'any' ||
-                animal.size === filters.size;
+        const ageMatch =
+            filters.age === 'any' ||
+            animal.ageGroup === filters.age;
 
-            const personalityMatch =
+        const sizeMatch =
+            filters.size === 'any' ||
+            animal.size === filters.size;
+
+        let personalityMatch;
+
+        if (window.innerWidth <= 768) {
+            personalityMatch =
+                filters.personality === 'any' ||
+                animal.personality.includes(filters.personality);
+        } else {
+            personalityMatch =
                 filters.personalities.length === 0 ||
                 filters.personalities.every((personality) => {
                     return animal.personality.includes(personality);
                 });
+        }
 
-            return (
-                animalMatch &&
-                genderMatch &&
-                ageMatch &&
-                sizeMatch &&
-                personalityMatch
-            );
-        });
+        return (
+            animalMatch &&
+            genderMatch &&
+            ageMatch &&
+            sizeMatch &&
+            personalityMatch
+        );
+    });
 
-        showAnimals(filteredAnimals);
-    }
+    showAnimals(filteredAnimals);
+}
 
-    // 완료 버튼을 눌러도 필터 실행
-    searchBtn.addEventListener('click', applyFilters);
+// 완료 버튼을 눌러도 필터 실행
+searchBtn.addEventListener('click', applyFilters);
 
-
-});
 
 resetBtn.addEventListener('click', () => {
     //동물,성별 선택값 초기화
@@ -1099,7 +291,7 @@ resetBtn.addEventListener('click', () => {
     //라디오와 체크박스 초기화
     document.querySelectorAll('.filter input')
         .forEach((input) => {
-            input.checked = false;
+            input.checked = input.value === 'any';
         });
     animalButtons.forEach((button) => {
         button.classList.remove('active')
@@ -1108,6 +300,13 @@ resetBtn.addEventListener('click', () => {
         button.classList.remove('active')
     })
 
+    document.querySelector('.animal[data-type="any"]')
+        .classList.add('active');
+
+    document.querySelector('.gender[data-type="all"]')
+        .classList.add('active');
+
+    showAnimals(animals);
 });
 
 //모바일초기화
@@ -1120,6 +319,4 @@ document.querySelectorAll('.select-mobile select')
             select.value = 'any';
 
         }
-    });
-// 필터링된 동물 출력
-showAnimals(animals);
+    }); 

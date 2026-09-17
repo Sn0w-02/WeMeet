@@ -73,6 +73,8 @@ menuBtn.addEventListener('click', () => {
     gnb.classList.toggle('open');
 
     const isOpen = gnb.classList.contains('open');
+    //햄버거 메뉴 열릴때 스크롤 차단
+    document.body.classList.toggle('menu-open', isOpen);
 
     menuBtn.setAttribute('aria-expanded', isOpen);
     menuBtn.setAttribute('aria-label', isOpen ? '메뉴닫기' : '메뉴열기');
@@ -118,6 +120,8 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
         gnb.classList.remove('open');
         menuBtn.classList.remove('active');
+        //body.menu-open 삭제
+        document.body.classList.remove('menu-open');
 
         menuBtn.setAttribute('aria-expanded', 'false');
         menuBtn.setAttribute('aria-label', '메뉴열기');
@@ -149,6 +153,9 @@ reservationBtns.forEach((reservationBtn) => {
     reservationBtn.addEventListener('click', () => {
         menuBtn.classList.remove('active');
         gnb.classList.remove('open');
+        //body.menu-open 삭제
+        document.body.classList.remove('menu-open');
+
         reservationForm.reset();
         purposeBtns.forEach((btn) => {
             btn.classList.remove('active');

@@ -1,6 +1,11 @@
 @charset "utf-8";
 @import url(reset.css);
 
+/* 햄버거 메뉴 열리면 스크롤 차단 */
+body.menu-open {
+    overflow: hidden;
+}
+
 /* header */
 .header {
     width: 100%;
