@@ -88,7 +88,7 @@ fetch("https://sn0w-02.github.io/WeMeet/js/animal.json")
                     return `
                         <div class="pet-card">
                             <a href="pages/animal-detail.html?id=${animal.id}">
-                                <img src="https://sn0w-02.github.io/WeMeet/${animal.image}" alt="${animal.name} 프로필사진">
+                                <img src="https://sn0w-02.github.io/WeMeet/${animal.image.replace('../', '')}" alt="${animal.name} 프로필사진">
 
                                 <div class="pet-card-detail">
                                     <h4>${animal.name}</h4>
