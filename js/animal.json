@@ -52,7 +52,7 @@
                     "icon": "../img/animal-detail/like-dog-person.png"
                 },
                 {
-                    "text":  "산책하고 냄새 맡기",
+                    "text": "산책하고 냄새 맡기",
                     "icon": "../img/animal-detail/like-dog-sniff.png"
                 },
                 {
@@ -62,15 +62,15 @@
             ],
             "dislikes": [
                 {
-                    "text":  "갑작스러운 큰 소리",
+                    "text": "갑작스러운 큰 소리",
                     "icon": "../img/animal-detail/dislike-dog-noise.png"
                 },
                 {
-                    "text":  "낯선 사람의 빠른 접근",
+                    "text": "낯선 사람의 빠른 접근",
                     "icon": "../img/animal-detail/dislike-dog-touch.png"
                 },
                 {
-                    "text":  "오랜 시간 혼자 있기",
+                    "text": "오랜 시간 혼자 있기",
                     "icon": "../img/animal-detail/dislike-dog-stress.png"
                 }
             ],
@@ -785,7 +785,7 @@
         "ageGroup": "adult",
         "weight": 5.8,
         "size": "small",
-        "image": "../img/dog&cat/dog.-6.jpg",
+        "image": "../img/dog&cat/dog-6.jpg",
         "neutered": true,
         "vaccinated": true,
         "fosterStatus": "none",
@@ -1277,17 +1277,17 @@
             ],
             "dislikes": [
                 {
-                    "text":  "심심하고 자극이 없는 환경",
+                    "text": "심심하고 자극이 없는 환경",
                     "icon": "../img/animal-detail/dislike-cat-inactive.png"
                 },
                 {
-                    "text":"오랜 시간 혼자 놀기",
+                    "text": "오랜 시간 혼자 놀기",
                     "icon": "../img/animal-detail/dislike-cat-Stress02.png"
                 },
                 {
-                    "text":  "갑작스럽게 안아 올리기",
+                    "text": "갑작스럽게 안아 올리기",
                     "icon": "../img/animal-detail/dislike-cat-touch.png"
-                }               
+                }
             ],
             "breedInfo": {
                 "personality": "코리안 숏헤어는 다양한 성격과 외모를 가진 고양이로, 개체에 따라 활발하거나 차분한 성향을 보일 수 있어요.",
@@ -1379,25 +1379,25 @@
                     "icon": "../img/animal-detail/like-cat-sleep.png"
                 },
                 {
-                    "text":"부드럽게 쓰다듬어 주기",
+                    "text": "부드럽게 쓰다듬어 주기",
                     "icon": "../img/animal-detail/like-cat-person.png"
                 },
                 {
-                    "text":"편안한 장소에서 쉬기",
+                    "text": "편안한 장소에서 쉬기",
                     "icon": "../img/animal-detail/like-cat-sleep.png"
                 }
             ],
             "dislikes": [
                 {
-                    "text":"시끄럽고 복잡한 환경",
+                    "text": "시끄럽고 복잡한 환경",
                     "icon": "../img/animal-detail/dislike-cat-Stress.png"
                 },
                 {
-                    "text":"잦은 환경 변화",
+                    "text": "잦은 환경 변화",
                     "icon": "../img/animal-detail/dislike-cat-Stress02.png"
                 },
                 {
-                    "text":"거칠고 갑작스러운 스킨십",
+                    "text": "거칠고 갑작스러운 스킨십",
                     "icon": "../img/animal-detail/dislike-cat-touch.png"
                 }
             ],
@@ -1492,25 +1492,25 @@
                     "icon": "../img/animal-detail/like-cat-sleep.png"
                 },
                 {
-                    "text":"익숙한 사람과 천천히 교감하기",
+                    "text": "익숙한 사람과 천천히 교감하기",
                     "icon": "../img/animal-detail/like-cat-person.png"
                 },
                 {
                     "text": "부드러운 장난감으로 놀기",
                     "icon": "../img/animal-detail/like-cat-toy.png"
-                }               
+                }
             ],
             "dislikes": [
                 {
-                    "text":"낯선 사람의 갑작스러운 접근",
+                    "text": "낯선 사람의 갑작스러운 접근",
                     "icon": "../img/animal-detail/dislike-cat-stranger.png"
                 },
                 {
-                    "text":"큰 소리",
+                    "text": "큰 소리",
                     "icon": "../img/animal-detail/dislike-cat-noise.png"
                 },
                 {
-                    "text":"억지로 안아 올리기",
+                    "text": "억지로 안아 올리기",
                     "icon": "../img/animal-detail/dislike-cat-touch.png"
                 }
             ],
@@ -1601,29 +1601,29 @@
             "intro": "온순하고 편안한 분위기로 사람과 천천히 교감하는 것을 좋아하는 아이에요.",
             "likes": [
                 {
-                    "text":"보호자 곁에서 쉬기",
+                    "text": "보호자 곁에서 쉬기",
                     "icon": "../img/animal-detail/like-cat-sleep.png"
                 },
                 {
-                    "text":"부드러운 장난감 놀이",
+                    "text": "부드러운 장난감 놀이",
                     "icon": "../img/animal-detail/like-cat-toy.png"
                 },
                 {
-                    "text":"천천히 쓰다듬어 주기",
+                    "text": "천천히 쓰다듬어 주기",
                     "icon": "../img/animal-detail/like-cat-person.png"
                 }
             ],
             "dislikes": [
                 {
-                    "text":"갑작스럽고 큰 소리",
+                    "text": "갑작스럽고 큰 소리",
                     "icon": "../img/animal-detail/dislike-cat-noise.png"
                 },
                 {
-                    "text":"거친 스킨십",
+                    "text": "거친 스킨십",
                     "icon": "../img/animal-detail/dislike-cat-touch.png"
                 },
                 {
-                    "text":"지나치게 복잡한 환경",
+                    "text": "지나치게 복잡한 환경",
                     "icon": "../img/animal-detail/dislike-cat-inactive.png"
                 }
             ],
@@ -1711,29 +1711,29 @@
             "intro": "아직 어린 아기 고양이로 호기심이 많고 주변을 탐색하며 활발하게 노는 아이에요.",
             "likes": [
                 {
-                    "text":"작은 장난감으로 놀기",
+                    "text": "작은 장난감으로 놀기",
                     "icon": "../img/animal-detail/like-cat-toy.png"
                 },
                 {
-                    "text":"새로운 공간 탐색하기",
+                    "text": "새로운 공간 탐색하기",
                     "icon": "../img/animal-detail/like-cat-sniff.png"
                 },
                 {
-                    "text":"사람과 함께하는 놀이",
+                    "text": "사람과 함께하는 놀이",
                     "icon": "../img/animal-detail/like-cat-toy02.png"
                 }
             ],
             "dislikes": [
                 {
-                    "text":"오랜 시간 혼자 있기",
+                    "text": "오랜 시간 혼자 있기",
                     "icon": "../img/animal-detail/dislike-cat-inactive.png"
                 },
                 {
-                    "text":"큰 소리와 갑작스러운 움직임",
+                    "text": "큰 소리와 갑작스러운 움직임",
                     "icon": "../img/animal-detail/dislike-cat-noise.png"
                 },
                 {
-                    "text":"추운 환경",
+                    "text": "추운 환경",
                     "icon": "../img/animail/dislike-cat-cold"
                 }
             ],
