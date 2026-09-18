@@ -183,6 +183,10 @@
     word-break: keep-all;
 }
 
+.animal-care p:last-child {
+    margin-bottom: 0;
+}
+
 .animal-info .info-flex,
 .animal-care .care-list {
     display: flex;
@@ -211,6 +215,7 @@
     background: url(../img/animal-detail/animal-care-bg.png) no-repeat;
     background-position: 90% 10%;
     background-size: 11.25rem;
+    padding: 2.5rem 3.125rem 1.25rem;
 }
 
 .animal-care .care-list img {
