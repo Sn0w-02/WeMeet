@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    /* ==========================================
-       1. 프로필 이미지 업로드 기능 
-       ================================---------- */
+
+    /*  1. 프로필 이미지 업로드 기능  */
     const photoChangeBtn = document.querySelector(".photo-change-btn");
     const editProfileImageInput = document.querySelector("#editProfileImageInput");
     const profileImgElement = document.querySelector("#profile-edit .profile-img img");
@@ -29,9 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* ==========================================
-       2. 프로필 정보 (닉네임, 상태 메시지) 수정 및 저장
-       ================================---------- */
+    /* 2. 프로필 정보 (닉네임, 상태 메시지) 수정 및 저장 */
     const editNicknameInput = document.getElementById("editNicknameInput");
     const editMessageInput = document.getElementById("editMessageInput");
     const profileEditBtn = document.querySelector("#profile-edit .profile-edit");
@@ -67,33 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* ==========================================
-       3. 반려동물 정보 수정 및 저장 기능
-       ================================---------- */
+    /* 3. 반려동물 정보 수정 및 저장 기능 */
     const petNicknameSpan = document.querySelector(".pet-nickname-text");
     const dDaySpan = document.querySelector(".d-day-text");
     const petBreedSpan = document.querySelector(".pet-breed-text");
     const saveMypetBtn = document.getElementById("saveMypetBtn");
 
-    // 저장된 반려동물 데이터 불러오기 및 input 변환 처리
     const savedPetData = localStorage.getItem("weMeet_pet");
 
-    // 페이지 로드 시 기존 텍스트를 input으로 바꿔주어 수정할 수 있게 세팅
     if (petNicknameSpan && dDaySpan && petBreedSpan) {
-        // 이미 저장된 값이 있다면 적용
+
         let currentPet = savedPetData ? JSON.parse(savedPetData) : {
             name: petNicknameSpan.textContent.trim(),
             date: dDaySpan.textContent.trim(),
             breed: petBreedSpan.textContent.trim()
         };
 
-        // input 형태로 변경하여 사용자가 수정할 수 있도록 유도
         petNicknameSpan.innerHTML = `<input type="text" id="editPetName" value="${currentPet.name}">`;
         dDaySpan.innerHTML = `<input type="date" id="editPetDate" value="${currentPet.date}">`;
         petBreedSpan.innerHTML = `<input type="text" id="editPetBreed" value="${currentPet.breed}">`;
     }
 
-    // 반려동물 정보 '수정하기' 버튼 클릭 시
     if (saveMypetBtn) {
         saveMypetBtn.addEventListener("click", function () {
             const editPetName = document.getElementById("editPetName");
@@ -117,9 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* ==========================================
-       4. Benefit Swiper 슬라이드 설정 
-       ================================---------- */
+    /* 4. Benefit Swiper 슬라이드 설정 */
+
     const benefitSwiperEl = document.querySelector('.benefit-swiper');
     if (benefitSwiperEl) {
         new Swiper('.benefit-swiper', {
@@ -169,15 +159,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         return;
                     }
 
-                    // 브라우저 저장소(localStorage)에 비밀번호 저장
                     localStorage.setItem("weMeet_password", passwordVal);
 
-                    // 화면을 다시 마스킹된 텍스트(********) 상태로 원복
                     passwordDd.textContent = "********";
                     passwordChangeBtn.textContent = "변경";
                     isEditingPassword = false;
 
-                    // 수정 완료 안내 메시지 팝업
                     alert("비밀번호가 성공적으로 변경되었습니다!");
                 }
             });
