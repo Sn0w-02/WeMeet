@@ -47,14 +47,32 @@
         "detail": {
             "intro": "사람을 좋아하지만 천천히 마음을 여는 다정한 아이에요.",
             "likes": [
-                "사람과 함께 있는 시간",
-                "산책하고 냄새 맡기",
-                "공놀이와 장난감 놀이"
+                {
+                    "text": "사람과 함께 있는 시간",
+                    "icon": "../img/animal-detail/like-dog-person.png"
+                },
+                {
+                    "text":  "산책하고 냄새 맡기",
+                    "icon": "../img/animal-detail/like-dog-sniff.png"
+                },
+                {
+                    "text": "공놀이와 장난감 놀이",
+                    "icon": "../img/animal-detail/like-dog-toy.png"
+                }
             ],
             "dislikes": [
-                "갑작스러운 큰 소리",
-                "낯선 사람의 빠른 접근",
-                "오랜 시간 혼자 있기"
+                {
+                    "text":  "갑작스러운 큰 소리",
+                    "icon": "../img/animal-detail/dislike-dog-noise.png"
+                },
+                {
+                    "text":  "낯선 사람의 빠른 접근",
+                    "icon": "../img/animal-detail/dislike-dog-touch.png"
+                },
+                {
+                    "text":  "오랜 시간 혼자 있기",
+                    "icon": "../img/animal-detail/dislike-dog-stress.png"
+                }
             ],
             "breedInfo": {
                 "personality": "애교가 많고 활발하며 영리하고 호기심이 많아요. 보호자와 잘 지내지만 경계심이 있거나 예민할 수 있어요.",
@@ -144,14 +162,32 @@
         "detail": {
             "intro": "차분하고 독립적인 편이지만 산책 시간에는 보호자와 함께 걷는 것을 좋아하는 아이에요.",
             "likes": [
-                "규칙적인 산책",
-                "조용한 휴식",
-                "익숙한 사람과 천천히 교감하기"
+                {
+                    "text": "규칙적인 산책",
+                    "icon": "../img/animal-detail/like-dog-walk.png"
+                },
+                {
+                    "text": "조용한 휴식",
+                    "icon": "../img/animal-detail/like-dog-rest.png"
+                },
+                {
+                    "text": "익숙한 사람과 천천히 교감하기",
+                    "icon": "../img/animal-detail/like-dog-person.png"
+                }
             ],
             "dislikes": [
-                "지나치게 소란스러운 환경",
-                "과도한 스킨십",
-                "갑작스러운 생활 패턴 변화"
+                {
+                    "text": "지나치게 소란스러운 환경",
+                    "icon": "../img/animal-detail/dislike-dog-change.png"
+                },
+                {
+                    "text": "과도한 스킨십",
+                    "icon": "../img/animal-detail/dislike-dog-touch.png"
+                },
+                {
+                    "text": "갑작스러운 생활 패턴 변화",
+                    "icon": "../img/animal-detail/dislike-dog-inactive.png"
+                }
             ],
             "breedInfo": {
                 "personality": "코커스패니얼은 사람과의 교감을 좋아하고 밝은 성격을 가진 경우가 많으며 산책과 놀이를 즐기는 편이에요.",
@@ -172,12 +208,20 @@
                     "description": "하루 30~60분 정도 무리하지 않는 산책을 권장해요."
                 },
                 {
-                    "title": "안정적인 환경",
-                    "description": "생활 패턴이 자주 바뀌지 않는 차분한 환경이 좋아요."
+                    "title": "꾸준한 빗질",
+                    "description": "털이 엉키지 않도록 정기적으로 빗질해 주세요."
                 },
                 {
-                    "title": "적당한 거리",
-                    "description": "혼자 쉬는 시간을 존중하면서 천천히 교감해 주세요."
+                    "title": "식사량 관리",
+                    "description": "적정한 급여량을 지키고 건강한 체중을 유지해 주세요."
+                },
+                {
+                    "title": "기본 훈련",
+                    "description": "차분한 성격을 살려 칭찬과 보상을 활용한 훈련을 해주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "혼자 쉬는 시간을 존중하면서도 매일 편안하게 교감해 주세요."
                 }
             ]
         }
@@ -230,14 +274,32 @@
         "detail": {
             "intro": "차분한 편이지만 익숙해진 사람에게는 먼저 다가와 애교를 보여주는 아이에요.",
             "likes": [
-                "조용한 공간에서 쉬기",
-                "보호자 옆에서 낮잠 자기",
-                "낚싯대 장난감 놀이"
+                {
+                    "text": "조용한 공간에서 쉬기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                },
+                {
+                    "text": "보호자 옆에서 낮잠 자기",
+                    "icon": "../img/animal-detail/like-cat-person.png"
+                },
+                {
+                    "text": "낚싯대 장난감 놀이",
+                    "icon": "../img/animal-detail/like-cat-toy02.png"
+                }
             ],
             "dislikes": [
-                "갑작스러운 큰 소리",
-                "과도하게 안아 올리기",
-                "낯선 환경의 잦은 변화"
+                {
+                    "text": "갑작스러운 큰 소리",
+                    "icon": "../img/animal-detail/dislike-cat-noise.png"
+                },
+                {
+                    "text": "과도하게 안아 올리기",
+                    "icon": "../img/animal-detail/dislike-cat-touch.png"
+                },
+                {
+                    "text": "낯선 환경의 잦은 변화",
+                    "icon": "../img/animal-detail/dislike-cat-Stress02.png"
+                }
             ],
             "breedInfo": {
                 "personality": "환경 적응력이 좋은 편이며 개체에 따라 독립성과 애교가 모두 나타날 수 있어요.",
@@ -256,16 +318,24 @@
             },
             "care": [
                 {
-                    "title": "놀이 시간",
+                    "title": "충분한 놀이",
                     "description": "하루 여러 번 짧은 놀이로 적절한 활동량을 채워 주세요."
                 },
                 {
-                    "title": "숨을 공간",
-                    "description": "낯선 상황에서 스스로 쉴 수 있는 조용한 공간이 필요해요."
+                    "title": "털 관리",
+                    "description": "털과 피부 상태를 확인하며 정기적으로 빗질해 주세요."
                 },
                 {
-                    "title": "체중 관리",
-                    "description": "적정 급여량과 주기적인 체중 확인이 필요해요."
+                    "title": "식사량 관리",
+                    "description": "적정 급여량을 지키고 주기적으로 체중을 확인해 주세요."
+                },
+                {
+                    "title": "생활 환경 관리",
+                    "description": "낯선 상황에서 편안하게 쉴 수 있는 조용한 공간을 마련해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "익숙한 사람에게 천천히 다가올 수 있도록 편안하게 교감해 주세요."
                 }
             ]
         }
@@ -312,7 +382,69 @@
             "#산책좋아함",
             "#활동적"
         ],
-        "detail": null
+        "detail": {
+            "intro": "사람과 함께 움직이고 노는 시간을 좋아하는 활발하고 사랑스러운 아이에요.",
+            "likes": [
+                {
+                    "text": "긴 산책과 야외 활동",
+                    "icon": "../img/animal-detail/like-dog-walk.png"
+                },
+                {
+                    "text": "장난감으로 신나게 놀기",
+                    "icon": "../img/animal-detail/like-dog-toy.png"
+                },
+                {
+                    "text": "보호자와 함께하는 시간",
+                    "icon": "../img/animal-detaillike-dog-person.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "활동량이 부족한 생활",
+                    "icon": "../img/animal-detail/dislike-dog-stress.png"
+                },
+                {
+                    "text": "너무 좁은 생활 공간",
+                    "icon": "../img/animal-detail/dislike-dog-tight.png"
+                },
+                {
+                    "text": "지나치게 조용하고 자극이 없는 환경",
+                    "icon": "../img/animal-detail/dislike-dog-inactive.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "말티즈는 사람과 함께하는 것을 좋아하고 애교가 많은 편이에요. 활발하게 움직이는 것을 좋아하는 개체도 있어요.",
+                "colors": [
+                    "화이트"
+                ],
+                "lifespan": "12~15년",
+                "adultWeight": "2~4kg",
+                "height": "20~25cm",
+                "breedOrigin": "지중해 지역"
+            },
+            "care": [
+                {
+                    "title": "충분한 산책",
+                    "description": "활동량이 많은 편이라 매일 충분한 산책과 놀이 시간을 마련해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털이 엉키지 않도록 매일 부드럽게 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "적정 급여량을 지켜 건강한 체중을 유지할 수 있도록 해주세요."
+                },
+                {
+                    "title": "치아 관리",
+                    "description": "작은 견종은 치아 관리가 중요하므로 꾸준히 구강 상태를 확인해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "사람과 함께하는 것을 좋아하므로 혼자 있는 시간을 너무 길게 만들지 않는 것이 좋아요."
+                }
+            ]
+        }
     },
     {
         "id": 5,
@@ -355,7 +487,74 @@
             "#영리함",
             "#훈련적응"
         ],
-        "detail": null
+        "detail": {
+            "intro": "차분하게 주변을 살피면서도 활동할 때는 힘차게 움직이는 영리한 아이에요.",
+            "likes": [
+                {
+                    "text": "넓은 공간에서 움직이기",
+                    "icon": "../img/animal-detail/like-dog-space.png"
+                },
+                {
+                    "text": "규칙적인 산책",
+                    "icon": "../img/animal-detail/like-dog-walk.png"
+                },
+                {
+                    "text": "보호자와 함께하는 훈련과 놀이",
+                    "icon": "../img/animal-detail/like-dog-training.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "좁고 답답한 공간",
+                    "icon": "../img/animal-detail/dislike-dog-tight.png"
+                },
+                {
+                    "text": "갑작스럽게 다가오는 낯선 사람",
+                    "icon": "../img/animal-detail/dislike-dog-stranger.png"
+                },
+                {
+                    "text": "활동량이 부족한 생활",
+                    "icon": "../img/animal-detail/dislike-dog-inactive.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "진도 믹스는 개체에 따라 다양한 성격이 나타날 수 있으며, 보호자와의 신뢰를 중요하게 생각하고 영리한 편이에요.",
+                "colors": [
+                    "화이트",
+                    "황색",
+                    "블랙",
+                    "브라운",
+                    "크림",
+                    "믹스"
+                ],
+                "lifespan": "12~15년",
+                "adultWeight": "14~23kg",
+                "height": "45~55cm",
+                "breedOrigin": "대한민국"
+            },
+            "care": [
+                {
+                    "title": "충분한 산책",
+                    "description": "체격과 활동량을 고려해 매일 충분한 산책과 움직임을 제공해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털과 피부 상태를 확인하며 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "적절한 급여량을 지키고 활동량에 맞춰 체중을 관리해 주세요."
+                },
+                {
+                    "title": "기본 훈련",
+                    "description": "영리한 편이므로 칭찬과 보상을 활용해 기본 훈련을 꾸준히 해주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "보호자와 신뢰를 쌓을 수 있도록 일정한 생활과 충분한 교감 시간을 가져주세요."
+                }
+            ]
+        }
     },
     {
         "id": 6,
@@ -400,7 +599,74 @@
             "#애교형",
             "#순둥이"
         ],
-        "detail": null
+        "detail": {
+            "intro": "온순하고 사람을 편하게 대하는 편이라 천천히 마음을 나누기 좋은 아이에요.",
+            "likes": [
+                {
+                    "text": "보호자와 함께 쉬기",
+                    "icon": "../img/animal-detail/like-dog-rest.png"
+                },
+                {
+                    "text": "가볍게 산책하기",
+                    "icon": "../img/animal-detail/like-dog-walk.png"
+                },
+                {
+                    "text": "칭찬받으며 놀이하기",
+                    "icon": "../img/animal-detail/like-cat-like.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "지나치게 큰 소리",
+                    "icon": "../img/animal-detail/dislike-dog-noise.png"
+                },
+                {
+                    "text": "강한 훈육",
+                    "icon": "../img/animal-detail/dislike-dog-inactive.png"
+                },
+                {
+                    "text": "오랜 시간 혼자 있는 생활",
+                    "icon": "../img/animal-detail/dislike-dog-stress.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "푸들은 영리하고 사람과의 교감을 좋아하는 편이에요. 활동성과 애교가 함께 나타나는 경우가 많아요.",
+                "colors": [
+                    "화이트",
+                    "블랙",
+                    "브라운",
+                    "실버",
+                    "크림",
+                    "레드"
+                ],
+                "lifespan": "12~15년",
+                "adultWeight": "3~10kg",
+                "height": "24~45cm",
+                "breedOrigin": "독일, 프랑스"
+            },
+            "care": [
+                {
+                    "title": "규칙적인 산책",
+                    "description": "하루 30~60분 정도 산책과 놀이로 적절한 활동량을 채워 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털이 엉키지 않도록 정기적으로 빗질하고 미용 상태를 관리해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "먹는 양과 활동량을 함께 살펴 건강한 체중을 유지해 주세요."
+                },
+                {
+                    "title": "기본 훈련",
+                    "description": "영리하고 교감을 좋아하는 성향을 살려 긍정적인 방식으로 훈련해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "사람과 함께하는 것을 좋아하므로 매일 편안하게 교감하는 시간을 가져주세요."
+                }
+            ]
+        }
     },
     {
         "id": 7,
@@ -443,7 +709,71 @@
             "#똑똑함",
             "#충성심"
         ],
-        "detail": null
+        "detail": {
+            "intro": "사람과 함께하는 것을 좋아하고 보호자에게 친근하게 다가오는 활발한 아이에요.",
+            "likes": [
+                {
+                    "text": "보호자와 함께하는 야외 활동",
+                    "icon": "../img/animal-detail/like-dog-space.png"
+                },
+                {
+                    "text": "공이나 장난감 놀이",
+                    "icon": "../img/animal-detail/like-dog-toy.png"
+                },
+                {
+                    "text": "칭찬받으며 배우는 시간",
+                    "icon": "../img/animal-detail/like-dog-training.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "활동량이 부족한 생활",
+                    "icon": "../img/animal-detail/dislike-dog-stress.png"
+                },
+                {
+                    "text": "오랜 시간 혼자 있기",
+                    "icon": "../img/animal-detail/dislike-dog-inactive.png"
+                },
+                {
+                    "text": "지나치게 제한된 공간",
+                    "icon": "../img/animal-detail/dislike-dog-tight.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "래브라도 리트리버는 사람을 좋아하고 친화적인 성격으로 알려져 있으며 활동적인 놀이와 훈련을 즐기는 편이에요.",
+                "colors": [
+                    "블랙",
+                    "옐로우",
+                    "초콜릿"
+                ],
+                "lifespan": "10~12년",
+                "adultWeight": "25~36kg",
+                "height": "54~62cm",
+                "breedOrigin": "캐나다, 영국"
+            },
+            "care": [
+                {
+                    "title": "충분한 산책",
+                    "description": "활동량이 많은 편이라 매일 충분한 산책과 놀이가 필요해요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털 상태를 깨끗하게 유지할 수 있도록 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "활동량과 체중을 함께 살피며 적정 급여량을 지켜주세요."
+                },
+                {
+                    "title": "기본 훈련",
+                    "description": "영리한 성향을 살려 놀이와 함께 기본 예절 훈련을 진행해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "사람과 함께하는 활동을 좋아하므로 충분한 교감 시간을 마련해 주세요."
+                }
+            ]
+        }
     },
     {
         "id": 8,
@@ -455,7 +785,7 @@
         "ageGroup": "adult",
         "weight": 5.8,
         "size": "small",
-        "image": "../img/dog&cat/dog-6.jpg",
+        "image": "../img/dog&cat/dog.-6.jpg",
         "neutered": true,
         "vaccinated": true,
         "fosterStatus": "none",
@@ -488,7 +818,73 @@
             "#명랑함",
             "#활동적"
         ],
-        "detail": null
+        "detail": {
+            "intro": "밝고 명랑한 분위기로 주변에 활기를 더해주는 활동적인 아이에요.",
+            "likes": [
+                {
+                    "text": "긴 산책",
+                    "icon": "../img/animal-detail/like-dog-walk.png"
+                },
+                {
+                    "text": "새로운 냄새 탐색하기",
+                    "icon": "../img/animal-detail/like-dog-sniff.png"
+                },
+                {
+                    "text": "장난감으로 신나게 놀기",
+                    "icon": "../img/animal-detail/like-dog-toy.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "활동량이 부족한 생활",
+                    "icon": "../img/animal-detail/like-dog-stress.png"
+                },
+                {
+                    "text": "지나치게 오랜 시간 혼자 있기",
+                    "icon": "../img/animal-detail/dislike-dog-inactive.png"
+                },
+                {
+                    "text": "갑작스럽고 큰 소리",
+                    "icon": "../img/animal-detail/dislike-dog-noise.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "스피츠 계열은 활발하고 영리하며 주변 환경에 관심이 많은 편이에요. 개체에 따라 경계심이 나타날 수 있어요.",
+                "colors": [
+                    "화이트",
+                    "크림",
+                    "브라운",
+                    "블랙",
+                    "믹스"
+                ],
+                "lifespan": "12~15년",
+                "adultWeight": "5~10kg",
+                "height": "30~40cm",
+                "breedOrigin": "일본, 유럽 등"
+            },
+            "care": [
+                {
+                    "title": "충분한 산책",
+                    "description": "활동적인 성향을 고려해 매일 충분한 산책과 놀이 시간을 마련해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "풍성한 털이 엉키지 않도록 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "활동량에 맞는 급여량을 지켜 건강한 체중을 유지해 주세요."
+                },
+                {
+                    "title": "기본 훈련",
+                    "description": "새로운 환경에 익숙해질 수 있도록 칭찬과 보상을 활용해 훈련해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "활발하게 움직이고 교감할 수 있도록 매일 함께하는 시간을 마련해 주세요."
+                }
+            ]
+        }
     },
     {
         "id": 9,
@@ -533,7 +929,72 @@
             "#신중함",
             "#교감형"
         ],
-        "detail": null
+        "detail": {
+            "intro": "천천히 주변을 살피며 편안한 관계를 만들어가는 차분하고 다정한 아이에요.",
+            "likes": [
+                {
+                    "text": "천천히 냄새 맡으며 걷기",
+                    "icon": "../img/animal-detail/like-dog-sniff.png"
+                },
+                {
+                    "text": "보호자와 조용히 쉬기",
+                    "icon": "../img/animal-detail/like-dog-rest.png"
+                },
+                {
+                    "text": "익숙한 사람과 교감하기",
+                    "icon": "../img/animal-detail/like-cat-person.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "지나치게 빠른 움직임",
+                    "icon": "../img/animal-detail/dislike-dog-change.png"
+                },
+                {
+                    "text": "갑작스러운 큰 소리",
+                    "icon": "../img/animal-detail/dislike-dog-noise.png"
+                },
+                {
+                    "text": "무리한 운동",
+                    "icon": "../img/animal-detail/dislike-dog-exercise.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "비글은 호기심이 많고 후각이 발달한 품종으로 알려져 있어요. 활발한 면과 사람을 좋아하는 친근한 면을 함께 보일 수 있어요.",
+                "colors": [
+                    "트라이컬러",
+                    "레몬",
+                    "레드 앤 화이트",
+                    "화이트"
+                ],
+                "lifespan": "10~15년",
+                "adultWeight": "9~14kg",
+                "height": "33~41cm",
+                "breedOrigin": "영국"
+            },
+            "care": [
+                {
+                    "title": "편안한 산책",
+                    "description": "나이와 컨디션을 고려해 무리하지 않는 범위에서 규칙적으로 산책해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털과 피부 상태를 확인하며 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "나이에 맞는 적정 급여량을 지키고 체중 변화를 확인해 주세요."
+                },
+                {
+                    "title": "건강 관리",
+                    "description": "정기적으로 건강 상태를 확인하고 평소와 다른 변화가 있는지 살펴주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "조용하게 곁에서 교감하며 편안하게 쉴 수 있는 시간을 충분히 마련해 주세요."
+                }
+            ]
+        }
     },
     {
         "id": 10,
@@ -579,7 +1040,69 @@
             "#느긋함",
             "#독립적"
         ],
-        "detail": null
+        "detail": {
+            "intro": "조용하고 느긋하게 자기만의 시간을 보내는 것을 좋아하는 차분한 아이에요.",
+            "likes": [
+                {
+                    "text": "조용한 공간에서 쉬기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                },
+                {
+                    "text": "혼자 편안하게 낮잠 자기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                },
+                {
+                    "text": "익숙한 보호자와 천천히 교감하기",
+                    "icon": "../img/animal-detail/like-cat-person.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "지나치게 시끄러운 환경",
+                    "icon": "../img/animal-detail/dislike-cat-noise.png"
+                },
+                {
+                    "text": "갑작스러운 스킨십",
+                    "icon": "../img/animal-detail/dislike-cat-touch.png"
+                },
+                {
+                    "text": "생활 공간의 잦은 변화",
+                    "icon": "../img/animal-detail/dislike-cat-Stress02.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "러시안블루는 차분하고 조용한 성격을 보이는 경우가 많으며 보호자와의 관계에서도 신중하게 다가가는 편이에요.",
+                "colors": [
+                    "블루"
+                ],
+                "lifespan": "10~16년",
+                "adultWeight": "3~6kg",
+                "height": "20~25cm",
+                "breedOrigin": "러시아"
+            },
+            "care": [
+                {
+                    "title": "충분한 놀이",
+                    "description": "활동량을 유지할 수 있도록 장난감과 짧은 놀이 시간을 적절하게 제공해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "짧은 털이라도 정기적으로 빗질하며 털과 피부 상태를 확인해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "실내 생활이 많다면 적정 급여량과 활동량을 함께 관리해 주세요."
+                },
+                {
+                    "title": "생활 환경 관리",
+                    "description": "혼자 편안하게 쉴 수 있는 조용한 공간을 마련해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "독립적인 시간을 존중하면서도 매일 편안하게 교감해 주세요."
+                }
+            ]
+        }
     },
     {
         "id": 11,
@@ -625,7 +1148,73 @@
             "#호기심",
             "#사람친화"
         ],
-        "detail": null
+        "detail": {
+            "intro": "새로운 것에 관심이 많고 사람과 함께하는 시간을 좋아하는 호기심 많은 아이에요.",
+            "likes": [
+                {
+                    "text": "새로운 장난감 탐색하기",
+                    "icon": "../img/animal-detail/like-cat-toy.png"
+                },
+                {
+                    "text": "사람과 함께하는 놀이",
+                    "icon": "../img/animal-detail/like-cat-toy02.png"
+                },
+                {
+                    "text": "집안 곳곳을 천천히 살펴보기",
+                    "icon": "../img/animal-detail/like-cat-sniff.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text": "지나치게 오랜 시간 혼자 있기",
+                    "icon": "../img/animal-detail/dislike-dog-stress.png"
+                },
+                {
+                    "text": "자극이 전혀 없는 환경",
+                    "icon": "../img/animal-detail/dislike-cat-inactive.png"
+                },
+                {
+                    "text": "갑작스러운 큰 소리",
+                    "icon": "../img/animal-detail/dislike-cat-noise.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "샴 계열은 사람과의 교감을 좋아하고 호기심이 많은 편으로 알려져 있어요. 개체에 따라 활동적이고 표현이 많은 성격을 보일 수 있어요.",
+                "colors": [
+                    "실버",
+                    "크림",
+                    "브라운",
+                    "블루",
+                    "믹스"
+                ],
+                "lifespan": "12~20년",
+                "adultWeight": "2.5~5.5kg",
+                "height": "20~25cm",
+                "breedOrigin": "태국"
+            },
+            "care": [
+                {
+                    "title": "충분한 놀이",
+                    "description": "호기심과 활동량을 채울 수 있도록 다양한 장난감으로 충분히 놀아주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털과 피부 상태를 확인하며 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "활동량에 맞는 급여량을 지키며 건강한 체중을 유지해 주세요."
+                },
+                {
+                    "title": "환경 탐색",
+                    "description": "안전한 범위에서 새로운 장난감과 공간을 경험할 수 있도록 해주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "사람과 함께하는 것을 좋아하므로 매일 일정한 교감 시간을 마련해 주세요."
+                }
+            ]
+        }
     },
     {
         "id": 12,
@@ -670,7 +1259,74 @@
             "#활발함",
             "#장난꾸러기"
         ],
-        "detail": null
+        "detail": {
+            "intro": "장난기와 호기심이 많아 집안 곳곳을 탐색하며 활발하게 노는 아이에요.",
+            "likes": [
+                {
+                    "text": "낚싯대 장난감 놀이",
+                    "icon": "../img/animal-detail/like-cat-toy02.png"
+                },
+                {
+                    "text": "새로운 장난감 탐색하기",
+                    "icon": "../img/animal-detail/like-cat-toy.png"
+                },
+                {
+                    "text": "주변 살펴보기",
+                    "icon": "../img/animal-detail/like-dog-sniff.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text":  "심심하고 자극이 없는 환경",
+                    "icon": "../img/animal-detail/dislike-cat-inactive.png"
+                },
+                {
+                    "text":"오랜 시간 혼자 놀기",
+                    "icon": "../img/animal-detail/dislike-cat-Stress02.png"
+                },
+                {
+                    "text":  "갑작스럽게 안아 올리기",
+                    "icon": "../img/animal-detail/dislike-cat-touch.png"
+                }               
+            ],
+            "breedInfo": {
+                "personality": "코리안 숏헤어는 다양한 성격과 외모를 가진 고양이로, 개체에 따라 활발하거나 차분한 성향을 보일 수 있어요.",
+                "colors": [
+                    "고등어",
+                    "치즈",
+                    "턱시도",
+                    "삼색",
+                    "화이트",
+                    "믹스"
+                ],
+                "lifespan": "12~18년",
+                "adultWeight": "3~6kg",
+                "height": "23~25cm",
+                "breedOrigin": "대한민국"
+            },
+            "care": [
+                {
+                    "title": "충분한 놀이",
+                    "description": "활동량이 많은 편이라 매일 여러 번 놀이 시간을 마련해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털 상태를 확인하면서 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "활동량과 체중을 함께 살펴 적절한 급여량을 유지해 주세요."
+                },
+                {
+                    "title": "안전한 환경",
+                    "description": "높은 곳을 좋아할 수 있으므로 안전하게 오를 수 있는 공간을 마련해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "장난감 놀이를 함께하며 충분히 교감할 수 있는 시간을 가져주세요."
+                }
+            ]
+        }
     },
     {
         "id": 13,
@@ -715,7 +1371,75 @@
             "#조용함",
             "#순둥이"
         ],
-        "detail": null
+        "detail": {
+            "intro": "조용하고 온순한 분위기로 편안하게 곁을 지켜주는 차분한 아이에요.",
+            "likes": [
+                {
+                    "text": "조용한 공간에서 낮잠 자기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                },
+                {
+                    "text":"부드럽게 쓰다듬어 주기",
+                    "icon": "../img/animal-detail/like-cat-person.png"
+                },
+                {
+                    "text":"편안한 장소에서 쉬기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text":"시끄럽고 복잡한 환경",
+                    "icon": "../img/animal-detail/dislike-cat-Stress.png"
+                },
+                {
+                    "text":"잦은 환경 변화",
+                    "icon": "../img/animal-detail/dislike-cat-Stress02.png"
+                },
+                {
+                    "text":"거칠고 갑작스러운 스킨십",
+                    "icon": "../img/animal-detail/dislike-cat-touch.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "페르시안은 차분하고 온순한 성격을 보이는 경우가 많으며 조용한 환경에서 편안하게 지내는 것을 좋아하는 편이에요.",
+                "colors": [
+                    "화이트",
+                    "크림",
+                    "실버",
+                    "골드",
+                    "블루",
+                    "블랙",
+                    "믹스"
+                ],
+                "lifespan": "12~17년",
+                "adultWeight": "3~5.5kg",
+                "height": "23~28cm",
+                "breedOrigin": "이란, 영국"
+            },
+            "care": [
+                {
+                    "title": "충분한 놀이",
+                    "description": "차분한 성격이라도 건강을 위해 매일 적당한 놀이 시간을 마련해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "긴 털이 엉키지 않도록 매일 꼼꼼하게 빗질해 주세요."
+                },
+                {
+                    "title": "눈 주변 관리",
+                    "description": "눈 주변의 분비물이나 눈물 자국을 확인하고 깨끗하게 관리해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "적정 급여량을 지켜 건강한 체중을 유지할 수 있도록 해주세요."
+                },
+                {
+                    "title": "편안한 휴식",
+                    "description": "조용하고 안정적인 공간에서 충분히 쉴 수 있도록 해주세요."
+                }
+            ]
+        }
     },
     {
         "id": 14,
@@ -760,7 +1484,74 @@
             "#낯가림",
             "#애교형"
         ],
-        "detail": null
+        "detail": {
+            "intro": "처음에는 조금 조심스럽지만 익숙해지면 다정한 모습을 보여주는 사랑스러운 아이에요.",
+            "likes": [
+                {
+                    "text": "조용한 공간에서 쉬기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                },
+                {
+                    "text":"익숙한 사람과 천천히 교감하기",
+                    "icon": "../img/animal-detail/like-cat-person.png"
+                },
+                {
+                    "text": "부드러운 장난감으로 놀기",
+                    "icon": "../img/animal-detail/like-cat-toy.png"
+                }               
+            ],
+            "dislikes": [
+                {
+                    "text":"낯선 사람의 갑작스러운 접근",
+                    "icon": "../img/animal-detail/dislike-cat-stranger.png"
+                },
+                {
+                    "text":"큰 소리",
+                    "icon": "../img/animal-detail/dislike-cat-noise.png"
+                },
+                {
+                    "text":"억지로 안아 올리기",
+                    "icon": "../img/animal-detail/dislike-cat-touch.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "코리안 숏헤어는 다양한 성격을 가진 고양이로, 개체에 따라 낯가림이 있거나 사람에게 애교를 보이는 성향이 나타날 수 있어요.",
+                "colors": [
+                    "고등어",
+                    "치즈",
+                    "턱시도",
+                    "삼색",
+                    "화이트",
+                    "믹스"
+                ],
+                "lifespan": "12~18년",
+                "adultWeight": "3~6kg",
+                "height": "23~25cm",
+                "breedOrigin": "대한민국"
+            },
+            "care": [
+                {
+                    "title": "충분한 놀이",
+                    "description": "차분한 성향을 고려해 무리하지 않는 짧은 놀이를 여러 번 제공해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "털과 피부 상태를 확인하며 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "적정 급여량을 지키고 건강한 체중을 유지해 주세요."
+                },
+                {
+                    "title": "안정적인 환경",
+                    "description": "낯선 상황에서 편안하게 숨을 수 있는 조용한 공간을 마련해 주세요."
+                },
+                {
+                    "title": "천천히 교감하기",
+                    "description": "낯을 가릴 수 있으므로 먼저 다가가기보다 스스로 다가올 시간을 충분히 주세요."
+                }
+            ]
+        }
     },
     {
         "id": 15,
@@ -806,7 +1597,74 @@
             "#온순함",
             "#교감형"
         ],
-        "detail": null
+        "detail": {
+            "intro": "온순하고 편안한 분위기로 사람과 천천히 교감하는 것을 좋아하는 아이에요.",
+            "likes": [
+                {
+                    "text":"보호자 곁에서 쉬기",
+                    "icon": "../img/animal-detail/like-cat-sleep.png"
+                },
+                {
+                    "text":"부드러운 장난감 놀이",
+                    "icon": "../img/animal-detail/like-cat-toy.png"
+                },
+                {
+                    "text":"천천히 쓰다듬어 주기",
+                    "icon": "../img/animal-detail/like-cat-person.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text":"갑작스럽고 큰 소리",
+                    "icon": "../img/animal-detail/dislike-cat-noise.png"
+                },
+                {
+                    "text":"거친 스킨십",
+                    "icon": "../img/animal-detail/dislike-cat-touch.png"
+                },
+                {
+                    "text":"지나치게 복잡한 환경",
+                    "icon": "../img/animal-detail/dislike-cat-inactive.png"
+                }
+            ],
+            "breedInfo": {
+                "personality": "아메리칸 숏헤어는 활발하면서도 사람과 편안하게 지내는 성격을 보이는 경우가 많아요. 개체에 따라 차분하고 온순한 모습을 보일 수 있어요.",
+                "colors": [
+                    "실버 태비",
+                    "브라운 태비",
+                    "블랙",
+                    "화이트",
+                    "크림",
+                    "오렌지"
+                ],
+                "lifespan": "12~15년",
+                "adultWeight": "3~7kg",
+                "height": "20~25cm",
+                "breedOrigin": "미국"
+            },
+            "care": [
+                {
+                    "title": "충분한 놀이",
+                    "description": "차분한 성격이라도 건강을 위해 매일 적당한 놀이 시간을 마련해 주세요."
+                },
+                {
+                    "title": "꾸준한 빗질",
+                    "description": "짧은 털을 깨끗하게 유지하고 피부 상태를 확인하며 정기적으로 빗질해 주세요."
+                },
+                {
+                    "title": "식사량 관리",
+                    "description": "실내 생활에 맞춰 적절한 급여량을 유지하고 체중을 관리해 주세요."
+                },
+                {
+                    "title": "건강 관리",
+                    "description": "식사와 활동량을 꾸준히 확인하며 평소와 다른 변화가 있는지 살펴주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "사람과 편안하게 교감하는 것을 좋아하므로 부드럽게 함께하는 시간을 가져주세요."
+                }
+            ]
+        }
     },
     {
         "id": 16,
@@ -849,6 +1707,73 @@
             "#아기고양이",
             "#장난꾸러기"
         ],
-        "detail": null
+        "detail": {
+            "intro": "아직 어린 아기 고양이로 호기심이 많고 주변을 탐색하며 활발하게 노는 아이에요.",
+            "likes": [
+                {
+                    "text":"작은 장난감으로 놀기",
+                    "icon": "../img/animal-detail/like-cat-toy.png"
+                },
+                {
+                    "text":"새로운 공간 탐색하기",
+                    "icon": "../img/animal-detail/like-cat-sniff.png"
+                },
+                {
+                    "text":"사람과 함께하는 놀이",
+                    "icon": "../img/animal-detail/like-cat-toy02.png"
+                }
+            ],
+            "dislikes": [
+                {
+                    "text":"오랜 시간 혼자 있기",
+                    "icon": "../img/animal-detail/dislike-cat-inactive.png"
+                },
+                {
+                    "text":"큰 소리와 갑작스러운 움직임",
+                    "icon": "../img/animal-detail/dislike-cat-noise.png"
+                },
+                {
+                    "text":"추운 환경",
+                    "icon": "../img/animail/dislike-cat-cold"
+                }
+            ],
+            "breedInfo": {
+                "personality": "코리안 숏헤어는 다양한 성격과 외모를 가진 고양이로, 어린 개체는 성장하면서 성격이 달라질 수 있어요.",
+                "colors": [
+                    "고등어",
+                    "치즈",
+                    "턱시도",
+                    "삼색",
+                    "화이트",
+                    "믹스"
+                ],
+                "lifespan": "12~18년",
+                "adultWeight": "3~6kg",
+                "height": "23~25cm",
+                "breedOrigin": "대한민국"
+            },
+            "care": [
+                {
+                    "title": "짧은 놀이",
+                    "description": "아직 어린 고양이이므로 무리하지 않고 짧게 여러 번 놀아주세요."
+                },
+                {
+                    "title": "안전한 환경",
+                    "description": "전선이나 작은 물건 등 아기 고양이가 다칠 수 있는 위험 요소를 미리 정리해 주세요."
+                },
+                {
+                    "title": "성장기 식사",
+                    "description": "성장기에 필요한 영양을 충분히 섭취할 수 있도록 연령에 맞는 식사를 제공해 주세요."
+                },
+                {
+                    "title": "예방접종 확인",
+                    "description": "아직 예방접종이 완료되지 않았으므로 수의사와 상담해 접종 일정을 확인해 주세요."
+                },
+                {
+                    "title": "함께하는 시간",
+                    "description": "아직 어린 시기이므로 혼자 두는 시간을 줄이고 충분히 보살펴 주세요."
+                }
+            ]
+        }
     }
 ]
