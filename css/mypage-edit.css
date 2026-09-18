@@ -252,6 +252,67 @@ main {
     color: #fff;
 }
 
+.profile-basic>div:nth-child(1) dd,
+.profile-basic>div:nth-child(2) dd {
+    padding: 0;
+    border: 1px solid #aaaed0;
+}
+
+.profile-basic>div:nth-child(1) dd input,
+.profile-basic>div:nth-child(2) dd input {
+    width: 100%;
+    height: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.mypet-basic dd {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.mypet-basic dd input {
+    width: 100%;
+    height: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.personal-basic>div:nth-child(2) dd {
+    padding: 0;
+    border: 1px solid #aaaed0;
+
+}
+
+.personal-basic>div:nth-child(2) dd input {
+    width: 100%;
+    height: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+
 @media (max-width: 768px) {
 
     main {
