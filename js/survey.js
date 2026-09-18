@@ -113,7 +113,7 @@ function renderAnimals() {
 
         if (animal.image) {
             card.innerHTML = `
-                <a href="./animal-detail.html"alt="">
+                <a href="./animal-detail.html?id=${animal.id}" alt="">
                     <div class="recommend-img">
                         <img src="${animal.image}" alt="${animal.name}">
                     </div>
@@ -132,8 +132,7 @@ function renderAnimals() {
         //else가 필요한가?
         else {
             card.innerHTML = `
-            <div class="recommend-box">
-                <a href="" alt="">
+                <a href="./animal-detail.html?id=${animal.id}" alt="">
                     <div class="recommend-image no-image">이미지 준비중</div>
                     <div class="recommend-info">
                         <div>
@@ -145,7 +144,6 @@ function renderAnimals() {
                         </div>
                     </div>
                 </a>
-            </div>
             `;
         }
 
