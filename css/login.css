@@ -76,6 +76,8 @@ input:focus {
     font-size: 0.75rem;
     font-weight: 500;
     cursor: pointer;
+    border: 1px solid #dcdcdc;
+    border-radius: 1.5rem;
     transition: background-color 0.2s;
 }
 
