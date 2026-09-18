@@ -1,46 +1,32 @@
 let animals = [];
 
 
-// ========================================
 // 1. 주소창에서 id 가져오기
-// ========================================
-
 const urlParams = new URLSearchParams(location.search);
 const animalId = Number(urlParams.get('id'));
 
 
-// ========================================
 // 2. HTML에서 사용할 요소 가져오기
-// ========================================
-
 // 프로필 이미지
-const animalImage =
-    document.querySelector('#animal-profile .web-img');
+const animalImage = document.querySelector('#animal-profile .web-img');
 
-const mobileImage =
-    document.querySelector('#animal-profile .mobile');
+const mobileImage = document.querySelector('#animal-profile .mobile');
 
 
 // 소개 문구
-const mainTitle =
-    document.querySelector('.main-title');
+const mainTitle = document.querySelector('.main-title');
 
 
 // 기본 프로필 정보
-const name =
-    document.querySelector('.desc.name');
+const name = document.querySelector('.desc.name');
 
-const breed =
-    document.querySelector('.desc.breed');
+const breed = document.querySelector('.desc.breed');
 
-const gender =
-    document.querySelector('.desc.gender');
+const gender = document.querySelector('.desc.gender');
 
-const age =
-    document.querySelector('.desc.age');
+const age = document.querySelector('.desc.age');
 
-const weight =
-    document.querySelector('.desc.weight');
+const weight = document.querySelector('.desc.weight');
 
 const neutered =
     document.querySelector('.desc.neutered');
@@ -101,19 +87,19 @@ const careDescription =
 
 fetch('../js/animal.json')
 
-    .then(function(response) {
+    .then(function (response) {
 
         return response.json();
 
     })
 
-    .then(function(data) {
+    .then(function (data) {
 
         animals = data;
 
 
         // URL의 id와 같은 동물 찾기
-        const animal = animals.find(function(item) {
+        const animal = animals.find(function (item) {
 
             return item.id === animalId;
 
@@ -249,7 +235,7 @@ function renderAnimal(animal) {
             document.querySelectorAll('.like-content > div');
 
 
-        animal.detail.likes.forEach(function(like, index) {
+        animal.detail.likes.forEach(function (like, index) {
 
             if (likeItems[index]) {
 
@@ -281,7 +267,7 @@ function renderAnimal(animal) {
             document.querySelectorAll('.bad-content > div');
 
 
-        animal.detail.dislikes.forEach(function(dislike, index) {
+        animal.detail.dislikes.forEach(function (dislike, index) {
 
             if (badItems[index]) {
 
@@ -351,7 +337,7 @@ function renderAnimal(animal) {
         // 7-8. 돌봄 정보
         // ========================================
 
-        animal.detail.care.forEach(function(care, index) {
+        animal.detail.care.forEach(function (care, index) {
 
             if (careList[index]) {
 
