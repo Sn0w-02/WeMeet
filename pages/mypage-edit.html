@@ -84,26 +84,44 @@
                     <p>회원님의 프로필정보를 관리하세요</p>
                 </div>
                 <div class="profile-bottom">
+
                     <dl class="profile-basic">
+
                         <div>
                             <dt>닉네임</dt>
-                            <dd class="user-nickname">wemeet</dd>
+                            <dd>
+                                <input type="text" id="editNicknameInput" value="wemeet">
+                            </dd>
                         </div>
+
                         <div>
                             <dt>상태</dt>
-                            <dd class="user-message">나에게 와줘서 고마워</dd>
+                            <dd>
+                                <input type="text" id="editMessageInput" value="나에게 와줘서 고마워">
+                            </dd>
                         </div>
+
                     </dl>
+
                     <div class="btn-list">
+
+                        <input type="file" id="editProfileImageInput" accept="image/*" hidden>
+
                         <button type="button" class="btn photo-change-btn">
                             <img src="../img/mypage/photo-camera-ico.png" alt="">
                             사진 변경
                         </button>
-                        <button type="button" class="btn profile-edit">수정하기</button>
+
+                        <button type="button" class="btn profile-edit">
+                            수정하기
+                        </button>
+
                     </div>
+
                 </div>
             </div>
         </section>
+
         <!-- mypet-edit -->
         <section id="mypet-edit">
             <div class="pet-img">
@@ -122,20 +140,20 @@
                     <dl class="mypet-basic">
                         <div>
                             <dt>아이 이름</dt>
-                            <dd class="pet-nickname">해피</dd>
+                            <dd><span class="pet-nickname-text">해피</span></dd>
                         </div>
 
                         <div>
                             <dt>입양날짜</dt>
-                            <dd class="d-day-text">2026-05-10</dd>
+                            <dd><span class="d-day-text">2026-05-10</span></dd>
                         </div>
                         <div>
                             <dt>품종</dt>
-                            <dd class="pet-breed">코리안 숏헤어</dd>
+                            <dd><span class="pet-breed-text">코리안 숏헤어</span></dd>
                         </div>
                     </dl>
                     <div class="btn-list pet">
-                        <button type="button" class="btn mypet-edit">수정하기</button>
+                        <button type="button" class="btn mypet-edit" id="saveMypetBtn">수정하기</button>
                     </div>
                 </div>
             </div>
