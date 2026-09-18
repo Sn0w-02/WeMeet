@@ -135,13 +135,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 document.addEventListener("DOMContentLoaded", function () {
-    /* ==========================================
-       [개인정보] 비밀번호 변경 및 수정 기능
-       ================================---------- */
-    // HTML 구조에서 비밀번호가 있는 row를 선택합니다 (개인정보 변경 영역 내부의 두 번째 div)
+
     const personalRows = document.querySelectorAll(".personal-basic > div");
 
-    // 보통 아이디가 첫 번째, 비밀번호가 두 번째이므로 index 1번을 선택합니다.
     if (personalRows.length >= 2) {
         const passwordRow = personalRows[1];
         const passwordDd = passwordRow.querySelector("dd");
@@ -152,20 +148,18 @@ document.addEventListener("DOMContentLoaded", function () {
         if (passwordChangeBtn && passwordDd) {
             passwordChangeBtn.addEventListener("click", function () {
                 if (!isEditingPassword) {
-                    // [1단계] '변경' 버튼을 처음 누른 경우 -> 입력창으로 변경
                     passwordDd.innerHTML = `
                         <input type="password" id="editPasswordInput" placeholder="새 비밀번호 입력" style="width: 100%; height: 100%; border: none; outline: none; background: transparent; font-size: inherit; font-family: inherit;">
                     `;
 
                     const editPasswordInput = document.getElementById("editPasswordInput");
                     if (editPasswordInput) {
-                        editPasswordInput.focus(); // 자동으로 입력창에 커서 깜빡이게 이동
+                        editPasswordInput.focus(); // 
                     }
 
                     passwordChangeBtn.textContent = "저장";
                     isEditingPassword = true;
                 } else {
-                    // [2단계] '저장' 버튼을 누른 경우 -> 값 검사 및 저장
                     const editPasswordInput = document.getElementById("editPasswordInput");
                     const passwordVal = editPasswordInput ? editPasswordInput.value.trim() : "";
 

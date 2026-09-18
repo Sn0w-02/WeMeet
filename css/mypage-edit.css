@@ -7,7 +7,6 @@ main {
     background: url(../img/mypage/edit-bottom-bg.png) center bottom / contain no-repeat;
 }
 
-
 #profile-edit,
 #mypet-edit {
     display: flex;
@@ -102,26 +101,10 @@ main {
 .profile-basic dd,
 .mypet-basic dd {
     line-height: 1.6;
-    padding: 0;
-    /* 내부 여백 제거 (input이 꽉 차게 하기 위함) */
-    background: transparent;
-    /* 배경 투명하게 */
-    border: none;
-    /* 부모 dd의 테두리 제거 */
-}
-
-.profile-basic dd input,
-.mypet-basic dd input {
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem;
     background: #fff;
-    border: 1px solid #222;
     border-radius: 0.5rem;
-    outline: none;
-    box-sizing: border-box;
-    font-size: inherit;
-    font-family: inherit;
+    border: 1px solid #222;
 }
 
 .photo-change-btn {
@@ -267,6 +250,67 @@ main {
 .personal-remove:hover {
     background: #000159;
     color: #fff;
+}
+
+.profile-basic>div:nth-child(1) dd,
+.profile-basic>div:nth-child(2) dd {
+    padding: 0;
+    border: 1px solid #aaaed0;
+}
+
+.profile-basic>div:nth-child(1) dd input,
+.profile-basic>div:nth-child(2) dd input {
+    width: 100%;
+    height: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.mypet-basic dd {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.mypet-basic dd input {
+    width: 100%;
+    height: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.personal-basic>div:nth-child(2) dd {
+    padding: 0;
+    border: 1px solid #aaaed0;
+
+}
+
+.personal-basic>div:nth-child(2) dd input {
+    width: 100%;
+    height: 100%;
+    min-height: 2.75rem;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border: 1px solid #aaaed0;
+    border-radius: 0.5rem;
+    outline: none;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
 }
 
 @media (max-width: 768px) {
